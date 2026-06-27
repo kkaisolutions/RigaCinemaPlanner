@@ -409,6 +409,13 @@ const BROWSER_HEADERS = {
   'accept-language': 'lv-LV,lv;q=0.9,en-US;q=0.8,en;q=0.7',
   'cache-control': 'no-cache',
   pragma: 'no-cache',
+  'sec-ch-ua': '"Chromium";v="126", "Google Chrome";v="126", "Not-A.Brand";v="99"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"macOS"',
+  'sec-fetch-dest': 'document',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-site': 'none',
+  'sec-fetch-user': '?1',
   'upgrade-insecure-requests': '1'
 };
 
@@ -461,6 +468,9 @@ async function fetchTextWithCurl(url, options = {}) {
     '--silent',
     '--show-error',
     '--fail',
+    '--ipv4',
+    '--http1.1',
+    '--compressed',
     '--max-time',
     String(timeoutSeconds)
   ];
