@@ -50,7 +50,7 @@ export async function main() {
     } else {
       warnings.push({
         source: result.source,
-        message: `A cinema source failed: ${result.reason?.message || result.reason}`
+        message: sourceFailureMessage(result.source, result.reason)
       });
     }
   }
@@ -401,6 +401,14 @@ function hashId(value) {
   let hash = 0;
   for (const char of String(value)) hash = ((hash << 5) - hash + char.charCodeAt(0)) | 0;
   return Math.abs(hash);
+}
+
+function sourceFailureMessage(source, error) {
+  const name = source === 'apollo' ? 'Apollo Kino' : source === 'cinamon' ? 'Cinamon Alfa' : source;
+  const message = String(error?.message || error || 'unknown error');
+  if (/HTTP 403/.test(message)) return `${name} blocked the GitHub Actions runner (HTTP 403).`;
+  if (/timed out|fetch failed|Connection timed out/i.test(message)) return `${name} could not be reached from the GitHub Actions runner.`;
+  return `${name} failed: ${message.split('\n')[0]}`;
 }
 
 const BROWSER_HEADERS = {
