@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kino Today</title>
+    <meta name="description" content="Today’s movie showtimes across Riga cinemas.">
+    <link rel="stylesheet" href="./assets/styles.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="header-inner">
+        <div>
+          <p class="eyebrow">Riga cinema planner</p>
+          <h1>Kino Today</h1>
+        </div>
+        <div class="status" id="status">Loading showtimes...</div>
+      </div>
+    </header>
+
+    <main class="app">
+      <section class="controls" aria-label="Filters">
+        <label class="search">
+          <span>Movie</span>
+          <input id="movie-search" type="search" autocomplete="off" placeholder="Search local or original title">
+        </label>
+        <fieldset class="cinema-filter">
+          <legend>Cinemas</legend>
+          <div id="cinema-options" class="cinema-options"></div>
+        </fieldset>
+      </section>
+
+      <section class="results-head" aria-live="polite">
+        <h2 id="result-count">Upcoming sessions</h2>
+        <p id="warning-note" class="warning-note" hidden></p>
+      </section>
+
+      <section id="showtime-list" class="showtime-list" aria-label="Showtimes"></section>
+      <section id="empty-state" class="empty-state" hidden>
+        <h2>No upcoming sessions today</h2>
+        <p>Check again later. The schedule updates hourly during the day and evening.</p>
+      </section>
+    </main>
+
+    <script src="./assets/app.js" type="module"></script>
+  </body>
+</html>
