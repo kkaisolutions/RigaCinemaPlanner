@@ -1,10 +1,13 @@
+import { execFile } from 'node:child_process';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname } from 'node:path';
+import { promisify } from 'node:util';
 import vm from 'node:vm';
 import * as cheerio from 'cheerio';
 import { XMLParser } from 'fast-xml-parser';
 
 const TIMEZONE = 'Europe/Riga';
+const execFileAsync = promisify(execFile);
 const OUTPUT_PATH = new URL('../site/data/schedule.json', import.meta.url);
 const SOURCES = {
   forumSchedule: 'https://www.forumcinemas.lv/xml/Schedule/?area=1011',
@@ -22,11 +25,18 @@ const xmlParser = new XMLParser({
 export async function main() {
   const generatedAt = new Date();
   const date = rigaDate(generatedAt);
-  const results = await Promise.allSettled([
-    scrapeForum(date),
-    scrapeApollo(date),
-    scrapeCinamon(date)
-  ]);
+  const scrapers = [
+    { id: 'forum', run: () => scrapeForum(date) },
+    { id: 'apollo', run: () => scrapeApollo(date) },
+    { id: 'cinamon', run: () => scrapeCinamon(date) }
+  ];
+  const results = await Promise.all(scrapers.map(async (scraper) => {
+    try {
+      return { status: 'fulfilled', value: await scraper.run() };
+    } catch (error) {
+      return { status: 'rejected', source: scraper.id, reason: error };
+    }
+  }));
 
   const showtimes = [];
   const sources = [];
@@ -39,7 +49,7 @@ export async function main() {
       if (result.value.warnings) warnings.push(...result.value.warnings);
     } else {
       warnings.push({
-        source: 'unknown',
+        source: result.source,
         message: `A cinema source failed: ${result.reason?.message || result.reason}`
       });
     }
@@ -60,6 +70,8 @@ export async function main() {
   await mkdir(dirname(OUTPUT_PATH.pathname), { recursive: true });
   await writeFile(OUTPUT_PATH, `${JSON.stringify(payload, null, 2)}\n`);
   console.log(`Wrote ${payload.showtimes.length} upcoming showtimes for ${date}`);
+  console.log(`Sources: ${payload.sources.map((source) => `${source.id}=${source.count}`).join(', ') || 'none'}`);
+  if (payload.warnings.length) console.warn(`Warnings: ${payload.warnings.map((warning) => `${warning.source}: ${warning.message}`).join(' | ')}`);
 }
 
 async function scrapeForum(date) {
@@ -128,12 +140,20 @@ export function parseForumSchedule(xmlText, eventsById = new Map(), date = rigaD
 }
 
 async function scrapeApollo(date) {
-  const scheduleText = await fetchText(SOURCES.apolloSchedule);
+  const scheduleText = await fetchText(SOURCES.apolloSchedule, {
+    headers: {
+      referer: 'https://www.apollokino.lv/'
+    }
+  });
   const baseShowtimes = parseApolloSchedule(scheduleText, date);
   const uniqueMovieUrls = [...new Set(baseShowtimes.map((showtime) => showtime.movieUrl).filter(Boolean))];
   const detailEntries = await Promise.all(uniqueMovieUrls.map(async (movieUrl) => {
     try {
-      return [movieUrl, parseApolloMovieDetail(await fetchText(movieUrl))];
+      return [movieUrl, parseApolloMovieDetail(await fetchText(movieUrl, {
+        headers: {
+          referer: SOURCES.apolloSchedule
+        }
+      }))];
     } catch {
       return [movieUrl, {}];
     }
@@ -383,14 +403,87 @@ function hashId(value) {
   return Math.abs(hash);
 }
 
-async function fetchText(url) {
-  const response = await fetch(url, {
-    headers: {
-      'user-agent': 'KinoTodayBot/1.0 (+https://github.com/)'
+const BROWSER_HEADERS = {
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language': 'lv-LV,lv;q=0.9,en-US;q=0.8,en;q=0.7',
+  'cache-control': 'no-cache',
+  pragma: 'no-cache',
+  'upgrade-insecure-requests': '1'
+};
+
+async function fetchText(url, options = {}) {
+  const attempts = options.attempts ?? 2;
+  const timeoutMs = options.timeoutMs ?? 20000;
+  let lastError;
+
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), timeoutMs);
+    try {
+      const response = await fetch(url, {
+        redirect: 'follow',
+        headers: {
+          ...BROWSER_HEADERS,
+          ...options.headers
+        },
+        signal: controller.signal
+      });
+      if (!response.ok) throw new Error(`${url} returned HTTP ${response.status}`);
+      return await response.text();
+    } catch (error) {
+      lastError = error;
+      if (attempt < attempts) await delay(attempt * 750);
+    } finally {
+      clearTimeout(timeout);
     }
+  }
+
+  if (options.curlFallback !== false) {
+    try {
+      return await fetchTextWithCurl(url, { ...options, timeoutMs });
+    } catch (error) {
+      throw new Error(`${lastError?.message || lastError}; curl fallback failed: ${error.message}`);
+    }
+  }
+
+  throw lastError;
+}
+
+async function fetchTextWithCurl(url, options = {}) {
+  const timeoutSeconds = Math.ceil((options.timeoutMs ?? 20000) / 1000);
+  const headers = {
+    ...BROWSER_HEADERS,
+    ...options.headers
+  };
+  const args = [
+    '-L',
+    '--silent',
+    '--show-error',
+    '--fail',
+    '--max-time',
+    String(timeoutSeconds)
+  ];
+
+  for (const [name, value] of Object.entries(headers)) {
+    args.push('-H', `${headerCase(name)}: ${value}`);
+  }
+  args.push(url);
+
+  const { stdout } = await execFileAsync('curl', args, {
+    maxBuffer: 20 * 1024 * 1024
   });
-  if (!response.ok) throw new Error(`${url} returned HTTP ${response.status}`);
-  return response.text();
+  return stdout;
+}
+
+function headerCase(value) {
+  return value.split('-').map((part) => `${part.charAt(0).toUpperCase()}${part.slice(1)}`).join('-');
+}
+
+function delay(ms) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, ms);
+  });
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
