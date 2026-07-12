@@ -20,6 +20,7 @@
     </header>
 
     <main class="app">
+      <nav id="date-tabs" class="date-tabs" aria-label="Schedule day" role="tablist"></nav>
       <section class="controls" aria-label="Filters">
         <label class="search">
           <span>Movie</span>
@@ -38,7 +39,7 @@
 
       <section id="showtime-list" class="showtime-list" aria-label="Showtimes"></section>
       <section id="empty-state" class="empty-state" hidden>
-        <h2>No upcoming sessions today</h2>
+        <h2 id="empty-title">No upcoming sessions today</h2>
         <p>Check again later. The schedule updates hourly during the day and evening.</p>
       </section>
     </main>

@@ -22,7 +22,8 @@ If Codex or Finder still points to the old path, reopen or attach the workspace 
 
 - Show one compact card per showtime, not one grouped card per movie.
 - Sort showtime cards chronologically by start time.
-- Show only upcoming sessions for the current `Europe/Riga` day.
+- Show upcoming sessions for the current and following `Europe/Riga` day.
+- Provide Today and Tomorrow tabs, with Today selected by default.
 - Each card links to the corresponding movie page on the corresponding cinema website.
 - The whole card is clickable.
 - Cards link to movie detail pages, not ticket checkout pages.
@@ -145,6 +146,7 @@ Workflow decisions:
 - The GitHub Actions cron is UTC; the scraper must compute `today` in `Europe/Riga`.
 - Also support manual `workflow_dispatch`.
 - If one source fails, still deploy partial data from successful sources and include a warning.
+- A source returning zero sessions is valid (for example, overnight); only fetch or parser failures should be reported as source failures.
 - The initial committed `site/data/schedule.json` is a valid empty dataset.
 - GitHub Actions uses current Node-compatible action versions to avoid Node 20 deprecation annotations.
 
@@ -228,6 +230,20 @@ Data model highlights:
 - `language`
 - `movieUrl`
 - `availability`
+
+The scraper publishes both the current Riga date and the following Riga date
+in `dates`, and each showtime carries `serviceDate`. Today is filtered to
+future sessions; tomorrow is kept as a complete upcoming-day schedule.
+
+Availability now keeps `freeSeats`, `totalSeats`, `takenSeats`, and (when the
+denominator is known) `occupiedPercent`. Apollo uses the cinema-published
+auditorium capacity table; Forum reads seat totals when present in its public
+schedule XML; Cinamon uses the public Nuxt schedule values. Unknown values stay
+unset rather than being estimated.
+
+IMDb links use a source-provided IMDb URL when available. Otherwise the UI
+provides an IMDb title-search link using the original title, which avoids
+claiming a potentially incorrect direct match without an external API key.
 
 ## Latest Verification
 

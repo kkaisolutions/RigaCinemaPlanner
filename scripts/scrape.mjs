@@ -16,6 +16,28 @@ const SOURCES = {
   cinamonSchedule: 'https://cinamonkino.com/akropole-alfa/saraksts/lv'
 };
 
+// Published sellable seat capacity by Apollo auditorium. These values are
+// maintained separately from the live free-seat count because Apollo exposes
+// the latter on its schedule but not a percentage.
+const APOLLO_CAPACITIES = {
+  'Apollo Akropole': {
+    '1. IMAX zāle': 277,
+    '2. zāle': 227,
+    '3. zāle Radio SWH': 109,
+    '4. zāle Kronenbourg 1664 Blanc': 171,
+    '5. zāle': 90,
+    '6. zāle ApolloStar': 50,
+    '7. zāle Cinema Restaurant': 40,
+    '8. zāle Cinema Restaurant': 40,
+    '9. zāle': 127
+  },
+  'Apollo Domina': {
+    '1. zāle': 70,
+    '2. zāle': 70,
+    '3. zāle': 70
+  }
+};
+
 const xmlParser = new XMLParser({
   ignoreAttributes: false,
   parseTagValue: false,
@@ -25,10 +47,11 @@ const xmlParser = new XMLParser({
 export async function main() {
   const generatedAt = new Date();
   const date = rigaDate(generatedAt);
+  const dates = [date, addRigaDays(date, 1)];
   const scrapers = [
-    { id: 'forum', run: () => scrapeForum(date) },
-    { id: 'apollo', run: () => scrapeApollo(date) },
-    { id: 'cinamon', run: () => scrapeCinamon(date) }
+    { id: 'forum', run: () => scrapeForum(dates) },
+    { id: 'apollo', run: () => scrapeApollo(dates) },
+    { id: 'cinamon', run: () => scrapeCinamon(dates) }
   ];
   const results = await Promise.all(scrapers.map(async (scraper) => {
     try {
@@ -59,28 +82,30 @@ export async function main() {
     generatedAt: generatedAt.toISOString(),
     timezone: TIMEZONE,
     date,
+    dates,
     sources,
     warnings,
     showtimes: showtimes
       .filter((showtime) => showtime.movieUrl)
-      .filter((showtime) => new Date(showtime.startTime) > generatedAt)
+      .filter((showtime) => dates.includes(showtime.serviceDate))
+      .filter((showtime) => showtime.serviceDate !== date || new Date(showtime.startTime) > generatedAt)
       .sort((a, b) => new Date(a.startTime) - new Date(b.startTime))
   };
 
   await mkdir(dirname(OUTPUT_PATH.pathname), { recursive: true });
   await writeFile(OUTPUT_PATH, `${JSON.stringify(payload, null, 2)}\n`);
-  console.log(`Wrote ${payload.showtimes.length} upcoming showtimes for ${date}`);
+  console.log(`Wrote ${payload.showtimes.length} upcoming showtimes for ${dates.join(' and ')}`);
   console.log(`Sources: ${payload.sources.map((source) => `${source.id}=${source.count}`).join(', ') || 'none'}`);
   if (payload.warnings.length) console.warn(`Warnings: ${payload.warnings.map((warning) => `${warning.source}: ${warning.message}`).join(' | ')}`);
 }
 
-async function scrapeForum(date) {
+async function scrapeForum(dates) {
   const [scheduleText, eventsText] = await Promise.all([
     fetchText(SOURCES.forumSchedule),
     fetchText(SOURCES.forumEvents)
   ]);
   const eventsById = parseForumEvents(eventsText);
-  const showtimes = parseForumSchedule(scheduleText, eventsById, date);
+  const showtimes = parseForumSchedule(scheduleText, eventsById, dates);
   return {
     source: {
       id: 'forum',
@@ -115,8 +140,9 @@ export function parseForumEvents(xmlText) {
 export function parseForumSchedule(xmlText, eventsById = new Map(), date = rigaDate()) {
   const parsed = xmlParser.parse(xmlText);
   const shows = asArray(parsed?.Schedule?.Shows?.Show);
+  const dates = dateList(date);
   return shows
-    .filter((show) => String(show.dtAccounting || '').startsWith(date))
+    .filter((show) => dates.includes(serviceDateFrom(show.dtAccounting)))
     .filter((show) => show.EventType === 'Movie')
     .map((show) => {
       const eventMeta = eventsById.get(String(show.EventID)) || {};
@@ -131,21 +157,22 @@ export function parseForumSchedule(xmlText, eventsById = new Map(), date = rigaD
         ageRating: show.RatingLabel || show.Rating,
         genres: splitList(show.Genres),
         startTime: withRigaOffset(show.dttmShowStart),
+        serviceDate: serviceDateFrom(show.dtAccounting),
         auditorium: clean(show.TheatreAuditorium),
         language: show.SpokenLanguage?.Name || '',
         movieUrl: absolutize(show.EventURL, 'https://www.forumcinemas.lv'),
-        availability: {}
+        availability: parseForumAvailability(show)
       });
     });
 }
 
-async function scrapeApollo(date) {
+async function scrapeApollo(dates) {
   const scheduleText = await fetchText(SOURCES.apolloSchedule, {
     headers: {
       referer: 'https://www.apollokino.lv/'
     }
   });
-  const baseShowtimes = parseApolloSchedule(scheduleText, date);
+  const baseShowtimes = parseApolloSchedule(scheduleText, dates);
   const uniqueMovieUrls = [...new Set(baseShowtimes.map((showtime) => showtime.movieUrl).filter(Boolean))];
   const detailEntries = await Promise.all(uniqueMovieUrls.map(async (movieUrl) => {
     try {
@@ -179,21 +206,25 @@ async function scrapeApollo(date) {
 export function parseApolloSchedule(htmlText, date = rigaDate()) {
   const $ = cheerio.load(htmlText);
   const showtimes = [];
+  const dates = dateList(date);
   $('.schedule-card').each((_, card) => {
     const node = $(card);
     const movieUrl = absolutize(node.find('.schedule-card__title-container a').first().attr('href'), 'https://www.apollokino.lv');
     const ticketUrl = node.find('a[href*="/websales/show/"]').first().attr('href');
     const showId = ticketUrl?.match(/show\/(\d+)/)?.[1] || hashId(movieUrl + node.text());
     const datetime = node.find('time[datetime]').first().attr('datetime') || '';
-    if (!datetime.startsWith(date)) return;
+    const serviceDate = dates.find((candidate) => datetime.startsWith(candidate));
+    if (!serviceDate) return;
     const image = firstSrcsetUrl(node.find('.schedule-card__image img').attr('data-srcset'));
     const cinemaRaw = clean(node.find('.schedule-card__cinema--desktop').first().text());
-    const graphValue = Number(node.find('.js-graph').first().attr('data-value'));
     const freeSeats = numberFromText(node.find('.schedule-card__option-seats .schedule-card__option-title').first().text());
+    const cinema = shortCinemaName(cinemaRaw);
+    const auditorium = clean(node.find('.schedule-card__hall').first().text());
+    const totalSeats = APOLLO_CAPACITIES[cinema]?.[auditorium] ?? null;
     showtimes.push(normalizeShowtime({
       id: `apollo-${showId}`,
       source: 'apollo',
-      cinema: shortCinemaName(cinemaRaw),
+      cinema,
       title: clean(node.find('.schedule-card__title').first().text()),
       originalTitle: clean(node.find('.schedule-card__secondary-title').first().text()),
       posterUrl: absolutize(image, 'https://www.apollokino.lv'),
@@ -201,12 +232,15 @@ export function parseApolloSchedule(htmlText, date = rigaDate()) {
       ageRating: clean(node.find('.schedule-card__tag').first().text()),
       genres: node.find('.schedule-card__genre').toArray().map((genre) => clean($(genre).text()).replace(/,$/, '')).filter(Boolean),
       startTime: withRigaOffset(datetime),
-      auditorium: clean(node.find('.schedule-card__hall').first().text()),
+      serviceDate,
+      auditorium,
       language: findOptionValue($, node, 'Valoda'),
       movieUrl,
       availability: {
         freeSeats,
-        occupiedPercent: Number.isFinite(graphValue) ? graphValue : null
+        totalSeats,
+        takenSeats: totalSeats != null && freeSeats != null ? totalSeats - freeSeats : null,
+        occupiedPercent: totalSeats != null && freeSeats != null ? percentage(totalSeats - freeSeats, totalSeats) : null
       }
     }));
   });
@@ -229,9 +263,9 @@ export function parseApolloMovieDetail(htmlText) {
   };
 }
 
-async function scrapeCinamon(date) {
+async function scrapeCinamon(dates) {
   const htmlText = await fetchText(SOURCES.cinamonSchedule);
-  const showtimes = parseCinamonSchedule(htmlText, date);
+  const showtimes = parseCinamonSchedule(htmlText, dates);
   return {
     source: {
       id: 'cinamon',
@@ -247,11 +281,13 @@ async function scrapeCinamon(date) {
 export function parseCinamonSchedule(htmlText, date = rigaDate()) {
   const nuxt = extractNuxtState(htmlText);
   const schedule = nuxt?.data?.[0]?.schedule || [];
+  const dates = dateList(date);
   return schedule
-    .filter((item) => item.date === date || String(item.showtime || '').startsWith(date))
+    .filter((item) => dates.includes(item.date) || dates.some((candidate) => String(item.showtime || '').startsWith(candidate)))
     .filter((item) => item.film)
     .map((item) => {
       const film = item.film;
+      const serviceDate = dates.find((candidate) => item.date === candidate || String(item.showtime || '').startsWith(candidate));
       const totalSeats = item.seats_left?.seats_total ?? item.screen?.seats_totall ?? null;
       const freeSeats = item.seats_left?.seats_left ?? null;
       return normalizeShowtime({
@@ -262,19 +298,47 @@ export function parseCinamonSchedule(htmlText, date = rigaDate()) {
         originalTitle: film.original_name,
         posterUrl: film.poster || film.cover || '',
         imdbRating: film.imdb_rating || '',
+        imdbUrl: film.imdb_url || film.imdb_link || film.imdb || '',
         ageRating: film.rating || '',
         genres: film.genre?.name ? [film.genre.name] : [],
         startTime: withRigaOffset(item.showtime),
+        serviceDate,
         auditorium: item.screen_name,
         language: item.audio_label || '',
         movieUrl: `https://cinamonkino.com/akropole-alfa/filma/${film.slug || film.coded_film_id}/lv`,
         availability: {
           totalSeats,
           freeSeats,
-          takenSeats: totalSeats != null && freeSeats != null ? Number(totalSeats) - Number(freeSeats) : null
+          takenSeats: totalSeats != null && freeSeats != null ? Number(totalSeats) - Number(freeSeats) : null,
+          occupiedPercent: totalSeats != null && freeSeats != null ? percentage(Number(totalSeats) - Number(freeSeats), Number(totalSeats)) : null
         }
       });
     });
+}
+
+function parseForumAvailability(show) {
+  const pair = findSeatPair(show);
+  const totalSeats = pair?.total ?? firstNumber(show, ['SeatsTotal', 'TotalSeats', 'SeatCount', 'Capacity']);
+  const freeSeats = pair?.free ?? firstNumber(show, ['SeatsAvailable', 'AvailableSeats', 'FreeSeats']);
+  return {
+    totalSeats,
+    freeSeats,
+    takenSeats: totalSeats != null && freeSeats != null ? totalSeats - freeSeats : null,
+    occupiedPercent: totalSeats != null && freeSeats != null ? percentage(totalSeats - freeSeats, totalSeats) : null
+  };
+}
+
+function findSeatPair(value) {
+  if (typeof value === 'string') {
+    const match = value.match(/(?:^|\D)(\d+)\s*\/\s*(\d+)(?:\D|$)/);
+    return match ? { free: Number(match[1]), total: Number(match[2]) } : null;
+  }
+  if (!value || typeof value !== 'object') return null;
+  for (const child of Object.values(value)) {
+    const pair = findSeatPair(child);
+    if (pair) return pair;
+  }
+  return null;
 }
 
 export function extractNuxtState(htmlText) {
@@ -300,6 +364,7 @@ function normalizeShowtime(input) {
     ageRating: clean(input.ageRating),
     genres: asArray(input.genres).map(clean).filter(Boolean),
     startTime: input.startTime,
+    serviceDate: clean(input.serviceDate) || serviceDateFrom(input.startTime),
     auditorium: clean(input.auditorium),
     language: clean(input.language),
     movieUrl: clean(input.movieUrl),
@@ -390,6 +455,33 @@ function clean(value = '') {
 function numberFromText(value) {
   const match = clean(value).match(/\d+/);
   return match ? Number(match[0]) : null;
+}
+
+function dateList(value) {
+  return [...new Set(asArray(value).map(String).filter(Boolean))];
+}
+
+function serviceDateFrom(value) {
+  return String(value || '').slice(0, 10);
+}
+
+function addRigaDays(date, days) {
+  const [year, month, day] = String(date).split('-').map(Number);
+  const shifted = new Date(Date.UTC(year, month - 1, day + days));
+  return shifted.toISOString().slice(0, 10);
+}
+
+function firstNumber(object, keys) {
+  for (const key of keys) {
+    const value = Number(object?.[key]);
+    if (Number.isFinite(value)) return value;
+  }
+  return null;
+}
+
+function percentage(numerator, denominator) {
+  if (!Number.isFinite(numerator) || !Number.isFinite(denominator) || denominator <= 0) return null;
+  return Math.round((numerator / denominator) * 100);
 }
 
 function asArray(value) {

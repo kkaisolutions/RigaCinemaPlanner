@@ -18,12 +18,15 @@ test('parses Forum schedule with language and auditorium', () => {
       <EventID>304667</EventID><Title>Rotaļlietu stāsts 5</Title><OriginalTitle>Toy Story 5</OriginalTitle>
       <RatingLabel>U</RatingLabel><EventType>Movie</EventType><Genres>Piedzīvojumi, Komēdija</Genres>
       <TheatreAuditorium>Auditorija 7</TheatreAuditorium><EventURL>http://www.forumcinemas.lv/event/304667/title/rota%C4%BClietu_st%C4%81sts_5/</EventURL>
-      <SpokenLanguage><Name>Latviešu</Name></SpokenLanguage>
+      <SpokenLanguage><Name>Latviešu</Name></SpokenLanguage><Availability>75/100</Availability>
     </Show></Shows></Schedule>`, events, '2026-06-27');
   assert.equal(items.length, 1);
   assert.equal(items[0].language, 'Latviešu');
   assert.equal(items[0].auditorium, 'Auditorija 7');
+  assert.equal(items[0].serviceDate, '2026-06-27');
   assert.equal(items[0].imdbUrl, 'https://www.imdb.com/title/tt123/');
+  assert.equal(items[0].availability.takenSeats, 25);
+  assert.equal(items[0].availability.occupiedPercent, 25);
 });
 
 test('parses Apollo showtime cards and detail poster', () => {
@@ -43,6 +46,9 @@ test('parses Apollo showtime cards and detail poster', () => {
   assert.equal(items[0].language, 'Angļu');
   assert.equal(items[0].auditorium, '1. IMAX zāle');
   assert.equal(items[0].availability.freeSeats, 269);
+  assert.equal(items[0].availability.totalSeats, 277);
+  assert.equal(items[0].availability.occupiedPercent, 3);
+  assert.equal(items[0].serviceDate, '2026-06-27');
 
   const detail = parseApolloMovieDetail(`
     <figure class="media-chess__image"><img data-srcset="//images.markus.live/poster_large.jpg?width=675 675w"></figure>
@@ -63,5 +69,7 @@ test('parses Cinamon Nuxt schedule with exact seats', () => {
   assert.equal(items[0].language, 'Angļu');
   assert.equal(items[0].auditorium, 'Zāle 1');
   assert.equal(items[0].availability.takenSeats, 30);
+  assert.equal(items[0].availability.occupiedPercent, 30);
+  assert.equal(items[0].serviceDate, '2026-06-27');
   assert.equal(items[0].imdbRating, '7.4');
 });
