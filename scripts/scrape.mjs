@@ -1,5 +1,5 @@
 import { execFile } from 'node:child_process';
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname } from 'node:path';
 import { promisify } from 'node:util';
 import vm from 'node:vm';
@@ -13,6 +13,7 @@ const SOURCES = {
   forumSchedule: 'https://www.forumcinemas.lv/xml/Schedule/?area=1011',
   forumEvents: 'https://www.forumcinemas.lv/xml/Events/?area=1011&includePictures=true&includeLinks=true',
   apolloSchedule: 'https://www.apollokino.lv/schedule?theatreAreaID=1014',
+  apolloDominaSchedule: 'https://www.apollokino.lv/schedule?theatreAreaID=1015',
   cinamonSchedule: 'https://cinamonkino.com/akropole-alfa/saraksts/lv'
 };
 
@@ -44,78 +45,100 @@ const xmlParser = new XMLParser({
   trimValues: true
 });
 
-export async function main() {
-  const generatedAt = new Date();
-  const date = rigaDate(generatedAt);
-  const dates = [date, addRigaDays(date, 1)];
-  const scrapers = [
-    { id: 'forum', run: () => scrapeForum(dates) },
-    { id: 'apollo', run: () => scrapeApollo(dates) },
-    { id: 'cinamon', run: () => scrapeCinamon(dates) }
-  ];
-  const results = await Promise.all(scrapers.map(async (scraper) => {
-    try {
-      return { status: 'fulfilled', value: await scraper.run() };
-    } catch (error) {
-      return { status: 'rejected', source: scraper.id, reason: error };
-    }
-  }));
+export async function main(argv = process.argv.slice(2)) {
+  const options = parseArguments(argv);
+  const generatedAt = options.generatedAt ? new Date(options.generatedAt) : new Date();
+  if (Number.isNaN(generatedAt.valueOf())) throw new Error('Invalid --generated-at value');
+  const date = options.date || rigaDate(generatedAt);
+  const previous = options.previous ? JSON.parse(await readFile(options.previous, 'utf8')) : null;
+  const attempted = new Map();
 
-  const showtimes = [];
-  const sources = [];
-  const warnings = [];
-
-  for (const result of results) {
-    if (result.status === 'fulfilled') {
-      showtimes.push(...result.value.showtimes);
-      sources.push(result.value.source);
-      if (result.value.warnings) warnings.push(...result.value.warnings);
-    } else {
-      warnings.push({
-        source: result.source,
-        message: sourceFailureMessage(result.source, result.reason)
-      });
-    }
+  if (!options.skipForum) attempted.set('forum', runSource('forum', () => scrapeForum(date)));
+  if (options.apolloFile || options.apolloDominaFile) {
+    attempted.set('apollo', runSource('apollo', async () => {
+      const pages = await Promise.all([options.apolloFile, options.apolloDominaFile]
+        .filter(Boolean)
+        .map((path) => readFile(path, 'utf8')));
+      return sourceResult('apollo', dedupeShowtimes(pages.flatMap((page) => parseApolloSchedule(page, date))), SOURCES.apolloSchedule);
+    }));
+  } else if (!options.forumOnly) {
+    attempted.set('apollo', runSource('apollo', () => scrapeApollo(date)));
+  }
+  if (options.cinamonFile) {
+    attempted.set('cinamon', runSource('cinamon', async () => sourceResult('cinamon', parseCinamonSchedule(await readFile(options.cinamonFile, 'utf8'), date), SOURCES.cinamonSchedule)));
+  } else if (!options.forumOnly) {
+    attempted.set('cinamon', runSource('cinamon', () => scrapeCinamon(date)));
   }
 
-  const payload = {
-    generatedAt: generatedAt.toISOString(),
-    timezone: TIMEZONE,
-    date,
-    dates,
-    sources,
-    warnings,
-    showtimes: showtimes
-      .filter((showtime) => showtime.movieUrl)
-      .filter((showtime) => dates.includes(showtime.serviceDate))
-      .filter((showtime) => showtime.serviceDate !== date || new Date(showtime.startTime) > generatedAt)
-      .sort((a, b) => new Date(a.startTime) - new Date(b.startTime))
-  };
-
-  await mkdir(dirname(OUTPUT_PATH.pathname), { recursive: true });
-  await writeFile(OUTPUT_PATH, `${JSON.stringify(payload, null, 2)}\n`);
-  console.log(`Wrote ${payload.showtimes.length} upcoming showtimes for ${dates.join(' and ')}`);
-  console.log(`Sources: ${payload.sources.map((source) => `${source.id}=${source.count}`).join(', ') || 'none'}`);
-  if (payload.warnings.length) console.warn(`Warnings: ${payload.warnings.map((warning) => `${warning.source}: ${warning.message}`).join(' | ')}`);
+  const results = new Map(await Promise.all([...attempted.entries()].map(async ([id, promise]) => [id, await promise])));
+  const payload = mergeSourceResults({ date, generatedAt, previous, results });
+  const outputPath = options.output || OUTPUT_PATH.pathname;
+  await mkdir(dirname(outputPath), { recursive: true });
+  await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`);
+  console.log(`Wrote ${payload.showtimes.length} upcoming showtimes for ${date}`);
+  console.log(`Sources: ${payload.sources.map((source) => `${source.id}=${source.status}:${source.count}`).join(', ')}`);
+  return payload;
 }
 
-async function scrapeForum(dates) {
+async function runSource(id, task) {
+  try {
+    return { ok: true, value: await task() };
+  } catch (error) {
+    return { ok: false, id, error };
+  }
+}
+
+export function mergeSourceResults({ date, generatedAt = new Date(), previous = null, results = new Map() }) {
+  const generatedAtIso = generatedAt.toISOString();
+  const previousSources = new Map((previous?.sources || []).map((source) => [source.id, source]));
+  const previousShowtimes = previous?.date === date ? previous?.showtimes || [] : [];
+  const warnings = [];
+  const sources = [];
+  const showtimes = [];
+
+  for (const id of ['forum', 'apollo', 'cinamon']) {
+    const result = results.get(id);
+    const oldSource = previousSources.get(id);
+    const oldShowtimes = previousShowtimes.filter((showtime) => showtime.source === id);
+    if (result?.ok) {
+      sources.push({ ...result.value.source, status: 'fresh', fetchedAt: generatedAtIso, lastSuccessAt: generatedAtIso, error: null });
+      showtimes.push(...result.value.showtimes);
+      continue;
+    }
+
+    const error = result ? sourceFailureMessage(id, result.error) : null;
+    const lastSuccessAt = oldSource?.lastSuccessAt || oldSource?.fetchedAt || null;
+    const ageMs = lastSuccessAt ? generatedAt - new Date(lastSuccessAt) : Number.POSITIVE_INFINITY;
+    const hasUsableCache = oldShowtimes.length > 0;
+    const status = hasUsableCache ? (ageMs <= 90 * 60 * 1000 ? 'cached' : 'stale') : 'waiting';
+    const source = { id, name: sourceName(id), url: sourceUrl(id), status, count: oldShowtimes.length, fetchedAt: oldSource?.fetchedAt || null, lastSuccessAt, error };
+    sources.push(source);
+    showtimes.push(...oldShowtimes);
+    if (status !== 'cached') warnings.push({ source: id, message: sourceWarning(source) });
+  }
+
+  return {
+    generatedAt: generatedAtIso,
+    timezone: TIMEZONE,
+    date,
+    dates: [date],
+    sources,
+    warnings,
+    showtimes: dedupeShowtimes(showtimes)
+      .filter((showtime) => showtime.movieUrl)
+      .filter((showtime) => showtime.serviceDate === date)
+      .filter((showtime) => new Date(showtime.startTime) > generatedAt)
+      .sort((a, b) => new Date(a.startTime) - new Date(b.startTime))
+  };
+}
+
+async function scrapeForum(date) {
   const [scheduleText, eventsText] = await Promise.all([
     fetchText(SOURCES.forumSchedule),
     fetchText(SOURCES.forumEvents)
   ]);
   const eventsById = parseForumEvents(eventsText);
-  const showtimes = parseForumSchedule(scheduleText, eventsById, dates);
-  return {
-    source: {
-      id: 'forum',
-      name: 'Forum Cinemas',
-      url: SOURCES.forumSchedule,
-      status: 'ok',
-      count: showtimes.length
-    },
-    showtimes
-  };
+  return sourceResult('forum', parseForumSchedule(scheduleText, eventsById, date), SOURCES.forumSchedule);
 }
 
 export function parseForumEvents(xmlText) {
@@ -166,41 +189,13 @@ export function parseForumSchedule(xmlText, eventsById = new Map(), date = rigaD
     });
 }
 
-async function scrapeApollo(dates) {
+async function scrapeApollo(date) {
   const scheduleText = await fetchText(SOURCES.apolloSchedule, {
     headers: {
       referer: 'https://www.apollokino.lv/'
     }
   });
-  const baseShowtimes = parseApolloSchedule(scheduleText, dates);
-  const uniqueMovieUrls = [...new Set(baseShowtimes.map((showtime) => showtime.movieUrl).filter(Boolean))];
-  const detailEntries = await Promise.all(uniqueMovieUrls.map(async (movieUrl) => {
-    try {
-      return [movieUrl, parseApolloMovieDetail(await fetchText(movieUrl, {
-        headers: {
-          referer: SOURCES.apolloSchedule
-        }
-      }))];
-    } catch {
-      return [movieUrl, {}];
-    }
-  }));
-  const details = new Map(detailEntries);
-  const showtimes = baseShowtimes.map((showtime) => ({
-    ...showtime,
-    posterUrl: details.get(showtime.movieUrl)?.posterUrl || showtime.posterUrl,
-    ageRating: details.get(showtime.movieUrl)?.ageRating || showtime.ageRating
-  }));
-  return {
-    source: {
-      id: 'apollo',
-      name: 'Apollo Kino',
-      url: SOURCES.apolloSchedule,
-      status: 'ok',
-      count: showtimes.length
-    },
-    showtimes
-  };
+  return sourceResult('apollo', parseApolloSchedule(scheduleText, date), SOURCES.apolloSchedule);
 }
 
 export function parseApolloSchedule(htmlText, date = rigaDate()) {
@@ -263,19 +258,9 @@ export function parseApolloMovieDetail(htmlText) {
   };
 }
 
-async function scrapeCinamon(dates) {
+async function scrapeCinamon(date) {
   const htmlText = await fetchText(SOURCES.cinamonSchedule);
-  const showtimes = parseCinamonSchedule(htmlText, dates);
-  return {
-    source: {
-      id: 'cinamon',
-      name: 'Cinamon Alfa',
-      url: SOURCES.cinamonSchedule,
-      status: 'ok',
-      count: showtimes.length
-    },
-    showtimes
-  };
+  return sourceResult('cinamon', parseCinamonSchedule(htmlText, date), SOURCES.cinamonSchedule);
 }
 
 export function parseCinamonSchedule(htmlText, date = rigaDate()) {
@@ -501,6 +486,67 @@ function sourceFailureMessage(source, error) {
   if (/HTTP 403/.test(message)) return `${name} blocked the GitHub Actions runner (HTTP 403).`;
   if (/timed out|fetch failed|Connection timed out/i.test(message)) return `${name} could not be reached from the GitHub Actions runner.`;
   return `${name} failed: ${message.split('\n')[0]}`;
+}
+
+function sourceResult(id, showtimes, url) {
+  return {
+    source: {
+      id,
+      name: sourceName(id),
+      url,
+      count: showtimes.length
+    },
+    showtimes
+  };
+}
+
+function sourceName(id) {
+  return ({ forum: 'Forum Cinemas', apollo: 'Apollo Kino', cinamon: 'Cinamon Alfa' })[id] || id;
+}
+
+function sourceUrl(id) {
+  return ({ forum: SOURCES.forumSchedule, apollo: SOURCES.apolloSchedule, cinamon: SOURCES.cinamonSchedule })[id] || '';
+}
+
+function sourceWarning(source) {
+  if (source.status === 'waiting') return `Waiting for today’s ${source.name} update.`;
+  const detail = source.error ? ` ${source.error}` : '';
+  return `${source.name} data is stale.${detail}`;
+}
+
+function dedupeShowtimes(showtimes) {
+  const seen = new Set();
+  return showtimes.filter((showtime) => {
+    const key = showtime.id || `${showtime.source}|${showtime.movieUrl}|${showtime.startTime}|${showtime.cinema}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+function parseArguments(argv) {
+  const options = {};
+  const aliases = {
+    '--output': 'output',
+    '--previous': 'previous',
+    '--date': 'date',
+    '--generated-at': 'generatedAt',
+    '--apollo-file': 'apolloFile',
+    '--apollo-domina-file': 'apolloDominaFile',
+    '--cinamon-file': 'cinamonFile'
+  };
+  for (let index = 0; index < argv.length; index += 1) {
+    const argument = argv[index];
+    if (argument === '--forum-only') options.forumOnly = true;
+    else if (argument === '--skip-forum') options.skipForum = true;
+    else if (aliases[argument]) {
+      const value = argv[index + 1];
+      if (!value || value.startsWith('--')) throw new Error(`${argument} requires a value`);
+      options[aliases[argument]] = value;
+      index += 1;
+    } else throw new Error(`Unknown argument: ${argument}`);
+  }
+  return options;
 }
 
 const BROWSER_HEADERS = {

@@ -15,8 +15,7 @@ const UPDATED_FORMATTER = new Intl.DateTimeFormat('en-GB', {
 const state = {
   data: null,
   cinemas: new Set(),
-  query: '',
-  selectedDay: 'today'
+  query: ''
 };
 
 const els = {
@@ -28,7 +27,6 @@ const els = {
   list: document.querySelector('#showtime-list'),
   empty: document.querySelector('#empty-state'),
   emptyTitle: document.querySelector('#empty-title'),
-  dateTabs: document.querySelector('#date-tabs'),
   refresh: document.querySelector('#refresh-data')
 };
 
@@ -43,7 +41,6 @@ function normalizeText(value) {
 function fromUrlState() {
   const params = new URLSearchParams(window.location.search);
   state.query = params.get('q') || '';
-  state.selectedDay = params.get('day') === 'tomorrow' ? 'tomorrow' : 'today';
   state.cinemas = new Set(params.getAll('cinema'));
   els.search.value = state.query;
 }
@@ -51,7 +48,6 @@ function fromUrlState() {
 function writeUrlState() {
   const params = new URLSearchParams();
   if (state.query) params.set('q', state.query);
-  if (state.selectedDay === 'tomorrow') params.set('day', 'tomorrow');
   for (const cinema of [...state.cinemas].sort()) params.append('cinema', cinema);
   const query = params.toString();
   const nextUrl = query ? `${window.location.pathname}?${query}` : window.location.pathname;
@@ -67,31 +63,8 @@ function formatTime(value) {
   return TIME_FORMATTER.format(new Date(value));
 }
 
-function scheduleDates() {
-  return (state.data?.dates || [state.data?.date]).filter(Boolean);
-}
-
-function selectedServiceDate() {
-  const dates = scheduleDates();
-  return state.selectedDay === 'tomorrow' && dates[1] ? dates[1] : dates[0];
-}
-
 function showtimeServiceDate(showtime) {
   return showtime.serviceDate || String(showtime.startTime || '').slice(0, 10);
-}
-
-function renderDateTabs() {
-  const dates = scheduleDates();
-  const options = [
-    { key: 'today', label: 'Today', date: dates[0] },
-    { key: 'tomorrow', label: 'Tomorrow', date: dates[1] }
-  ];
-  els.dateTabs.innerHTML = options.map((option) => {
-    const disabled = !option.date;
-    const selected = !disabled && state.selectedDay === option.key && option.date === selectedServiceDate();
-    const detail = option.date ? `<small>${escapeHtml(option.date)}</small>` : '';
-    return `<button class="date-tab${selected ? ' is-selected' : ''}" type="button" role="tab" aria-selected="${selected}" data-day="${option.key}" ${disabled ? 'disabled' : ''}>${option.label}${detail}</button>`;
-  }).join('');
 }
 
 function formatAge(value) {
@@ -159,9 +132,8 @@ function renderWarnings(data) {
 
 function visibleShowtimes() {
   const query = normalizeText(state.query);
-  const serviceDate = selectedServiceDate();
   return state.data.showtimes.filter((showtime) => {
-    if (showtimeServiceDate(showtime) !== serviceDate) return false;
+    if (showtimeServiceDate(showtime) !== state.data.date) return false;
     if (!state.cinemas.has(showtime.cinema)) return false;
     if (!query) return true;
     return normalizeText(`${showtime.title} ${showtime.originalTitle}`).includes(query);
@@ -170,15 +142,11 @@ function visibleShowtimes() {
 
 function render() {
   if (!state.data) return;
-  if (state.selectedDay === 'tomorrow' && !scheduleDates()[1]) state.selectedDay = 'today';
   writeUrlState();
-  renderDateTabs();
   const showtimes = visibleShowtimes();
   els.count.textContent = `${showtimes.length} upcoming session${showtimes.length === 1 ? '' : 's'}`;
   els.list.innerHTML = showtimes.map(renderCard).join('');
-  els.emptyTitle.textContent = state.selectedDay === 'tomorrow'
-    ? 'No upcoming sessions tomorrow'
-    : 'No upcoming sessions today';
+  els.emptyTitle.textContent = 'No upcoming sessions today';
   els.empty.hidden = showtimes.length !== 0;
 }
 
@@ -244,13 +212,6 @@ function escapeHtml(value) {
 
 els.search.addEventListener('input', () => {
   state.query = els.search.value;
-  render();
-});
-
-els.dateTabs.addEventListener('click', (event) => {
-  const tab = event.target instanceof Element ? event.target.closest('[data-day]') : null;
-  if (!tab || tab.disabled) return;
-  state.selectedDay = tab.dataset.day === 'tomorrow' ? 'tomorrow' : 'today';
   render();
 });
 

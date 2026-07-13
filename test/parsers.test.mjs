@@ -2,12 +2,31 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   extractNuxtState,
+  mergeSourceResults,
   parseApolloMovieDetail,
   parseApolloSchedule,
   parseCinamonSchedule,
   parseForumEvents,
   parseForumSchedule
 } from '../scripts/scrape.mjs';
+
+test('keeps a previous source snapshot and marks it stale after 90 minutes', () => {
+  const previous = {
+    date: '2026-06-27',
+    sources: [{ id: 'apollo', fetchedAt: '2026-06-27T07:00:00.000Z', lastSuccessAt: '2026-06-27T07:00:00.000Z' }],
+    showtimes: [{ id: 'apollo-1', source: 'apollo', cinema: 'Apollo Akropole', movieUrl: 'https://example.test', serviceDate: '2026-06-27', startTime: '2026-06-27T13:00:00+03:00' }]
+  };
+  const payload = mergeSourceResults({
+    date: '2026-06-27',
+    generatedAt: new Date('2026-06-27T09:00:00.000Z'),
+    previous,
+    results: new Map()
+  });
+  const apollo = payload.sources.find((source) => source.id === 'apollo');
+  assert.equal(apollo.status, 'stale');
+  assert.equal(payload.showtimes.length, 1);
+  assert.match(payload.warnings.find((warning) => warning.source === 'apollo').message, /stale/i);
+});
 
 test('parses Forum schedule with language and auditorium', () => {
   const events = parseForumEvents(`<?xml version="1.0"?>
