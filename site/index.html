@@ -22,12 +22,22 @@
       <section class="controls" aria-label="Filters">
         <label class="search">
           <span>Movie</span>
-          <input id="movie-search" type="search" autocomplete="off" placeholder="Search local or original title">
+          <span class="search-field">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.15a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
+            <input id="movie-search" type="search" autocomplete="off" placeholder="Search local or original title">
+          </span>
         </label>
-        <fieldset class="cinema-filter">
-          <legend>Cinemas</legend>
-          <div id="cinema-options" class="cinema-options"></div>
-        </fieldset>
+        <div class="cinema-filter">
+          <span class="filter-label">Cinema</span>
+          <details class="cinema-menu">
+            <summary>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-4 7 4v13M9 21v-6h6v6M8 10h.01M16 10h.01"/></svg>
+              <span id="cinema-summary">Loading cinemas…</span>
+              <svg class="chevron" aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+            </summary>
+            <div id="cinema-options" class="cinema-options"></div>
+          </details>
+        </div>
       </section>
 
       <section class="results-head" aria-live="polite">

@@ -22,6 +22,7 @@ const els = {
   status: document.querySelector('#status'),
   search: document.querySelector('#movie-search'),
   cinemaOptions: document.querySelector('#cinema-options'),
+  cinemaSummary: document.querySelector('#cinema-summary'),
   count: document.querySelector('#result-count'),
   warning: document.querySelector('#warning-note'),
   list: document.querySelector('#showtime-list'),
@@ -98,12 +99,6 @@ function availabilityText(availability) {
   return occupancy;
 }
 
-function imdbText(showtime) {
-  if (showtime.imdbRating) return `IMDb ${showtime.imdbRating}`;
-  if (showtime.imdbUrl) return 'IMDb';
-  return 'IMDb search';
-}
-
 function imdbUrl(showtime) {
   if (showtime.imdbUrl) return showtime.imdbUrl;
   const query = showtime.originalTitle || showtime.title;
@@ -117,6 +112,12 @@ function renderCinemaFilters(showtimes) {
     const checked = state.cinemas.has(name) ? 'checked' : '';
     return `<label class="cinema-choice"><input type="checkbox" value="${escapeHtml(name)}" ${checked}>${escapeHtml(name)}</label>`;
   }).join('');
+  updateCinemaSummary();
+}
+
+function updateCinemaSummary() {
+  const count = state.cinemas.size;
+  els.cinemaSummary.textContent = `${count} selected`;
 }
 
 function renderWarnings(data) {
@@ -142,6 +143,7 @@ function visibleShowtimes() {
 function render() {
   if (!state.data) return;
   writeUrlState();
+  updateCinemaSummary();
   const showtimes = visibleShowtimes();
   els.count.textContent = `${showtimes.length} upcoming session${showtimes.length === 1 ? '' : 's'}`;
   els.list.innerHTML = showtimes.map(renderCard).join('');
@@ -151,20 +153,19 @@ function render() {
 
 function renderCard(showtime) {
   const age = formatAge(showtime.ageRating);
-  const imdb = imdbText(showtime);
   const availability = availabilityText(showtime.availability);
   const details = [showtime.language].filter(Boolean).map(escapeHtml).join(' · ');
   const meta = [
-    `<span class="cinema-name">${escapeHtml(showtime.cinema)}</span>`,
+    renderCinemaLink(showtime),
     showtime.genres?.length ? `<span>${escapeHtml(showtime.genres.join(', '))}</span>` : '',
-    imdb ? renderImdb(showtime, imdb) : ''
+    renderImdb(showtime)
   ].filter(Boolean).join('');
   const poster = showtime.posterUrl
     ? `<img class="poster" src="${escapeHtml(showtime.posterUrl)}" alt="">`
     : `<div class="poster poster-fallback" aria-hidden="true">${escapeHtml((showtime.title || '?').slice(0, 1))}</div>`;
 
   return `
-    <a class="showtime-card" href="${escapeHtml(showtime.movieUrl)}">
+    <article class="showtime-card">
       ${poster}
       <div class="card-main">
         <span class="title-line">${escapeHtml(titleText(showtime))}</span>
@@ -176,30 +177,18 @@ function renderCard(showtime) {
         <time class="time" datetime="${escapeHtml(showtime.startTime)}">${escapeHtml(formatTime(showtime.startTime))}</time>
         ${showtime.auditorium ? `<span class="auditorium">${escapeHtml(showtime.auditorium)}</span>` : ''}
       </div>
-    </a>
+    </article>
   `;
 }
 
-function renderImdb(showtime, label) {
-  return `<span class="imdb-link" role="link" tabindex="0" data-imdb-url="${escapeHtml(imdbUrl(showtime))}">${escapeHtml(label)}</span>`;
+function renderCinemaLink(showtime) {
+  if (!showtime.movieUrl) return `<span class="cinema-name">${escapeHtml(showtime.cinema)}</span>`;
+  return `<a class="cinema-name cinema-link" href="${escapeHtml(showtime.movieUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(showtime.cinema)}</a>`;
 }
 
-els.list.addEventListener('click', (event) => {
-  const target = event.target instanceof Element ? event.target.closest('[data-imdb-url]') : null;
-  if (!target) return;
-  event.preventDefault();
-  event.stopPropagation();
-  window.open(target.dataset.imdbUrl, '_blank', 'noopener,noreferrer');
-});
-
-els.list.addEventListener('keydown', (event) => {
-  if (event.key !== 'Enter' && event.key !== ' ') return;
-  const target = event.target instanceof Element ? event.target.closest('[data-imdb-url]') : null;
-  if (!target) return;
-  event.preventDefault();
-  event.stopPropagation();
-  window.open(target.dataset.imdbUrl, '_blank', 'noopener,noreferrer');
-});
+function renderImdb(showtime) {
+  return `<a class="imdb-link" href="${escapeHtml(imdbUrl(showtime))}" target="_blank" rel="noopener noreferrer" aria-label="Open IMDb in a new tab">IMDb</a>`;
+}
 
 function escapeHtml(value) {
   return String(value ?? '')
