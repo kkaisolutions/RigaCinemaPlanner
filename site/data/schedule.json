@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T17:11:41.487Z",
+  "generatedAt": "2026-07-13T17:12:02.411Z",
   "timezone": "Europe/Riga",
   "date": "2026-07-13",
   "dates": [
@@ -10,18 +10,18 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/xml/Schedule/?area=1011",
-      "status": "waiting",
-      "count": 0,
-      "fetchedAt": null,
-      "lastSuccessAt": null,
+      "count": 54,
+      "status": "fresh",
+      "fetchedAt": "2026-07-13T17:12:02.411Z",
+      "lastSuccessAt": "2026-07-13T17:12:02.411Z",
       "error": null
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
+      "status": "cached",
       "count": 19,
-      "status": "fresh",
       "fetchedAt": "2026-07-13T17:11:41.487Z",
       "lastSuccessAt": "2026-07-13T17:11:41.487Z",
       "error": null
@@ -30,20 +30,58 @@
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
+      "status": "cached",
       "count": 8,
-      "status": "fresh",
       "fetchedAt": "2026-07-13T17:11:41.487Z",
       "lastSuccessAt": "2026-07-13T17:11:41.487Z",
       "error": null
     }
   ],
-  "warnings": [
-    {
-      "source": "forum",
-      "message": "Waiting for today’s Forum Cinemas update."
-    }
-  ],
+  "warnings": [],
   "showtimes": [
+    {
+      "id": "forum-434691",
+      "source": "forum",
+      "cinema": "Forum Cinemas",
+      "title": "Apsēstība",
+      "originalTitle": "Obsession",
+      "posterUrl": "http://forumcinemaslv.blob.core.windows.net/1012/Event_11368/poster_large/Obsession-poster.jpg",
+      "imdbRating": "",
+      "imdbUrl": "https://www.imdb.com/title/tt37287335/",
+      "ageRating": "N16",
+      "genres": [
+        "Trilleris",
+        "Šausmu filma"
+      ],
+      "startTime": "2026-07-13T20:15:00+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "Auditorija 13",
+      "language": "Angļu",
+      "movieUrl": "http://www.forumcinemas.lv/event/304809/title/aps%C4%93st%C4%ABba/",
+      "availability": {}
+    },
+    {
+      "id": "forum-434683",
+      "source": "forum",
+      "cinema": "Forum Cinemas",
+      "title": "Maikls",
+      "originalTitle": "Michael",
+      "posterUrl": "http://forumcinemaslv.blob.core.windows.net/1012/Event_10468/poster_xxlarge/Michael-Maikls-plakats.jpg",
+      "imdbRating": "",
+      "imdbUrl": "https://www.imdb.com/title/tt11378946/",
+      "ageRating": "N12",
+      "genres": [
+        "Drāma",
+        "Biogrāfija",
+        "Mūzika"
+      ],
+      "startTime": "2026-07-13T20:20:00+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "Auditorija 4 LUX",
+      "language": "Angļu",
+      "movieUrl": "http://www.forumcinemas.lv/event/303990/title/maikls/",
+      "availability": {}
+    },
     {
       "id": "apollo-513180",
       "source": "apollo",
@@ -171,6 +209,28 @@
       }
     },
     {
+      "id": "forum-434700",
+      "source": "forum",
+      "cinema": "Forum Cinemas",
+      "title": "Atklāšanas diena",
+      "originalTitle": "Disclosure Day",
+      "posterUrl": "http://forumcinemaslv.blob.core.windows.net/1012/Event_11220/poster_xxlarge/disclosure-day-plakats.jpg",
+      "imdbRating": "",
+      "imdbUrl": "https://www.imdb.com/title/tt15047880/",
+      "ageRating": "N12",
+      "genres": [
+        "Trilleris",
+        "Drāma",
+        "Fantastika"
+      ],
+      "startTime": "2026-07-13T20:40:00+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "Auditorija 12",
+      "language": "Angļu",
+      "movieUrl": "http://www.forumcinemas.lv/event/304677/title/atkl%C4%81%C5%A1anas_diena/",
+      "availability": {}
+    },
+    {
       "id": "apollo-513219",
       "source": "apollo",
       "cinema": "Apollo Plaza",
@@ -191,6 +251,48 @@
       "availability": {
         "freeSeats": 37
       }
+    },
+    {
+      "id": "forum-434679",
+      "source": "forum",
+      "cinema": "Forum Cinemas",
+      "title": "Sātans Pradas brunčos 2",
+      "originalTitle": "The Devil Wears Prada 2",
+      "posterUrl": "http://forumcinemaslv.blob.core.windows.net/1012/Event_11207/poster_xxlarge/Devil-Wears-Prada-2-plakats.jpg",
+      "imdbRating": "",
+      "imdbUrl": "https://www.imdb.com/title/tt33612209/",
+      "ageRating": "N16",
+      "genres": [
+        "Komēdija",
+        "Drāma"
+      ],
+      "startTime": "2026-07-13T20:50:00+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "Auditorija 7",
+      "language": "Angļu",
+      "movieUrl": "http://www.forumcinemas.lv/event/304665/title/s%C4%81tans_pradas_brun%C4%8Dos_2/",
+      "availability": {}
+    },
+    {
+      "id": "forum-434727",
+      "source": "forum",
+      "cinema": "Forum Cinemas",
+      "title": "Ļaunie miroņi deg",
+      "originalTitle": "Evil Dead Burn",
+      "posterUrl": "http://forumcinemaslv.blob.core.windows.net/1012/Event_11408/poster_xxlarge/edb-lakats.jpg",
+      "imdbRating": "",
+      "imdbUrl": "https://www.imdb.com/title/tt31170389/",
+      "ageRating": "A18",
+      "genres": [
+        "Trilleris",
+        "Šausmu filma"
+      ],
+      "startTime": "2026-07-13T20:55:00+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "Auditorija 11",
+      "language": "Angļu",
+      "movieUrl": "http://www.forumcinemas.lv/event/304827/title/%C4%BCaunie_miro%C5%86i_deg/",
+      "availability": {}
     },
     {
       "id": "cinamon-487649779",
@@ -291,6 +393,27 @@
       }
     },
     {
+      "id": "forum-434686",
+      "source": "forum",
+      "cinema": "Forum Cinemas",
+      "title": "Backrooms: Everything Must Go",
+      "originalTitle": "Backrooms: Everything Must Go",
+      "posterUrl": "http://forumcinemaslv.blob.core.windows.net/1012/Event_11287/poster_large/Backrooms-poster.jpg",
+      "imdbRating": "",
+      "imdbUrl": "https://www.imdb.com/title/tt26657236/",
+      "ageRating": "N12",
+      "genres": [
+        "Šausmu filma",
+        "Fantastika"
+      ],
+      "startTime": "2026-07-13T21:15:00+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "Auditorija 10",
+      "language": "Angļu",
+      "movieUrl": "http://www.forumcinemas.lv/event/304736/title/backrooms_everything_must_go/",
+      "availability": {}
+    },
+    {
       "id": "cinamon-1420657721",
       "source": "cinamon",
       "cinema": "Cinamon Alfa",
@@ -314,6 +437,28 @@
         "takenSeats": 17,
         "occupiedPercent": 5
       }
+    },
+    {
+      "id": "forum-434723",
+      "source": "forum",
+      "cinema": "Forum Cinemas",
+      "title": "Robina Huda nāve",
+      "originalTitle": "The Death of Robin Hood",
+      "posterUrl": "http://forumcinemaslv.blob.core.windows.net/1012/Event_11358/poster_xxlarge/The-Death-of-Robin-Hood-plakats.jpg",
+      "imdbRating": "",
+      "imdbUrl": "https://www.imdb.com/title/tt32273171/",
+      "ageRating": "N16",
+      "genres": [
+        "Piedzīvojumi",
+        "Drāma",
+        "Asa sižeta filma"
+      ],
+      "startTime": "2026-07-13T21:25:00+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "Auditorija 6",
+      "language": "Angļu",
+      "movieUrl": "http://www.forumcinemas.lv/event/304801/title/robina_huda_n%C4%81ve/",
+      "availability": {}
     },
     {
       "id": "apollo-513575",
@@ -340,6 +485,29 @@
         "takenSeats": 37,
         "occupiedPercent": 29
       }
+    },
+    {
+      "id": "forum-434706",
+      "source": "forum",
+      "cinema": "Forum Cinemas",
+      "title": "Minioni un mošķi",
+      "originalTitle": "Minions & Monsters",
+      "posterUrl": "http://forumcinemaslv.blob.core.windows.net/1012/Event_11230/poster_xxlarge/minions-and-monsters-poster.jpg",
+      "imdbRating": "",
+      "imdbUrl": "https://www.imdb.com/title/tt32890033/",
+      "ageRating": "N7",
+      "genres": [
+        "Piedzīvojumi",
+        "Komēdija",
+        "Animācija",
+        "Ģimenes filma"
+      ],
+      "startTime": "2026-07-13T21:30:00+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "PEPSI auditorija",
+      "language": "Angļu",
+      "movieUrl": "http://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
+      "availability": {}
     },
     {
       "id": "apollo-513187",
