@@ -1,8 +1,510 @@
 {
-  "generatedAt": null,
+  "generatedAt": "2026-07-13T17:01:43.286Z",
   "timezone": "Europe/Riga",
-  "date": null,
-  "sources": [],
-  "warnings": [],
-  "showtimes": []
+  "date": "2026-07-13",
+  "dates": [
+    "2026-07-13"
+  ],
+  "sources": [
+    {
+      "id": "forum",
+      "name": "Forum Cinemas",
+      "url": "https://www.forumcinemas.lv/xml/Schedule/?area=1011",
+      "status": "waiting",
+      "count": 0,
+      "fetchedAt": null,
+      "lastSuccessAt": null,
+      "error": null
+    },
+    {
+      "id": "apollo",
+      "name": "Apollo Kino",
+      "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
+      "count": 20,
+      "status": "fresh",
+      "fetchedAt": "2026-07-13T17:01:43.286Z",
+      "lastSuccessAt": "2026-07-13T17:01:43.286Z",
+      "error": null
+    },
+    {
+      "id": "cinamon",
+      "name": "Cinamon Alfa",
+      "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
+      "status": "waiting",
+      "count": 0,
+      "fetchedAt": null,
+      "lastSuccessAt": null,
+      "error": "Cinamon Alfa could not be reached from the GitHub Actions runner."
+    }
+  ],
+  "warnings": [
+    {
+      "source": "forum",
+      "message": "Waiting for today’s Forum Cinemas update."
+    },
+    {
+      "source": "cinamon",
+      "message": "Waiting for today’s Cinamon Alfa update."
+    }
+  ],
+  "showtimes": [
+    {
+      "id": "apollo-513180",
+      "source": "apollo",
+      "cinema": "Apollo Plaza",
+      "title": "Ļaunie miroņi deg",
+      "originalTitle": "Evil Dead Burn",
+      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8594/landscape_qhd/EvilDeadBurn_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+      "imdbRating": "",
+      "imdbUrl": "",
+      "ageRating": "18+",
+      "genres": [
+        "Šausmu filma",
+        "Fantastika"
+      ],
+      "startTime": "2026-07-13T20:20:00.0000000+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "1. zāle",
+      "language": "Angļu",
+      "movieUrl": "https://www.apollokino.lv/event/304154/%C4%BCaunie_miro%C5%86i_deg?theatreAreaID=1014&dt=13.07.2026",
+      "availability": {
+        "freeSeats": 299
+      }
+    },
+    {
+      "id": "apollo-513414",
+      "source": "apollo",
+      "cinema": "Apollo Akropole",
+      "title": "Supermeitene",
+      "originalTitle": "Supergirl",
+      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8484/landscape_qhd/SuperGirl_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+      "imdbRating": "",
+      "imdbUrl": "",
+      "ageRating": "12+",
+      "genres": [
+        "Asa sižeta filma",
+        "Zinātniska fantastika",
+        "Piedzīvojumu filma"
+      ],
+      "startTime": "2026-07-13T20:30:00.0000000+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "1. IMAX zāle",
+      "language": "Angļu",
+      "movieUrl": "https://www.apollokino.lv/event/304052/supermeitene?theatreAreaID=1014&dt=13.07.2026",
+      "availability": {
+        "freeSeats": 238,
+        "totalSeats": 277,
+        "takenSeats": 39,
+        "occupiedPercent": 14
+      }
+    },
+    {
+      "id": "apollo-513621",
+      "source": "apollo",
+      "cinema": "Apollo Domina",
+      "title": "Ļaunie miroņi deg",
+      "originalTitle": "Evil Dead Burn",
+      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8594/landscape_qhd/EvilDeadBurn_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+      "imdbRating": "",
+      "imdbUrl": "",
+      "ageRating": "18+",
+      "genres": [
+        "Šausmu filma",
+        "Fantastika"
+      ],
+      "startTime": "2026-07-13T20:30:00.0000000+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "2. zāle",
+      "language": "Angļu",
+      "movieUrl": "https://www.apollokino.lv/event/304154/%C4%BCaunie_miro%C5%86i_deg?theatreAreaID=1014&dt=13.07.2026",
+      "availability": {
+        "freeSeats": 62,
+        "totalSeats": 70,
+        "takenSeats": 8,
+        "occupiedPercent": 11
+      }
+    },
+    {
+      "id": "apollo-513219",
+      "source": "apollo",
+      "cinema": "Apollo Plaza",
+      "title": "Atklāšanas diena",
+      "originalTitle": "Disclosure Day",
+      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8485/landscape_qhd/LK_DD__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+      "imdbRating": "",
+      "imdbUrl": "",
+      "ageRating": "12+",
+      "genres": [
+        "Zinātniska fantastika"
+      ],
+      "startTime": "2026-07-13T20:40:00.0000000+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "5. zāle",
+      "language": "Angļu",
+      "movieUrl": "https://www.apollokino.lv/event/304053/atkl%C4%81%C5%A1anas_diena?theatreAreaID=1014&dt=13.07.2026",
+      "availability": {
+        "freeSeats": 35
+      }
+    },
+    {
+      "id": "apollo-513556",
+      "source": "apollo",
+      "cinema": "Apollo Akropole",
+      "title": "Robina Huda Nāve",
+      "originalTitle": "The Death of Robin Hood",
+      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8586/landscape_qhd/Apollo_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+      "imdbRating": "",
+      "imdbUrl": "",
+      "ageRating": "16+",
+      "genres": [
+        "Drāma",
+        "Asa sižeta filma",
+        "Piedzīvojumu filma"
+      ],
+      "startTime": "2026-07-13T21:05:00.0000000+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "8. zāle Restorāns",
+      "language": "Angļu",
+      "movieUrl": "https://www.apollokino.lv/event/304147/robina_huda_n%C4%81ve?theatreAreaID=1014&dt=13.07.2026",
+      "availability": {
+        "freeSeats": 9
+      }
+    },
+    {
+      "id": "apollo-513476",
+      "source": "apollo",
+      "cinema": "Apollo Akropole",
+      "title": "Apsēstība",
+      "originalTitle": "Obsession",
+      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8588/landscape_qhd/LK_OB__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+      "imdbRating": "",
+      "imdbUrl": "",
+      "ageRating": "16+",
+      "genres": [
+        "Šausmu filma",
+        "Trilleris"
+      ],
+      "startTime": "2026-07-13T21:05:00.0000000+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "4. Kronenbourg 1664 Blanc zāle",
+      "language": "Angļu",
+      "movieUrl": "https://www.apollokino.lv/event/304149/aps%C4%93st%C4%ABba?theatreAreaID=1014&dt=13.07.2026",
+      "availability": {
+        "freeSeats": 104
+      }
+    },
+    {
+      "id": "apollo-513646",
+      "source": "apollo",
+      "cinema": "Apollo Domina",
+      "title": "Backrooms: Bez izejas",
+      "originalTitle": "Backrooms",
+      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8533/landscape_qhd/Backrooms_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+      "imdbRating": "",
+      "imdbUrl": "",
+      "ageRating": "16+",
+      "genres": [
+        "Šausmu filma",
+        "Fantastika"
+      ],
+      "startTime": "2026-07-13T21:10:00.0000000+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "3. zāle",
+      "language": "Angļu",
+      "movieUrl": "https://www.apollokino.lv/event/304096/backrooms_bez_izejas?theatreAreaID=1014&dt=13.07.2026",
+      "availability": {
+        "freeSeats": 38,
+        "totalSeats": 70,
+        "takenSeats": 32,
+        "occupiedPercent": 46
+      }
+    },
+    {
+      "id": "apollo-513575",
+      "source": "apollo",
+      "cinema": "Apollo Akropole",
+      "title": "Šausmenīte 6",
+      "originalTitle": "Scary Movie 6",
+      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8536/landscape_qhd/LK_SM__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+      "imdbRating": "",
+      "imdbUrl": "",
+      "ageRating": "16+",
+      "genres": [
+        "Komēdija",
+        "Šausmu filma"
+      ],
+      "startTime": "2026-07-13T21:25:00.0000000+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "9. zāle",
+      "language": "Angļu",
+      "movieUrl": "https://www.apollokino.lv/event/304097/%C5%A1ausmen%C4%ABte_6?theatreAreaID=1014&dt=13.07.2026",
+      "availability": {
+        "freeSeats": 90,
+        "totalSeats": 127,
+        "takenSeats": 37,
+        "occupiedPercent": 29
+      }
+    },
+    {
+      "id": "apollo-513187",
+      "source": "apollo",
+      "cinema": "Apollo Plaza",
+      "title": "Apsēstība",
+      "originalTitle": "Obsession",
+      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8588/landscape_qhd/LK_OB__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+      "imdbRating": "",
+      "imdbUrl": "",
+      "ageRating": "16+",
+      "genres": [
+        "Šausmu filma",
+        "Trilleris"
+      ],
+      "startTime": "2026-07-13T21:30:00.0000000+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "2. zāle",
+      "language": "Angļu",
+      "movieUrl": "https://www.apollokino.lv/event/304149/aps%C4%93st%C4%ABba?theatreAreaID=1014&dt=13.07.2026",
+      "availability": {
+        "freeSeats": 158
+      }
+    },
+    {
+      "id": "apollo-513265",
+      "source": "apollo",
+      "cinema": "Apollo Plaza",
+      "title": "Robina Huda Nāve",
+      "originalTitle": "The Death of Robin Hood",
+      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8586/landscape_qhd/Apollo_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+      "imdbRating": "",
+      "imdbUrl": "",
+      "ageRating": "16+",
+      "genres": [
+        "Drāma",
+        "Asa sižeta filma",
+        "Piedzīvojumu filma"
+      ],
+      "startTime": "2026-07-13T21:30:00.0000000+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "8. Vintage zāle",
+      "language": "Angļu",
+      "movieUrl": "https://www.apollokino.lv/event/304147/robina_huda_n%C4%81ve?theatreAreaID=1014&dt=13.07.2026",
+      "availability": {
+        "freeSeats": 40
+      }
+    },
+    {
+      "id": "apollo-513206",
+      "source": "apollo",
+      "cinema": "Apollo Plaza",
+      "title": "Ielūgums",
+      "originalTitle": "The Invite",
+      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8583/landscape_qhd/Invite_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+      "imdbRating": "",
+      "imdbUrl": "",
+      "ageRating": "16+",
+      "genres": [
+        "Komēdija",
+        "Drāma"
+      ],
+      "startTime": "2026-07-13T21:40:00.0000000+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "4. zāle",
+      "language": "Angļu",
+      "movieUrl": "https://www.apollokino.lv/event/304144/iel%C5%ABgums?theatreAreaID=1014&dt=13.07.2026",
+      "availability": {
+        "freeSeats": 35
+      }
+    },
+    {
+      "id": "apollo-513515",
+      "source": "apollo",
+      "cinema": "Apollo Akropole",
+      "title": "Lāču ala",
+      "originalTitle": "Bear Country",
+      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8600/landscape_qhd/3840_2160.jpg?width=350&height=200&format=jpg&quality=90",
+      "imdbRating": "",
+      "imdbUrl": "",
+      "ageRating": "16+",
+      "genres": [
+        "Asa sižeta filma",
+        "Trilleris"
+      ],
+      "startTime": "2026-07-13T21:40:00.0000000+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "6. Zvaigžņu zāle",
+      "language": "Angļu",
+      "movieUrl": "https://www.apollokino.lv/event/304160/l%C4%81%C4%8Du_ala?theatreAreaID=1014&dt=13.07.2026",
+      "availability": {
+        "freeSeats": 41
+      }
+    },
+    {
+      "id": "apollo-513496",
+      "source": "apollo",
+      "cinema": "Apollo Akropole",
+      "title": "Izsalkums",
+      "originalTitle": "Hungry",
+      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8592/landscape_qhd/hunger-3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+      "imdbRating": "",
+      "imdbUrl": "",
+      "ageRating": "16+",
+      "genres": [
+        "Šausmu filma",
+        "Trilleris"
+      ],
+      "startTime": "2026-07-13T21:45:00.0000000+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "5. zāle",
+      "language": "Angļu",
+      "movieUrl": "https://www.apollokino.lv/event/304153/izsalkums?theatreAreaID=1014&dt=13.07.2026",
+      "availability": {
+        "freeSeats": 84,
+        "totalSeats": 90,
+        "takenSeats": 6,
+        "occupiedPercent": 7
+      }
+    },
+    {
+      "id": "apollo-513249",
+      "source": "apollo",
+      "cinema": "Apollo Plaza",
+      "title": "Šausmenīte 6",
+      "originalTitle": "Scary Movie 6",
+      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8536/landscape_qhd/LK_SM__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+      "imdbRating": "",
+      "imdbUrl": "",
+      "ageRating": "16+",
+      "genres": [
+        "Komēdija",
+        "Šausmu filma"
+      ],
+      "startTime": "2026-07-13T22:05:00.0000000+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "7. zāle",
+      "language": "Angļu",
+      "movieUrl": "https://www.apollokino.lv/event/304097/%C5%A1ausmen%C4%ABte_6?theatreAreaID=1014&dt=13.07.2026",
+      "availability": {
+        "freeSeats": 72
+      }
+    },
+    {
+      "id": "apollo-513197",
+      "source": "apollo",
+      "cinema": "Apollo Plaza",
+      "title": "Ļaunie miroņi deg",
+      "originalTitle": "Evil Dead Burn",
+      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8594/landscape_qhd/EvilDeadBurn_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+      "imdbRating": "",
+      "imdbUrl": "",
+      "ageRating": "18+",
+      "genres": [
+        "Šausmu filma",
+        "Fantastika"
+      ],
+      "startTime": "2026-07-13T22:15:00.0000000+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "3. zāle",
+      "language": "Angļu",
+      "movieUrl": "https://www.apollokino.lv/event/304154/%C4%BCaunie_miro%C5%86i_deg?theatreAreaID=1014&dt=13.07.2026",
+      "availability": {
+        "freeSeats": 95
+      }
+    },
+    {
+      "id": "apollo-513435",
+      "source": "apollo",
+      "cinema": "Apollo Akropole",
+      "title": "Ļaunie miroņi deg",
+      "originalTitle": "Evil Dead Burn",
+      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8594/landscape_qhd/EvilDeadBurn_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+      "imdbRating": "",
+      "imdbUrl": "",
+      "ageRating": "18+",
+      "genres": [
+        "Šausmu filma",
+        "Fantastika"
+      ],
+      "startTime": "2026-07-13T22:15:00.0000000+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "2. zāle",
+      "language": "Angļu",
+      "movieUrl": "https://www.apollokino.lv/event/304154/%C4%BCaunie_miro%C5%86i_deg?theatreAreaID=1014&dt=13.07.2026",
+      "availability": {
+        "freeSeats": 207,
+        "totalSeats": 227,
+        "takenSeats": 20,
+        "occupiedPercent": 9
+      }
+    },
+    {
+      "id": "apollo-513456",
+      "source": "apollo",
+      "cinema": "Apollo Akropole",
+      "title": "Backrooms: Bez izejas",
+      "originalTitle": "Backrooms",
+      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8533/landscape_qhd/Backrooms_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+      "imdbRating": "",
+      "imdbUrl": "",
+      "ageRating": "16+",
+      "genres": [
+        "Šausmu filma",
+        "Fantastika"
+      ],
+      "startTime": "2026-07-13T22:15:00.0000000+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "3. Radio SWH zāle",
+      "language": "Angļu",
+      "movieUrl": "https://www.apollokino.lv/event/304096/backrooms_bez_izejas?theatreAreaID=1014&dt=13.07.2026",
+      "availability": {
+        "freeSeats": 90
+      }
+    },
+    {
+      "id": "apollo-513536",
+      "source": "apollo",
+      "cinema": "Apollo Akropole",
+      "title": "Kolonija",
+      "originalTitle": "Colony",
+      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8618/landscape_qhd/LK_CL__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+      "imdbRating": "",
+      "imdbUrl": "",
+      "ageRating": "16+",
+      "genres": [
+        "Zinātniska fantastika",
+        "Šausmu filma",
+        "Trilleris"
+      ],
+      "startTime": "2026-07-13T22:15:00.0000000+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "7. zāle Restorāns",
+      "language": "Korejiešu valodā",
+      "movieUrl": "https://www.apollokino.lv/event/304175/kolonija?theatreAreaID=1014&dt=13.07.2026",
+      "availability": {
+        "freeSeats": 35
+      }
+    },
+    {
+      "id": "apollo-513236",
+      "source": "apollo",
+      "cinema": "Apollo Plaza",
+      "title": "Lāču ala",
+      "originalTitle": "Bear Country",
+      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8600/landscape_qhd/3840_2160.jpg?width=350&height=200&format=jpg&quality=90",
+      "imdbRating": "",
+      "imdbUrl": "",
+      "ageRating": "16+",
+      "genres": [
+        "Asa sižeta filma",
+        "Trilleris"
+      ],
+      "startTime": "2026-07-13T22:30:00.0000000+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "6. zāle",
+      "language": "Angļu",
+      "movieUrl": "https://www.apollokino.lv/event/304160/l%C4%81%C4%8Du_ala?theatreAreaID=1014&dt=13.07.2026",
+      "availability": {
+        "freeSeats": 44
+      }
+    }
+  ]
 }
