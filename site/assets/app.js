@@ -1,4 +1,11 @@
 const DATA_URL = './data/schedule.json';
+const KNOWN_CINEMAS = [
+  'Apollo Akropole',
+  'Apollo Domina',
+  'Apollo Plaza',
+  'Cinamon Alfa',
+  'Forum Cinemas'
+];
 const TIME_FORMATTER = new Intl.DateTimeFormat('en-GB', {
   hour: '2-digit',
   minute: '2-digit',
@@ -106,8 +113,9 @@ function imdbUrl(showtime) {
 }
 
 function renderCinemaFilters(showtimes) {
-  const names = [...new Set(showtimes.map((item) => item.cinema).filter(Boolean))].sort();
+  const names = [...new Set([...KNOWN_CINEMAS, ...showtimes.map((item) => item.cinema).filter(Boolean)])];
   if (state.cinemas.size === 0) state.cinemas = new Set(names);
+  else state.cinemas = new Set([...state.cinemas].filter((name) => names.includes(name)));
   els.cinemaOptions.innerHTML = names.map((name) => {
     const checked = state.cinemas.has(name) ? 'checked' : '';
     return `<label class="cinema-choice"><input type="checkbox" value="${escapeHtml(name)}" ${checked}>${escapeHtml(name)}</label>`;

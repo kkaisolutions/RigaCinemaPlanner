@@ -28,6 +28,23 @@ test('keeps a previous source snapshot and marks it stale after 90 minutes', () 
   assert.match(payload.warnings.find((warning) => warning.source === 'apollo').message, /stale/i);
 });
 
+test('keeps a successful zero-session source cached without a waiting warning', () => {
+  const previous = {
+    date: '2026-06-27',
+    sources: [{ id: 'forum', fetchedAt: '2026-06-27T20:00:00.000Z', lastSuccessAt: '2026-06-27T20:00:00.000Z' }],
+    showtimes: []
+  };
+  const payload = mergeSourceResults({
+    date: '2026-06-27',
+    generatedAt: new Date('2026-06-27T20:30:00.000Z'),
+    previous,
+    results: new Map()
+  });
+  const forum = payload.sources.find((source) => source.id === 'forum');
+  assert.equal(forum.status, 'cached');
+  assert.equal(payload.warnings.some((warning) => warning.source === 'forum'), false);
+});
+
 test('parses Forum schedule with language and auditorium', () => {
   const events = parseForumEvents(`<?xml version="1.0"?>
     <Events><Event><ID>304667</ID><Links><Link><Title>IMDB</Title><Location>https://www.imdb.com/title/tt123/</Location></Link></Links></Event></Events>`);

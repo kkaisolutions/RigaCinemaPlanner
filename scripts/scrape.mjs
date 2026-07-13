@@ -109,8 +109,11 @@ export function mergeSourceResults({ date, generatedAt = new Date(), previous = 
     const error = result ? sourceFailureMessage(id, result.error) : null;
     const lastSuccessAt = oldSource?.lastSuccessAt || oldSource?.fetchedAt || null;
     const ageMs = lastSuccessAt ? generatedAt - new Date(lastSuccessAt) : Number.POSITIVE_INFINITY;
-    const hasUsableCache = oldShowtimes.length > 0;
-    const status = hasUsableCache ? (ageMs <= 90 * 60 * 1000 ? 'cached' : 'stale') : 'waiting';
+    // A successful source can legitimately have no later sessions today.
+    // Preserve that successful zero-result snapshot rather than turning it
+    // into a misleading “waiting” warning on a later partial refresh.
+    const hasSuccessfulSnapshot = Boolean(lastSuccessAt);
+    const status = hasSuccessfulSnapshot ? (ageMs <= 90 * 60 * 1000 ? 'cached' : 'stale') : 'waiting';
     const source = { id, name: sourceName(id), url: sourceUrl(id), status, count: oldShowtimes.length, fetchedAt: oldSource?.fetchedAt || null, lastSuccessAt, error };
     sources.push(source);
     showtimes.push(...oldShowtimes);
