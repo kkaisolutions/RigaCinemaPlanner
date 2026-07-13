@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T19:15:08.673Z",
+  "generatedAt": "2026-07-13T19:36:42.289Z",
   "timezone": "Europe/Riga",
   "date": "2026-07-13",
   "dates": [
@@ -10,8 +10,8 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/xml/Schedule/?area=1011",
-      "count": 54,
-      "status": "fresh",
+      "status": "waiting",
+      "count": 0,
       "fetchedAt": "2026-07-13T19:15:08.673Z",
       "lastSuccessAt": "2026-07-13T19:15:08.673Z",
       "error": null
@@ -20,56 +20,28 @@
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "status": "stale",
-      "count": 15,
-      "fetchedAt": "2026-07-13T17:36:06.921Z",
-      "lastSuccessAt": "2026-07-13T17:36:06.921Z",
+      "count": 1,
+      "status": "fresh",
+      "fetchedAt": "2026-07-13T19:36:42.289Z",
+      "lastSuccessAt": "2026-07-13T19:36:42.289Z",
       "error": null
     },
     {
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "status": "stale",
-      "count": 6,
-      "fetchedAt": "2026-07-13T17:36:06.921Z",
-      "lastSuccessAt": "2026-07-13T17:36:06.921Z",
+      "count": 0,
+      "status": "fresh",
+      "fetchedAt": "2026-07-13T19:36:42.289Z",
+      "lastSuccessAt": "2026-07-13T19:36:42.289Z",
       "error": null
     }
   ],
   "warnings": [
     {
-      "source": "apollo",
-      "message": "Apollo Kino data is stale."
-    },
-    {
-      "source": "cinamon",
-      "message": "Cinamon Alfa data is stale."
+      "source": "forum",
+      "message": "Waiting for today’s Forum Cinemas update."
     }
   ],
-  "showtimes": [
-    {
-      "id": "apollo-513236",
-      "source": "apollo",
-      "cinema": "Apollo Plaza",
-      "title": "Lāču ala",
-      "originalTitle": "Bear Country",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8600/landscape_qhd/3840_2160.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "16+",
-      "genres": [
-        "Asa sižeta filma",
-        "Trilleris"
-      ],
-      "startTime": "2026-07-13T22:30:00.0000000+03:00",
-      "serviceDate": "2026-07-13",
-      "auditorium": "6. zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304160/l%C4%81%C4%8Du_ala?theatreAreaID=1014&dt=13.07.2026",
-      "availability": {
-        "freeSeats": 46
-      }
-    }
-  ]
+  "showtimes": []
 }
