@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T17:06:11.537Z",
+  "generatedAt": "2026-07-13T17:09:44.161Z",
   "timezone": "Europe/Riga",
   "date": "2026-07-13",
   "dates": [
@@ -20,31 +20,27 @@
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "count": 20,
+      "count": 19,
       "status": "fresh",
-      "fetchedAt": "2026-07-13T17:06:11.537Z",
-      "lastSuccessAt": "2026-07-13T17:06:11.537Z",
+      "fetchedAt": "2026-07-13T17:09:44.161Z",
+      "lastSuccessAt": "2026-07-13T17:09:44.161Z",
       "error": null
     },
     {
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "status": "waiting",
-      "count": 0,
-      "fetchedAt": null,
-      "lastSuccessAt": null,
-      "error": "Cinamon Alfa could not be reached from the GitHub Actions runner."
+      "count": 8,
+      "status": "fresh",
+      "fetchedAt": "2026-07-13T17:09:44.161Z",
+      "lastSuccessAt": "2026-07-13T17:09:44.161Z",
+      "error": null
     }
   ],
   "warnings": [
     {
       "source": "forum",
       "message": "Waiting for today’s Forum Cinemas update."
-    },
-    {
-      "source": "cinamon",
-      "message": "Waiting for today’s Cinamon Alfa update."
     }
   ],
   "showtimes": [
@@ -69,6 +65,31 @@
       "movieUrl": "https://www.apollokino.lv/event/304154/%C4%BCaunie_miro%C5%86i_deg?theatreAreaID=1014&dt=13.07.2026",
       "availability": {
         "freeSeats": 299
+      }
+    },
+    {
+      "id": "cinamon-828074588",
+      "source": "cinamon",
+      "cinema": "Cinamon Alfa",
+      "title": "Ļaunie miroņi deg",
+      "originalTitle": "Evil Dead Burn",
+      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=657694851",
+      "imdbRating": "N/A",
+      "imdbUrl": "",
+      "ageRating": "18+",
+      "genres": [
+        "Šausmu filma"
+      ],
+      "startTime": "2026-07-13T20:20:00+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "Zale 3",
+      "language": "",
+      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/launie-mironi-deg/lv",
+      "availability": {
+        "totalSeats": 184,
+        "freeSeats": 176,
+        "takenSeats": 8,
+        "occupiedPercent": 4
       }
     },
     {
@@ -125,6 +146,31 @@
       }
     },
     {
+      "id": "cinamon-1223966362",
+      "source": "cinamon",
+      "cinema": "Cinamon Alfa",
+      "title": "Minioni un mošķi",
+      "originalTitle": "Minions & Monsters",
+      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1752605446",
+      "imdbRating": "",
+      "imdbUrl": "",
+      "ageRating": "7+",
+      "genres": [
+        "Animācija"
+      ],
+      "startTime": "2026-07-13T20:30:00+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "Zale 7",
+      "language": "",
+      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/minioni-un-moski/lv",
+      "availability": {
+        "totalSeats": 78,
+        "freeSeats": 63,
+        "takenSeats": 15,
+        "occupiedPercent": 19
+      }
+    },
+    {
       "id": "apollo-513219",
       "source": "apollo",
       "cinema": "Apollo Plaza",
@@ -143,7 +189,32 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304053/atkl%C4%81%C5%A1anas_diena?theatreAreaID=1014&dt=13.07.2026",
       "availability": {
-        "freeSeats": 35
+        "freeSeats": 37
+      }
+    },
+    {
+      "id": "cinamon-487649779",
+      "source": "cinamon",
+      "cinema": "Cinamon Alfa",
+      "title": "Ielūgums",
+      "originalTitle": "The Invite",
+      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1307302589",
+      "imdbRating": "7.8",
+      "imdbUrl": "",
+      "ageRating": "16+",
+      "genres": [
+        "Komēdija"
+      ],
+      "startTime": "2026-07-13T21:00:00+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "Zale 2",
+      "language": "",
+      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/ielugums/lv",
+      "availability": {
+        "totalSeats": 250,
+        "freeSeats": 243,
+        "takenSeats": 7,
+        "occupiedPercent": 3
       }
     },
     {
@@ -190,7 +261,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304149/aps%C4%93st%C4%ABba?theatreAreaID=1014&dt=13.07.2026",
       "availability": {
-        "freeSeats": 104
+        "freeSeats": 98
       }
     },
     {
@@ -217,6 +288,31 @@
         "totalSeats": 70,
         "takenSeats": 32,
         "occupiedPercent": 46
+      }
+    },
+    {
+      "id": "cinamon-1420657721",
+      "source": "cinamon",
+      "cinema": "Cinamon Alfa",
+      "title": "Maikls",
+      "originalTitle": "Michael",
+      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=157186170",
+      "imdbRating": "7.5",
+      "imdbUrl": "",
+      "ageRating": "12+",
+      "genres": [
+        "Drāma"
+      ],
+      "startTime": "2026-07-13T21:15:00+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "KOSMOS Zale",
+      "language": "",
+      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/maikls/lv",
+      "availability": {
+        "totalSeats": 357,
+        "freeSeats": 340,
+        "takenSeats": 17,
+        "occupiedPercent": 5
       }
     },
     {
@@ -293,6 +389,31 @@
       }
     },
     {
+      "id": "cinamon-1166491317",
+      "source": "cinamon",
+      "cinema": "Cinamon Alfa",
+      "title": "Apsēstība",
+      "originalTitle": "Obsession",
+      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1059812055",
+      "imdbRating": "8.0",
+      "imdbUrl": "",
+      "ageRating": "16+",
+      "genres": [
+        "Šausmu filma"
+      ],
+      "startTime": "2026-07-13T21:35:00+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "Zale 4",
+      "language": "",
+      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/apsestiba/lv",
+      "availability": {
+        "totalSeats": 163,
+        "freeSeats": 149,
+        "takenSeats": 14,
+        "occupiedPercent": 9
+      }
+    },
+    {
       "id": "apollo-513206",
       "source": "apollo",
       "cinema": "Apollo Plaza",
@@ -365,6 +486,56 @@
       }
     },
     {
+      "id": "cinamon-1528785680",
+      "source": "cinamon",
+      "cinema": "Cinamon Alfa",
+      "title": "Backrooms: Everything Must Go",
+      "originalTitle": "Backrooms",
+      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=881461315",
+      "imdbRating": "7.0",
+      "imdbUrl": "",
+      "ageRating": "12+",
+      "genres": [
+        "Šausmu filma"
+      ],
+      "startTime": "2026-07-13T21:50:00+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "Zale 6",
+      "language": "",
+      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/backrooms-everything-must-go/lv",
+      "availability": {
+        "totalSeats": 78,
+        "freeSeats": 70,
+        "takenSeats": 8,
+        "occupiedPercent": 10
+      }
+    },
+    {
+      "id": "cinamon-2043565846",
+      "source": "cinamon",
+      "cinema": "Cinamon Alfa",
+      "title": "Šausmenīte",
+      "originalTitle": "Scary Movie",
+      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1075541479",
+      "imdbRating": "5.2",
+      "imdbUrl": "",
+      "ageRating": "16+",
+      "genres": [
+        "Komēdija"
+      ],
+      "startTime": "2026-07-13T22:00:00+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "Zale 8",
+      "language": "",
+      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/sausmenite/lv",
+      "availability": {
+        "totalSeats": 48,
+        "freeSeats": 31,
+        "takenSeats": 17,
+        "occupiedPercent": 35
+      }
+    },
+    {
       "id": "apollo-513249",
       "source": "apollo",
       "cinema": "Apollo Plaza",
@@ -385,6 +556,31 @@
       "movieUrl": "https://www.apollokino.lv/event/304097/%C5%A1ausmen%C4%ABte_6?theatreAreaID=1014&dt=13.07.2026",
       "availability": {
         "freeSeats": 72
+      }
+    },
+    {
+      "id": "cinamon-250243599",
+      "source": "cinamon",
+      "cinema": "Cinamon Alfa",
+      "title": "Ļaunie miroņi deg",
+      "originalTitle": "Evil Dead Burn",
+      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=657694851",
+      "imdbRating": "N/A",
+      "imdbUrl": "",
+      "ageRating": "18+",
+      "genres": [
+        "Šausmu filma"
+      ],
+      "startTime": "2026-07-13T22:10:00+03:00",
+      "serviceDate": "2026-07-13",
+      "auditorium": "Zale 5",
+      "language": "",
+      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/launie-mironi-deg/lv",
+      "availability": {
+        "totalSeats": 93,
+        "freeSeats": 85,
+        "takenSeats": 8,
+        "occupiedPercent": 9
       }
     },
     {
@@ -430,10 +626,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304154/%C4%BCaunie_miro%C5%86i_deg?theatreAreaID=1014&dt=13.07.2026",
       "availability": {
-        "freeSeats": 207,
+        "freeSeats": 211,
         "totalSeats": 227,
-        "takenSeats": 20,
-        "occupiedPercent": 9
+        "takenSeats": 16,
+        "occupiedPercent": 7
       }
     },
     {
