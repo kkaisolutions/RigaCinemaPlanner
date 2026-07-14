@@ -1,26 +1,28 @@
 {
-  "generatedAt": "2026-07-14T20:52:03.462Z",
+  "generatedAt": "2026-07-14T21:06:03.427Z",
   "timezone": "Europe/Riga",
-  "date": "2026-07-14",
+  "date": "2026-07-15",
   "dates": [
-    "2026-07-14"
+    "2026-07-15"
   ],
   "sources": [
     {
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/xml/Schedule/?area=1011",
-      "count": 51,
+      "count": 0,
       "status": "fresh",
-      "fetchedAt": "2026-07-14T20:52:03.462Z",
-      "lastSuccessAt": "2026-07-14T20:52:03.462Z",
+      "dataDate": "2026-07-15",
+      "fetchedAt": "2026-07-14T21:06:03.427Z",
+      "lastSuccessAt": "2026-07-14T21:06:03.427Z",
       "error": null
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "status": "cached",
+      "status": "waiting",
+      "dataDate": "2026-07-14",
       "count": 0,
       "fetchedAt": "2026-07-14T20:11:14.548Z",
       "lastSuccessAt": "2026-07-14T20:11:14.548Z",
@@ -30,13 +32,23 @@
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "status": "cached",
+      "status": "waiting",
+      "dataDate": "2026-07-14",
       "count": 0,
       "fetchedAt": "2026-07-14T20:11:14.548Z",
       "lastSuccessAt": "2026-07-14T20:11:14.548Z",
       "error": null
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "source": "apollo",
+      "message": "Waiting for today’s Apollo Kino update."
+    },
+    {
+      "source": "cinamon",
+      "message": "Waiting for today’s Cinamon Alfa update."
+    }
+  ],
   "showtimes": []
 }
