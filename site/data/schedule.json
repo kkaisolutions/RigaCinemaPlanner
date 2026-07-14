@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T09:11:35.574Z",
+  "generatedAt": "2026-07-14T09:48:46.807Z",
   "timezone": "Europe/Riga",
   "date": "2026-07-14",
   "dates": [
@@ -10,18 +10,18 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/xml/Schedule/?area=1011",
-      "status": "stale",
-      "count": 48,
-      "fetchedAt": "2026-07-14T07:05:45.073Z",
-      "lastSuccessAt": "2026-07-14T07:05:45.073Z",
+      "count": 51,
+      "status": "fresh",
+      "fetchedAt": "2026-07-14T09:48:46.807Z",
+      "lastSuccessAt": "2026-07-14T09:48:46.807Z",
       "error": null
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
+      "status": "cached",
       "count": 85,
-      "status": "fresh",
       "fetchedAt": "2026-07-14T09:11:35.574Z",
       "lastSuccessAt": "2026-07-14T09:11:35.574Z",
       "error": null
@@ -34,139 +34,16 @@
       "count": 0,
       "fetchedAt": "2026-07-13T20:37:10.011Z",
       "lastSuccessAt": "2026-07-13T20:37:10.011Z",
-      "error": "Cinamon Alfa could not be reached from the GitHub Actions runner."
+      "error": null
     }
   ],
   "warnings": [
     {
-      "source": "forum",
-      "message": "Forum Cinemas data is stale."
-    },
-    {
       "source": "cinamon",
-      "message": "Cinamon Alfa data is stale. Cinamon Alfa could not be reached from the GitHub Actions runner."
+      "message": "Cinamon Alfa data is stale."
     }
   ],
   "showtimes": [
-    {
-      "id": "apollo-513477",
-      "source": "apollo",
-      "cinema": "Apollo Akropole",
-      "title": "Minioni un mošķi",
-      "originalTitle": "Minions & Monsters",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8371/landscape_qhd/LK_MN3__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "7+",
-      "genres": [
-        "Piedzīvojumu filma",
-        "Animācija",
-        "Ģimenes filma"
-      ],
-      "startTime": "2026-07-14T12:15:00.0000000+03:00",
-      "serviceDate": "2026-07-14",
-      "auditorium": "4. Kronenbourg 1664 Blanc zāle",
-      "language": "Latviešu",
-      "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=14.07.2026",
-      "availability": {
-        "freeSeats": 135
-      }
-    },
-    {
-      "id": "apollo-513237",
-      "source": "apollo",
-      "cinema": "Apollo Plaza",
-      "title": "Aitas izmeklētājas",
-      "originalTitle": "Sheep Detectives",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8502/landscape_qhd/SheepDetectives_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "7+",
-      "genres": [
-        "Komēdija",
-        "Ģimenes filma",
-        "Mistika",
-        "Detektīvfilma"
-      ],
-      "startTime": "2026-07-14T12:20:00.0000000+03:00",
-      "serviceDate": "2026-07-14",
-      "auditorium": "6. zāle",
-      "language": "Latviešu",
-      "movieUrl": "https://www.apollokino.lv/event/304069/aitas_izmekl%C4%93t%C4%81jas?theatreAreaID=1014&dt=14.07.2026",
-      "availability": {
-        "freeSeats": 52
-      }
-    },
-    {
-      "id": "apollo-513537",
-      "source": "apollo",
-      "cinema": "Apollo Akropole",
-      "title": "Rotaļlietu stāsts 5",
-      "originalTitle": "Toy Story 5",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8461/landscape_qhd/LK_TS5__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "U",
-      "genres": [
-        "Komēdija",
-        "Piedzīvojumu filma",
-        "Animācija"
-      ],
-      "startTime": "2026-07-14T12:30:00.0000000+03:00",
-      "serviceDate": "2026-07-14",
-      "auditorium": "7. zāle Restorāns",
-      "language": "Krievu",
-      "movieUrl": "https://www.apollokino.lv/event/304031/rota%C4%BClietu_st%C4%81sts_5?theatreAreaID=1014&dt=14.07.2026",
-      "availability": {
-        "freeSeats": 40
-      }
-    },
-    {
-      "id": "forum-434755",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Minioni un mošķi",
-      "originalTitle": "Minions & Monsters",
-      "posterUrl": "http://forumcinemaslv.blob.core.windows.net/1012/Event_11230/poster_xxlarge/minions-and-monsters-poster.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt32890033/",
-      "ageRating": "N7",
-      "genres": [
-        "Piedzīvojumi",
-        "Komēdija",
-        "Animācija",
-        "Ģimenes filma"
-      ],
-      "startTime": "2026-07-14T12:35:00+03:00",
-      "serviceDate": "2026-07-14",
-      "auditorium": "Auditorija 7",
-      "language": "Angļu",
-      "movieUrl": "http://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
-      "availability": {}
-    },
-    {
-      "id": "forum-434779",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Rotaļlietu stāsts 5",
-      "originalTitle": "Toy Story 5",
-      "posterUrl": "http://forumcinemaslv.blob.core.windows.net/1012/Event_11209/poster_xlarge/toy-story-plakats.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt29355505/",
-      "ageRating": "U",
-      "genres": [
-        "Piedzīvojumi",
-        "Komēdija",
-        "Animācija",
-        "Ģimenes filma"
-      ],
-      "startTime": "2026-07-14T12:40:00+03:00",
-      "serviceDate": "2026-07-14",
-      "auditorium": "Auditorija 10",
-      "language": "Latviešu",
-      "movieUrl": "http://www.forumcinemas.lv/event/304667/title/rota%C4%BClietu_st%C4%81sts_5/",
-      "availability": {}
-    },
     {
       "id": "forum-434749",
       "source": "forum",
