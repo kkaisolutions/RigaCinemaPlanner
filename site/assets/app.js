@@ -30,6 +30,8 @@ const els = {
   search: document.querySelector('#movie-search'),
   cinemaOptions: document.querySelector('#cinema-options'),
   cinemaSummary: document.querySelector('#cinema-summary'),
+  sourceInfo: document.querySelector('#source-info'),
+  sourceTooltip: document.querySelector('#source-tooltip'),
   count: document.querySelector('#result-count'),
   warning: document.querySelector('#warning-note'),
   list: document.querySelector('#showtime-list'),
@@ -138,6 +140,30 @@ function renderWarnings(data) {
   els.warning.textContent = data.warnings.map((warning) => warning.message || warning.source).join(' · ');
 }
 
+function sourceStatusLabel(source) {
+  return ({
+    fresh: 'up to date',
+    cached: 'scheduled update pending',
+    stale: 'scheduled update overdue',
+    waiting: 'today\'s data missing'
+  })[source.status] || source.status;
+}
+
+function formatSourceTime(value) {
+  return value ? UPDATED_FORMATTER.format(new Date(value)) : 'no successful update';
+}
+
+function renderSourceInfo(data) {
+  const sources = data.sources || [];
+  const hasDelayedSource = sources.some((source) => source.status !== 'fresh');
+  els.sourceInfo.hidden = !hasDelayedSource;
+  if (!hasDelayedSource) return;
+  els.sourceTooltip.innerHTML = `
+    <strong>Scheduled update details</strong>
+    <ul>${sources.map((source) => `<li><b>${escapeHtml(source.name)}</b><span>${escapeHtml(sourceStatusLabel(source))} · ${escapeHtml(formatSourceTime(source.lastSuccessAt || source.fetchedAt))}</span></li>`).join('')}</ul>
+  `;
+}
+
 function visibleShowtimes() {
   const query = normalizeText(state.query);
   return state.data.showtimes.filter((showtime) => {
@@ -226,6 +252,7 @@ async function loadData() {
     state.data = await response.json();
     els.status.textContent = formatUpdated(state.data.generatedAt);
     renderWarnings(state.data);
+    renderSourceInfo(state.data);
     renderCinemaFilters(state.data.showtimes || []);
     render();
   } catch (error) {

@@ -101,7 +101,7 @@ export function mergeSourceResults({ date, generatedAt = new Date(), previous = 
     const oldSource = previousSources.get(id);
     const oldShowtimes = previousShowtimes.filter((showtime) => showtime.source === id);
     if (result?.ok) {
-      sources.push({ ...result.value.source, status: 'fresh', fetchedAt: generatedAtIso, lastSuccessAt: generatedAtIso, error: null });
+      sources.push({ ...result.value.source, status: 'fresh', dataDate: date, fetchedAt: generatedAtIso, lastSuccessAt: generatedAtIso, error: null });
       showtimes.push(...result.value.showtimes);
       continue;
     }
@@ -109,15 +109,16 @@ export function mergeSourceResults({ date, generatedAt = new Date(), previous = 
     const error = result ? sourceFailureMessage(id, result.error) : null;
     const lastSuccessAt = oldSource?.lastSuccessAt || oldSource?.fetchedAt || null;
     const ageMs = lastSuccessAt ? generatedAt - new Date(lastSuccessAt) : Number.POSITIVE_INFINITY;
-    // A successful source can legitimately have no later sessions today.
-    // Preserve that successful zero-result snapshot rather than turning it
-    // into a misleading “waiting” warning on a later partial refresh.
-    const hasSuccessfulSnapshot = Boolean(lastSuccessAt);
-    const status = hasSuccessfulSnapshot ? (ageMs <= 90 * 60 * 1000 ? 'cached' : 'stale') : 'waiting';
-    const source = { id, name: sourceName(id), url: sourceUrl(id), status, count: oldShowtimes.length, fetchedAt: oldSource?.fetchedAt || null, lastSuccessAt, error };
+    const dataDate = oldSource?.dataDate || previous?.date || null;
+    // An empty result is valid only after this source has successfully been
+    // acquired for *this* date. Yesterday's data must not mask a missing
+    // morning update for today's schedule.
+    const hasCurrentDaySnapshot = dataDate === date && Boolean(lastSuccessAt);
+    const status = hasCurrentDaySnapshot ? (ageMs <= 90 * 60 * 1000 ? 'cached' : 'stale') : 'waiting';
+    const source = { id, name: sourceName(id), url: sourceUrl(id), status, dataDate, count: oldShowtimes.length, fetchedAt: oldSource?.fetchedAt || null, lastSuccessAt, error };
     sources.push(source);
     showtimes.push(...oldShowtimes);
-    if (status !== 'cached') warnings.push({ source: id, message: sourceWarning(source) });
+    if (status === 'waiting') warnings.push({ source: id, message: sourceWarning(source) });
   }
 
   return {

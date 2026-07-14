@@ -50,7 +50,48 @@ h1 {
   text-shadow: -5px 0 20px rgba(125, 91, 255, 0.67);
 }
 
+.header-actions { display: flex; align-items: center; gap: 11px; }
 .status { color: var(--muted); font-size: 0.95rem; }
+.source-info { position: relative; }
+.source-info-button {
+  display: grid;
+  width: 22px;
+  height: 22px;
+  place-items: center;
+  border: 1px solid #526782;
+  border-radius: 50%;
+  padding: 0;
+  background: transparent;
+  color: #b6c3d6;
+  font: 700 0.78rem/1 Georgia, serif;
+  cursor: help;
+}
+.source-info-button:hover, .source-info-button:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
+.source-tooltip {
+  position: absolute;
+  z-index: 10;
+  top: calc(100% + 10px);
+  right: 0;
+  width: max-content;
+  max-width: min(330px, calc(100vw - 32px));
+  padding: 12px 14px;
+  border: 1px solid #2d486a;
+  border-radius: 9px;
+  background: #0c1b30;
+  color: var(--muted);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.36);
+  font-size: 0.78rem;
+  line-height: 1.35;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-4px);
+  transition: opacity 130ms ease, transform 130ms ease;
+}
+.source-info:hover .source-tooltip, .source-info:focus-within .source-tooltip { opacity: 1; transform: translateY(0); }
+.source-tooltip strong { display: block; margin-bottom: 7px; color: var(--text); }
+.source-tooltip ul { display: grid; gap: 5px; margin: 0; padding: 0; list-style: none; }
+.source-tooltip li { display: grid; gap: 1px; }
+.source-tooltip b { color: #dce6f6; }
 .app { padding: 0 0 32px; }
 
 .controls {
@@ -156,7 +197,7 @@ h1 {
 @media (max-width: 760px) {
   .header-inner, .app { width: min(100% - 28px, 1510px); }
   .header-inner { display: block; padding: 24px 0 18px; }
-  .status { margin-top: 12px; }
+  .header-actions { justify-content: space-between; margin-top: 12px; }
   .controls { grid-template-columns: 1fr; gap: 15px; padding: 14px; }
   .showtime-card { grid-template-columns: 62px minmax(0, 1fr); gap: 14px; min-height: 0; padding: 10px; }
   .poster { width: 62px; height: 93px; }

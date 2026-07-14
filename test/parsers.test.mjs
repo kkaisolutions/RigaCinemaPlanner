@@ -10,10 +10,10 @@ import {
   parseForumSchedule
 } from '../scripts/scrape.mjs';
 
-test('keeps a previous source snapshot and marks it stale after 90 minutes', () => {
+test('keeps a current-day source snapshot stale after 90 minutes without a main warning', () => {
   const previous = {
     date: '2026-06-27',
-    sources: [{ id: 'apollo', fetchedAt: '2026-06-27T07:00:00.000Z', lastSuccessAt: '2026-06-27T07:00:00.000Z' }],
+    sources: [{ id: 'apollo', dataDate: '2026-06-27', fetchedAt: '2026-06-27T07:00:00.000Z', lastSuccessAt: '2026-06-27T07:00:00.000Z' }],
     showtimes: [{ id: 'apollo-1', source: 'apollo', cinema: 'Apollo Akropole', movieUrl: 'https://example.test', serviceDate: '2026-06-27', startTime: '2026-06-27T13:00:00+03:00' }]
   };
   const payload = mergeSourceResults({
@@ -25,13 +25,13 @@ test('keeps a previous source snapshot and marks it stale after 90 minutes', () 
   const apollo = payload.sources.find((source) => source.id === 'apollo');
   assert.equal(apollo.status, 'stale');
   assert.equal(payload.showtimes.length, 1);
-  assert.match(payload.warnings.find((warning) => warning.source === 'apollo').message, /stale/i);
+  assert.equal(payload.warnings.some((warning) => warning.source === 'apollo'), false);
 });
 
 test('keeps a successful zero-session source cached without a waiting warning', () => {
   const previous = {
     date: '2026-06-27',
-    sources: [{ id: 'forum', fetchedAt: '2026-06-27T20:00:00.000Z', lastSuccessAt: '2026-06-27T20:00:00.000Z' }],
+    sources: [{ id: 'forum', dataDate: '2026-06-27', fetchedAt: '2026-06-27T20:00:00.000Z', lastSuccessAt: '2026-06-27T20:00:00.000Z' }],
     showtimes: []
   };
   const payload = mergeSourceResults({
@@ -43,6 +43,23 @@ test('keeps a successful zero-session source cached without a waiting warning', 
   const forum = payload.sources.find((source) => source.id === 'forum');
   assert.equal(forum.status, 'cached');
   assert.equal(payload.warnings.some((warning) => warning.source === 'forum'), false);
+});
+
+test('warns when a source has not yet acquired data for the current day', () => {
+  const previous = {
+    date: '2026-06-26',
+    sources: [{ id: 'cinamon', dataDate: '2026-06-26', fetchedAt: '2026-06-26T20:00:00.000Z', lastSuccessAt: '2026-06-26T20:00:00.000Z' }],
+    showtimes: []
+  };
+  const payload = mergeSourceResults({
+    date: '2026-06-27',
+    generatedAt: new Date('2026-06-27T05:15:00.000Z'),
+    previous,
+    results: new Map()
+  });
+  const cinamon = payload.sources.find((source) => source.id === 'cinamon');
+  assert.equal(cinamon.status, 'waiting');
+  assert.match(payload.warnings.find((warning) => warning.source === 'cinamon').message, /waiting/i);
 });
 
 test('parses Forum schedule with language and auditorium', () => {
