@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T19:06:00.009Z",
+  "generatedAt": "2026-07-14T19:11:18.243Z",
   "timezone": "Europe/Riga",
   "date": "2026-07-14",
   "dates": [
@@ -10,8 +10,8 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/xml/Schedule/?area=1011",
-      "count": 51,
-      "status": "fresh",
+      "status": "cached",
+      "count": 0,
       "fetchedAt": "2026-07-14T19:06:00.009Z",
       "lastSuccessAt": "2026-07-14T19:06:00.009Z",
       "error": null
@@ -20,72 +20,25 @@
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "status": "cached",
-      "count": 13,
-      "fetchedAt": "2026-07-14T18:11:16.925Z",
-      "lastSuccessAt": "2026-07-14T18:11:16.925Z",
+      "count": 6,
+      "status": "fresh",
+      "fetchedAt": "2026-07-14T19:11:18.243Z",
+      "lastSuccessAt": "2026-07-14T19:11:18.243Z",
       "error": null
     },
     {
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "status": "cached",
-      "count": 5,
-      "fetchedAt": "2026-07-14T18:11:16.925Z",
-      "lastSuccessAt": "2026-07-14T18:11:16.925Z",
+      "count": 0,
+      "status": "fresh",
+      "fetchedAt": "2026-07-14T19:11:18.243Z",
+      "lastSuccessAt": "2026-07-14T19:11:18.243Z",
       "error": null
     }
   ],
   "warnings": [],
   "showtimes": [
-    {
-      "id": "apollo-513541",
-      "source": "apollo",
-      "cinema": "Apollo Akropole",
-      "title": "Svešām acīm",
-      "originalTitle": "Gli occhi degli altri",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8620/landscape_qhd/EyesOfOthers_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "16+",
-      "genres": [
-        "Trilleris"
-      ],
-      "startTime": "2026-07-14T22:10:00.0000000+03:00",
-      "serviceDate": "2026-07-14",
-      "auditorium": "7. zāle Restorāns",
-      "language": "Itāļu valodā",
-      "movieUrl": "https://www.apollokino.lv/event/304181/sve%C5%A1%C4%81m_ac%C4%ABm?theatreAreaID=1014&dt=14.07.2026",
-      "availability": {
-        "freeSeats": 38
-      }
-    },
-    {
-      "id": "cinamon-450975049",
-      "source": "cinamon",
-      "cinema": "Cinamon Alfa",
-      "title": "Ļaunie miroņi deg",
-      "originalTitle": "Evil Dead Burn",
-      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=657694851",
-      "imdbRating": "N/A",
-      "imdbUrl": "",
-      "ageRating": "18+",
-      "genres": [
-        "Šausmu filma"
-      ],
-      "startTime": "2026-07-14T22:10:00+03:00",
-      "serviceDate": "2026-07-14",
-      "auditorium": "Zale 5",
-      "language": "",
-      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/launie-mironi-deg/lv",
-      "availability": {
-        "totalSeats": 93,
-        "freeSeats": 87,
-        "takenSeats": 6,
-        "occupiedPercent": 6
-      }
-    },
     {
       "id": "apollo-513441",
       "source": "apollo",
@@ -106,10 +59,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304154/%C4%BCaunie_miro%C5%86i_deg?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 221,
+        "freeSeats": 217,
         "totalSeats": 227,
-        "takenSeats": 6,
-        "occupiedPercent": 3
+        "takenSeats": 10,
+        "occupiedPercent": 4
       }
     },
     {
@@ -133,7 +86,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304171/dantes_rokraksts?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 99
+        "freeSeats": 98
       }
     },
     {
@@ -179,7 +132,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304160/l%C4%81%C4%8Du_ala?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 48
+        "freeSeats": 46
       }
     }
   ]
