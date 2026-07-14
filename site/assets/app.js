@@ -213,7 +213,7 @@ function sourceStatusLabel(source) {
     fresh: 'up to date',
     cached: 'scheduled update pending',
     stale: 'scheduled update overdue',
-    waiting: 'today\'s data missing'
+    waiting: 'selected date missing'
   })[source.status] || source.status;
 }
 
