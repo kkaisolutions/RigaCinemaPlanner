@@ -62,6 +62,34 @@ test('warns when a source has not yet acquired data for the current day', () => 
   assert.match(payload.warnings.find((warning) => warning.source === 'cinamon').message, /waiting/i);
 });
 
+test('keeps Today and Tomorrow source snapshots independently', () => {
+  const previous = {
+    dates: ['2026-06-27', '2026-06-28'],
+    days: {
+      '2026-06-27': {
+        date: '2026-06-27',
+        sources: [{ id: 'apollo', dataDate: '2026-06-27', lastSuccessAt: '2026-06-27T18:00:00.000Z' }],
+        showtimes: [{ id: 'apollo-today', source: 'apollo', cinema: 'Apollo Akropole', movieUrl: 'https://example.test/today', serviceDate: '2026-06-27', startTime: '2026-06-27T21:00:00+03:00' }]
+      },
+      '2026-06-28': {
+        date: '2026-06-28',
+        sources: [{ id: 'apollo', dataDate: '2026-06-28', lastSuccessAt: '2026-06-27T18:00:00.000Z' }],
+        showtimes: [{ id: 'apollo-tomorrow', source: 'apollo', cinema: 'Apollo Akropole', movieUrl: 'https://example.test/tomorrow', serviceDate: '2026-06-28', startTime: '2026-06-28T11:00:00+03:00' }]
+      }
+    }
+  };
+  const payload = mergeSourceResults({
+    dates: ['2026-06-27', '2026-06-28'],
+    generatedAt: new Date('2026-06-27T17:00:00.000Z'),
+    previous,
+    results: new Map()
+  });
+  assert.equal(payload.days['2026-06-27'].showtimes[0].id, 'apollo-today');
+  assert.equal(payload.days['2026-06-28'].showtimes[0].id, 'apollo-tomorrow');
+  assert.equal(payload.days['2026-06-27'].warnings.some((warning) => warning.source === 'apollo'), false);
+  assert.equal(payload.days['2026-06-28'].warnings.some((warning) => warning.source === 'apollo'), false);
+});
+
 test('parses Forum schedule with language and auditorium', () => {
   const events = parseForumEvents(`<?xml version="1.0"?>
     <Events><Event><ID>304667</ID><Links><Link><Title>IMDB</Title><Location>https://www.imdb.com/title/tt123/</Location></Link></Links></Event></Events>`);
@@ -125,4 +153,13 @@ test('parses Cinamon Nuxt schedule with exact seats', () => {
   assert.equal(items[0].availability.occupiedPercent, 30);
   assert.equal(items[0].serviceDate, '2026-06-27');
   assert.equal(items[0].imdbRating, '7.4');
+});
+
+test('parses a date-specific Cinamon API response', () => {
+  const items = parseCinamonSchedule(JSON.stringify([{
+    pid: 456, screen_name: 'Zāle 2', date: '2026-06-28', showtime: '2026-06-28 10:10:00',
+    film: { name: 'Rīt', original_name: 'Tomorrow', slug: 'tomorrow', genre: { name: 'Drāma' } }
+  }]), '2026-06-28');
+  assert.equal(items.length, 1);
+  assert.equal(items[0].serviceDate, '2026-06-28');
 });

@@ -157,6 +157,29 @@ h1 {
 .cinema-choice:hover { background: rgba(83, 112, 151, 0.18); }
 .cinema-choice input { width: 16px; height: 16px; accent-color: var(--accent); }
 
+.date-tabs {
+  display: flex;
+  gap: 8px;
+  margin: 18px 0 0;
+}
+.date-tab {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  min-height: 42px;
+  border: 1px solid #29405e;
+  border-radius: 9px;
+  padding: 0 14px;
+  background: rgba(7, 20, 38, 0.74);
+  color: var(--muted);
+  font: 750 0.95rem/1 inherit;
+  cursor: pointer;
+}
+.date-tab span { color: #7f8da4; font-weight: 650; }
+.date-tab:hover, .date-tab:focus-visible { border-color: #6399d7; color: var(--text); outline: none; }
+.date-tab.is-active { border-color: var(--accent); background: var(--accent-soft); color: var(--text); }
+.date-tab.is-active span { color: #9ee9d9; }
+
 .results-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 16px 12px; }
 .results-head h2 { font-size: 1.05rem; }
 .warning-note { border-radius: 8px; padding: 8px 10px; background: var(--warn-bg); color: var(--warn); font-size: 0.88rem; }
@@ -199,6 +222,7 @@ h1 {
   .header-inner { display: block; padding: 24px 0 18px; }
   .header-actions { justify-content: space-between; margin-top: 12px; }
   .controls { grid-template-columns: 1fr; gap: 15px; padding: 14px; }
+  .date-tabs { margin-top: 14px; }
   .showtime-card { grid-template-columns: 62px minmax(0, 1fr); gap: 14px; min-height: 0; padding: 10px; }
   .poster { width: 62px; height: 93px; }
   .title-line { font-size: 1rem; }

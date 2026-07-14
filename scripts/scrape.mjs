@@ -16,6 +16,8 @@ const SOURCES = {
   apolloDominaSchedule: 'https://www.apollokino.lv/schedule?theatreAreaID=1015',
   cinamonSchedule: 'https://cinamonkino.com/akropole-alfa/saraksts/lv'
 };
+const CINAMON_API = 'https://cinamonkino.com/api/schedule';
+const CINAMON_CINEMA_ID = '1633064176';
 
 // Published sellable seat capacity by Apollo auditorium. These values are
 // maintained separately from the live free-seat count because Apollo exposes
@@ -49,34 +51,15 @@ export async function main(argv = process.argv.slice(2)) {
   const options = parseArguments(argv);
   const generatedAt = options.generatedAt ? new Date(options.generatedAt) : new Date();
   if (Number.isNaN(generatedAt.valueOf())) throw new Error('Invalid --generated-at value');
-  const date = options.date || rigaDate(generatedAt);
+  const dates = requestedDates(options, generatedAt);
   const previous = options.previous ? JSON.parse(await readFile(options.previous, 'utf8')) : null;
-  const attempted = new Map();
-
-  if (!options.skipForum) attempted.set('forum', runSource('forum', () => scrapeForum(date)));
-  if (options.apolloFile || options.apolloDominaFile) {
-    attempted.set('apollo', runSource('apollo', async () => {
-      const pages = await Promise.all([options.apolloFile, options.apolloDominaFile]
-        .filter(Boolean)
-        .map((path) => readFile(path, 'utf8')));
-      return sourceResult('apollo', dedupeShowtimes(pages.flatMap((page) => parseApolloSchedule(page, date))), SOURCES.apolloSchedule);
-    }));
-  } else if (!options.forumOnly) {
-    attempted.set('apollo', runSource('apollo', () => scrapeApollo(date)));
-  }
-  if (options.cinamonFile) {
-    attempted.set('cinamon', runSource('cinamon', async () => sourceResult('cinamon', parseCinamonSchedule(await readFile(options.cinamonFile, 'utf8'), date), SOURCES.cinamonSchedule)));
-  } else if (!options.forumOnly) {
-    attempted.set('cinamon', runSource('cinamon', () => scrapeCinamon(date)));
-  }
-
-  const results = new Map(await Promise.all([...attempted.entries()].map(async ([id, promise]) => [id, await promise])));
-  const payload = mergeSourceResults({ date, generatedAt, previous, results });
+  const results = await collectSourceResults({ dates, options });
+  const payload = mergeSourceResults({ dates, generatedAt, previous, results });
   const outputPath = options.output || OUTPUT_PATH.pathname;
   await mkdir(dirname(outputPath), { recursive: true });
   await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`);
-  console.log(`Wrote ${payload.showtimes.length} upcoming showtimes for ${date}`);
-  console.log(`Sources: ${payload.sources.map((source) => `${source.id}=${source.status}:${source.count}`).join(', ')}`);
+  console.log(`Wrote ${payload.showtimes.length} upcoming showtimes for ${dates.join(', ')}`);
+  console.log(`Sources: ${dates.map((date) => `${date} ${payload.days[date].sources.map((source) => `${source.id}=${source.status}:${source.count}`).join(', ')}`).join(' | ')}`);
   return payload;
 }
 
@@ -88,20 +71,74 @@ async function runSource(id, task) {
   }
 }
 
-export function mergeSourceResults({ date, generatedAt = new Date(), previous = null, results = new Map() }) {
+async function collectSourceResults({ dates, options }) {
+  const results = new Map();
+  if (!options.skipForum) {
+    const forum = await runSource('forum', () => scrapeForum(dates));
+    for (const date of dates) results.set(resultKey(date, 'forum'), forum.ok
+      ? { ok: true, value: sourceResult('forum', forum.value.get(date) || [], SOURCES.forumSchedule) }
+      : forum);
+  }
+
+  for (const date of dates) {
+    if (!options.forumOnly) {
+      const apolloFiles = [options.apolloFiles.get(date), options.apolloDominaFiles.get(date)].filter(Boolean);
+      if (apolloFiles.length > 0) {
+        results.set(resultKey(date, 'apollo'), await runSource('apollo', async () => {
+          const pages = await Promise.all(apolloFiles.map((path) => readFile(path, 'utf8')));
+          return sourceResult('apollo', dedupeShowtimes(pages.flatMap((page) => parseApolloSchedule(page, date))), SOURCES.apolloSchedule);
+        }));
+      } else if (!options.hasLocalAssets) {
+        results.set(resultKey(date, 'apollo'), await runSource('apollo', () => scrapeApollo(date)));
+      }
+
+      const cinamonFile = options.cinamonFiles.get(date);
+      if (cinamonFile) {
+        results.set(resultKey(date, 'cinamon'), await runSource('cinamon', async () => sourceResult('cinamon', parseCinamonSchedule(await readFile(cinamonFile, 'utf8'), date), SOURCES.cinamonSchedule)));
+      } else if (!options.hasLocalAssets) {
+        results.set(resultKey(date, 'cinamon'), await runSource('cinamon', () => scrapeCinamon(date)));
+      }
+    }
+  }
+  return results;
+}
+
+export function mergeSourceResults({ date, dates: requested = null, generatedAt = new Date(), previous = null, results = new Map() }) {
+  const dates = requested || [date];
+  if (!dates.length) throw new Error('At least one service date is required');
   const generatedAtIso = generatedAt.toISOString();
-  const previousSources = new Map((previous?.sources || []).map((source) => [source.id, source]));
-  const previousShowtimes = previous?.date === date ? previous?.showtimes || [] : [];
+  const previousDays = previous?.days || (previous?.date ? {
+    [previous.date]: { date: previous.date, sources: previous.sources || [], warnings: previous.warnings || [], showtimes: previous.showtimes || [] }
+  } : {});
+  const days = Object.fromEntries(dates.map((serviceDate) => [serviceDate, mergeDay({ serviceDate, generatedAt, generatedAtIso, previousDay: previousDays[serviceDate], results })]));
+  const primary = days[dates[0]];
+
+  return {
+    generatedAt: generatedAtIso,
+    timezone: TIMEZONE,
+    date: dates[0],
+    dates,
+    days,
+    // Keep top-level aliases for existing consumers while the site transitions
+    // to date tabs.
+    sources: primary.sources,
+    warnings: primary.warnings,
+    showtimes: primary.showtimes
+  };
+}
+
+function mergeDay({ serviceDate, generatedAt, generatedAtIso, previousDay, results }) {
+  const previousSources = new Map((previousDay?.sources || []).map((source) => [source.id, source]));
+  const previousShowtimes = previousDay?.showtimes || [];
   const warnings = [];
   const sources = [];
   const showtimes = [];
-
   for (const id of ['forum', 'apollo', 'cinamon']) {
-    const result = results.get(id);
+    const result = results.get(resultKey(serviceDate, id));
     const oldSource = previousSources.get(id);
     const oldShowtimes = previousShowtimes.filter((showtime) => showtime.source === id);
     if (result?.ok) {
-      sources.push({ ...result.value.source, status: 'fresh', dataDate: date, fetchedAt: generatedAtIso, lastSuccessAt: generatedAtIso, error: null });
+      sources.push({ ...result.value.source, status: 'fresh', dataDate: serviceDate, fetchedAt: generatedAtIso, lastSuccessAt: generatedAtIso, error: null });
       showtimes.push(...result.value.showtimes);
       continue;
     }
@@ -109,40 +146,37 @@ export function mergeSourceResults({ date, generatedAt = new Date(), previous = 
     const error = result ? sourceFailureMessage(id, result.error) : null;
     const lastSuccessAt = oldSource?.lastSuccessAt || oldSource?.fetchedAt || null;
     const ageMs = lastSuccessAt ? generatedAt - new Date(lastSuccessAt) : Number.POSITIVE_INFINITY;
-    const dataDate = oldSource?.dataDate || previous?.date || null;
+    const dataDate = oldSource?.dataDate || previousDay?.date || null;
     // An empty result is valid only after this source has successfully been
     // acquired for *this* date. Yesterday's data must not mask a missing
     // morning update for today's schedule.
-    const hasCurrentDaySnapshot = dataDate === date && Boolean(lastSuccessAt);
+    const hasCurrentDaySnapshot = dataDate === serviceDate && Boolean(lastSuccessAt);
     const status = hasCurrentDaySnapshot ? (ageMs <= 90 * 60 * 1000 ? 'cached' : 'stale') : 'waiting';
     const source = { id, name: sourceName(id), url: sourceUrl(id), status, dataDate, count: oldShowtimes.length, fetchedAt: oldSource?.fetchedAt || null, lastSuccessAt, error };
     sources.push(source);
     showtimes.push(...oldShowtimes);
-    if (status === 'waiting') warnings.push({ source: id, message: sourceWarning(source) });
+    if (status === 'waiting') warnings.push({ source: id, message: sourceWarning(source, serviceDate) });
   }
 
   return {
-    generatedAt: generatedAtIso,
-    timezone: TIMEZONE,
-    date,
-    dates: [date],
+    date: serviceDate,
     sources,
     warnings,
     showtimes: dedupeShowtimes(showtimes)
       .filter((showtime) => showtime.movieUrl)
-      .filter((showtime) => showtime.serviceDate === date)
+      .filter((showtime) => showtime.serviceDate === serviceDate)
       .filter((showtime) => new Date(showtime.startTime) > generatedAt)
       .sort((a, b) => new Date(a.startTime) - new Date(b.startTime))
   };
 }
 
-async function scrapeForum(date) {
+async function scrapeForum(dates) {
   const [scheduleText, eventsText] = await Promise.all([
     fetchText(SOURCES.forumSchedule),
     fetchText(SOURCES.forumEvents)
   ]);
   const eventsById = parseForumEvents(eventsText);
-  return sourceResult('forum', parseForumSchedule(scheduleText, eventsById, date), SOURCES.forumSchedule);
+  return new Map(dates.map((date) => [date, parseForumSchedule(scheduleText, eventsById, date)]));
 }
 
 export function parseForumEvents(xmlText) {
@@ -194,12 +228,13 @@ export function parseForumSchedule(xmlText, eventsById = new Map(), date = rigaD
 }
 
 async function scrapeApollo(date) {
-  const scheduleText = await fetchText(SOURCES.apolloSchedule, {
+  const scheduleUrl = apolloScheduleUrl(SOURCES.apolloSchedule, date);
+  const scheduleText = await fetchText(scheduleUrl, {
     headers: {
       referer: 'https://www.apollokino.lv/'
     }
   });
-  return sourceResult('apollo', parseApolloSchedule(scheduleText, date), SOURCES.apolloSchedule);
+  return sourceResult('apollo', parseApolloSchedule(scheduleText, date), scheduleUrl);
 }
 
 export function parseApolloSchedule(htmlText, date = rigaDate()) {
@@ -263,13 +298,16 @@ export function parseApolloMovieDetail(htmlText) {
 }
 
 async function scrapeCinamon(date) {
-  const htmlText = await fetchText(SOURCES.cinamonSchedule);
-  return sourceResult('cinamon', parseCinamonSchedule(htmlText, date), SOURCES.cinamonSchedule);
+  const scheduleUrl = cinamonScheduleUrl(date);
+  const scheduleText = await fetchText(scheduleUrl, { headers: { accept: 'application/json' } });
+  return sourceResult('cinamon', parseCinamonSchedule(scheduleText, date), scheduleUrl);
 }
 
 export function parseCinamonSchedule(htmlText, date = rigaDate()) {
-  const nuxt = extractNuxtState(htmlText);
-  const schedule = nuxt?.data?.[0]?.schedule || [];
+  const trimmed = String(htmlText).trim();
+  const directSchedule = trimmed.startsWith('[') ? JSON.parse(trimmed) : null;
+  const nuxt = directSchedule ? null : extractNuxtState(htmlText);
+  const schedule = directSchedule || nuxt?.data?.[0]?.schedule || [];
   const dates = dateList(date);
   return schedule
     .filter((item) => dates.includes(item.date) || dates.some((candidate) => String(item.showtime || '').startsWith(candidate)))
@@ -433,6 +471,33 @@ function rigaDate(value = new Date()) {
   }).format(value);
 }
 
+function requestedDates(options, generatedAt) {
+  if (options.dates?.length) return options.dates;
+  const first = options.date || rigaDate(generatedAt);
+  return Array.from({ length: options.days || 1 }, (_, index) => addRigaDays(first, index));
+}
+
+function resultKey(date, id) {
+  return `${date}:${id}`;
+}
+
+function apolloScheduleUrl(base, date) {
+  const url = new URL(base);
+  const [year, month, day] = date.split('-');
+  url.searchParams.set('2958-dt', `${day}.${month}.${year}`);
+  return url.toString();
+}
+
+function cinamonScheduleUrl(date) {
+  const url = new URL(CINAMON_API);
+  url.searchParams.set('cinema_id', CINAMON_CINEMA_ID);
+  url.searchParams.set('timezone', 'Europe/Riga');
+  url.searchParams.set('locale', 'lv');
+  url.searchParams.set('date', date);
+  url.searchParams.set('include', 'film.genre,screen,relatedAttributes,seatsLeft');
+  return url.toString();
+}
+
 function splitList(value = '') {
   return clean(value).split(',').map((item) => item.trim()).filter(Boolean);
 }
@@ -512,8 +577,8 @@ function sourceUrl(id) {
   return ({ forum: SOURCES.forumSchedule, apollo: SOURCES.apolloSchedule, cinamon: SOURCES.cinamonSchedule })[id] || '';
 }
 
-function sourceWarning(source) {
-  if (source.status === 'waiting') return `Waiting for today’s ${source.name} update.`;
+function sourceWarning(source, serviceDate) {
+  if (source.status === 'waiting') return `Waiting for ${serviceDate} ${source.name} update.`;
   const detail = source.error ? ` ${source.error}` : '';
   return `${source.name} data is stale.${detail}`;
 }
@@ -529,15 +594,17 @@ function dedupeShowtimes(showtimes) {
 }
 
 function parseArguments(argv) {
-  const options = {};
+  const options = { apolloFiles: new Map(), apolloDominaFiles: new Map(), cinamonFiles: new Map() };
   const aliases = {
     '--output': 'output',
     '--previous': 'previous',
     '--date': 'date',
+    '--dates': 'dates',
+    '--days': 'days',
     '--generated-at': 'generatedAt',
-    '--apollo-file': 'apolloFile',
-    '--apollo-domina-file': 'apolloDominaFile',
-    '--cinamon-file': 'cinamonFile'
+    '--apollo-file': 'apolloFiles',
+    '--apollo-domina-file': 'apolloDominaFiles',
+    '--cinamon-file': 'cinamonFiles'
   };
   for (let index = 0; index < argv.length; index += 1) {
     const argument = argv[index];
@@ -546,7 +613,19 @@ function parseArguments(argv) {
     else if (aliases[argument]) {
       const value = argv[index + 1];
       if (!value || value.startsWith('--')) throw new Error(`${argument} requires a value`);
-      options[aliases[argument]] = value;
+      const key = aliases[argument];
+      if (key === 'dates') options.dates = dateList(value.split(','));
+      else if (key === 'days') {
+        options.days = Number(value);
+        if (!Number.isInteger(options.days) || options.days < 1 || options.days > 7) throw new Error('--days must be an integer from 1 to 7');
+      } else if (key.endsWith('Files')) {
+        const separator = value.indexOf(':');
+        const hasExplicitDate = separator === 10 && /^\d{4}-\d{2}-\d{2}$/.test(value.slice(0, separator));
+        const assetDate = hasExplicitDate ? value.slice(0, separator) : options.date || rigaDate();
+        const path = hasExplicitDate ? value.slice(separator + 1) : value;
+        options[key].set(assetDate, path);
+        options.hasLocalAssets = true;
+      } else options[key] = value;
       index += 1;
     } else throw new Error(`Unknown argument: ${argument}`);
   }

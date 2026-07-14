@@ -1,6 +1,6 @@
 # Riga Cinema Planner
 
-A GitHub Pages site showing **today's upcoming** movie sessions in Riga.
+A GitHub Pages site showing upcoming movie sessions in Riga for **Today and Tomorrow**.
 
 Planned public address: <https://kkaisolutions.github.io/RigaCinemaPlanner/>
 
@@ -8,9 +8,9 @@ Planned public address: <https://kkaisolutions.github.io/RigaCinemaPlanner/>
 
 | Source | Acquisition | Why |
 | --- | --- | --- |
-| Forum Cinemas | GitHub Actions, hourly at `:00` | Public XML works from GitHub-hosted runners. |
-| Apollo Kino, including Domina | ESP32 at home, hourly at `:10` | Apollo blocks GitHub-hosted runner traffic. |
-| Cinamon Alfa | ESP32 at home, hourly at `:10` | Cinamon times out from GitHub-hosted runners. |
+| Forum Cinemas | GitHub Actions, hourly at `:00` | Fetches both dates from the public XML. |
+| Apollo Kino, including Domina | ESP32 at home, hourly at `:10` | Fetches explicitly selected Today and Tomorrow pages from a home IP. |
+| Cinamon Alfa | ESP32 at home, hourly at `:10` | Fetches the date-specific public schedule API from a home IP. |
 
 The ESP32 uploads raw public schedule HTML to a temporary release in the private `RigaCinemaPlannerIngest` repository. Its release workflow parses the assets and updates this repository's `data` branch. The raw release is deleted immediately after a fully successful ingest; partial/failed releases are retained for seven days.
 

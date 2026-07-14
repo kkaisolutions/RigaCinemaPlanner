@@ -39,7 +39,7 @@ jobs:
       - run: pnpm test
         working-directory: website
       - run: >-
-          node scripts/scrape.mjs --forum-only
+          node scripts/scrape.mjs --forum-only --days 2
           --previous ../data/site/data/schedule.json
           --output ../data/site/data/schedule.json
         working-directory: website
