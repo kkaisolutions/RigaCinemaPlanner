@@ -163,3 +163,14 @@ test('parses a date-specific Cinamon API response', () => {
   assert.equal(items.length, 1);
   assert.equal(items[0].serviceDate, '2026-06-28');
 });
+
+test('parses a chunk-framed Cinamon API response saved by an ESP stream', () => {
+  const payload = JSON.stringify([{
+    pid: 789, screen_name: 'Zāle 3', date: '2026-06-29', showtime: '2026-06-29 11:00:00',
+    film: { name: 'Rīt pēc', original_name: 'The Day After', slug: 'the-day-after', genre: { name: 'Drāma' } }
+  }]);
+  const chunked = `${payload.length.toString(16)}\r\n${payload}\r\n0\r\n\r\n`;
+  const items = parseCinamonSchedule(chunked, '2026-06-29');
+  assert.equal(items.length, 1);
+  assert.equal(items[0].auditorium, 'Zāle 3');
+});

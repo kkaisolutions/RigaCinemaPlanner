@@ -75,9 +75,14 @@ async function collectSourceResults({ dates, options }) {
   const results = new Map();
   if (!options.skipForum) {
     const forum = await runSource('forum', () => scrapeForum(dates));
-    for (const date of dates) results.set(resultKey(date, 'forum'), forum.ok
-      ? { ok: true, value: sourceResult('forum', forum.value.get(date) || [], SOURCES.forumSchedule) }
-      : forum);
+    for (const date of dates) {
+      const day = forum.ok ? forum.value.get(date) : null;
+      results.set(resultKey(date, 'forum'), forum.ok && day?.published
+        ? { ok: true, value: sourceResult('forum', day.showtimes, SOURCES.forumSchedule) }
+        : forum.ok
+          ? { ok: false, id: 'forum', error: new Error(`Forum Cinemas has not published its ${date} schedule in the XML feed yet`) }
+          : forum);
+    }
   }
 
   for (const date of dates) {
@@ -176,7 +181,18 @@ async function scrapeForum(dates) {
     fetchText(SOURCES.forumEvents)
   ]);
   const eventsById = parseForumEvents(eventsText);
-  return new Map(dates.map((date) => [date, parseForumSchedule(scheduleText, eventsById, date)]));
+  const publishedDates = forumPublishedDates(scheduleText);
+  return new Map(dates.map((date) => [date, {
+    published: publishedDates.has(date),
+    showtimes: parseForumSchedule(scheduleText, eventsById, date)
+  }]));
+}
+
+function forumPublishedDates(xmlText) {
+  const parsed = xmlParser.parse(xmlText);
+  return new Set(asArray(parsed?.Schedule?.Shows?.Show)
+    .map((show) => serviceDateFrom(show.dtAccounting || show.dttmShowStart))
+    .filter(Boolean));
 }
 
 export function parseForumEvents(xmlText) {
@@ -304,8 +320,8 @@ async function scrapeCinamon(date) {
 }
 
 export function parseCinamonSchedule(htmlText, date = rigaDate()) {
-  const trimmed = String(htmlText).trim();
-  const directSchedule = trimmed.startsWith('[') ? JSON.parse(trimmed) : null;
+  const trimmed = decodeChunkedHttpBody(String(htmlText)).trim();
+  const directSchedule = parseCinamonJson(trimmed);
   const nuxt = directSchedule ? null : extractNuxtState(htmlText);
   const schedule = directSchedule || nuxt?.data?.[0]?.schedule || [];
   const dates = dateList(date);
@@ -341,6 +357,41 @@ export function parseCinamonSchedule(htmlText, date = rigaDate()) {
         }
       });
     });
+}
+
+function parseCinamonJson(value) {
+  if (!value.startsWith('[') && !value.startsWith('{')) return null;
+  const payload = JSON.parse(value);
+  if (Array.isArray(payload)) return payload;
+  if (Array.isArray(payload?.schedule)) return payload.schedule;
+  if (Array.isArray(payload?.data?.schedule)) return payload.data.schedule;
+  if (Array.isArray(payload?.data)) return payload.data;
+  return null;
+}
+
+// ESP HTTPClient streams can retain HTTP/1.1 chunk framing when the response
+// has no Content-Length. HTML parsers tolerate that prefix, but a JSON payload
+// does not. Accept both the normal response and such a saved stream.
+function decodeChunkedHttpBody(value) {
+  const text = String(value);
+  const firstBreak = text.indexOf('\r\n');
+  if (firstBreak < 1 || !/^[0-9a-f]+(?:;.*)?$/i.test(text.slice(0, firstBreak))) return text;
+
+  let offset = 0;
+  let decoded = '';
+  while (offset < text.length) {
+    const lineEnd = text.indexOf('\r\n', offset);
+    if (lineEnd < 0) return text;
+    const length = Number.parseInt(text.slice(offset, lineEnd), 16);
+    if (!Number.isFinite(length) || length < 0) return text;
+    const chunkStart = lineEnd + 2;
+    if (length === 0) return decoded;
+    const chunkEnd = chunkStart + length;
+    if (chunkEnd > text.length || text.slice(chunkEnd, chunkEnd + 2) !== '\r\n') return text;
+    decoded += text.slice(chunkStart, chunkEnd);
+    offset = chunkEnd + 2;
+  }
+  return text;
 }
 
 function parseForumAvailability(show) {
