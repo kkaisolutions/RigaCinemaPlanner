@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T07:05:45.073Z",
+  "generatedAt": "2026-07-14T07:11:35.816Z",
   "timezone": "Europe/Riga",
   "date": "2026-07-14",
   "dates": [
@@ -10,8 +10,8 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/xml/Schedule/?area=1011",
+      "status": "cached",
       "count": 51,
-      "status": "fresh",
       "fetchedAt": "2026-07-14T07:05:45.073Z",
       "lastSuccessAt": "2026-07-14T07:05:45.073Z",
       "error": null
@@ -20,10 +20,10 @@
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "status": "cached",
       "count": 102,
-      "fetchedAt": "2026-07-14T06:11:34.682Z",
-      "lastSuccessAt": "2026-07-14T06:11:34.682Z",
+      "status": "fresh",
+      "fetchedAt": "2026-07-14T07:11:35.816Z",
+      "lastSuccessAt": "2026-07-14T07:11:35.816Z",
       "error": null
     },
     {
@@ -34,13 +34,13 @@
       "count": 0,
       "fetchedAt": "2026-07-13T20:37:10.011Z",
       "lastSuccessAt": "2026-07-13T20:37:10.011Z",
-      "error": null
+      "error": "Cinamon Alfa could not be reached from the GitHub Actions runner."
     }
   ],
   "warnings": [
     {
       "source": "cinamon",
-      "message": "Cinamon Alfa data is stale."
+      "message": "Cinamon Alfa data is stale. Cinamon Alfa could not be reached from the GitHub Actions runner."
     }
   ],
   "showtimes": [
@@ -65,7 +65,7 @@
       "language": "Latviešu",
       "movieUrl": "https://www.apollokino.lv/event/304031/rota%C4%BClietu_st%C4%81sts_5?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 78
+        "freeSeats": 72
       }
     },
     {
@@ -89,10 +89,10 @@
       "language": "Latviešu",
       "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 267,
+        "freeSeats": 262,
         "totalSeats": 277,
-        "takenSeats": 10,
-        "occupiedPercent": 4
+        "takenSeats": 15,
+        "occupiedPercent": 5
       }
     },
     {
@@ -140,7 +140,7 @@
       "language": "Latviešu",
       "movieUrl": "https://www.apollokino.lv/event/304069/aitas_izmekl%C4%93t%C4%81jas?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 38
+        "freeSeats": 40
       }
     },
     {
@@ -164,7 +164,7 @@
       "language": "Krievu",
       "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 109
+        "freeSeats": 106
       }
     },
     {
@@ -189,7 +189,7 @@
       "language": "Latviešu",
       "movieUrl": "https://www.apollokino.lv/event/304037/vaiana?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 197
+        "freeSeats": 199
       }
     },
     {
@@ -387,10 +387,10 @@
       "language": "Latviešu",
       "movieUrl": "https://www.apollokino.lv/event/304037/vaiana?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 90,
+        "freeSeats": 86,
         "totalSeats": 90,
-        "takenSeats": 0,
-        "occupiedPercent": 0
+        "takenSeats": 4,
+        "occupiedPercent": 4
       }
     },
     {
@@ -438,7 +438,7 @@
       "language": "Krievu",
       "movieUrl": "https://www.apollokino.lv/event/304031/rota%C4%BClietu_st%C4%81sts_5?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 55
+        "freeSeats": 52
       }
     },
     {
@@ -462,7 +462,7 @@
       "language": "Latviešu",
       "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 326
+        "freeSeats": 324
       }
     },
     {
@@ -631,7 +631,7 @@
       "language": "Krievu",
       "movieUrl": "https://www.apollokino.lv/event/304037/vaiana?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 69
+        "freeSeats": 64
       }
     },
     {
@@ -656,7 +656,7 @@
       "language": "Krievu",
       "movieUrl": "https://www.apollokino.lv/event/304037/vaiana?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 99
+        "freeSeats": 97
       }
     },
     {
@@ -728,7 +728,7 @@
       "language": "Latviešu",
       "movieUrl": "https://www.apollokino.lv/event/304069/aitas_izmekl%C4%93t%C4%81jas?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 50
+        "freeSeats": 52
       }
     },
     {
@@ -918,7 +918,7 @@
       "language": "Krievu",
       "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 95
+        "freeSeats": 94
       }
     },
     {
@@ -942,10 +942,10 @@
       "language": "Krievu",
       "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 214,
+        "freeSeats": 215,
         "totalSeats": 227,
-        "takenSeats": 13,
-        "occupiedPercent": 6
+        "takenSeats": 12,
+        "occupiedPercent": 5
       }
     },
     {
@@ -1045,7 +1045,7 @@
       "language": "Latviešu",
       "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 333
+        "freeSeats": 328
       }
     },
     {
@@ -1210,10 +1210,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304020/projekts_ave_maria?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 82,
+        "freeSeats": 84,
         "totalSeats": 90,
-        "takenSeats": 8,
-        "occupiedPercent": 9
+        "takenSeats": 6,
+        "occupiedPercent": 7
       }
     },
     {
@@ -1349,10 +1349,10 @@
       "language": "Krievu",
       "movieUrl": "https://www.apollokino.lv/event/304031/rota%C4%BClietu_st%C4%81sts_5?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 116,
+        "freeSeats": 123,
         "totalSeats": 127,
-        "takenSeats": 11,
-        "occupiedPercent": 9
+        "takenSeats": 4,
+        "occupiedPercent": 3
       }
     },
     {
@@ -1502,7 +1502,7 @@
     {
       "id": "apollo-513539",
       "source": "apollo",
-      "cinema": "Apollo Akropole",
+      "cinema": "Apollo Kino Akr 97f5 opole Rīga",
       "title": "Šausmenīte 6",
       "originalTitle": "Scary Movie 6",
       "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8536/landscape_qhd/LK_SM__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
@@ -1610,7 +1610,7 @@
       "language": "Krievu",
       "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 107
+        "freeSeats": 106
       }
     },
     {
@@ -1678,10 +1678,10 @@
       "language": "Krievu",
       "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 199,
+        "freeSeats": 197,
         "totalSeats": 227,
-        "takenSeats": 28,
-        "occupiedPercent": 12
+        "takenSeats": 30,
+        "occupiedPercent": 13
       }
     },
     {
@@ -1855,7 +1855,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304144/iel%C5%ABgums?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 59
+        "freeSeats": 57
       }
     },
     {
@@ -1969,7 +1969,7 @@
       ],
       "startTime": "2026-07-14T16:30:00.0000000+03:00",
       "serviceDate": "2026-07-14",
-      "auditorium": "8. Vintage zāle",
+      "auditorium": "",
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304171/dantes_rokraksts?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
@@ -2209,10 +2209,10 @@
       "language": "Latviešu",
       "movieUrl": "https://www.apollokino.lv/event/304037/vaiana?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 65,
+        "freeSeats": 61,
         "totalSeats": 70,
-        "takenSeats": 5,
-        "occupiedPercent": 7
+        "takenSeats": 9,
+        "occupiedPercent": 13
       }
     },
     {
@@ -2352,7 +2352,7 @@
       "language": "Krievu",
       "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 99
+        "freeSeats": 101
       }
     },
     {
@@ -2376,9 +2376,9 @@
       "language": "Krievu",
       "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 202,
+        "freeSeats": 201,
         "totalSeats": 227,
-        "takenSeats": 25,
+        "takenSeats": 26,
         "occupiedPercent": 11
       }
     },
@@ -2454,7 +2454,7 @@
       "language": "Latviešu",
       "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 333
+        "freeSeats": 331
       }
     },
     {
@@ -2495,14 +2495,11 @@
       ],
       "startTime": "2026-07-14T18:15:00.0000000+03:00",
       "serviceDate": "2026-07-14",
-      "auditorium": "2. zāle",
+      "auditorium": "",
       "language": "Latviešu",
       "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 68,
-        "totalSeats": 70,
-        "takenSeats": 2,
-        "occupiedPercent": 3
+        "freeSeats": 68
       }
     },
     {
@@ -2598,7 +2595,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304053/atkl%C4%81%C5%A1anas_diena?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 47
+        "freeSeats": 45
       }
     },
     {
@@ -2667,7 +2664,7 @@
       "language": "Latviešu",
       "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 160
+        "freeSeats": 159
       }
     },
     {
@@ -2723,7 +2720,7 @@
       "cinema": "Apollo Akropole",
       "title": "Ielūgums",
       "originalTitle": "The Invite",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8583/landscape_qhd/Invite_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+      "posterUrl": "",
       "imdbRating": "",
       "imdbUrl": "",
       "ageRating": "16+",
@@ -2737,10 +2734,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304144/iel%C5%ABgums?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 114,
+        "freeSeats": 112,
         "totalSeats": 127,
-        "takenSeats": 13,
-        "occupiedPercent": 10
+        "takenSeats": 15,
+        "occupiedPercent": 12
       }
     },
     {
@@ -2762,7 +2759,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304053/atkl%C4%81%C5%A1anas_diena?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 38
+        "freeSeats": 33
       }
     },
     {
@@ -2990,10 +2987,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/303659/maikls?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 70,
+        "freeSeats": 68,
         "totalSeats": 70,
-        "takenSeats": 0,
-        "occupiedPercent": 0
+        "takenSeats": 2,
+        "occupiedPercent": 3
       }
     },
     {
@@ -3064,7 +3061,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304096/backrooms_bez_izejas?theatreAreaID=1014&dt=14.07.2026",
       "availability": {
-        "freeSeats": 48
+        "freeSeats": 44
       }
     },
     {
@@ -3396,7 +3393,7 @@
       "id": "apollo-513192",
       "source": "apollo",
       "cinema": "Apollo Plaza",
-      "title": "Apsēstība",
+      "title": "Apsēstī 1ef01 ba",
       "originalTitle": "Obsession",
       "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8588/landscape_qhd/LK_OB__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
       "imdbRating": "",
