@@ -7,6 +7,7 @@ import {
   parseApolloSchedule,
   parseCinamonSchedule,
   parseForumEvents,
+  parseForumPage,
   parseForumSchedule
 } from '../scripts/scrape.mjs';
 
@@ -108,6 +109,31 @@ test('parses Forum schedule with language and auditorium', () => {
   assert.equal(items[0].imdbUrl, 'https://www.imdb.com/title/tt123/');
   assert.equal(items[0].availability.takenSeats, 25);
   assert.equal(items[0].availability.occupiedPercent, 25);
+});
+
+test('parses Forum’s date-specific schedule page including grouped sessions', () => {
+  const events = new Map([['304667', {
+    imdbUrl: 'https://www.imdb.com/title/tt123/',
+    posterUrl: 'https://images.example.test/toy-story.jpg'
+  }]]);
+  const items = parseForumPage(`
+    <button class="classfilter-filter-btn" data-filterclass="classfilter_eventratings_eventrating_1105" data-displayname="Līdz 12 g.v. - neiesakām"></button>
+    <div class="show-list-item classfilter_eventratings_eventrating_1105">
+      <h1 class="eventName"><a href="/event/304667/title/rota%C4%BClietu_st%C4%81sts_5/"><span class="name-part">Rotaļlietu stāsts 5</span></a></h1>
+      <img class="event-item-thumb" data-src="https://images.example.test/toy.jpg">
+      <h4 class="showLocation">Forum Cinemas, Auditorija 7</h4>
+      <div class="right-side-middle"><h2 class="showTime">11:05</h2><a href="/websales/show/433940/"></a></div>
+      <span class="spokenLanguage">Latviešu</span><span class="freeSeats">75</span><span class="totalSeats">100</span>
+      <div class="show-list-item-bottom"><a href="/websales/show/433941/" title="Forum Cinemas, Auditorija 8">13:40</a></div>
+    </div>`, events, '2026-06-27');
+  assert.equal(items.length, 2);
+  assert.equal(items[0].title, 'Rotaļlietu stāsts 5');
+  assert.equal(items[0].ageRating, '12+');
+  assert.equal(items[0].auditorium, 'Auditorija 7');
+  assert.equal(items[0].availability.freeSeats, 75);
+  assert.equal(items[1].auditorium, 'Auditorija 8');
+  assert.equal(items[1].availability.freeSeats, undefined);
+  assert.equal(items[1].startTime, '2026-06-27T13:40:00+03:00');
 });
 
 test('parses Apollo showtime cards and detail poster', () => {

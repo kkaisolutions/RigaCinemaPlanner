@@ -10,7 +10,7 @@ const TIMEZONE = 'Europe/Riga';
 const execFileAsync = promisify(execFile);
 const OUTPUT_PATH = new URL('../site/data/schedule.json', import.meta.url);
 const SOURCES = {
-  forumSchedule: 'https://www.forumcinemas.lv/xml/Schedule/?area=1011',
+  forumSchedule: 'https://www.forumcinemas.lv/',
   forumEvents: 'https://www.forumcinemas.lv/xml/Events/?area=1011&includePictures=true&includeLinks=true',
   apolloSchedule: 'https://www.apollokino.lv/schedule?theatreAreaID=1014',
   apolloDominaSchedule: 'https://www.apollokino.lv/schedule?theatreAreaID=1015',
@@ -80,7 +80,7 @@ async function collectSourceResults({ dates, options }) {
       results.set(resultKey(date, 'forum'), forum.ok && day?.published
         ? { ok: true, value: sourceResult('forum', day.showtimes, SOURCES.forumSchedule) }
         : forum.ok
-          ? { ok: false, id: 'forum', error: new Error(`Forum Cinemas has not published its ${date} schedule in the XML feed yet`) }
+          ? { ok: false, id: 'forum', error: new Error(`Forum Cinemas did not return its ${date} schedule page`) }
           : forum);
     }
   }
@@ -176,23 +176,106 @@ function mergeDay({ serviceDate, generatedAt, generatedAtIso, previousDay, resul
 }
 
 async function scrapeForum(dates) {
-  const [scheduleText, eventsText] = await Promise.all([
-    fetchText(SOURCES.forumSchedule),
+  const [pages, eventsText] = await Promise.all([
+    Promise.all(dates.map((date) => fetchText(SOURCES.forumSchedule, forumPageRequest(date)))),
     fetchText(SOURCES.forumEvents)
   ]);
   const eventsById = parseForumEvents(eventsText);
-  const publishedDates = forumPublishedDates(scheduleText);
-  return new Map(dates.map((date) => [date, {
-    published: publishedDates.has(date),
-    showtimes: parseForumSchedule(scheduleText, eventsById, date)
-  }]));
+  return new Map(dates.map((date, index) => {
+    const page = pages[index];
+    return [date, {
+      published: forumPageShowsDate(page, date),
+      showtimes: parseForumPage(page, eventsById, date)
+    }];
+  }));
 }
 
-function forumPublishedDates(xmlText) {
-  const parsed = xmlParser.parse(xmlText);
-  return new Set(asArray(parsed?.Schedule?.Shows?.Show)
-    .map((show) => serviceDateFrom(show.dtAccounting || show.dttmShowStart))
-    .filter(Boolean));
+function forumPageRequest(date) {
+  const [year, month, day] = date.split('-');
+  return {
+    method: 'POST',
+    body: new URLSearchParams({ dt: `${day}.${month}.${year}`, blockID: '2351' }).toString(),
+    headers: { 'content-type': 'application/x-www-form-urlencoded' }
+  };
+}
+
+function forumPageShowsDate(htmlText, date) {
+  const [year, month, day] = date.split('-');
+  const expected = `${day}.${month}.${year}`;
+  const $ = cheerio.load(htmlText);
+  return $('select[name="dt"] option[selected]').first().attr('value') === expected;
+}
+
+export function parseForumPage(htmlText, eventsById = new Map(), date = rigaDate()) {
+  const $ = cheerio.load(htmlText);
+  const ratingLabels = new Map();
+  $('.classfilter-filter-btn[data-filterclass*="eventrating_"]').each((_, button) => {
+    const node = $(button);
+    ratingLabels.set(node.attr('data-filterclass'), clean(node.attr('data-displayname')));
+  });
+
+  const showtimes = [];
+  $('.show-list-item').each((_, card) => {
+    const node = $(card);
+    const eventLink = node.find('.eventName a').first();
+    const movieUrl = absolutize(eventLink.attr('href'), SOURCES.forumSchedule);
+    const eventId = movieUrl.match(/\/event\/(\d+)/)?.[1] || '';
+    const eventMeta = eventsById.get(eventId) || {};
+    const title = clean(node.find('.eventName .name-part').first().text()) || clean(eventLink.text());
+    if (!title || !movieUrl) return;
+
+    const posterUrl = absolutize(node.find('.event-item-thumb img[data-src]').first().attr('data-src'), SOURCES.forumSchedule) || eventMeta.posterUrl || '';
+    const primaryLocation = clean(node.find('.showLocation').first().text());
+    const language = clean(node.find('.spokenLanguage').first().text());
+    const ratingClass = (node.attr('class') || '').split(/\s+/).find((name) => name.includes('eventrating_')) || '';
+    const ageRating = shortForumRating(ratingLabels.get(ratingClass));
+    const availability = {
+      freeSeats: numberFromText(node.find('.freeSeats').first().text()),
+      totalSeats: numberFromText(node.find('.totalSeats').first().text())
+    };
+    const append = (ticket, time, location, seats = {}) => {
+      const ticketUrl = absolutize(ticket.attr('href'), SOURCES.forumSchedule);
+      const showId = ticketUrl.match(/\/websales\/show\/(\d+)/)?.[1];
+      const start = clean(time);
+      if (!showId || !/^\d{1,2}:\d{2}$/.test(start)) return;
+      showtimes.push(normalizeShowtime({
+        id: `forum-${showId}`,
+        source: 'forum',
+        cinema: 'Forum Cinemas',
+        title,
+        originalTitle: '',
+        posterUrl,
+        imdbUrl: eventMeta.imdbUrl || '',
+        ageRating,
+        genres: [],
+        startTime: withRigaOffset(`${date}T${start}:00`),
+        serviceDate: date,
+        auditorium: forumAuditorium(location),
+        language,
+        movieUrl,
+        availability: seats
+      }));
+    };
+
+    const primaryTicket = node.find('.right-side-middle a[href*="/websales/show/"]').first();
+    append(primaryTicket, node.find('.showTime').first().text(), primaryLocation, availability);
+    node.find('.show-list-item-bottom a[href*="/websales/show/"]').each((_, ticket) => {
+      const ticketNode = $(ticket);
+      append(ticketNode, ticketNode.text(), ticketNode.attr('title'), {});
+    });
+  });
+  return dedupeShowtimes(showtimes);
+}
+
+function forumAuditorium(value) {
+  return clean(value).replace(/^Forum Cinemas\s*,?\s*/i, '');
+}
+
+function shortForumRating(value) {
+  const label = clean(value);
+  const age = label.match(/(\d+)/)?.[1];
+  if (age) return `${age}+`;
+  return /bez vecuma/i.test(label) ? 'U' : label;
 }
 
 export function parseForumEvents(xmlText) {
@@ -709,6 +792,8 @@ async function fetchText(url, options = {}) {
     const timeout = setTimeout(() => controller.abort(), timeoutMs);
     try {
       const response = await fetch(url, {
+        method: options.method || 'GET',
+        body: options.body,
         redirect: 'follow',
         headers: {
           ...BROWSER_HEADERS,
@@ -758,6 +843,8 @@ async function fetchTextWithCurl(url, options = {}) {
   for (const [name, value] of Object.entries(headers)) {
     args.push('-H', `${headerCase(name)}: ${value}`);
   }
+  if (options.method && options.method !== 'GET') args.push('--request', options.method);
+  if (options.body != null) args.push('--data-raw', options.body);
   args.push(url);
 
   const { stdout } = await execFileAsync('curl', args, {
