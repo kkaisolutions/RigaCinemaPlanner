@@ -263,7 +263,7 @@ function renderCard(showtime) {
   const availability = availabilityText(showtime.availability);
   const details = [showtime.language].filter(Boolean).map(escapeHtml).join(' · ');
   const meta = [
-    renderCinemaLink(showtime),
+    renderCinemaName(showtime),
     showtime.genres?.length ? `<span>${escapeHtml(showtime.genres.join(', '))}</span>` : '',
     renderImdb(showtime)
   ].filter(Boolean).join('');
@@ -272,7 +272,7 @@ function renderCard(showtime) {
     : `<div class="poster poster-fallback" aria-hidden="true">${escapeHtml((showtime.title || '?').slice(0, 1))}</div>`;
 
   return `
-    <article class="showtime-card">
+    <article class="showtime-card${showtime.movieUrl ? ' showtime-card-link' : ''}"${showtime.movieUrl ? ` data-movie-url="${escapeHtml(showtime.movieUrl)}" tabindex="0" role="link" aria-label="Open ${escapeHtml(titleText(showtime))} at ${escapeHtml(showtime.cinema)} in a new tab"` : ''}>
       ${poster}
       <div class="card-main">
         <span class="title-line">${escapeHtml(titleText(showtime))}</span>
@@ -288,9 +288,8 @@ function renderCard(showtime) {
   `;
 }
 
-function renderCinemaLink(showtime) {
-  if (!showtime.movieUrl) return `<span class="cinema-name">${escapeHtml(showtime.cinema)}</span>`;
-  return `<a class="cinema-name cinema-link" href="${escapeHtml(showtime.movieUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(showtime.cinema)}</a>`;
+function renderCinemaName(showtime) {
+  return `<span class="cinema-name">${escapeHtml(showtime.cinema)}</span>`;
 }
 
 function renderImdb(showtime) {
@@ -304,6 +303,25 @@ function escapeHtml(value) {
     .replaceAll('>', '&gt;')
     .replaceAll('"', '&quot;');
 }
+
+function openMovieFromCard(card) {
+  const url = card.dataset.movieUrl;
+  if (url) window.open(url, '_blank', 'noopener');
+}
+
+els.list.addEventListener('click', (event) => {
+  const card = event.target.closest('.showtime-card-link');
+  if (!card || event.target.closest('a, button, input, select, textarea')) return;
+  openMovieFromCard(card);
+});
+
+els.list.addEventListener('keydown', (event) => {
+  if (event.key !== 'Enter' && event.key !== ' ') return;
+  const card = event.target.closest('.showtime-card-link');
+  if (!card || event.target.closest('a, button, input, select, textarea')) return;
+  event.preventDefault();
+  openMovieFromCard(card);
+});
 
 els.search.addEventListener('input', () => {
   state.query = els.search.value;
