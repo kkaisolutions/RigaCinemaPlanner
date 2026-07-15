@@ -44,6 +44,7 @@ const els = {
   search: document.querySelector('#movie-search'),
   cinemaOptions: document.querySelector('#cinema-options'),
   cinemaSummary: document.querySelector('#cinema-summary'),
+  cinemaMenu: document.querySelector('.cinema-menu'),
   sourceInfo: document.querySelector('#source-info'),
   sourceTooltip: document.querySelector('#source-tooltip'),
   dateTabs: document.querySelector('#date-tabs'),
@@ -140,7 +141,7 @@ function renderDateTabs() {
   els.dateTabs.hidden = dates.length < 2;
   els.dateTabs.innerHTML = dates.map((date) => {
     const active = date === state.selectedDate;
-    return `<button type="button" class="date-tab${active ? ' is-active' : ''}" data-date="${escapeHtml(date)}" aria-pressed="${active}">${escapeHtml(tabLabel(date))}<span>${escapeHtml(DATE_FORMATTER.format(new Date(`${date}T12:00:00Z`)))}</span></button>`;
+    return `<button type="button" class="date-tab${active ? ' is-active' : ''}" data-date="${escapeHtml(date)}" aria-pressed="${active}"><span class="date-tab-label">${escapeHtml(tabLabel(date))}</span><span>${escapeHtml(DATE_FORMATTER.format(new Date(`${date}T12:00:00Z`)))}</span></button>`;
   }).join('');
 }
 
@@ -332,6 +333,12 @@ els.cinemaOptions.addEventListener('change', (event) => {
     if (event.target.checked) state.cinemas.add(event.target.value);
     else state.cinemas.delete(event.target.value);
     render();
+  }
+});
+
+document.addEventListener('pointerdown', (event) => {
+  if (els.cinemaMenu?.open && event.target instanceof Node && !els.cinemaMenu.contains(event.target)) {
+    els.cinemaMenu.open = false;
   }
 });
 
