@@ -261,11 +261,10 @@ function render() {
 function renderCard(showtime) {
   const age = formatAge(showtime.ageRating);
   const availability = availabilityText(showtime.availability);
-  const details = [showtime.language].filter(Boolean).map(escapeHtml).join(' · ');
+  const details = [showtime.language, showtime.genres?.join(', ')].filter(Boolean).map(escapeHtml).join(' | ');
   const meta = [
     renderCinemaName(showtime),
-    renderImdb(showtime),
-    showtime.genres?.length ? `<span>${escapeHtml(showtime.genres.join(', '))}</span>` : '',
+    renderImdb(showtime)
   ].filter(Boolean).join('');
   const poster = showtime.posterUrl
     ? `<img class="poster" src="${escapeHtml(showtime.posterUrl)}" alt="">`
