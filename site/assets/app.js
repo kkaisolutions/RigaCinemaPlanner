@@ -264,8 +264,8 @@ function renderCard(showtime) {
   const details = [showtime.language].filter(Boolean).map(escapeHtml).join(' · ');
   const meta = [
     renderCinemaName(showtime),
+    renderImdb(showtime),
     showtime.genres?.length ? `<span>${escapeHtml(showtime.genres.join(', '))}</span>` : '',
-    renderImdb(showtime)
   ].filter(Boolean).join('');
   const poster = showtime.posterUrl
     ? `<img class="poster" src="${escapeHtml(showtime.posterUrl)}" alt="">`
@@ -275,8 +275,8 @@ function renderCard(showtime) {
     <article class="showtime-card${showtime.movieUrl ? ' showtime-card-link' : ''}"${showtime.movieUrl ? ` data-movie-url="${escapeHtml(showtime.movieUrl)}" tabindex="0" role="link" aria-label="Open ${escapeHtml(titleText(showtime))} at ${escapeHtml(showtime.cinema)} in a new tab"` : ''}>
       ${poster}
       <div class="card-main">
-        <span class="title-line">${escapeHtml(titleText(showtime))}</span>
-        <div class="meta-line">${age ? `<span class="rating">${escapeHtml(age)}</span>` : ''}${meta}</div>
+        <div class="title-line"><span class="title-text">${escapeHtml(titleText(showtime))}</span>${age ? `<span class="rating">${escapeHtml(age)}</span>` : ''}</div>
+        <div class="meta-line">${meta}</div>
         ${details ? `<div class="detail-line">${details}</div>` : ''}
         ${availability ? `<div class="seat-line">${escapeHtml(availability)}</div>` : ''}
       </div>
@@ -293,7 +293,7 @@ function renderCinemaName(showtime) {
 }
 
 function renderImdb(showtime) {
-  return `<a class="imdb-link" href="${escapeHtml(imdbUrl(showtime))}" target="_blank" rel="noopener noreferrer" aria-label="Open IMDb in a new tab">IMDb</a>`;
+  return `<a class="imdb-link" href="${escapeHtml(imdbUrl(showtime))}" target="_blank" rel="noopener noreferrer" aria-label="Open IMDb in a new tab" title="Open IMDb in a new tab">IMDb</a>`;
 }
 
 function escapeHtml(value) {
