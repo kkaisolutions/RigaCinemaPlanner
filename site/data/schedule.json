@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T15:11:45.831Z",
+  "generatedAt": "2026-07-15T15:20:15.019Z",
   "timezone": "Europe/Riga",
   "date": "2026-07-15",
   "dates": [
@@ -14,20 +14,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "stale",
+          "count": 17,
+          "status": "fresh",
           "dataDate": "2026-07-15",
-          "count": 21,
-          "fetchedAt": "2026-07-15T13:17:54.938Z",
-          "lastSuccessAt": "2026-07-15T13:17:54.938Z",
+          "fetchedAt": "2026-07-15T15:20:15.019Z",
+          "lastSuccessAt": "2026-07-15T15:20:15.019Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 38,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-15",
+          "count": 37,
           "fetchedAt": "2026-07-15T15:11:45.831Z",
           "lastSuccessAt": "2026-07-15T15:11:45.831Z",
           "error": null
@@ -36,9 +36,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 14,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-15",
+          "count": 14,
           "fetchedAt": "2026-07-15T15:11:45.831Z",
           "lastSuccessAt": "2026-07-15T15:11:45.831Z",
           "error": null
@@ -46,58 +46,6 @@
       ],
       "warnings": [],
       "showtimes": [
-        {
-          "id": "apollo-513630",
-          "source": "apollo",
-          "cinema": "Apollo Domina",
-          "title": "Minioni un mošķi",
-          "originalTitle": "Minions & Monsters",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8371/landscape_qhd/LK_MN3__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "7+",
-          "genres": [
-            "Piedzīvojumu filma",
-            "Animācija",
-            "Ģimenes filma"
-          ],
-          "startTime": "2026-07-15T18:15:00.0000000+03:00",
-          "serviceDate": "2026-07-15",
-          "auditorium": "2. zāle",
-          "language": "Latviešu",
-          "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=15.07.2026",
-          "availability": {
-            "freeSeats": 53,
-            "totalSeats": 70,
-            "takenSeats": 17,
-            "occupiedPercent": 24
-          }
-        },
-        {
-          "id": "cinamon-2123484720",
-          "source": "cinamon",
-          "cinema": "Cinamon Alfa",
-          "title": "Vaiana",
-          "originalTitle": "Moana",
-          "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1115883288",
-          "imdbRating": "N/A",
-          "imdbUrl": "",
-          "ageRating": "7+",
-          "genres": [
-            "Piedzīvojumi"
-          ],
-          "startTime": "2026-07-15T18:15:00+03:00",
-          "serviceDate": "2026-07-15",
-          "auditorium": "Zale 2",
-          "language": "(latviešu valodā)",
-          "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/vaiana/lv",
-          "availability": {
-            "totalSeats": 250,
-            "freeSeats": 222,
-            "takenSeats": 28,
-            "occupiedPercent": 11
-          }
-        },
         {
           "id": "apollo-513655",
           "source": "apollo",
@@ -147,7 +95,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/303990/title/maikls/",
           "availability": {
-            "freeSeats": 85,
+            "freeSeats": 80,
             "totalSeats": 91
           }
         },
@@ -217,7 +165,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/299344/title/cik_man_gadu_2004/",
           "availability": {
-            "freeSeats": 152,
+            "freeSeats": 153,
             "totalSeats": 183
           }
         },
@@ -339,9 +287,12 @@
           "startTime": "2026-07-15T19:00:00+03:00",
           "serviceDate": "2026-07-15",
           "auditorium": "PEPSI auditorija",
-          "language": "Latviešu",
+          "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 587,
+            "totalSeats": 602
+          }
         },
         {
           "id": "apollo-513586",
@@ -438,7 +389,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/302850/title/p%C4%93d%C4%93jais_gr%C4%81v%C4%93jfilmu_varonis_1993/",
           "availability": {
-            "freeSeats": 215,
+            "freeSeats": 212,
             "totalSeats": 234
           }
         },
@@ -534,7 +485,10 @@
           "auditorium": "Auditorija 14",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304809/title/aps%C4%93st%C4%ABba/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 157,
+            "totalSeats": 183
+          }
         },
         {
           "id": "forum-434795",
@@ -555,7 +509,7 @@
           "startTime": "2026-07-15T19:30:00+03:00",
           "serviceDate": "2026-07-15",
           "auditorium": "Auditorija 2",
-          "language": "Latviešu",
+          "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
           "availability": {}
         },
@@ -701,7 +655,10 @@
           "auditorium": "DELFI LUX auditorija",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304784/title/iel%C5%ABgums/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 90,
+            "totalSeats": 109
+          }
         },
         {
           "id": "forum-434771",
@@ -723,7 +680,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304665/title/s%C4%81tans_pradas_brun%C4%8Dos_2/",
           "availability": {
-            "freeSeats": 86,
+            "freeSeats": 78,
             "totalSeats": 96
           }
         },
@@ -1062,7 +1019,10 @@
           "auditorium": "Auditorija 10",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304827/title/%C4%BCaunie_miro%C5%86i_deg/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 118,
+            "totalSeats": 127
+          }
         },
         {
           "id": "cinamon-424444376",
@@ -1275,7 +1235,7 @@
           "startTime": "2026-07-15T21:30:00+03:00",
           "serviceDate": "2026-07-15",
           "auditorium": "Auditorija 4 LUX",
-          "language": "Latviešu",
+          "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
           "availability": {}
         },
@@ -1490,7 +1450,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304860/title/futbols_sf_anglija_-_argent%C4%ABna/",
           "availability": {
-            "freeSeats": 422,
+            "freeSeats": 410,
             "totalSeats": 602
           }
         },
@@ -1672,20 +1632,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "stale",
-          "dataDate": "2026-07-16",
           "count": 53,
-          "fetchedAt": "2026-07-15T13:17:54.938Z",
-          "lastSuccessAt": "2026-07-15T13:17:54.938Z",
+          "status": "fresh",
+          "dataDate": "2026-07-16",
+          "fetchedAt": "2026-07-15T15:20:15.019Z",
+          "lastSuccessAt": "2026-07-15T15:20:15.019Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 102,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-16",
+          "count": 102,
           "fetchedAt": "2026-07-15T15:11:45.831Z",
           "lastSuccessAt": "2026-07-15T15:11:45.831Z",
           "error": null
@@ -1694,9 +1654,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 41,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-16",
+          "count": 41,
           "fetchedAt": "2026-07-15T15:11:45.831Z",
           "lastSuccessAt": "2026-07-15T15:11:45.831Z",
           "error": null
@@ -2002,7 +1962,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304667/title/rota%C4%BClietu_st%C4%81sts_5/?dt=16.07.2026",
           "availability": {
-            "freeSeats": 94,
+            "freeSeats": 93,
             "totalSeats": 96
           }
         },
@@ -5181,9 +5141,12 @@
           "startTime": "2026-07-16T19:00:00+03:00",
           "serviceDate": "2026-07-16",
           "auditorium": "PEPSI auditorija",
-          "language": "Krievu",
+          "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/?dt=16.07.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 596,
+            "totalSeats": 602
+          }
         },
         {
           "id": "apollo-513591",
@@ -5376,7 +5339,10 @@
           "auditorium": "Auditorija 2",
           "language": "Krievu",
           "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/?dt=16.07.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 420,
+            "totalSeats": 426
+          }
         },
         {
           "id": "forum-434828",
@@ -6485,20 +6451,20 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/",
-      "status": "stale",
+      "count": 17,
+      "status": "fresh",
       "dataDate": "2026-07-15",
-      "count": 21,
-      "fetchedAt": "2026-07-15T13:17:54.938Z",
-      "lastSuccessAt": "2026-07-15T13:17:54.938Z",
+      "fetchedAt": "2026-07-15T15:20:15.019Z",
+      "lastSuccessAt": "2026-07-15T15:20:15.019Z",
       "error": null
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "count": 38,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-07-15",
+      "count": 37,
       "fetchedAt": "2026-07-15T15:11:45.831Z",
       "lastSuccessAt": "2026-07-15T15:11:45.831Z",
       "error": null
@@ -6507,9 +6473,9 @@
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "count": 14,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-07-15",
+      "count": 14,
       "fetchedAt": "2026-07-15T15:11:45.831Z",
       "lastSuccessAt": "2026-07-15T15:11:45.831Z",
       "error": null
@@ -6517,58 +6483,6 @@
   ],
   "warnings": [],
   "showtimes": [
-    {
-      "id": "apollo-513630",
-      "source": "apollo",
-      "cinema": "Apollo Domina",
-      "title": "Minioni un mošķi",
-      "originalTitle": "Minions & Monsters",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8371/landscape_qhd/LK_MN3__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "7+",
-      "genres": [
-        "Piedzīvojumu filma",
-        "Animācija",
-        "Ģimenes filma"
-      ],
-      "startTime": "2026-07-15T18:15:00.0000000+03:00",
-      "serviceDate": "2026-07-15",
-      "auditorium": "2. zāle",
-      "language": "Latviešu",
-      "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=15.07.2026",
-      "availability": {
-        "freeSeats": 53,
-        "totalSeats": 70,
-        "takenSeats": 17,
-        "occupiedPercent": 24
-      }
-    },
-    {
-      "id": "cinamon-2123484720",
-      "source": "cinamon",
-      "cinema": "Cinamon Alfa",
-      "title": "Vaiana",
-      "originalTitle": "Moana",
-      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1115883288",
-      "imdbRating": "N/A",
-      "imdbUrl": "",
-      "ageRating": "7+",
-      "genres": [
-        "Piedzīvojumi"
-      ],
-      "startTime": "2026-07-15T18:15:00+03:00",
-      "serviceDate": "2026-07-15",
-      "auditorium": "Zale 2",
-      "language": "(latviešu valodā)",
-      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/vaiana/lv",
-      "availability": {
-        "totalSeats": 250,
-        "freeSeats": 222,
-        "takenSeats": 28,
-        "occupiedPercent": 11
-      }
-    },
     {
       "id": "apollo-513655",
       "source": "apollo",
@@ -6618,7 +6532,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/303990/title/maikls/",
       "availability": {
-        "freeSeats": 85,
+        "freeSeats": 80,
         "totalSeats": 91
       }
     },
@@ -6688,7 +6602,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/299344/title/cik_man_gadu_2004/",
       "availability": {
-        "freeSeats": 152,
+        "freeSeats": 153,
         "totalSeats": 183
       }
     },
@@ -6810,9 +6724,12 @@
       "startTime": "2026-07-15T19:00:00+03:00",
       "serviceDate": "2026-07-15",
       "auditorium": "PEPSI auditorija",
-      "language": "Latviešu",
+      "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 587,
+        "totalSeats": 602
+      }
     },
     {
       "id": "apollo-513586",
@@ -6909,7 +6826,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/302850/title/p%C4%93d%C4%93jais_gr%C4%81v%C4%93jfilmu_varonis_1993/",
       "availability": {
-        "freeSeats": 215,
+        "freeSeats": 212,
         "totalSeats": 234
       }
     },
@@ -7005,7 +6922,10 @@
       "auditorium": "Auditorija 14",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304809/title/aps%C4%93st%C4%ABba/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 157,
+        "totalSeats": 183
+      }
     },
     {
       "id": "forum-434795",
@@ -7026,7 +6946,7 @@
       "startTime": "2026-07-15T19:30:00+03:00",
       "serviceDate": "2026-07-15",
       "auditorium": "Auditorija 2",
-      "language": "Latviešu",
+      "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
       "availability": {}
     },
@@ -7172,7 +7092,10 @@
       "auditorium": "DELFI LUX auditorija",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304784/title/iel%C5%ABgums/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 90,
+        "totalSeats": 109
+      }
     },
     {
       "id": "forum-434771",
@@ -7194,7 +7117,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304665/title/s%C4%81tans_pradas_brun%C4%8Dos_2/",
       "availability": {
-        "freeSeats": 86,
+        "freeSeats": 78,
         "totalSeats": 96
       }
     },
@@ -7533,7 +7456,10 @@
       "auditorium": "Auditorija 10",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304827/title/%C4%BCaunie_miro%C5%86i_deg/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 118,
+        "totalSeats": 127
+      }
     },
     {
       "id": "cinamon-424444376",
@@ -7746,7 +7672,7 @@
       "startTime": "2026-07-15T21:30:00+03:00",
       "serviceDate": "2026-07-15",
       "auditorium": "Auditorija 4 LUX",
-      "language": "Latviešu",
+      "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
       "availability": {}
     },
@@ -7961,7 +7887,7 @@
       "language": "Latviešu",
       "movieUrl": "https://www.forumcinemas.lv/event/304860/title/futbols_sf_anglija_-_argent%C4%ABna/",
       "availability": {
-        "freeSeats": 422,
+        "freeSeats": 410,
         "totalSeats": 602
       }
     },
