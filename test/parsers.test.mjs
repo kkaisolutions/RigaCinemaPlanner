@@ -7,8 +7,7 @@ import {
   parseApolloSchedule,
   parseCinamonSchedule,
   parseForumEvents,
-  parseForumPage,
-  parseForumSchedule
+  parseForumPage
 } from '../scripts/scrape.mjs';
 
 test('keeps a current-day source snapshot stale after 90 minutes without a main warning', () => {
@@ -91,34 +90,11 @@ test('keeps Today and Tomorrow source snapshots independently', () => {
   assert.equal(payload.days['2026-06-28'].warnings.some((warning) => warning.source === 'apollo'), false);
 });
 
-test('parses Forum schedule with language and auditorium', () => {
-  const events = parseForumEvents(`<?xml version="1.0"?>
-    <Events><Event><ID>304667</ID><Links><Link><Title>IMDB</Title><Location>https://www.imdb.com/title/tt123/</Location></Link></Links></Event></Events>`);
-  const items = parseForumSchedule(`<?xml version="1.0"?>
-    <Schedule><Shows><Show>
-      <ID>433940</ID><dtAccounting>2026-06-27T00:00:00</dtAccounting><dttmShowStart>2026-06-27T11:05:00</dttmShowStart>
-      <EventID>304667</EventID><Title>Rotaļlietu stāsts 5</Title><OriginalTitle>Toy Story 5</OriginalTitle>
-      <RatingLabel>U</RatingLabel><EventType>Movie</EventType><Genres>Piedzīvojumi, Komēdija</Genres>
-      <TheatreAuditorium>Auditorija 7</TheatreAuditorium><EventURL>http://www.forumcinemas.lv/event/304667/title/rota%C4%BClietu_st%C4%81sts_5/</EventURL>
-      <SpokenLanguage><Name>Latviešu</Name></SpokenLanguage><Availability>75/100</Availability>
-    </Show></Shows></Schedule>`, events, '2026-06-27');
-  assert.equal(items.length, 1);
-  assert.equal(items[0].language, 'Latviešu');
-  assert.equal(items[0].auditorium, 'Auditorija 7');
-  assert.equal(items[0].serviceDate, '2026-06-27');
-  assert.equal(items[0].imdbUrl, 'https://www.imdb.com/title/tt123/');
-  assert.equal(items[0].availability.takenSeats, 25);
-  assert.equal(items[0].availability.occupiedPercent, 25);
-});
-
 test('parses Forum’s date-specific schedule page including grouped sessions', () => {
-  const events = new Map([['304667', {
-    title: 'Rotaļlietu stāsts 5',
-    originalTitle: 'Toy Story 5',
-    genres: ['Piedzīvojumi', 'Komēdija'],
-    imdbUrl: 'https://www.imdb.com/title/tt123/',
-    posterUrl: 'https://images.example.test/toy-story.jpg'
-  }]]);
+  const events = parseForumEvents(`<?xml version="1.0"?>
+    <Events><Event><ID>304667</ID><Title>Rotaļlietu stāsts 5</Title><OriginalTitle>Toy Story 5</OriginalTitle>
+    <Genres>Piedzīvojumi, Komēdija</Genres><Rating>Līdz 12 g.v. - neiesakām</Rating>
+    <Links><Link><Title>IMDB</Title><Location>https://www.imdb.com/title/tt123/</Location></Link></Links></Event></Events>`);
   const items = parseForumPage(`
     <button class="classfilter-filter-btn" data-filterclass="classfilter_eventratings_eventrating_1105" data-displayname="Līdz 12 g.v. - neiesakām"></button>
     <div class="show-list-item classfilter_eventratings_eventrating_1105">

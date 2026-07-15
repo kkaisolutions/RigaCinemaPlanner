@@ -2,13 +2,13 @@
 
 A GitHub Pages site showing upcoming movie sessions in Riga for **Today and Tomorrow**.
 
-Planned public address: <https://kkaisolutions.github.io/RigaCinemaPlanner/>
+Public address: <https://kkaisolutions.github.io/RigaCinemaPlanner/>
 
 ## Sources and data flow
 
 | Source | Acquisition | Why |
 | --- | --- | --- |
-| Forum Cinemas | GitHub Actions, hourly at `:00` | Fetches both dates from the public XML. |
+| Forum Cinemas | GitHub Actions, hourly at `:00` | Fetches both dates from Forum’s public dated schedule page; its XML event feed supplements movie metadata. |
 | Apollo Kino, including Domina | ESP32 at home, hourly at `:10` | Fetches explicitly selected Today and Tomorrow pages from a home IP. |
 | Cinamon Alfa | ESP32 at home, hourly at `:10` | Fetches the date-specific public schedule API from a home IP. |
 
@@ -22,7 +22,6 @@ The ESP32 uploads raw public schedule HTML to a temporary release in the private
 - If a source fails, its last successful data for today is retained and marked stale.
 - Before the first morning ESP upload, the site says it is waiting for Apollo/Cinamon.
 - Yesterday's sessions are never displayed.
-- A private ingest-repository issue opens after two expected ESP uploads are missed, updates during the outage, and closes after recovery.
 
 ## Local development
 

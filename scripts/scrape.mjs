@@ -11,6 +11,7 @@ const execFileAsync = promisify(execFile);
 const OUTPUT_PATH = new URL('../site/data/schedule.json', import.meta.url);
 const SOURCES = {
   forumSchedule: 'https://www.forumcinemas.lv/',
+  // Metadata only: the dated HTML page above is the schedule source.
   forumEvents: 'https://www.forumcinemas.lv/xml/Events/?area=1011&includePictures=true&includeLinks=true',
   apolloSchedule: 'https://www.apollokino.lv/schedule?theatreAreaID=1014',
   apolloDominaSchedule: 'https://www.apollokino.lv/schedule?theatreAreaID=1015',
@@ -180,6 +181,8 @@ async function scrapeForum(dates) {
     Promise.all(dates.map((date) => fetchText(SOURCES.forumSchedule, forumPageRequest(date)))),
     fetchText(SOURCES.forumEvents)
   ]);
+  // The dated page has session times; this small XML feed adds stable movie
+  // metadata the page omits (original title, genres, IMDb and a poster fallback).
   const eventsById = parseForumEvents(eventsText);
   return new Map(dates.map((date, index) => {
     const page = pages[index];
@@ -302,35 +305,6 @@ export function parseForumEvents(xmlText) {
     });
   }
   return byId;
-}
-
-export function parseForumSchedule(xmlText, eventsById = new Map(), date = rigaDate()) {
-  const parsed = xmlParser.parse(xmlText);
-  const shows = asArray(parsed?.Schedule?.Shows?.Show);
-  const dates = dateList(date);
-  return shows
-    .filter((show) => dates.includes(serviceDateFrom(show.dtAccounting)))
-    .filter((show) => show.EventType === 'Movie')
-    .map((show) => {
-      const eventMeta = eventsById.get(String(show.EventID)) || {};
-      return normalizeShowtime({
-        id: `forum-${show.ID}`,
-        source: 'forum',
-        cinema: 'Forum Cinemas',
-        title: show.Title,
-        originalTitle: show.OriginalTitle,
-        posterUrl: eventMeta.posterUrl || show.Images?.EventLargeImagePortrait || '',
-        imdbUrl: eventMeta.imdbUrl || '',
-        ageRating: show.RatingLabel || show.Rating,
-        genres: splitList(show.Genres),
-        startTime: withRigaOffset(show.dttmShowStart),
-        serviceDate: serviceDateFrom(show.dtAccounting),
-        auditorium: clean(show.TheatreAuditorium),
-        language: show.SpokenLanguage?.Name || '',
-        movieUrl: absolutize(show.EventURL, 'https://www.forumcinemas.lv'),
-        availability: parseForumAvailability(show)
-      });
-    });
 }
 
 async function scrapeApollo(date) {
@@ -482,31 +456,6 @@ function decodeChunkedHttpBody(value) {
     offset = chunkEnd + 2;
   }
   return text;
-}
-
-function parseForumAvailability(show) {
-  const pair = findSeatPair(show);
-  const totalSeats = pair?.total ?? firstNumber(show, ['SeatsTotal', 'TotalSeats', 'SeatCount', 'Capacity']);
-  const freeSeats = pair?.free ?? firstNumber(show, ['SeatsAvailable', 'AvailableSeats', 'FreeSeats']);
-  return {
-    totalSeats,
-    freeSeats,
-    takenSeats: totalSeats != null && freeSeats != null ? totalSeats - freeSeats : null,
-    occupiedPercent: totalSeats != null && freeSeats != null ? percentage(totalSeats - freeSeats, totalSeats) : null
-  };
-}
-
-function findSeatPair(value) {
-  if (typeof value === 'string') {
-    const match = value.match(/(?:^|\D)(\d+)\s*\/\s*(\d+)(?:\D|$)/);
-    return match ? { free: Number(match[1]), total: Number(match[2]) } : null;
-  }
-  if (!value || typeof value !== 'object') return null;
-  for (const child of Object.values(value)) {
-    const pair = findSeatPair(child);
-    if (pair) return pair;
-  }
-  return null;
 }
 
 export function extractNuxtState(htmlText) {
@@ -664,14 +613,6 @@ function addRigaDays(date, days) {
   const [year, month, day] = String(date).split('-').map(Number);
   const shifted = new Date(Date.UTC(year, month - 1, day + days));
   return shifted.toISOString().slice(0, 10);
-}
-
-function firstNumber(object, keys) {
-  for (const key of keys) {
-    const value = Number(object?.[key]);
-    if (Number.isFinite(value)) return value;
-  }
-  return null;
 }
 
 function percentage(numerator, denominator) {
