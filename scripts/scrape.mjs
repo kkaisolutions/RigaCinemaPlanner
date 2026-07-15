@@ -242,12 +242,12 @@ export function parseForumPage(htmlText, eventsById = new Map(), date = rigaDate
         id: `forum-${showId}`,
         source: 'forum',
         cinema: 'Forum Cinemas',
-        title,
-        originalTitle: '',
+        title: eventMeta.title || title,
+        originalTitle: eventMeta.originalTitle || '',
         posterUrl,
         imdbUrl: eventMeta.imdbUrl || '',
-        ageRating,
-        genres: [],
+        ageRating: ageRating || shortForumRating(eventMeta.ageRating),
+        genres: eventMeta.genres || [],
         startTime: withRigaOffset(`${date}T${start}:00`),
         serviceDate: date,
         auditorium: forumAuditorium(location),
@@ -292,7 +292,14 @@ export function parseForumEvents(xmlText) {
       pictures.find((picture) => picture.PictureType === 'EventPosterLargeImage')?.Location ||
       event.Images?.EventLargeImagePortrait ||
       '';
-    byId.set(String(event.ID), { imdbUrl: absolutize(posterSafe(imdbUrl), 'https://www.forumcinemas.lv'), posterUrl });
+    byId.set(String(event.ID), {
+      title: clean(event.Title),
+      originalTitle: clean(event.OriginalTitle),
+      genres: splitList(event.Genres),
+      ageRating: clean(event.Rating),
+      imdbUrl: absolutize(posterSafe(imdbUrl), 'https://www.forumcinemas.lv'),
+      posterUrl
+    });
   }
   return byId;
 }

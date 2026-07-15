@@ -113,6 +113,9 @@ test('parses Forum schedule with language and auditorium', () => {
 
 test('parses Forum’s date-specific schedule page including grouped sessions', () => {
   const events = new Map([['304667', {
+    title: 'Rotaļlietu stāsts 5',
+    originalTitle: 'Toy Story 5',
+    genres: ['Piedzīvojumi', 'Komēdija'],
     imdbUrl: 'https://www.imdb.com/title/tt123/',
     posterUrl: 'https://images.example.test/toy-story.jpg'
   }]]);
@@ -128,6 +131,8 @@ test('parses Forum’s date-specific schedule page including grouped sessions', 
     </div>`, events, '2026-06-27');
   assert.equal(items.length, 2);
   assert.equal(items[0].title, 'Rotaļlietu stāsts 5');
+  assert.equal(items[0].originalTitle, 'Toy Story 5');
+  assert.deepEqual(items[0].genres, ['Piedzīvojumi', 'Komēdija']);
   assert.equal(items[0].ageRating, '12+');
   assert.equal(items[0].auditorium, 'Auditorija 7');
   assert.equal(items[0].availability.freeSeats, 75);
