@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T20:11:37.753Z",
+  "generatedAt": "2026-07-16T20:48:30.434Z",
   "timezone": "Europe/Riga",
   "date": "2026-07-16",
   "dates": [
@@ -19,15 +19,15 @@
           "count": 0,
           "fetchedAt": "2026-07-16T17:59:24.362Z",
           "lastSuccessAt": "2026-07-16T17:59:24.362Z",
-          "error": null
+          "error": "forum failed: Forum Cinemas did not return its 2026-07-16 schedule page"
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 0,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-16",
+          "count": 0,
           "fetchedAt": "2026-07-16T20:11:37.753Z",
           "lastSuccessAt": "2026-07-16T20:11:37.753Z",
           "error": null
@@ -36,9 +36,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 0,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-16",
+          "count": 0,
           "fetchedAt": "2026-07-16T20:11:37.753Z",
           "lastSuccessAt": "2026-07-16T20:11:37.753Z",
           "error": null
@@ -54,20 +54,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "cached",
-          "dataDate": "2026-07-17",
           "count": 49,
-          "fetchedAt": "2026-07-16T19:17:34.858Z",
-          "lastSuccessAt": "2026-07-16T19:17:34.858Z",
+          "status": "fresh",
+          "dataDate": "2026-07-17",
+          "fetchedAt": "2026-07-16T20:48:30.434Z",
+          "lastSuccessAt": "2026-07-16T20:48:30.434Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 96,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-17",
+          "count": 96,
           "fetchedAt": "2026-07-16T20:11:37.753Z",
           "lastSuccessAt": "2026-07-16T20:11:37.753Z",
           "error": null
@@ -76,9 +76,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 38,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-17",
+          "count": 38,
           "fetchedAt": "2026-07-16T20:11:37.753Z",
           "lastSuccessAt": "2026-07-16T20:11:37.753Z",
           "error": null
@@ -310,7 +310,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
           "availability": {
-            "freeSeats": 62,
+            "freeSeats": 58,
             "totalSeats": 91
           }
         },
@@ -4061,7 +4061,7 @@
           "language": "Korejiešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304864/title/kolonija/",
           "availability": {
-            "freeSeats": 121,
+            "freeSeats": 120,
             "totalSeats": 129
           }
         },
@@ -4552,15 +4552,15 @@
       "count": 0,
       "fetchedAt": "2026-07-16T17:59:24.362Z",
       "lastSuccessAt": "2026-07-16T17:59:24.362Z",
-      "error": null
+      "error": "forum failed: Forum Cinemas did not return its 2026-07-16 schedule page"
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "count": 0,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-07-16",
+      "count": 0,
       "fetchedAt": "2026-07-16T20:11:37.753Z",
       "lastSuccessAt": "2026-07-16T20:11:37.753Z",
       "error": null
@@ -4569,9 +4569,9 @@
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "count": 0,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-07-16",
+      "count": 0,
       "fetchedAt": "2026-07-16T20:11:37.753Z",
       "lastSuccessAt": "2026-07-16T20:11:37.753Z",
       "error": null
