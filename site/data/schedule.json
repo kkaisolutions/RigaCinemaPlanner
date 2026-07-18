@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T14:11:44.752Z",
+  "generatedAt": "2026-07-18T14:17:52.347Z",
   "timezone": "Europe/Riga",
   "date": "2026-07-18",
   "dates": [
@@ -14,20 +14,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "cached",
+          "count": 20,
+          "status": "fresh",
           "dataDate": "2026-07-18",
-          "count": 26,
-          "fetchedAt": "2026-07-18T12:55:54.367Z",
-          "lastSuccessAt": "2026-07-18T12:55:54.367Z",
+          "fetchedAt": "2026-07-18T14:17:52.347Z",
+          "lastSuccessAt": "2026-07-18T14:17:52.347Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 40,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-18",
+          "count": 40,
           "fetchedAt": "2026-07-18T14:11:44.752Z",
           "lastSuccessAt": "2026-07-18T14:11:44.752Z",
           "error": null
@@ -36,9 +36,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 15,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-18",
+          "count": 15,
           "fetchedAt": "2026-07-18T14:11:44.752Z",
           "lastSuccessAt": "2026-07-18T14:11:44.752Z",
           "error": null
@@ -46,29 +46,6 @@
       ],
       "warnings": [],
       "showtimes": [
-        {
-          "id": "forum-433375",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Odiseja",
-          "originalTitle": "The Odyssey",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11365/portrait_medium/odyssey-plakats.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt33764258/",
-          "ageRating": "16+",
-          "genres": [
-            "Piedzīvojumi",
-            "Drāma",
-            "Asa sižeta filma",
-            "Vēsturiska"
-          ],
-          "startTime": "2026-07-18T17:15:00+03:00",
-          "serviceDate": "2026-07-18",
-          "auditorium": "DELFI LUX auditorija",
-          "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
-          "availability": {}
-        },
         {
           "id": "forum-434966",
           "source": "forum",
@@ -90,7 +67,10 @@
           "auditorium": "Auditorija 14",
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 154,
+            "totalSeats": 183
+          }
         },
         {
           "id": "apollo-513759",
@@ -231,7 +211,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304736/title/backrooms_everything_must_go/",
           "availability": {
-            "freeSeats": 68,
+            "freeSeats": 66,
             "totalSeats": 95
           }
         },
@@ -629,7 +609,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/303990/title/maikls/",
           "availability": {
-            "freeSeats": 119,
+            "freeSeats": 118,
             "totalSeats": 127
           }
         },
@@ -870,7 +850,10 @@
           "auditorium": "Auditorija 12",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304827/title/%C4%BCaunie_miro%C5%86i_deg/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 173,
+            "totalSeats": 183
+          }
         },
         {
           "id": "apollo-513756",
@@ -989,7 +972,10 @@
           "auditorium": "Auditorija 14",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304809/title/aps%C4%93st%C4%ABba/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 168,
+            "totalSeats": 183
+          }
         },
         {
           "id": "apollo-513689",
@@ -1034,7 +1020,10 @@
           "auditorium": "Auditorija 9",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304676/title/supermeitene/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 96,
+            "totalSeats": 98
+          }
         },
         {
           "id": "cinamon-563885666",
@@ -1081,7 +1070,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304665/title/s%C4%81tans_pradas_brun%C4%8Dos_2/",
           "availability": {
-            "freeSeats": 90,
+            "freeSeats": 88,
             "totalSeats": 96
           }
         },
@@ -1272,7 +1261,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304677/title/atkl%C4%81%C5%A1anas_diena/",
           "availability": {
-            "freeSeats": 93,
+            "freeSeats": 92,
             "totalSeats": 95
           }
         },
@@ -1836,20 +1825,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "cached",
-          "dataDate": "2026-07-19",
           "count": 50,
-          "fetchedAt": "2026-07-18T12:55:54.367Z",
-          "lastSuccessAt": "2026-07-18T12:55:54.367Z",
+          "status": "fresh",
+          "dataDate": "2026-07-19",
+          "fetchedAt": "2026-07-18T14:17:52.347Z",
+          "lastSuccessAt": "2026-07-18T14:17:52.347Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 91,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-19",
+          "count": 91,
           "fetchedAt": "2026-07-18T14:11:44.752Z",
           "lastSuccessAt": "2026-07-18T14:11:44.752Z",
           "error": null
@@ -1858,9 +1847,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 36,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-19",
+          "count": 36,
           "fetchedAt": "2026-07-18T14:11:44.752Z",
           "lastSuccessAt": "2026-07-18T14:11:44.752Z",
           "error": null
@@ -4917,7 +4906,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304470/title/gudr%C4%81_blond%C4%ABne_2001/?dt=19.07.2026",
           "availability": {
-            "freeSeats": 144,
+            "freeSeats": 143,
             "totalSeats": 183
           }
         },
@@ -6031,7 +6020,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304861/title/futbols_fin%C4%81ls_sp%C4%81nija_-_argent%C4%ABna/?dt=19.07.2026",
           "availability": {
-            "freeSeats": 45,
+            "freeSeats": 42,
             "totalSeats": 602
           }
         },
@@ -6055,7 +6044,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304861/title/futbols_fin%C4%81ls_sp%C4%81nija_-_argent%C4%ABna/?dt=19.07.2026",
           "availability": {
-            "freeSeats": 106,
+            "freeSeats": 102,
             "totalSeats": 426
           }
         },
@@ -6185,20 +6174,20 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/",
-      "status": "cached",
+      "count": 20,
+      "status": "fresh",
       "dataDate": "2026-07-18",
-      "count": 26,
-      "fetchedAt": "2026-07-18T12:55:54.367Z",
-      "lastSuccessAt": "2026-07-18T12:55:54.367Z",
+      "fetchedAt": "2026-07-18T14:17:52.347Z",
+      "lastSuccessAt": "2026-07-18T14:17:52.347Z",
       "error": null
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "count": 40,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-07-18",
+      "count": 40,
       "fetchedAt": "2026-07-18T14:11:44.752Z",
       "lastSuccessAt": "2026-07-18T14:11:44.752Z",
       "error": null
@@ -6207,9 +6196,9 @@
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "count": 15,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-07-18",
+      "count": 15,
       "fetchedAt": "2026-07-18T14:11:44.752Z",
       "lastSuccessAt": "2026-07-18T14:11:44.752Z",
       "error": null
@@ -6217,29 +6206,6 @@
   ],
   "warnings": [],
   "showtimes": [
-    {
-      "id": "forum-433375",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Odiseja",
-      "originalTitle": "The Odyssey",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11365/portrait_medium/odyssey-plakats.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt33764258/",
-      "ageRating": "16+",
-      "genres": [
-        "Piedzīvojumi",
-        "Drāma",
-        "Asa sižeta filma",
-        "Vēsturiska"
-      ],
-      "startTime": "2026-07-18T17:15:00+03:00",
-      "serviceDate": "2026-07-18",
-      "auditorium": "DELFI LUX auditorija",
-      "language": "Angļu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
-      "availability": {}
-    },
     {
       "id": "forum-434966",
       "source": "forum",
@@ -6261,7 +6227,10 @@
       "auditorium": "Auditorija 14",
       "language": "Latviešu",
       "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 154,
+        "totalSeats": 183
+      }
     },
     {
       "id": "apollo-513759",
@@ -6402,7 +6371,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304736/title/backrooms_everything_must_go/",
       "availability": {
-        "freeSeats": 68,
+        "freeSeats": 66,
         "totalSeats": 95
       }
     },
@@ -6800,7 +6769,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/303990/title/maikls/",
       "availability": {
-        "freeSeats": 119,
+        "freeSeats": 118,
         "totalSeats": 127
       }
     },
@@ -7041,7 +7010,10 @@
       "auditorium": "Auditorija 12",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304827/title/%C4%BCaunie_miro%C5%86i_deg/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 173,
+        "totalSeats": 183
+      }
     },
     {
       "id": "apollo-513756",
@@ -7160,7 +7132,10 @@
       "auditorium": "Auditorija 14",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304809/title/aps%C4%93st%C4%ABba/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 168,
+        "totalSeats": 183
+      }
     },
     {
       "id": "apollo-513689",
@@ -7205,7 +7180,10 @@
       "auditorium": "Auditorija 9",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304676/title/supermeitene/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 96,
+        "totalSeats": 98
+      }
     },
     {
       "id": "cinamon-563885666",
@@ -7252,7 +7230,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304665/title/s%C4%81tans_pradas_brun%C4%8Dos_2/",
       "availability": {
-        "freeSeats": 90,
+        "freeSeats": 88,
         "totalSeats": 96
       }
     },
@@ -7443,7 +7421,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304677/title/atkl%C4%81%C5%A1anas_diena/",
       "availability": {
-        "freeSeats": 93,
+        "freeSeats": 92,
         "totalSeats": 95
       }
     },
