@@ -38,19 +38,33 @@ jobs:
         working-directory: website
       - run: pnpm test
         working-directory: website
-      - run: >-
-          node scripts/scrape.mjs --forum-only --days 2
-          --previous ../data/site/data/schedule.json
-          --output ../data/site/data/schedule.json
-        working-directory: website
-      - name: Commit latest normalized data
-        working-directory: data
+      - name: Refresh and push normalized data
         run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add site/data/schedule.json
-          git diff --cached --quiet || git commit -m 'Refresh Forum Cinemas schedule'
-          git push
+          set -euo pipefail
+          git -C data config user.name 'github-actions[bot]'
+          git -C data config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3; do
+            # ESP ingestion can update this branch at the same time. Rebuild
+            # from its latest snapshot so neither source's data is discarded.
+            git -C data fetch origin data
+            git -C data reset --hard origin/data
+            node website/scripts/scrape.mjs --forum-only --days 2 \
+              --previous data/site/data/schedule.json \
+              --output data/site/data/schedule.json
+            git -C data add site/data/schedule.json
+            if git -C data diff --cached --quiet; then
+              echo 'Forum data is already current.'
+              exit 0
+            fi
+            git -C data commit -m 'Refresh Forum Cinemas schedule'
+            if git -C data push origin HEAD:data; then
+              exit 0
+            fi
+            echo "Data branch changed during attempt $attempt; retrying."
+            sleep "$((attempt * 2))"
+          done
+          echo 'Could not push Forum data after three attempts.' >&2
+          exit 1
       - run: cp data/site/data/schedule.json website/site/data/schedule.json
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
