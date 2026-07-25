@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-25T19:11:29.587Z",
+  "generatedAt": "2026-07-25T20:08:10.679Z",
   "timezone": "Europe/Riga",
   "date": "2026-07-25",
   "dates": [
@@ -19,15 +19,15 @@
           "count": 0,
           "fetchedAt": "2026-07-25T17:02:08.037Z",
           "lastSuccessAt": "2026-07-25T17:02:08.037Z",
-          "error": null
+          "error": "forum failed: Forum Cinemas did not return its 2026-07-25 schedule page"
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 5,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-25",
+          "count": 4,
           "fetchedAt": "2026-07-25T19:11:29.587Z",
           "lastSuccessAt": "2026-07-25T19:11:29.587Z",
           "error": null
@@ -36,112 +36,16 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 0,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-25",
+          "count": 0,
           "fetchedAt": "2026-07-25T19:11:29.587Z",
           "lastSuccessAt": "2026-07-25T19:11:29.587Z",
           "error": null
         }
       ],
       "warnings": [],
-      "showtimes": [
-        {
-          "id": "apollo-514718",
-          "source": "apollo",
-          "cinema": "Apollo Plaza",
-          "title": "Apsēstība",
-          "originalTitle": "Obsession",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8588/landscape_qhd/LK_OB__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "16+",
-          "genres": [
-            "Šausmu filma",
-            "Trilleris"
-          ],
-          "startTime": "2026-07-25T22:15:00.0000000+03:00",
-          "serviceDate": "2026-07-25",
-          "auditorium": "5. zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304149/aps%C4%93st%C4%ABba?theatreAreaID=1014&dt=25.07.2026",
-          "availability": {
-            "freeSeats": 31
-          }
-        },
-        {
-          "id": "apollo-514631",
-          "source": "apollo",
-          "cinema": "Apollo Plaza",
-          "title": "Ļaunie miroņi deg",
-          "originalTitle": "Evil Dead Burn",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8594/landscape_qhd/EvilDeadBurn_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "18+",
-          "genres": [
-            "Šausmu filma",
-            "Fantastika"
-          ],
-          "startTime": "2026-07-25T22:15:00.0000000+03:00",
-          "serviceDate": "2026-07-25",
-          "auditorium": "2. zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304154/%C4%BCaunie_miro%C5%86i_deg?theatreAreaID=1014&dt=25.07.2026",
-          "availability": {
-            "freeSeats": 199
-          }
-        },
-        {
-          "id": "apollo-514369",
-          "source": "apollo",
-          "cinema": "Apollo Akropole",
-          "title": "Izsalkums",
-          "originalTitle": "Hungry",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8592/landscape_qhd/hunger-3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "16+",
-          "genres": [
-            "Šausmu filma",
-            "Trilleris"
-          ],
-          "startTime": "2026-07-25T22:15:00.0000000+03:00",
-          "serviceDate": "2026-07-25",
-          "auditorium": "5. zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304153/izsalkums?theatreAreaID=1014&dt=25.07.2026",
-          "availability": {
-            "freeSeats": 79,
-            "totalSeats": 90,
-            "takenSeats": 11,
-            "occupiedPercent": 12
-          }
-        },
-        {
-          "id": "apollo-514353",
-          "source": "apollo",
-          "cinema": "Apollo Akropole",
-          "title": "Ielūgums",
-          "originalTitle": "The Invite",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8583/landscape_qhd/Invite_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "16+",
-          "genres": [
-            "Komēdija",
-            "Drāma"
-          ],
-          "startTime": "2026-07-25T22:15:00.0000000+03:00",
-          "serviceDate": "2026-07-25",
-          "auditorium": "4. Kronenbourg 1664 Blanc zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304144/iel%C5%ABgums?theatreAreaID=1014&dt=25.07.2026",
-          "availability": {
-            "freeSeats": 157
-          }
-        }
-      ]
+      "showtimes": []
     },
     "2026-07-26": {
       "date": "2026-07-26",
@@ -150,20 +54,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "cached",
-          "dataDate": "2026-07-26",
           "count": 52,
-          "fetchedAt": "2026-07-25T18:55:38.259Z",
-          "lastSuccessAt": "2026-07-25T18:55:38.259Z",
+          "status": "fresh",
+          "dataDate": "2026-07-26",
+          "fetchedAt": "2026-07-25T20:08:10.679Z",
+          "lastSuccessAt": "2026-07-25T20:08:10.679Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 97,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-26",
+          "count": 97,
           "fetchedAt": "2026-07-25T19:11:29.587Z",
           "lastSuccessAt": "2026-07-25T19:11:29.587Z",
           "error": null
@@ -172,9 +76,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 35,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-26",
+          "count": 35,
           "fetchedAt": "2026-07-25T19:11:29.587Z",
           "lastSuccessAt": "2026-07-25T19:11:29.587Z",
           "error": null
@@ -329,7 +233,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
           "availability": {
-            "freeSeats": 357,
+            "freeSeats": 353,
             "totalSeats": 427
           }
         },
@@ -483,7 +387,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304667/title/rota%C4%BClietu_st%C4%81sts_5/",
           "availability": {
-            "freeSeats": 160,
+            "freeSeats": 158,
             "totalSeats": 183
           }
         },
@@ -1128,7 +1032,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304774/title/aitas_izmekl%C4%93t%C4%81jas/",
           "availability": {
-            "freeSeats": 91,
+            "freeSeats": 90,
             "totalSeats": 98
           }
         },
@@ -2794,7 +2698,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/303990/title/maikls/",
           "availability": {
-            "freeSeats": 89,
+            "freeSeats": 84,
             "totalSeats": 95
           }
         },
@@ -4684,15 +4588,15 @@
       "count": 0,
       "fetchedAt": "2026-07-25T17:02:08.037Z",
       "lastSuccessAt": "2026-07-25T17:02:08.037Z",
-      "error": null
+      "error": "forum failed: Forum Cinemas did not return its 2026-07-25 schedule page"
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "count": 5,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-07-25",
+      "count": 4,
       "fetchedAt": "2026-07-25T19:11:29.587Z",
       "lastSuccessAt": "2026-07-25T19:11:29.587Z",
       "error": null
@@ -4701,110 +4605,14 @@
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "count": 0,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-07-25",
+      "count": 0,
       "fetchedAt": "2026-07-25T19:11:29.587Z",
       "lastSuccessAt": "2026-07-25T19:11:29.587Z",
       "error": null
     }
   ],
   "warnings": [],
-  "showtimes": [
-    {
-      "id": "apollo-514718",
-      "source": "apollo",
-      "cinema": "Apollo Plaza",
-      "title": "Apsēstība",
-      "originalTitle": "Obsession",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8588/landscape_qhd/LK_OB__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "16+",
-      "genres": [
-        "Šausmu filma",
-        "Trilleris"
-      ],
-      "startTime": "2026-07-25T22:15:00.0000000+03:00",
-      "serviceDate": "2026-07-25",
-      "auditorium": "5. zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304149/aps%C4%93st%C4%ABba?theatreAreaID=1014&dt=25.07.2026",
-      "availability": {
-        "freeSeats": 31
-      }
-    },
-    {
-      "id": "apollo-514631",
-      "source": "apollo",
-      "cinema": "Apollo Plaza",
-      "title": "Ļaunie miroņi deg",
-      "originalTitle": "Evil Dead Burn",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8594/landscape_qhd/EvilDeadBurn_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "18+",
-      "genres": [
-        "Šausmu filma",
-        "Fantastika"
-      ],
-      "startTime": "2026-07-25T22:15:00.0000000+03:00",
-      "serviceDate": "2026-07-25",
-      "auditorium": "2. zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304154/%C4%BCaunie_miro%C5%86i_deg?theatreAreaID=1014&dt=25.07.2026",
-      "availability": {
-        "freeSeats": 199
-      }
-    },
-    {
-      "id": "apollo-514369",
-      "source": "apollo",
-      "cinema": "Apollo Akropole",
-      "title": "Izsalkums",
-      "originalTitle": "Hungry",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8592/landscape_qhd/hunger-3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "16+",
-      "genres": [
-        "Šausmu filma",
-        "Trilleris"
-      ],
-      "startTime": "2026-07-25T22:15:00.0000000+03:00",
-      "serviceDate": "2026-07-25",
-      "auditorium": "5. zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304153/izsalkums?theatreAreaID=1014&dt=25.07.2026",
-      "availability": {
-        "freeSeats": 79,
-        "totalSeats": 90,
-        "takenSeats": 11,
-        "occupiedPercent": 12
-      }
-    },
-    {
-      "id": "apollo-514353",
-      "source": "apollo",
-      "cinema": "Apollo Akropole",
-      "title": "Ielūgums",
-      "originalTitle": "The Invite",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8583/landscape_qhd/Invite_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "16+",
-      "genres": [
-        "Komēdija",
-        "Drāma"
-      ],
-      "startTime": "2026-07-25T22:15:00.0000000+03:00",
-      "serviceDate": "2026-07-25",
-      "auditorium": "4. Kronenbourg 1664 Blanc zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304144/iel%C5%ABgums?theatreAreaID=1014&dt=25.07.2026",
-      "availability": {
-        "freeSeats": 157
-      }
-    }
-  ]
+  "showtimes": []
 }
