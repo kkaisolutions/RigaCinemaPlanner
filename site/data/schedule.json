@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T18:11:42.771Z",
+  "generatedAt": "2026-07-27T18:19:20.609Z",
   "timezone": "Europe/Riga",
   "date": "2026-07-27",
   "dates": [
@@ -14,20 +14,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "stale",
+          "count": 5,
+          "status": "fresh",
           "dataDate": "2026-07-27",
-          "count": 7,
-          "fetchedAt": "2026-07-27T16:09:53.143Z",
-          "lastSuccessAt": "2026-07-27T16:09:53.143Z",
+          "fetchedAt": "2026-07-27T18:19:20.609Z",
+          "lastSuccessAt": "2026-07-27T18:19:20.609Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 13,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-27",
+          "count": 10,
           "fetchedAt": "2026-07-27T18:11:42.771Z",
           "lastSuccessAt": "2026-07-27T18:11:42.771Z",
           "error": null
@@ -36,9 +36,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 3,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-27",
+          "count": 3,
           "fetchedAt": "2026-07-27T18:11:42.771Z",
           "lastSuccessAt": "2026-07-27T18:11:42.771Z",
           "error": null
@@ -46,27 +46,6 @@
       ],
       "warnings": [],
       "showtimes": [
-        {
-          "id": "forum-435454",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Backrooms: Everything Must Go",
-          "originalTitle": "Backrooms: Everything Must Go",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11287/portrait_medium/Backrooms-poster.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt26657236/",
-          "ageRating": "12+",
-          "genres": [
-            "Šausmu filma",
-            "Fantastika"
-          ],
-          "startTime": "2026-07-27T21:15:00+03:00",
-          "serviceDate": "2026-07-27",
-          "auditorium": "Auditorija 9",
-          "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304736/title/backrooms_everything_must_go/",
-          "availability": {}
-        },
         {
           "id": "forum-435473",
           "source": "forum",
@@ -88,7 +67,10 @@
           "auditorium": "Auditorija 11",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 210,
+            "totalSeats": 234
+          }
         },
         {
           "id": "forum-435457",
@@ -110,7 +92,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304809/title/aps%C4%93st%C4%ABba/",
           "availability": {
-            "freeSeats": 219,
+            "freeSeats": 210,
             "totalSeats": 228
           }
         },
@@ -186,7 +168,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304677/title/atkl%C4%81%C5%A1anas_diena/",
           "availability": {
-            "freeSeats": 93,
+            "freeSeats": 90,
             "totalSeats": 95
           }
         },
@@ -209,7 +191,10 @@
           "auditorium": "DELFI LUX auditorija",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304784/title/iel%C5%ABgums/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 101,
+            "totalSeats": 109
+          }
         },
         {
           "id": "apollo-514461",
@@ -486,20 +471,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "stale",
-          "dataDate": "2026-07-28",
           "count": 49,
-          "fetchedAt": "2026-07-27T16:09:53.143Z",
-          "lastSuccessAt": "2026-07-27T16:09:53.143Z",
+          "status": "fresh",
+          "dataDate": "2026-07-28",
+          "fetchedAt": "2026-07-27T18:19:20.609Z",
+          "lastSuccessAt": "2026-07-27T18:19:20.609Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 95,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-28",
+          "count": 95,
           "fetchedAt": "2026-07-27T18:11:42.771Z",
           "lastSuccessAt": "2026-07-27T18:11:42.771Z",
           "error": null
@@ -508,9 +493,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 36,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-28",
+          "count": 36,
           "fetchedAt": "2026-07-27T18:11:42.771Z",
           "lastSuccessAt": "2026-07-27T18:11:42.771Z",
           "error": null
@@ -2636,7 +2621,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304830/title/nakts_un_diena/?dt=28.07.2026",
           "availability": {
-            "freeSeats": 95,
+            "freeSeats": 94,
             "totalSeats": 95
           }
         },
@@ -4913,20 +4898,20 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/",
-      "status": "stale",
+      "count": 5,
+      "status": "fresh",
       "dataDate": "2026-07-27",
-      "count": 7,
-      "fetchedAt": "2026-07-27T16:09:53.143Z",
-      "lastSuccessAt": "2026-07-27T16:09:53.143Z",
+      "fetchedAt": "2026-07-27T18:19:20.609Z",
+      "lastSuccessAt": "2026-07-27T18:19:20.609Z",
       "error": null
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "count": 13,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-07-27",
+      "count": 10,
       "fetchedAt": "2026-07-27T18:11:42.771Z",
       "lastSuccessAt": "2026-07-27T18:11:42.771Z",
       "error": null
@@ -4935,9 +4920,9 @@
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "count": 3,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-07-27",
+      "count": 3,
       "fetchedAt": "2026-07-27T18:11:42.771Z",
       "lastSuccessAt": "2026-07-27T18:11:42.771Z",
       "error": null
@@ -4945,27 +4930,6 @@
   ],
   "warnings": [],
   "showtimes": [
-    {
-      "id": "forum-435454",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Backrooms: Everything Must Go",
-      "originalTitle": "Backrooms: Everything Must Go",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11287/portrait_medium/Backrooms-poster.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt26657236/",
-      "ageRating": "12+",
-      "genres": [
-        "Šausmu filma",
-        "Fantastika"
-      ],
-      "startTime": "2026-07-27T21:15:00+03:00",
-      "serviceDate": "2026-07-27",
-      "auditorium": "Auditorija 9",
-      "language": "Angļu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304736/title/backrooms_everything_must_go/",
-      "availability": {}
-    },
     {
       "id": "forum-435473",
       "source": "forum",
@@ -4987,7 +4951,10 @@
       "auditorium": "Auditorija 11",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 210,
+        "totalSeats": 234
+      }
     },
     {
       "id": "forum-435457",
@@ -5009,7 +4976,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304809/title/aps%C4%93st%C4%ABba/",
       "availability": {
-        "freeSeats": 219,
+        "freeSeats": 210,
         "totalSeats": 228
       }
     },
@@ -5085,7 +5052,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304677/title/atkl%C4%81%C5%A1anas_diena/",
       "availability": {
-        "freeSeats": 93,
+        "freeSeats": 90,
         "totalSeats": 95
       }
     },
@@ -5108,7 +5075,10 @@
       "auditorium": "DELFI LUX auditorija",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304784/title/iel%C5%ABgums/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 101,
+        "totalSeats": 109
+      }
     },
     {
       "id": "apollo-514461",
