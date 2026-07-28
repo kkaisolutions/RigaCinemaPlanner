@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28T18:11:38.199Z",
+  "generatedAt": "2026-07-28T19:11:11.654Z",
   "timezone": "Europe/Riga",
   "date": "2026-07-28",
   "dates": [
@@ -14,20 +14,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "cached",
+          "status": "stale",
           "dataDate": "2026-07-28",
-          "count": 4,
+          "count": 2,
           "fetchedAt": "2026-07-28T17:20:13.124Z",
           "lastSuccessAt": "2026-07-28T17:20:13.124Z",
-          "error": null
+          "error": "forum failed: Forum Cinemas did not return its 2026-07-28 schedule page"
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 13,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-28",
+          "count": 13,
           "fetchedAt": "2026-07-28T18:11:38.199Z",
           "lastSuccessAt": "2026-07-28T18:11:38.199Z",
           "error": null
@@ -36,9 +36,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 3,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-28",
+          "count": 3,
           "fetchedAt": "2026-07-28T18:11:38.199Z",
           "lastSuccessAt": "2026-07-28T18:11:38.199Z",
           "error": null
@@ -46,349 +46,6 @@
       ],
       "warnings": [],
       "showtimes": [
-        {
-          "id": "forum-435532",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Apsēstība",
-          "originalTitle": "Obsession",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11368/portrait_medium/Obsession-poster.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt37287335/",
-          "ageRating": "16+",
-          "genres": [
-            "Trilleris",
-            "Šausmu filma"
-          ],
-          "startTime": "2026-07-28T21:20:00+03:00",
-          "serviceDate": "2026-07-28",
-          "auditorium": "Auditorija 7",
-          "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304809/title/aps%C4%93st%C4%ABba/",
-          "availability": {
-            "freeSeats": 226,
-            "totalSeats": 228
-          }
-        },
-        {
-          "id": "forum-435557",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Backrooms: Everything Must Go",
-          "originalTitle": "Backrooms: Everything Must Go",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11287/portrait_medium/Backrooms-poster.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt26657236/",
-          "ageRating": "12+",
-          "genres": [
-            "Šausmu filma",
-            "Fantastika"
-          ],
-          "startTime": "2026-07-28T21:25:00+03:00",
-          "serviceDate": "2026-07-28",
-          "auditorium": "Auditorija 6",
-          "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304736/title/backrooms_everything_must_go/",
-          "availability": {
-            "freeSeats": 94,
-            "totalSeats": 96
-          }
-        },
-        {
-          "id": "apollo-514442",
-          "source": "apollo",
-          "cinema": "Apollo Akropole",
-          "title": "Odiseja",
-          "originalTitle": "The Odyssey",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8419/landscape_qhd/LK_OD__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "16+",
-          "genres": [
-            "Piedzīvojumu filma",
-            "Vēsturiska"
-          ],
-          "startTime": "2026-07-28T21:30:00.0000000+03:00",
-          "serviceDate": "2026-07-28",
-          "auditorium": "1. IMAX zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=28.07.2026",
-          "availability": {
-            "freeSeats": 40,
-            "totalSeats": 277,
-            "takenSeats": 237,
-            "occupiedPercent": 86
-          }
-        },
-        {
-          "id": "cinamon-142439478",
-          "source": "cinamon",
-          "cinema": "Cinamon Alfa",
-          "title": "Ielūgums",
-          "originalTitle": "The Invite",
-          "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1307302589",
-          "imdbRating": "7.8",
-          "imdbUrl": "",
-          "ageRating": "16+",
-          "genres": [
-            "Komēdija"
-          ],
-          "startTime": "2026-07-28T21:40:00+03:00",
-          "serviceDate": "2026-07-28",
-          "auditorium": "Zale 6",
-          "language": "",
-          "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/ielugums/lv",
-          "availability": {
-            "totalSeats": 78,
-            "freeSeats": 70,
-            "takenSeats": 8,
-            "occupiedPercent": 10
-          }
-        },
-        {
-          "id": "apollo-514466",
-          "source": "apollo",
-          "cinema": "Apollo Akropole",
-          "title": "Šausmenīte 6",
-          "originalTitle": "Scary Movie 6",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8536/landscape_qhd/LK_SM__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "16+",
-          "genres": [
-            "Komēdija",
-            "Šausmu filma"
-          ],
-          "startTime": "2026-07-28T21:45:00.0000000+03:00",
-          "serviceDate": "2026-07-28",
-          "auditorium": "3. Radio SWH zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304097/%C5%A1ausmen%C4%ABte_6?theatreAreaID=1014&dt=28.07.2026",
-          "availability": {
-            "freeSeats": 81
-          }
-        },
-        {
-          "id": "apollo-514677",
-          "source": "apollo",
-          "cinema": "Apollo Plaza",
-          "title": "Odiseja",
-          "originalTitle": "The Odyssey",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8419/landscape_qhd/LK_OD__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "16+",
-          "genres": [
-            "Piedzīvojumu filma",
-            "Vēsturiska"
-          ],
-          "startTime": "2026-07-28T21:45:00.0000000+03:00",
-          "serviceDate": "2026-07-28",
-          "auditorium": "3. zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=28.07.2026",
-          "availability": {
-            "freeSeats": 75
-          }
-        },
-        {
-          "id": "apollo-514883",
-          "source": "apollo",
-          "cinema": "Apollo Domina",
-          "title": "Maikls",
-          "originalTitle": "Michael",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8066/landscape_qhd/LK_MC__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "12+",
-          "genres": [
-            "Biogrāfija",
-            "Vēsturiska drāma"
-          ],
-          "startTime": "2026-07-28T21:45:00.0000000+03:00",
-          "serviceDate": "2026-07-28",
-          "auditorium": "1. zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/303659/maikls?theatreAreaID=1014&dt=28.07.2026",
-          "availability": {
-            "freeSeats": 67,
-            "totalSeats": 70,
-            "takenSeats": 3,
-            "occupiedPercent": 4
-          }
-        },
-        {
-          "id": "apollo-514947",
-          "source": "apollo",
-          "cinema": "Apollo Domina",
-          "title": "Backrooms: Bez izejas",
-          "originalTitle": "Backrooms",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8533/landscape_qhd/Backrooms_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "16+",
-          "genres": [
-            "Šausmu filma",
-            "Fantastika"
-          ],
-          "startTime": "2026-07-28T21:50:00.0000000+03:00",
-          "serviceDate": "2026-07-28",
-          "auditorium": "3. zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304096/backrooms_bez_izejas?theatreAreaID=1014&dt=28.07.2026",
-          "availability": {
-            "freeSeats": 62,
-            "totalSeats": 70,
-            "takenSeats": 8,
-            "occupiedPercent": 11
-          }
-        },
-        {
-          "id": "cinamon-961998146",
-          "source": "cinamon",
-          "cinema": "Cinamon Alfa",
-          "title": "Zirnekļcilvēks: Jauna diena",
-          "originalTitle": "Spider-Man: Brand New Day",
-          "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=531892269",
-          "imdbRating": "N/A",
-          "imdbUrl": "",
-          "ageRating": "12+",
-          "genres": [
-            "Piedzīvojumi"
-          ],
-          "startTime": "2026-07-28T21:50:00+03:00",
-          "serviceDate": "2026-07-28",
-          "auditorium": "KOSMOS Zale",
-          "language": "",
-          "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/zirneklcilveks-jauna-diena/lv",
-          "availability": {
-            "totalSeats": 357,
-            "freeSeats": 210,
-            "takenSeats": 147,
-            "occupiedPercent": 41
-          }
-        },
-        {
-          "id": "apollo-514509",
-          "source": "apollo",
-          "cinema": "Apollo Akropole",
-          "title": "Nakts un diena",
-          "originalTitle": "Virginia Woolf's Night & Day",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8608/landscape_qhd/LK_ND__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "12+",
-          "genres": [
-            "Komēdija",
-            "Drāma",
-            "Romantika"
-          ],
-          "startTime": "2026-07-28T21:55:00.0000000+03:00",
-          "serviceDate": "2026-07-28",
-          "auditorium": "6. Zvaigžņu zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304168/nakts_un_diena?theatreAreaID=1014&dt=28.07.2026",
-          "availability": {
-            "freeSeats": 45
-          }
-        },
-        {
-          "id": "apollo-514535",
-          "source": "apollo",
-          "cinema": "Apollo Akropole",
-          "title": "Apsēstība",
-          "originalTitle": "Obsession",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8588/landscape_qhd/LK_OB__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "16+",
-          "genres": [
-            "Šausmu filma",
-            "Trilleris"
-          ],
-          "startTime": "2026-07-28T22:10:00.0000000+03:00",
-          "serviceDate": "2026-07-28",
-          "auditorium": "8. zāle Restorāns",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304149/aps%C4%93st%C4%ABba?theatreAreaID=1014&dt=28.07.2026",
-          "availability": {
-            "freeSeats": 26
-          }
-        },
-        {
-          "id": "apollo-514557",
-          "source": "apollo",
-          "cinema": "Apollo Akropole",
-          "title": "Odiseja",
-          "originalTitle": "The Odyssey",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8419/landscape_qhd/LK_OD__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "16+",
-          "genres": [
-            "Piedzīvojumu filma",
-            "Vēsturiska"
-          ],
-          "startTime": "2026-07-28T22:10:00.0000000+03:00",
-          "serviceDate": "2026-07-28",
-          "auditorium": "2. zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=28.07.2026",
-          "availability": {
-            "freeSeats": 195,
-            "totalSeats": 227,
-            "takenSeats": 32,
-            "occupiedPercent": 14
-          }
-        },
-        {
-          "id": "apollo-514798",
-          "source": "apollo",
-          "cinema": "Apollo Plaza",
-          "title": "Ielūgums",
-          "originalTitle": "The Invite",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8583/landscape_qhd/Invite_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "16+",
-          "genres": [
-            "Komēdija",
-            "Drāma"
-          ],
-          "startTime": "2026-07-28T22:10:00.0000000+03:00",
-          "serviceDate": "2026-07-28",
-          "auditorium": "7. zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304144/iel%C5%ABgums?theatreAreaID=1014&dt=28.07.2026",
-          "availability": {
-            "freeSeats": 74
-          }
-        },
-        {
-          "id": "cinamon-1893966216",
-          "source": "cinamon",
-          "cinema": "Cinamon Alfa",
-          "title": "Šausmenīte",
-          "originalTitle": "Scary Movie",
-          "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1075541479",
-          "imdbRating": "5.2",
-          "imdbUrl": "",
-          "ageRating": "16+",
-          "genres": [
-            "Komēdija"
-          ],
-          "startTime": "2026-07-28T22:10:00+03:00",
-          "serviceDate": "2026-07-28",
-          "auditorium": "Zale 8",
-          "language": "",
-          "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/sausmenite/lv",
-          "availability": {
-            "totalSeats": 48,
-            "freeSeats": 40,
-            "takenSeats": 8,
-            "occupiedPercent": 17
-          }
-        },
         {
           "id": "apollo-514736",
           "source": "apollo",
@@ -493,20 +150,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "cached",
-          "dataDate": "2026-07-29",
           "count": 49,
-          "fetchedAt": "2026-07-28T17:20:13.124Z",
-          "lastSuccessAt": "2026-07-28T17:20:13.124Z",
+          "status": "fresh",
+          "dataDate": "2026-07-29",
+          "fetchedAt": "2026-07-28T19:11:11.654Z",
+          "lastSuccessAt": "2026-07-28T19:11:11.654Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 93,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-29",
+          "count": 93,
           "fetchedAt": "2026-07-28T18:11:38.199Z",
           "lastSuccessAt": "2026-07-28T18:11:38.199Z",
           "error": null
@@ -515,9 +172,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 36,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-29",
+          "count": 36,
           "fetchedAt": "2026-07-28T18:11:38.199Z",
           "lastSuccessAt": "2026-07-28T18:11:38.199Z",
           "error": null
@@ -752,7 +409,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/?dt=29.07.2026",
           "availability": {
-            "freeSeats": 374,
+            "freeSeats": 373,
             "totalSeats": 602
           }
         },
@@ -1245,7 +902,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304667/title/rota%C4%BClietu_st%C4%81sts_5/?dt=29.07.2026",
           "availability": {
-            "freeSeats": 125,
+            "freeSeats": 123,
             "totalSeats": 127
           }
         },
@@ -1664,7 +1321,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304665/title/s%C4%81tans_pradas_brun%C4%8Dos_2/?dt=29.07.2026",
           "availability": {
-            "freeSeats": 94,
+            "freeSeats": 93,
             "totalSeats": 96
           }
         },
@@ -2076,7 +1733,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304809/title/aps%C4%93st%C4%ABba/?dt=29.07.2026",
           "availability": {
-            "freeSeats": 233,
+            "freeSeats": 231,
             "totalSeats": 234
           }
         },
@@ -3670,7 +3327,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304470/title/gudr%C4%81_blond%C4%ABne_2001/?dt=29.07.2026",
           "availability": {
-            "freeSeats": 160,
+            "freeSeats": 158,
             "totalSeats": 183
           }
         },
@@ -4851,20 +4508,20 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/",
-      "status": "cached",
+      "status": "stale",
       "dataDate": "2026-07-28",
-      "count": 4,
+      "count": 2,
       "fetchedAt": "2026-07-28T17:20:13.124Z",
       "lastSuccessAt": "2026-07-28T17:20:13.124Z",
-      "error": null
+      "error": "forum failed: Forum Cinemas did not return its 2026-07-28 schedule page"
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "count": 13,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-07-28",
+      "count": 13,
       "fetchedAt": "2026-07-28T18:11:38.199Z",
       "lastSuccessAt": "2026-07-28T18:11:38.199Z",
       "error": null
@@ -4873,9 +4530,9 @@
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "count": 3,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-07-28",
+      "count": 3,
       "fetchedAt": "2026-07-28T18:11:38.199Z",
       "lastSuccessAt": "2026-07-28T18:11:38.199Z",
       "error": null
@@ -4883,349 +4540,6 @@
   ],
   "warnings": [],
   "showtimes": [
-    {
-      "id": "forum-435532",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Apsēstība",
-      "originalTitle": "Obsession",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11368/portrait_medium/Obsession-poster.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt37287335/",
-      "ageRating": "16+",
-      "genres": [
-        "Trilleris",
-        "Šausmu filma"
-      ],
-      "startTime": "2026-07-28T21:20:00+03:00",
-      "serviceDate": "2026-07-28",
-      "auditorium": "Auditorija 7",
-      "language": "Angļu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304809/title/aps%C4%93st%C4%ABba/",
-      "availability": {
-        "freeSeats": 226,
-        "totalSeats": 228
-      }
-    },
-    {
-      "id": "forum-435557",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Backrooms: Everything Must Go",
-      "originalTitle": "Backrooms: Everything Must Go",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11287/portrait_medium/Backrooms-poster.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt26657236/",
-      "ageRating": "12+",
-      "genres": [
-        "Šausmu filma",
-        "Fantastika"
-      ],
-      "startTime": "2026-07-28T21:25:00+03:00",
-      "serviceDate": "2026-07-28",
-      "auditorium": "Auditorija 6",
-      "language": "Angļu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304736/title/backrooms_everything_must_go/",
-      "availability": {
-        "freeSeats": 94,
-        "totalSeats": 96
-      }
-    },
-    {
-      "id": "apollo-514442",
-      "source": "apollo",
-      "cinema": "Apollo Akropole",
-      "title": "Odiseja",
-      "originalTitle": "The Odyssey",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8419/landscape_qhd/LK_OD__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "16+",
-      "genres": [
-        "Piedzīvojumu filma",
-        "Vēsturiska"
-      ],
-      "startTime": "2026-07-28T21:30:00.0000000+03:00",
-      "serviceDate": "2026-07-28",
-      "auditorium": "1. IMAX zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=28.07.2026",
-      "availability": {
-        "freeSeats": 40,
-        "totalSeats": 277,
-        "takenSeats": 237,
-        "occupiedPercent": 86
-      }
-    },
-    {
-      "id": "cinamon-142439478",
-      "source": "cinamon",
-      "cinema": "Cinamon Alfa",
-      "title": "Ielūgums",
-      "originalTitle": "The Invite",
-      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1307302589",
-      "imdbRating": "7.8",
-      "imdbUrl": "",
-      "ageRating": "16+",
-      "genres": [
-        "Komēdija"
-      ],
-      "startTime": "2026-07-28T21:40:00+03:00",
-      "serviceDate": "2026-07-28",
-      "auditorium": "Zale 6",
-      "language": "",
-      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/ielugums/lv",
-      "availability": {
-        "totalSeats": 78,
-        "freeSeats": 70,
-        "takenSeats": 8,
-        "occupiedPercent": 10
-      }
-    },
-    {
-      "id": "apollo-514466",
-      "source": "apollo",
-      "cinema": "Apollo Akropole",
-      "title": "Šausmenīte 6",
-      "originalTitle": "Scary Movie 6",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8536/landscape_qhd/LK_SM__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "16+",
-      "genres": [
-        "Komēdija",
-        "Šausmu filma"
-      ],
-      "startTime": "2026-07-28T21:45:00.0000000+03:00",
-      "serviceDate": "2026-07-28",
-      "auditorium": "3. Radio SWH zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304097/%C5%A1ausmen%C4%ABte_6?theatreAreaID=1014&dt=28.07.2026",
-      "availability": {
-        "freeSeats": 81
-      }
-    },
-    {
-      "id": "apollo-514677",
-      "source": "apollo",
-      "cinema": "Apollo Plaza",
-      "title": "Odiseja",
-      "originalTitle": "The Odyssey",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8419/landscape_qhd/LK_OD__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "16+",
-      "genres": [
-        "Piedzīvojumu filma",
-        "Vēsturiska"
-      ],
-      "startTime": "2026-07-28T21:45:00.0000000+03:00",
-      "serviceDate": "2026-07-28",
-      "auditorium": "3. zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=28.07.2026",
-      "availability": {
-        "freeSeats": 75
-      }
-    },
-    {
-      "id": "apollo-514883",
-      "source": "apollo",
-      "cinema": "Apollo Domina",
-      "title": "Maikls",
-      "originalTitle": "Michael",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8066/landscape_qhd/LK_MC__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "12+",
-      "genres": [
-        "Biogrāfija",
-        "Vēsturiska drāma"
-      ],
-      "startTime": "2026-07-28T21:45:00.0000000+03:00",
-      "serviceDate": "2026-07-28",
-      "auditorium": "1. zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/303659/maikls?theatreAreaID=1014&dt=28.07.2026",
-      "availability": {
-        "freeSeats": 67,
-        "totalSeats": 70,
-        "takenSeats": 3,
-        "occupiedPercent": 4
-      }
-    },
-    {
-      "id": "apollo-514947",
-      "source": "apollo",
-      "cinema": "Apollo Domina",
-      "title": "Backrooms: Bez izejas",
-      "originalTitle": "Backrooms",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8533/landscape_qhd/Backrooms_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "16+",
-      "genres": [
-        "Šausmu filma",
-        "Fantastika"
-      ],
-      "startTime": "2026-07-28T21:50:00.0000000+03:00",
-      "serviceDate": "2026-07-28",
-      "auditorium": "3. zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304096/backrooms_bez_izejas?theatreAreaID=1014&dt=28.07.2026",
-      "availability": {
-        "freeSeats": 62,
-        "totalSeats": 70,
-        "takenSeats": 8,
-        "occupiedPercent": 11
-      }
-    },
-    {
-      "id": "cinamon-961998146",
-      "source": "cinamon",
-      "cinema": "Cinamon Alfa",
-      "title": "Zirnekļcilvēks: Jauna diena",
-      "originalTitle": "Spider-Man: Brand New Day",
-      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=531892269",
-      "imdbRating": "N/A",
-      "imdbUrl": "",
-      "ageRating": "12+",
-      "genres": [
-        "Piedzīvojumi"
-      ],
-      "startTime": "2026-07-28T21:50:00+03:00",
-      "serviceDate": "2026-07-28",
-      "auditorium": "KOSMOS Zale",
-      "language": "",
-      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/zirneklcilveks-jauna-diena/lv",
-      "availability": {
-        "totalSeats": 357,
-        "freeSeats": 210,
-        "takenSeats": 147,
-        "occupiedPercent": 41
-      }
-    },
-    {
-      "id": "apollo-514509",
-      "source": "apollo",
-      "cinema": "Apollo Akropole",
-      "title": "Nakts un diena",
-      "originalTitle": "Virginia Woolf's Night & Day",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8608/landscape_qhd/LK_ND__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "12+",
-      "genres": [
-        "Komēdija",
-        "Drāma",
-        "Romantika"
-      ],
-      "startTime": "2026-07-28T21:55:00.0000000+03:00",
-      "serviceDate": "2026-07-28",
-      "auditorium": "6. Zvaigžņu zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304168/nakts_un_diena?theatreAreaID=1014&dt=28.07.2026",
-      "availability": {
-        "freeSeats": 45
-      }
-    },
-    {
-      "id": "apollo-514535",
-      "source": "apollo",
-      "cinema": "Apollo Akropole",
-      "title": "Apsēstība",
-      "originalTitle": "Obsession",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8588/landscape_qhd/LK_OB__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "16+",
-      "genres": [
-        "Šausmu filma",
-        "Trilleris"
-      ],
-      "startTime": "2026-07-28T22:10:00.0000000+03:00",
-      "serviceDate": "2026-07-28",
-      "auditorium": "8. zāle Restorāns",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304149/aps%C4%93st%C4%ABba?theatreAreaID=1014&dt=28.07.2026",
-      "availability": {
-        "freeSeats": 26
-      }
-    },
-    {
-      "id": "apollo-514557",
-      "source": "apollo",
-      "cinema": "Apollo Akropole",
-      "title": "Odiseja",
-      "originalTitle": "The Odyssey",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8419/landscape_qhd/LK_OD__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "16+",
-      "genres": [
-        "Piedzīvojumu filma",
-        "Vēsturiska"
-      ],
-      "startTime": "2026-07-28T22:10:00.0000000+03:00",
-      "serviceDate": "2026-07-28",
-      "auditorium": "2. zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=28.07.2026",
-      "availability": {
-        "freeSeats": 195,
-        "totalSeats": 227,
-        "takenSeats": 32,
-        "occupiedPercent": 14
-      }
-    },
-    {
-      "id": "apollo-514798",
-      "source": "apollo",
-      "cinema": "Apollo Plaza",
-      "title": "Ielūgums",
-      "originalTitle": "The Invite",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8583/landscape_qhd/Invite_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "16+",
-      "genres": [
-        "Komēdija",
-        "Drāma"
-      ],
-      "startTime": "2026-07-28T22:10:00.0000000+03:00",
-      "serviceDate": "2026-07-28",
-      "auditorium": "7. zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304144/iel%C5%ABgums?theatreAreaID=1014&dt=28.07.2026",
-      "availability": {
-        "freeSeats": 74
-      }
-    },
-    {
-      "id": "cinamon-1893966216",
-      "source": "cinamon",
-      "cinema": "Cinamon Alfa",
-      "title": "Šausmenīte",
-      "originalTitle": "Scary Movie",
-      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1075541479",
-      "imdbRating": "5.2",
-      "imdbUrl": "",
-      "ageRating": "16+",
-      "genres": [
-        "Komēdija"
-      ],
-      "startTime": "2026-07-28T22:10:00+03:00",
-      "serviceDate": "2026-07-28",
-      "auditorium": "Zale 8",
-      "language": "",
-      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/sausmenite/lv",
-      "availability": {
-        "totalSeats": 48,
-        "freeSeats": 40,
-        "takenSeats": 8,
-        "occupiedPercent": 17
-      }
-    },
     {
       "id": "apollo-514736",
       "source": "apollo",
