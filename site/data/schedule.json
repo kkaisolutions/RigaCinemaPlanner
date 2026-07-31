@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T13:13:09.427Z",
+  "generatedAt": "2026-07-31T13:44:50.262Z",
   "timezone": "Europe/Riga",
   "date": "2026-07-31",
   "dates": [
@@ -14,20 +14,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "stale",
+          "count": 23,
+          "status": "fresh",
           "dataDate": "2026-07-31",
-          "count": 28,
-          "fetchedAt": "2026-07-31T11:22:58.069Z",
-          "lastSuccessAt": "2026-07-31T11:22:58.069Z",
+          "fetchedAt": "2026-07-31T13:44:50.262Z",
+          "lastSuccessAt": "2026-07-31T13:44:50.262Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 47,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-31",
+          "count": 45,
           "fetchedAt": "2026-07-31T13:13:09.427Z",
           "lastSuccessAt": "2026-07-31T13:13:09.427Z",
           "error": null
@@ -36,9 +36,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 15,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-07-31",
+          "count": 15,
           "fetchedAt": "2026-07-31T13:13:09.427Z",
           "lastSuccessAt": "2026-07-31T13:13:09.427Z",
           "error": null
@@ -46,177 +46,6 @@
       ],
       "warnings": [],
       "showtimes": [
-        {
-          "id": "apollo-515015",
-          "source": "apollo",
-          "cinema": "Apollo Akropole",
-          "title": "Zirnekļcilvēks: Jauna diena",
-          "originalTitle": "Spider-Man: Brand New Day",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8505/landscape_qhd/SpiderMan-BND_LV_PPRef_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "12+",
-          "genres": [
-            "Piedzīvojumu filma",
-            "Fantastika"
-          ],
-          "startTime": "2026-07-31T16:20:00.0000000+03:00",
-          "serviceDate": "2026-07-31",
-          "auditorium": "7. zāle Restorāns",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=31.07.2026",
-          "availability": {
-            "freeSeats": 4
-          }
-        },
-        {
-          "id": "apollo-515339",
-          "source": "apollo",
-          "cinema": "Apollo Plaza",
-          "title": "Vaiana",
-          "originalTitle": "Moana",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8467/landscape_qhd/LK_VN__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "7+",
-          "genres": [
-            "Komēdija",
-            "Asa sižeta filma",
-            "Piedzīvojumu filma",
-            "Ģimenes filma"
-          ],
-          "startTime": "2026-07-31T16:20:00.0000000+03:00",
-          "serviceDate": "2026-07-31",
-          "auditorium": "5. zāle",
-          "language": "Latviešu",
-          "movieUrl": "https://www.apollokino.lv/event/304037/vaiana?theatreAreaID=1014&dt=31.07.2026",
-          "availability": {
-            "freeSeats": 59
-          }
-        },
-        {
-          "id": "forum-435660",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Vaiana",
-          "originalTitle": "Moana",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11379/portrait_medium/Vaiana-Moana-plakats.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt27419466/",
-          "ageRating": "7+",
-          "genres": [
-            "Piedzīvojumi",
-            "Komēdija",
-            "Asa sižeta filma",
-            "Ģimenes filma"
-          ],
-          "startTime": "2026-07-31T16:25:00+03:00",
-          "serviceDate": "2026-07-31",
-          "auditorium": "Auditorija 12",
-          "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304819/title/vaiana/",
-          "availability": {
-            "freeSeats": 183,
-            "totalSeats": 183
-          }
-        },
-        {
-          "id": "forum-435547",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Odiseja",
-          "originalTitle": "The Odyssey",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11365/portrait_medium/odyssey-plakats.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt33764258/",
-          "ageRating": "16+",
-          "genres": [
-            "Piedzīvojumi",
-            "Drāma",
-            "Asa sižeta filma",
-            "Vēsturiska"
-          ],
-          "startTime": "2026-07-31T16:30:00+03:00",
-          "serviceDate": "2026-07-31",
-          "auditorium": "Auditorija 4 LUX",
-          "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
-          "availability": {}
-        },
-        {
-          "id": "forum-435957",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Zirnekļcilvēks: Jauna diena",
-          "originalTitle": "Spider-Man: Brand New Day",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11377/portrait_medium/Spider-Man-Brand-New-Day-plakats.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt22084616/",
-          "ageRating": "12+",
-          "genres": [
-            "Piedzīvojumi",
-            "Fantāzija",
-            "Fantastika"
-          ],
-          "startTime": "2026-07-31T16:40:00+03:00",
-          "serviceDate": "2026-07-31",
-          "auditorium": "Auditorija 13",
-          "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
-          "availability": {}
-        },
-        {
-          "id": "apollo-515022",
-          "source": "apollo",
-          "cinema": "Apollo Akropole",
-          "title": "Rotaļlietu stāsts 5",
-          "originalTitle": "Toy Story 5",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8461/landscape_qhd/LK_TS5__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "U",
-          "genres": [
-            "Komēdija",
-            "Piedzīvojumu filma",
-            "Animācija"
-          ],
-          "startTime": "2026-07-31T16:40:00.0000000+03:00",
-          "serviceDate": "2026-07-31",
-          "auditorium": "9. zāle",
-          "language": "Latviešu",
-          "movieUrl": "https://www.apollokino.lv/event/304031/rota%C4%BClietu_st%C4%81sts_5?theatreAreaID=1014&dt=31.07.2026",
-          "availability": {
-            "freeSeats": 123,
-            "totalSeats": 127,
-            "takenSeats": 4,
-            "occupiedPercent": 3
-          }
-        },
-        {
-          "id": "cinamon-1449449255",
-          "source": "cinamon",
-          "cinema": "Cinamon Alfa",
-          "title": "Odiseja",
-          "originalTitle": "Odyssey",
-          "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=448571596",
-          "imdbRating": "8.3",
-          "imdbUrl": "",
-          "ageRating": "16+",
-          "genres": [
-            "Piedzīvojumi"
-          ],
-          "startTime": "2026-07-31T16:40:00+03:00",
-          "serviceDate": "2026-07-31",
-          "auditorium": "Zale 5",
-          "language": "",
-          "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/odiseja/lv",
-          "availability": {
-            "totalSeats": 93,
-            "freeSeats": 79,
-            "takenSeats": 14,
-            "occupiedPercent": 15
-          }
-        },
         {
           "id": "apollo-514996",
           "source": "apollo",
@@ -264,9 +93,12 @@
           "startTime": "2026-07-31T17:05:00+03:00",
           "serviceDate": "2026-07-31",
           "auditorium": "Auditorija 11",
-          "language": "Latviešu",
+          "language": "Krievu",
           "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 232,
+            "totalSeats": 234
+          }
         },
         {
           "id": "forum-435664",
@@ -287,7 +119,7 @@
           "language": "Angļu un franču valodā",
           "movieUrl": "https://www.forumcinemas.lv/event/304874/title/mana_m%C4%ABla/",
           "availability": {
-            "freeSeats": 95,
+            "freeSeats": 94,
             "totalSeats": 95
           }
         },
@@ -484,7 +316,10 @@
           "auditorium": "Auditorija 7",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 210,
+            "totalSeats": 228
+          }
         },
         {
           "id": "forum-435668",
@@ -506,7 +341,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304665/title/s%C4%81tans_pradas_brun%C4%8Dos_2/",
           "availability": {
-            "freeSeats": 94,
+            "freeSeats": 89,
             "totalSeats": 98
           }
         },
@@ -553,7 +388,10 @@
           "auditorium": "Auditorija 6",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/303990/title/maikls/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 90,
+            "totalSeats": 96
+          }
         },
         {
           "id": "forum-433810",
@@ -596,7 +434,10 @@
           "auditorium": "Auditorija 10",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304809/title/aps%C4%93st%C4%ABba/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 125,
+            "totalSeats": 127
+          }
         },
         {
           "id": "apollo-514991",
@@ -838,7 +679,7 @@
           "startTime": "2026-07-31T18:30:00+03:00",
           "serviceDate": "2026-07-31",
           "auditorium": "Auditorija 14",
-          "language": "Latviešu",
+          "language": "Krievu",
           "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
           "availability": {}
         },
@@ -1035,7 +876,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304784/title/iel%C5%ABgums/",
           "availability": {
-            "freeSeats": 178,
+            "freeSeats": 172,
             "totalSeats": 183
           }
         },
@@ -1250,7 +1091,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304798/title/labie_pui%C5%A1i_1990/",
           "availability": {
-            "freeSeats": 101,
+            "freeSeats": 97,
             "totalSeats": 129
           }
         },
@@ -2099,20 +1940,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "stale",
-          "dataDate": "2026-08-01",
           "count": 51,
-          "fetchedAt": "2026-07-31T11:22:58.069Z",
-          "lastSuccessAt": "2026-07-31T11:22:58.069Z",
+          "status": "fresh",
+          "dataDate": "2026-08-01",
+          "fetchedAt": "2026-07-31T13:44:50.262Z",
+          "lastSuccessAt": "2026-07-31T13:44:50.262Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 93,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-01",
+          "count": 93,
           "fetchedAt": "2026-07-31T13:13:09.427Z",
           "lastSuccessAt": "2026-07-31T13:13:09.427Z",
           "error": null
@@ -2121,9 +1962,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 36,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-01",
+          "count": 36,
           "fetchedAt": "2026-07-31T13:13:09.427Z",
           "lastSuccessAt": "2026-07-31T13:13:09.427Z",
           "error": null
@@ -2328,7 +2169,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/?dt=01.08.2026",
           "availability": {
-            "freeSeats": 456,
+            "freeSeats": 450,
             "totalSeats": 602
           }
         },
@@ -2456,7 +2297,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/?dt=01.08.2026",
           "availability": {
-            "freeSeats": 183,
+            "freeSeats": 180,
             "totalSeats": 183
           }
         },
@@ -6507,20 +6348,20 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/",
-      "status": "stale",
+      "count": 23,
+      "status": "fresh",
       "dataDate": "2026-07-31",
-      "count": 28,
-      "fetchedAt": "2026-07-31T11:22:58.069Z",
-      "lastSuccessAt": "2026-07-31T11:22:58.069Z",
+      "fetchedAt": "2026-07-31T13:44:50.262Z",
+      "lastSuccessAt": "2026-07-31T13:44:50.262Z",
       "error": null
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "count": 47,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-07-31",
+      "count": 45,
       "fetchedAt": "2026-07-31T13:13:09.427Z",
       "lastSuccessAt": "2026-07-31T13:13:09.427Z",
       "error": null
@@ -6529,9 +6370,9 @@
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "count": 15,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-07-31",
+      "count": 15,
       "fetchedAt": "2026-07-31T13:13:09.427Z",
       "lastSuccessAt": "2026-07-31T13:13:09.427Z",
       "error": null
@@ -6539,177 +6380,6 @@
   ],
   "warnings": [],
   "showtimes": [
-    {
-      "id": "apollo-515015",
-      "source": "apollo",
-      "cinema": "Apollo Akropole",
-      "title": "Zirnekļcilvēks: Jauna diena",
-      "originalTitle": "Spider-Man: Brand New Day",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8505/landscape_qhd/SpiderMan-BND_LV_PPRef_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "12+",
-      "genres": [
-        "Piedzīvojumu filma",
-        "Fantastika"
-      ],
-      "startTime": "2026-07-31T16:20:00.0000000+03:00",
-      "serviceDate": "2026-07-31",
-      "auditorium": "7. zāle Restorāns",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=31.07.2026",
-      "availability": {
-        "freeSeats": 4
-      }
-    },
-    {
-      "id": "apollo-515339",
-      "source": "apollo",
-      "cinema": "Apollo Plaza",
-      "title": "Vaiana",
-      "originalTitle": "Moana",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8467/landscape_qhd/LK_VN__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "7+",
-      "genres": [
-        "Komēdija",
-        "Asa sižeta filma",
-        "Piedzīvojumu filma",
-        "Ģimenes filma"
-      ],
-      "startTime": "2026-07-31T16:20:00.0000000+03:00",
-      "serviceDate": "2026-07-31",
-      "auditorium": "5. zāle",
-      "language": "Latviešu",
-      "movieUrl": "https://www.apollokino.lv/event/304037/vaiana?theatreAreaID=1014&dt=31.07.2026",
-      "availability": {
-        "freeSeats": 59
-      }
-    },
-    {
-      "id": "forum-435660",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Vaiana",
-      "originalTitle": "Moana",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11379/portrait_medium/Vaiana-Moana-plakats.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt27419466/",
-      "ageRating": "7+",
-      "genres": [
-        "Piedzīvojumi",
-        "Komēdija",
-        "Asa sižeta filma",
-        "Ģimenes filma"
-      ],
-      "startTime": "2026-07-31T16:25:00+03:00",
-      "serviceDate": "2026-07-31",
-      "auditorium": "Auditorija 12",
-      "language": "Latviešu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304819/title/vaiana/",
-      "availability": {
-        "freeSeats": 183,
-        "totalSeats": 183
-      }
-    },
-    {
-      "id": "forum-435547",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Odiseja",
-      "originalTitle": "The Odyssey",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11365/portrait_medium/odyssey-plakats.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt33764258/",
-      "ageRating": "16+",
-      "genres": [
-        "Piedzīvojumi",
-        "Drāma",
-        "Asa sižeta filma",
-        "Vēsturiska"
-      ],
-      "startTime": "2026-07-31T16:30:00+03:00",
-      "serviceDate": "2026-07-31",
-      "auditorium": "Auditorija 4 LUX",
-      "language": "Angļu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
-      "availability": {}
-    },
-    {
-      "id": "forum-435957",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Zirnekļcilvēks: Jauna diena",
-      "originalTitle": "Spider-Man: Brand New Day",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11377/portrait_medium/Spider-Man-Brand-New-Day-plakats.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt22084616/",
-      "ageRating": "12+",
-      "genres": [
-        "Piedzīvojumi",
-        "Fantāzija",
-        "Fantastika"
-      ],
-      "startTime": "2026-07-31T16:40:00+03:00",
-      "serviceDate": "2026-07-31",
-      "auditorium": "Auditorija 13",
-      "language": "Angļu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
-      "availability": {}
-    },
-    {
-      "id": "apollo-515022",
-      "source": "apollo",
-      "cinema": "Apollo Akropole",
-      "title": "Rotaļlietu stāsts 5",
-      "originalTitle": "Toy Story 5",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8461/landscape_qhd/LK_TS5__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "U",
-      "genres": [
-        "Komēdija",
-        "Piedzīvojumu filma",
-        "Animācija"
-      ],
-      "startTime": "2026-07-31T16:40:00.0000000+03:00",
-      "serviceDate": "2026-07-31",
-      "auditorium": "9. zāle",
-      "language": "Latviešu",
-      "movieUrl": "https://www.apollokino.lv/event/304031/rota%C4%BClietu_st%C4%81sts_5?theatreAreaID=1014&dt=31.07.2026",
-      "availability": {
-        "freeSeats": 123,
-        "totalSeats": 127,
-        "takenSeats": 4,
-        "occupiedPercent": 3
-      }
-    },
-    {
-      "id": "cinamon-1449449255",
-      "source": "cinamon",
-      "cinema": "Cinamon Alfa",
-      "title": "Odiseja",
-      "originalTitle": "Odyssey",
-      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=448571596",
-      "imdbRating": "8.3",
-      "imdbUrl": "",
-      "ageRating": "16+",
-      "genres": [
-        "Piedzīvojumi"
-      ],
-      "startTime": "2026-07-31T16:40:00+03:00",
-      "serviceDate": "2026-07-31",
-      "auditorium": "Zale 5",
-      "language": "",
-      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/odiseja/lv",
-      "availability": {
-        "totalSeats": 93,
-        "freeSeats": 79,
-        "takenSeats": 14,
-        "occupiedPercent": 15
-      }
-    },
     {
       "id": "apollo-514996",
       "source": "apollo",
@@ -6757,9 +6427,12 @@
       "startTime": "2026-07-31T17:05:00+03:00",
       "serviceDate": "2026-07-31",
       "auditorium": "Auditorija 11",
-      "language": "Latviešu",
+      "language": "Krievu",
       "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 232,
+        "totalSeats": 234
+      }
     },
     {
       "id": "forum-435664",
@@ -6780,7 +6453,7 @@
       "language": "Angļu un franču valodā",
       "movieUrl": "https://www.forumcinemas.lv/event/304874/title/mana_m%C4%ABla/",
       "availability": {
-        "freeSeats": 95,
+        "freeSeats": 94,
         "totalSeats": 95
       }
     },
@@ -6977,7 +6650,10 @@
       "auditorium": "Auditorija 7",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 210,
+        "totalSeats": 228
+      }
     },
     {
       "id": "forum-435668",
@@ -6999,7 +6675,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304665/title/s%C4%81tans_pradas_brun%C4%8Dos_2/",
       "availability": {
-        "freeSeats": 94,
+        "freeSeats": 89,
         "totalSeats": 98
       }
     },
@@ -7046,7 +6722,10 @@
       "auditorium": "Auditorija 6",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/303990/title/maikls/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 90,
+        "totalSeats": 96
+      }
     },
     {
       "id": "forum-433810",
@@ -7089,7 +6768,10 @@
       "auditorium": "Auditorija 10",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304809/title/aps%C4%93st%C4%ABba/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 125,
+        "totalSeats": 127
+      }
     },
     {
       "id": "apollo-514991",
@@ -7331,7 +7013,7 @@
       "startTime": "2026-07-31T18:30:00+03:00",
       "serviceDate": "2026-07-31",
       "auditorium": "Auditorija 14",
-      "language": "Latviešu",
+      "language": "Krievu",
       "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
       "availability": {}
     },
@@ -7528,7 +7210,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304784/title/iel%C5%ABgums/",
       "availability": {
-        "freeSeats": 178,
+        "freeSeats": 172,
         "totalSeats": 183
       }
     },
@@ -7743,7 +7425,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304798/title/labie_pui%C5%A1i_1990/",
       "availability": {
-        "freeSeats": 101,
+        "freeSeats": 97,
         "totalSeats": 129
       }
     },
