@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T19:11:37.718Z",
+  "generatedAt": "2026-08-02T20:11:32.821Z",
   "timezone": "Europe/Riga",
   "date": "2026-08-02",
   "dates": [
@@ -14,20 +14,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "cached",
+          "status": "stale",
           "dataDate": "2026-08-02",
           "count": 0,
           "fetchedAt": "2026-08-02T17:55:41.077Z",
           "lastSuccessAt": "2026-08-02T17:55:41.077Z",
-          "error": null
+          "error": "forum failed: Forum Cinemas did not return its 2026-08-02 schedule page"
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 2,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-02",
+          "count": 2,
           "fetchedAt": "2026-08-02T19:11:37.718Z",
           "lastSuccessAt": "2026-08-02T19:11:37.718Z",
           "error": null
@@ -36,63 +36,16 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 0,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-02",
+          "count": 0,
           "fetchedAt": "2026-08-02T19:11:37.718Z",
           "lastSuccessAt": "2026-08-02T19:11:37.718Z",
           "error": null
         }
       ],
       "warnings": [],
-      "showtimes": [
-        {
-          "id": "apollo-515297",
-          "source": "apollo",
-          "cinema": "Apollo Plaza",
-          "title": "Ielūgums",
-          "originalTitle": "The Invite",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8583/landscape_qhd/Invite_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "16+",
-          "genres": [
-            "Komēdija",
-            "Drāma"
-          ],
-          "startTime": "2026-08-02T22:15:00.0000000+03:00",
-          "serviceDate": "2026-08-02",
-          "auditorium": "2. zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304144/iel%C5%ABgums?theatreAreaID=1014&dt=02.08.2026",
-          "availability": {
-            "freeSeats": 197
-          }
-        },
-        {
-          "id": "apollo-515105",
-          "source": "apollo",
-          "cinema": "Apollo Akropole",
-          "title": "Ļaunie miroņi deg",
-          "originalTitle": "Evil Dead Burn",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8594/landscape_qhd/EvilDeadBurn_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "18+",
-          "genres": [
-            "Šausmu filma",
-            "Fantastika"
-          ],
-          "startTime": "2026-08-02T22:30:00.0000000+03:00",
-          "serviceDate": "2026-08-02",
-          "auditorium": "3. Radio SWH zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304154/%C4%BCaunie_miro%C5%86i_deg?theatreAreaID=1014&dt=02.08.2026",
-          "availability": {
-            "freeSeats": 93
-          }
-        }
-      ]
+      "showtimes": []
     },
     "2026-08-03": {
       "date": "2026-08-03",
@@ -101,20 +54,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "cached",
-          "dataDate": "2026-08-03",
           "count": 52,
-          "fetchedAt": "2026-08-02T18:59:16.948Z",
-          "lastSuccessAt": "2026-08-02T18:59:16.948Z",
+          "status": "fresh",
+          "dataDate": "2026-08-03",
+          "fetchedAt": "2026-08-02T20:11:32.821Z",
+          "lastSuccessAt": "2026-08-02T20:11:32.821Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 93,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-03",
+          "count": 93,
           "fetchedAt": "2026-08-02T19:11:37.718Z",
           "lastSuccessAt": "2026-08-02T19:11:37.718Z",
           "error": null
@@ -123,9 +76,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 35,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-03",
+          "count": 35,
           "fetchedAt": "2026-08-02T19:11:37.718Z",
           "lastSuccessAt": "2026-08-02T19:11:37.718Z",
           "error": null
@@ -330,7 +283,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
           "availability": {
-            "freeSeats": 485,
+            "freeSeats": 477,
             "totalSeats": 602
           }
         },
@@ -456,7 +409,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
           "availability": {
-            "freeSeats": 92,
+            "freeSeats": 90,
             "totalSeats": 109
           }
         },
@@ -504,7 +457,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304829/title/val%C4%ABtis_vincents/",
           "availability": {
-            "freeSeats": 180,
+            "freeSeats": 178,
             "totalSeats": 183
           }
         },
@@ -980,7 +933,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/303990/title/maikls/",
           "availability": {
-            "freeSeats": 94,
+            "freeSeats": 93,
             "totalSeats": 98
           }
         },
@@ -2354,7 +2307,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304736/title/backrooms_everything_must_go/",
           "availability": {
-            "freeSeats": 176,
+            "freeSeats": 175,
             "totalSeats": 183
           }
         },
@@ -2546,7 +2499,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304809/title/aps%C4%93st%C4%ABba/",
           "availability": {
-            "freeSeats": 90,
+            "freeSeats": 88,
             "totalSeats": 96
           }
         },
@@ -4493,20 +4446,20 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/",
-      "status": "cached",
+      "status": "stale",
       "dataDate": "2026-08-02",
       "count": 0,
       "fetchedAt": "2026-08-02T17:55:41.077Z",
       "lastSuccessAt": "2026-08-02T17:55:41.077Z",
-      "error": null
+      "error": "forum failed: Forum Cinemas did not return its 2026-08-02 schedule page"
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "count": 2,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-08-02",
+      "count": 2,
       "fetchedAt": "2026-08-02T19:11:37.718Z",
       "lastSuccessAt": "2026-08-02T19:11:37.718Z",
       "error": null
@@ -4515,61 +4468,14 @@
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "count": 0,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-08-02",
+      "count": 0,
       "fetchedAt": "2026-08-02T19:11:37.718Z",
       "lastSuccessAt": "2026-08-02T19:11:37.718Z",
       "error": null
     }
   ],
   "warnings": [],
-  "showtimes": [
-    {
-      "id": "apollo-515297",
-      "source": "apollo",
-      "cinema": "Apollo Plaza",
-      "title": "Ielūgums",
-      "originalTitle": "The Invite",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8583/landscape_qhd/Invite_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "16+",
-      "genres": [
-        "Komēdija",
-        "Drāma"
-      ],
-      "startTime": "2026-08-02T22:15:00.0000000+03:00",
-      "serviceDate": "2026-08-02",
-      "auditorium": "2. zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304144/iel%C5%ABgums?theatreAreaID=1014&dt=02.08.2026",
-      "availability": {
-        "freeSeats": 197
-      }
-    },
-    {
-      "id": "apollo-515105",
-      "source": "apollo",
-      "cinema": "Apollo Akropole",
-      "title": "Ļaunie miroņi deg",
-      "originalTitle": "Evil Dead Burn",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8594/landscape_qhd/EvilDeadBurn_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "18+",
-      "genres": [
-        "Šausmu filma",
-        "Fantastika"
-      ],
-      "startTime": "2026-08-02T22:30:00.0000000+03:00",
-      "serviceDate": "2026-08-02",
-      "auditorium": "3. Radio SWH zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304154/%C4%BCaunie_miro%C5%86i_deg?theatreAreaID=1014&dt=02.08.2026",
-      "availability": {
-        "freeSeats": 93
-      }
-    }
-  ]
+  "showtimes": []
 }
