@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T19:11:34.149Z",
+  "generatedAt": "2026-08-05T19:17:36.592Z",
   "timezone": "Europe/Riga",
   "date": "2026-08-05",
   "dates": [
@@ -16,18 +16,18 @@
           "url": "https://www.forumcinemas.lv/",
           "status": "stale",
           "dataDate": "2026-08-05",
-          "count": 3,
+          "count": 0,
           "fetchedAt": "2026-08-05T17:23:12.463Z",
           "lastSuccessAt": "2026-08-05T17:23:12.463Z",
-          "error": null
+          "error": "forum failed: Forum Cinemas did not return its 2026-08-05 schedule page"
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 2,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-05",
+          "count": 2,
           "fetchedAt": "2026-08-05T19:11:34.149Z",
           "lastSuccessAt": "2026-08-05T19:11:34.149Z",
           "error": null
@@ -36,9 +36,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 0,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-05",
+          "count": 0,
           "fetchedAt": "2026-08-05T19:11:34.149Z",
           "lastSuccessAt": "2026-08-05T19:11:34.149Z",
           "error": null
@@ -46,29 +46,6 @@
       ],
       "warnings": [],
       "showtimes": [
-        {
-          "id": "apollo-515437",
-          "source": "apollo",
-          "cinema": "Apollo Plaza",
-          "title": "Ielūgums",
-          "originalTitle": "The Invite",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8583/landscape_qhd/Invite_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "16+",
-          "genres": [
-            "Komēdija",
-            "Drāma"
-          ],
-          "startTime": "2026-08-05T22:15:00.0000000+03:00",
-          "serviceDate": "2026-08-05",
-          "auditorium": "2. zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304144/iel%C5%ABgums?theatreAreaID=1014&dt=05.08.2026",
-          "availability": {
-            "freeSeats": 204
-          }
-        },
         {
           "id": "apollo-515123",
           "source": "apollo",
@@ -101,20 +78,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "stale",
-          "dataDate": "2026-08-06",
           "count": 51,
-          "fetchedAt": "2026-08-05T17:23:12.463Z",
-          "lastSuccessAt": "2026-08-05T17:23:12.463Z",
+          "status": "fresh",
+          "dataDate": "2026-08-06",
+          "fetchedAt": "2026-08-05T19:17:36.592Z",
+          "lastSuccessAt": "2026-08-05T19:17:36.592Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 93,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-06",
+          "count": 93,
           "fetchedAt": "2026-08-05T19:11:34.149Z",
           "lastSuccessAt": "2026-08-05T19:11:34.149Z",
           "error": null
@@ -123,9 +100,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 34,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-06",
+          "count": 34,
           "fetchedAt": "2026-08-05T19:11:34.149Z",
           "lastSuccessAt": "2026-08-05T19:11:34.149Z",
           "error": null
@@ -304,7 +281,7 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 2",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
           "availability": {
             "freeSeats": 376,
             "totalSeats": 427
@@ -427,7 +404,7 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 12",
           "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304829/title/val%C4%ABtis_vincents/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304829/title/val%C4%ABtis_vincents/",
           "availability": {
             "freeSeats": 183,
             "totalSeats": 183
@@ -452,7 +429,7 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 5",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304830/title/nakts_un_diena/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304830/title/nakts_un_diena/",
           "availability": {
             "freeSeats": 93,
             "totalSeats": 95
@@ -502,7 +479,7 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 14",
           "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304819/title/vaiana/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304819/title/vaiana/",
           "availability": {
             "freeSeats": 183,
             "totalSeats": 183
@@ -575,7 +552,7 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 11",
           "language": "Krievu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
           "availability": {
             "freeSeats": 230,
             "totalSeats": 234
@@ -726,9 +703,9 @@
           "serviceDate": "2026-08-06",
           "auditorium": "DELFI LUX auditorija",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
           "availability": {
-            "freeSeats": 107,
+            "freeSeats": 105,
             "totalSeats": 109
           }
         },
@@ -775,7 +752,7 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 6",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304784/title/iel%C5%ABgums/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304784/title/iel%C5%ABgums/",
           "availability": {
             "freeSeats": 96,
             "totalSeats": 96
@@ -849,9 +826,12 @@
           "startTime": "2026-08-06T11:50:00+03:00",
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 7",
-          "language": "Krievu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/?dt=06.08.2026",
-          "availability": {}
+          "language": "Latviešu",
+          "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
+          "availability": {
+            "freeSeats": 226,
+            "totalSeats": 228
+          }
         },
         {
           "id": "apollo-515275",
@@ -925,8 +905,11 @@
           "serviceDate": "2026-08-06",
           "auditorium": "PEPSI auditorija",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/?dt=06.08.2026",
-          "availability": {}
+          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
+          "availability": {
+            "freeSeats": 540,
+            "totalSeats": 602
+          }
         },
         {
           "id": "apollo-515251",
@@ -1050,7 +1033,7 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 9",
           "language": "Krievu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304667/title/rota%C4%BClietu_st%C4%81sts_5/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304667/title/rota%C4%BClietu_st%C4%81sts_5/",
           "availability": {
             "freeSeats": 98,
             "totalSeats": 98
@@ -1124,8 +1107,11 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 4 LUX",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/?dt=06.08.2026",
-          "availability": {}
+          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
+          "availability": {
+            "freeSeats": 85,
+            "totalSeats": 91
+          }
         },
         {
           "id": "apollo-515240",
@@ -1198,7 +1184,7 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 13",
           "language": "Krievu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304667/title/rota%C4%BClietu_st%C4%81sts_5/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304667/title/rota%C4%BClietu_st%C4%81sts_5/",
           "availability": {}
         },
         {
@@ -1296,7 +1282,7 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 10",
           "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304819/title/vaiana/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304819/title/vaiana/",
           "availability": {}
         },
         {
@@ -1367,8 +1353,11 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 12",
           "language": "Krievu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/?dt=06.08.2026",
-          "availability": {}
+          "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
+          "availability": {
+            "freeSeats": 183,
+            "totalSeats": 183
+          }
         },
         {
           "id": "apollo-515494",
@@ -1437,7 +1426,7 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 5",
           "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304829/title/val%C4%ABtis_vincents/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304829/title/val%C4%ABtis_vincents/",
           "availability": {}
         },
         {
@@ -1459,8 +1448,11 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 11",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/?dt=06.08.2026",
-          "availability": {}
+          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
+          "availability": {
+            "freeSeats": 196,
+            "totalSeats": 234
+          }
         },
         {
           "id": "apollo-515453",
@@ -1607,7 +1599,7 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 14",
           "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304819/title/vaiana/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304819/title/vaiana/",
           "availability": {}
         },
         {
@@ -1676,9 +1668,12 @@
           "startTime": "2026-08-06T14:10:00+03:00",
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 7",
-          "language": "Krievu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/?dt=06.08.2026",
-          "availability": {}
+          "language": "Latviešu",
+          "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
+          "availability": {
+            "freeSeats": 224,
+            "totalSeats": 228
+          }
         },
         {
           "id": "apollo-515261",
@@ -1747,7 +1742,7 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 6",
           "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304819/title/vaiana/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304819/title/vaiana/",
           "availability": {}
         },
         {
@@ -1797,8 +1792,11 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 2",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/?dt=06.08.2026",
-          "availability": {}
+          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
+          "availability": {
+            "freeSeats": 388,
+            "totalSeats": 427
+          }
         },
         {
           "id": "apollo-515467",
@@ -1948,7 +1946,7 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 9",
           "language": "Krievu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304667/title/rota%C4%BClietu_st%C4%81sts_5/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304667/title/rota%C4%BClietu_st%C4%81sts_5/",
           "availability": {}
         },
         {
@@ -2095,8 +2093,11 @@
           "serviceDate": "2026-08-06",
           "auditorium": "DELFI LUX auditorija",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/?dt=06.08.2026",
-          "availability": {}
+          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
+          "availability": {
+            "freeSeats": 107,
+            "totalSeats": 109
+          }
         },
         {
           "id": "apollo-515516",
@@ -2142,7 +2143,7 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 13",
           "language": "Krievu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304667/title/rota%C4%BClietu_st%C4%81sts_5/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304667/title/rota%C4%BClietu_st%C4%81sts_5/",
           "availability": {}
         },
         {
@@ -2187,8 +2188,11 @@
           "serviceDate": "2026-08-06",
           "auditorium": "PEPSI auditorija",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/?dt=06.08.2026",
-          "availability": {}
+          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
+          "availability": {
+            "freeSeats": 540,
+            "totalSeats": 602
+          }
         },
         {
           "id": "apollo-515241",
@@ -2236,8 +2240,11 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 12",
           "language": "Krievu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/?dt=06.08.2026",
-          "availability": {}
+          "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
+          "availability": {
+            "freeSeats": 177,
+            "totalSeats": 183
+          }
         },
         {
           "id": "apollo-515496",
@@ -2282,8 +2289,11 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 10",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304784/title/iel%C5%ABgums/?dt=06.08.2026",
-          "availability": {}
+          "movieUrl": "https://www.forumcinemas.lv/event/304784/title/iel%C5%ABgums/",
+          "availability": {
+            "freeSeats": 127,
+            "totalSeats": 127
+          }
         },
         {
           "id": "forum-435953",
@@ -2303,7 +2313,7 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 5",
           "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304829/title/val%C4%ABtis_vincents/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304829/title/val%C4%ABtis_vincents/",
           "availability": {}
         },
         {
@@ -2520,8 +2530,11 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 4 LUX",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/?dt=06.08.2026",
-          "availability": {}
+          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
+          "availability": {
+            "freeSeats": 88,
+            "totalSeats": 91
+          }
         },
         {
           "id": "forum-435926",
@@ -2542,9 +2555,12 @@
           "startTime": "2026-08-06T16:40:00+03:00",
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 7",
-          "language": "Krievu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/?dt=06.08.2026",
-          "availability": {}
+          "language": "Latviešu",
+          "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
+          "availability": {
+            "freeSeats": 228,
+            "totalSeats": 228
+          }
         },
         {
           "id": "apollo-515274",
@@ -2645,9 +2661,12 @@
           "startTime": "2026-08-06T16:55:00+03:00",
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 14",
-          "language": "Krievu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/?dt=06.08.2026",
-          "availability": {}
+          "language": "Angļu",
+          "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
+          "availability": {
+            "freeSeats": 179,
+            "totalSeats": 183
+          }
         },
         {
           "id": "forum-435911",
@@ -2667,7 +2686,7 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 6",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304665/title/s%C4%81tans_pradas_brun%C4%8Dos_2/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304665/title/s%C4%81tans_pradas_brun%C4%8Dos_2/",
           "availability": {
             "freeSeats": 92,
             "totalSeats": 96
@@ -2692,8 +2711,11 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 11",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/?dt=06.08.2026",
-          "availability": {}
+          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
+          "availability": {
+            "freeSeats": 212,
+            "totalSeats": 234
+          }
         },
         {
           "id": "apollo-515581",
@@ -2910,7 +2932,7 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 9",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304809/title/aps%C4%93st%C4%ABba/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304809/title/aps%C4%93st%C4%ABba/",
           "availability": {
             "freeSeats": 98,
             "totalSeats": 98
@@ -2959,9 +2981,9 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 13",
           "language": "Japāņu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304611/title/ce%C4%BCojo%C5%A1%C4%81_pils_2004/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304611/title/ce%C4%BCojo%C5%A1%C4%81_pils_2004/",
           "availability": {
-            "freeSeats": 80,
+            "freeSeats": 78,
             "totalSeats": 129
           }
         },
@@ -3062,8 +3084,11 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 12",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/?dt=06.08.2026",
-          "availability": {}
+          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
+          "availability": {
+            "freeSeats": 176,
+            "totalSeats": 183
+          }
         },
         {
           "id": "apollo-515254",
@@ -3157,8 +3182,11 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 2",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/?dt=06.08.2026",
-          "availability": {}
+          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
+          "availability": {
+            "freeSeats": 382,
+            "totalSeats": 427
+          }
         },
         {
           "id": "apollo-515498",
@@ -3224,8 +3252,11 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 5",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304784/title/iel%C5%ABgums/?dt=06.08.2026",
-          "availability": {}
+          "movieUrl": "https://www.forumcinemas.lv/event/304784/title/iel%C5%ABgums/",
+          "availability": {
+            "freeSeats": 91,
+            "totalSeats": 95
+          }
         },
         {
           "id": "apollo-515428",
@@ -3294,9 +3325,9 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 10",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/303990/title/maikls/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/303990/title/maikls/",
           "availability": {
-            "freeSeats": 125,
+            "freeSeats": 123,
             "totalSeats": 127
           }
         },
@@ -3392,9 +3423,9 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 7",
           "language": "Korejiešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304866/title/ateez_light_the_way_in_cinemas/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304866/title/ateez_light_the_way_in_cinemas/",
           "availability": {
-            "freeSeats": 141,
+            "freeSeats": 138,
             "totalSeats": 228
           }
         },
@@ -3446,8 +3477,11 @@
           "serviceDate": "2026-08-06",
           "auditorium": "PEPSI auditorija",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/?dt=06.08.2026",
-          "availability": {}
+          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
+          "availability": {
+            "freeSeats": 539,
+            "totalSeats": 602
+          }
         },
         {
           "id": "forum-435613",
@@ -3469,9 +3503,9 @@
           "serviceDate": "2026-08-06",
           "auditorium": "DELFI LUX auditorija",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/302012/title/la_la_land_kalifornijas_sap%C5%86i_2016/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/302012/title/la_la_land_kalifornijas_sap%C5%86i_2016/",
           "availability": {
-            "freeSeats": 28,
+            "freeSeats": 26,
             "totalSeats": 109
           }
         },
@@ -3494,8 +3528,11 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 14",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/?dt=06.08.2026",
-          "availability": {}
+          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
+          "availability": {
+            "freeSeats": 158,
+            "totalSeats": 183
+          }
         },
         {
           "id": "apollo-515268",
@@ -3687,7 +3724,7 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 6",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304809/title/aps%C4%93st%C4%ABba/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304809/title/aps%C4%93st%C4%ABba/",
           "availability": {}
         },
         {
@@ -3710,8 +3747,11 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 4 LUX",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/?dt=06.08.2026",
-          "availability": {}
+          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
+          "availability": {
+            "freeSeats": 87,
+            "totalSeats": 91
+          }
         },
         {
           "id": "forum-435912",
@@ -3731,7 +3771,7 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 9",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304665/title/s%C4%81tans_pradas_brun%C4%8Dos_2/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304665/title/s%C4%81tans_pradas_brun%C4%8Dos_2/",
           "availability": {}
         },
         {
@@ -3799,8 +3839,11 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 11",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/?dt=06.08.2026",
-          "availability": {}
+          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
+          "availability": {
+            "freeSeats": 231,
+            "totalSeats": 234
+          }
         },
         {
           "id": "apollo-515260",
@@ -3940,7 +3983,7 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 13",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/303990/title/maikls/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/303990/title/maikls/",
           "availability": {}
         },
         {
@@ -3987,7 +4030,7 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 5",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304518/title/projekts_ave_maria/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304518/title/projekts_ave_maria/",
           "availability": {
             "freeSeats": 90,
             "totalSeats": 95
@@ -4062,8 +4105,11 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 7",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/?dt=06.08.2026",
-          "availability": {}
+          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
+          "availability": {
+            "freeSeats": 228,
+            "totalSeats": 228
+          }
         },
         {
           "id": "apollo-515527",
@@ -4230,9 +4276,9 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 10",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304736/title/backrooms_everything_must_go/?dt=06.08.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304736/title/backrooms_everything_must_go/",
           "availability": {
-            "freeSeats": 125,
+            "freeSeats": 123,
             "totalSeats": 127
           }
         },
@@ -4280,8 +4326,11 @@
           "serviceDate": "2026-08-06",
           "auditorium": "Auditorija 2",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/?dt=06.08.2026",
-          "availability": {}
+          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
+          "availability": {
+            "freeSeats": 427,
+            "totalSeats": 427
+          }
         },
         {
           "id": "apollo-515243",
@@ -4461,18 +4510,18 @@
       "url": "https://www.forumcinemas.lv/",
       "status": "stale",
       "dataDate": "2026-08-05",
-      "count": 3,
+      "count": 0,
       "fetchedAt": "2026-08-05T17:23:12.463Z",
       "lastSuccessAt": "2026-08-05T17:23:12.463Z",
-      "error": null
+      "error": "forum failed: Forum Cinemas did not return its 2026-08-05 schedule page"
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "count": 2,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-08-05",
+      "count": 2,
       "fetchedAt": "2026-08-05T19:11:34.149Z",
       "lastSuccessAt": "2026-08-05T19:11:34.149Z",
       "error": null
@@ -4481,9 +4530,9 @@
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "count": 0,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-08-05",
+      "count": 0,
       "fetchedAt": "2026-08-05T19:11:34.149Z",
       "lastSuccessAt": "2026-08-05T19:11:34.149Z",
       "error": null
@@ -4491,29 +4540,6 @@
   ],
   "warnings": [],
   "showtimes": [
-    {
-      "id": "apollo-515437",
-      "source": "apollo",
-      "cinema": "Apollo Plaza",
-      "title": "Ielūgums",
-      "originalTitle": "The Invite",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8583/landscape_qhd/Invite_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "16+",
-      "genres": [
-        "Komēdija",
-        "Drāma"
-      ],
-      "startTime": "2026-08-05T22:15:00.0000000+03:00",
-      "serviceDate": "2026-08-05",
-      "auditorium": "2. zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304144/iel%C5%ABgums?theatreAreaID=1014&dt=05.08.2026",
-      "availability": {
-        "freeSeats": 204
-      }
-    },
     {
       "id": "apollo-515123",
       "source": "apollo",
