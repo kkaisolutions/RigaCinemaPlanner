@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T09:12:26.449Z",
+  "generatedAt": "2026-08-08T09:29:23.197Z",
   "timezone": "Europe/Riga",
   "date": "2026-08-08",
   "dates": [
@@ -14,20 +14,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "cached",
+          "count": 44,
+          "status": "fresh",
           "dataDate": "2026-08-08",
-          "count": 52,
-          "fetchedAt": "2026-08-08T08:30:19.446Z",
-          "lastSuccessAt": "2026-08-08T08:30:19.446Z",
+          "fetchedAt": "2026-08-08T09:29:23.197Z",
+          "lastSuccessAt": "2026-08-08T09:29:23.197Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 75,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-08",
+          "count": 74,
           "fetchedAt": "2026-08-08T09:12:26.449Z",
           "lastSuccessAt": "2026-08-08T09:12:26.449Z",
           "error": null
@@ -36,9 +36,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 31,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-08",
+          "count": 31,
           "fetchedAt": "2026-08-08T09:12:26.449Z",
           "lastSuccessAt": "2026-08-08T09:12:26.449Z",
           "error": null
@@ -46,52 +46,6 @@
       ],
       "warnings": [],
       "showtimes": [
-        {
-          "id": "forum-436059",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Rotaļlietu stāsts 5",
-          "originalTitle": "Toy Story 5",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11209/portrait_medium/toy-story-plakats.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt29355505/",
-          "ageRating": "U",
-          "genres": [
-            "Piedzīvojumi",
-            "Komēdija",
-            "Animācija",
-            "Ģimenes filma"
-          ],
-          "startTime": "2026-08-08T12:20:00+03:00",
-          "serviceDate": "2026-08-08",
-          "auditorium": "Auditorija 10",
-          "language": "Krievu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304667/title/rota%C4%BClietu_st%C4%81sts_5/",
-          "availability": {}
-        },
-        {
-          "id": "apollo-514969",
-          "source": "apollo",
-          "cinema": "Apollo Plaza",
-          "title": "Ķepu patruļa: Dinozauru filma",
-          "originalTitle": "Paw Patrol: The Dino Movie",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8439/landscape_qhd/LK_PP__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "7+",
-          "genres": [
-            "Animācija",
-            "Ģimenes filma"
-          ],
-          "startTime": "2026-08-08T12:20:00.0000000+03:00",
-          "serviceDate": "2026-08-08",
-          "auditorium": "1. zāle",
-          "language": "Latviešu",
-          "movieUrl": "https://www.apollokino.lv/event/304012/%C4%B7epu_patru%C4%BCa_dinozauru_filma?theatreAreaID=1014&dt=08.08.2026",
-          "availability": {
-            "freeSeats": 236
-          }
-        },
         {
           "id": "forum-436039",
           "source": "forum",
@@ -114,7 +68,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
           "availability": {
-            "freeSeats": 63,
+            "freeSeats": 41,
             "totalSeats": 91
           }
         },
@@ -140,7 +94,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304819/title/vaiana/",
           "availability": {
-            "freeSeats": 92,
+            "freeSeats": 89,
             "totalSeats": 98
           }
         },
@@ -266,7 +220,10 @@
           "auditorium": "Auditorija 2",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 352,
+            "totalSeats": 427
+          }
         },
         {
           "id": "cinamon-1147214551",
@@ -564,7 +521,10 @@
           "auditorium": "Auditorija 13",
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304685/title/%C4%B7epu_patru%C4%BCa_dinozauru_filma/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 100,
+            "totalSeats": 129
+          }
         },
         {
           "id": "apollo-515696",
@@ -762,29 +722,6 @@
           }
         },
         {
-          "id": "forum-436112",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Minioni un mošķi",
-          "originalTitle": "Minions & Monsters",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11230/portrait_medium/minions-and-monsters-poster.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt32890033/",
-          "ageRating": "7+",
-          "genres": [
-            "Piedzīvojumi",
-            "Komēdija",
-            "Animācija",
-            "Ģimenes filma"
-          ],
-          "startTime": "2026-08-08T14:20:00+03:00",
-          "serviceDate": "2026-08-08",
-          "auditorium": "Auditorija 12",
-          "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
-          "availability": {}
-        },
-        {
           "id": "forum-436046",
           "source": "forum",
           "cinema": "Forum Cinemas",
@@ -898,7 +835,10 @@
           "auditorium": "Auditorija 14",
           "language": "Krievu",
           "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 176,
+            "totalSeats": 183
+          }
         },
         {
           "id": "forum-436064",
@@ -945,29 +885,6 @@
           "availability": {
             "freeSeats": 146
           }
-        },
-        {
-          "id": "forum-436114",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Minioni un mošķi",
-          "originalTitle": "Minions & Monsters",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11230/portrait_medium/minions-and-monsters-poster.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt32890033/",
-          "ageRating": "7+",
-          "genres": [
-            "Piedzīvojumi",
-            "Komēdija",
-            "Animācija",
-            "Ģimenes filma"
-          ],
-          "startTime": "2026-08-08T14:55:00+03:00",
-          "serviceDate": "2026-08-08",
-          "auditorium": "Auditorija 10",
-          "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
-          "availability": {}
         },
         {
           "id": "apollo-515731",
@@ -1279,7 +1196,7 @@
           "startTime": "2026-08-08T15:25:00+03:00",
           "serviceDate": "2026-08-08",
           "auditorium": "Auditorija 9",
-          "language": "Krievu",
+          "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304667/title/rota%C4%BClietu_st%C4%81sts_5/",
           "availability": {}
         },
@@ -1377,7 +1294,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304809/title/aps%C4%93st%C4%ABba/",
           "availability": {
-            "freeSeats": 78,
+            "freeSeats": 76,
             "totalSeats": 96
           }
         },
@@ -1843,29 +1760,6 @@
           }
         },
         {
-          "id": "forum-436113",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Minioni un mošķi",
-          "originalTitle": "Minions & Monsters",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11230/portrait_medium/minions-and-monsters-poster.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt32890033/",
-          "ageRating": "7+",
-          "genres": [
-            "Piedzīvojumi",
-            "Komēdija",
-            "Animācija",
-            "Ģimenes filma"
-          ],
-          "startTime": "2026-08-08T17:20:00+03:00",
-          "serviceDate": "2026-08-08",
-          "auditorium": "Auditorija 10",
-          "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
-          "availability": {}
-        },
-        {
           "id": "forum-435625",
           "source": "forum",
           "cinema": "Forum Cinemas",
@@ -1886,7 +1780,7 @@
           "language": "Japāņu",
           "movieUrl": "https://www.forumcinemas.lv/event/304633/title/princese_mononoke_1997/",
           "availability": {
-            "freeSeats": 98,
+            "freeSeats": 96,
             "totalSeats": 127
           }
         },
@@ -2389,7 +2283,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/301955/title/par_da%C5%BEiem_dol%C4%81riem_vair%C4%81k_1965/",
           "availability": {
-            "freeSeats": 86,
+            "freeSeats": 82,
             "totalSeats": 129
           }
         },
@@ -2464,7 +2358,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/303990/title/maikls/",
           "availability": {
-            "freeSeats": 85,
+            "freeSeats": 83,
             "totalSeats": 95
           }
         },
@@ -3703,20 +3597,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "cached",
-          "dataDate": "2026-08-09",
           "count": 50,
-          "fetchedAt": "2026-08-08T08:30:19.446Z",
-          "lastSuccessAt": "2026-08-08T08:30:19.446Z",
+          "status": "fresh",
+          "dataDate": "2026-08-09",
+          "fetchedAt": "2026-08-08T09:29:23.197Z",
+          "lastSuccessAt": "2026-08-08T09:29:23.197Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 92,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-09",
+          "count": 92,
           "fetchedAt": "2026-08-08T09:12:26.449Z",
           "lastSuccessAt": "2026-08-08T09:12:26.449Z",
           "error": null
@@ -3725,9 +3619,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 38,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-09",
+          "count": 38,
           "fetchedAt": "2026-08-08T09:12:26.449Z",
           "lastSuccessAt": "2026-08-08T09:12:26.449Z",
           "error": null
@@ -4061,7 +3955,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/?dt=09.08.2026",
           "availability": {
-            "freeSeats": 556,
+            "freeSeats": 555,
             "totalSeats": 602
           }
         },
@@ -7065,7 +6959,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/301878/title/pa_asmeni_skrejo%C5%A1ais_1982/?dt=09.08.2026",
           "availability": {
-            "freeSeats": 118,
+            "freeSeats": 115,
             "totalSeats": 183
           }
         },
@@ -8098,20 +7992,20 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/",
-      "status": "cached",
+      "count": 44,
+      "status": "fresh",
       "dataDate": "2026-08-08",
-      "count": 52,
-      "fetchedAt": "2026-08-08T08:30:19.446Z",
-      "lastSuccessAt": "2026-08-08T08:30:19.446Z",
+      "fetchedAt": "2026-08-08T09:29:23.197Z",
+      "lastSuccessAt": "2026-08-08T09:29:23.197Z",
       "error": null
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "count": 75,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-08-08",
+      "count": 74,
       "fetchedAt": "2026-08-08T09:12:26.449Z",
       "lastSuccessAt": "2026-08-08T09:12:26.449Z",
       "error": null
@@ -8120,9 +8014,9 @@
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "count": 31,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-08-08",
+      "count": 31,
       "fetchedAt": "2026-08-08T09:12:26.449Z",
       "lastSuccessAt": "2026-08-08T09:12:26.449Z",
       "error": null
@@ -8130,52 +8024,6 @@
   ],
   "warnings": [],
   "showtimes": [
-    {
-      "id": "forum-436059",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Rotaļlietu stāsts 5",
-      "originalTitle": "Toy Story 5",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11209/portrait_medium/toy-story-plakats.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt29355505/",
-      "ageRating": "U",
-      "genres": [
-        "Piedzīvojumi",
-        "Komēdija",
-        "Animācija",
-        "Ģimenes filma"
-      ],
-      "startTime": "2026-08-08T12:20:00+03:00",
-      "serviceDate": "2026-08-08",
-      "auditorium": "Auditorija 10",
-      "language": "Krievu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304667/title/rota%C4%BClietu_st%C4%81sts_5/",
-      "availability": {}
-    },
-    {
-      "id": "apollo-514969",
-      "source": "apollo",
-      "cinema": "Apollo Plaza",
-      "title": "Ķepu patruļa: Dinozauru filma",
-      "originalTitle": "Paw Patrol: The Dino Movie",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8439/landscape_qhd/LK_PP__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "7+",
-      "genres": [
-        "Animācija",
-        "Ģimenes filma"
-      ],
-      "startTime": "2026-08-08T12:20:00.0000000+03:00",
-      "serviceDate": "2026-08-08",
-      "auditorium": "1. zāle",
-      "language": "Latviešu",
-      "movieUrl": "https://www.apollokino.lv/event/304012/%C4%B7epu_patru%C4%BCa_dinozauru_filma?theatreAreaID=1014&dt=08.08.2026",
-      "availability": {
-        "freeSeats": 236
-      }
-    },
     {
       "id": "forum-436039",
       "source": "forum",
@@ -8198,7 +8046,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
       "availability": {
-        "freeSeats": 63,
+        "freeSeats": 41,
         "totalSeats": 91
       }
     },
@@ -8224,7 +8072,7 @@
       "language": "Latviešu",
       "movieUrl": "https://www.forumcinemas.lv/event/304819/title/vaiana/",
       "availability": {
-        "freeSeats": 92,
+        "freeSeats": 89,
         "totalSeats": 98
       }
     },
@@ -8350,7 +8198,10 @@
       "auditorium": "Auditorija 2",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 352,
+        "totalSeats": 427
+      }
     },
     {
       "id": "cinamon-1147214551",
@@ -8648,7 +8499,10 @@
       "auditorium": "Auditorija 13",
       "language": "Latviešu",
       "movieUrl": "https://www.forumcinemas.lv/event/304685/title/%C4%B7epu_patru%C4%BCa_dinozauru_filma/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 100,
+        "totalSeats": 129
+      }
     },
     {
       "id": "apollo-515696",
@@ -8846,29 +8700,6 @@
       }
     },
     {
-      "id": "forum-436112",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Minioni un mošķi",
-      "originalTitle": "Minions & Monsters",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11230/portrait_medium/minions-and-monsters-poster.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt32890033/",
-      "ageRating": "7+",
-      "genres": [
-        "Piedzīvojumi",
-        "Komēdija",
-        "Animācija",
-        "Ģimenes filma"
-      ],
-      "startTime": "2026-08-08T14:20:00+03:00",
-      "serviceDate": "2026-08-08",
-      "auditorium": "Auditorija 12",
-      "language": "Latviešu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
-      "availability": {}
-    },
-    {
       "id": "forum-436046",
       "source": "forum",
       "cinema": "Forum Cinemas",
@@ -8982,7 +8813,10 @@
       "auditorium": "Auditorija 14",
       "language": "Krievu",
       "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 176,
+        "totalSeats": 183
+      }
     },
     {
       "id": "forum-436064",
@@ -9029,29 +8863,6 @@
       "availability": {
         "freeSeats": 146
       }
-    },
-    {
-      "id": "forum-436114",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Minioni un mošķi",
-      "originalTitle": "Minions & Monsters",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11230/portrait_medium/minions-and-monsters-poster.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt32890033/",
-      "ageRating": "7+",
-      "genres": [
-        "Piedzīvojumi",
-        "Komēdija",
-        "Animācija",
-        "Ģimenes filma"
-      ],
-      "startTime": "2026-08-08T14:55:00+03:00",
-      "serviceDate": "2026-08-08",
-      "auditorium": "Auditorija 10",
-      "language": "Latviešu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
-      "availability": {}
     },
     {
       "id": "apollo-515731",
@@ -9363,7 +9174,7 @@
       "startTime": "2026-08-08T15:25:00+03:00",
       "serviceDate": "2026-08-08",
       "auditorium": "Auditorija 9",
-      "language": "Krievu",
+      "language": "Latviešu",
       "movieUrl": "https://www.forumcinemas.lv/event/304667/title/rota%C4%BClietu_st%C4%81sts_5/",
       "availability": {}
     },
@@ -9461,7 +9272,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304809/title/aps%C4%93st%C4%ABba/",
       "availability": {
-        "freeSeats": 78,
+        "freeSeats": 76,
         "totalSeats": 96
       }
     },
@@ -9927,29 +9738,6 @@
       }
     },
     {
-      "id": "forum-436113",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Minioni un mošķi",
-      "originalTitle": "Minions & Monsters",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11230/portrait_medium/minions-and-monsters-poster.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt32890033/",
-      "ageRating": "7+",
-      "genres": [
-        "Piedzīvojumi",
-        "Komēdija",
-        "Animācija",
-        "Ģimenes filma"
-      ],
-      "startTime": "2026-08-08T17:20:00+03:00",
-      "serviceDate": "2026-08-08",
-      "auditorium": "Auditorija 10",
-      "language": "Latviešu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
-      "availability": {}
-    },
-    {
       "id": "forum-435625",
       "source": "forum",
       "cinema": "Forum Cinemas",
@@ -9970,7 +9758,7 @@
       "language": "Japāņu",
       "movieUrl": "https://www.forumcinemas.lv/event/304633/title/princese_mononoke_1997/",
       "availability": {
-        "freeSeats": 98,
+        "freeSeats": 96,
         "totalSeats": 127
       }
     },
@@ -10473,7 +10261,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/301955/title/par_da%C5%BEiem_dol%C4%81riem_vair%C4%81k_1965/",
       "availability": {
-        "freeSeats": 86,
+        "freeSeats": 82,
         "totalSeats": 129
       }
     },
@@ -10548,7 +10336,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/303990/title/maikls/",
       "availability": {
-        "freeSeats": 85,
+        "freeSeats": 83,
         "totalSeats": 95
       }
     },
