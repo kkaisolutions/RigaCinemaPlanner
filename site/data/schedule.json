@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T18:11:37.964Z",
+  "generatedAt": "2026-08-09T18:28:10.145Z",
   "timezone": "Europe/Riga",
   "date": "2026-08-09",
   "dates": [
@@ -14,20 +14,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "cached",
+          "count": 2,
+          "status": "fresh",
           "dataDate": "2026-08-09",
-          "count": 6,
-          "fetchedAt": "2026-08-09T17:23:20.679Z",
-          "lastSuccessAt": "2026-08-09T17:23:20.679Z",
+          "fetchedAt": "2026-08-09T18:28:10.145Z",
+          "lastSuccessAt": "2026-08-09T18:28:10.145Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 11,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-09",
+          "count": 10,
           "fetchedAt": "2026-08-09T18:11:37.964Z",
           "lastSuccessAt": "2026-08-09T18:11:37.964Z",
           "error": null
@@ -36,9 +36,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 4,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-09",
+          "count": 4,
           "fetchedAt": "2026-08-09T18:11:37.964Z",
           "lastSuccessAt": "2026-08-09T18:11:37.964Z",
           "error": null
@@ -46,56 +46,6 @@
       ],
       "warnings": [],
       "showtimes": [
-        {
-          "id": "cinamon-228082781",
-          "source": "cinamon",
-          "cinema": "Cinamon Alfa",
-          "title": "Apsēstība",
-          "originalTitle": "Obsession",
-          "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1059812055",
-          "imdbRating": "7.9",
-          "imdbUrl": "",
-          "ageRating": "16+",
-          "genres": [
-            "Šausmu filma"
-          ],
-          "startTime": "2026-08-09T21:15:00+03:00",
-          "serviceDate": "2026-08-09",
-          "auditorium": "Zale 6",
-          "language": "",
-          "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/apsestiba/lv",
-          "availability": {
-            "totalSeats": 78,
-            "freeSeats": 65,
-            "takenSeats": 13,
-            "occupiedPercent": 17
-          }
-        },
-        {
-          "id": "apollo-516267",
-          "source": "apollo",
-          "cinema": "Apollo Domina",
-          "title": "Saldējuma pārdevējs",
-          "originalTitle": "Ice Cream Man",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8595/landscape_qhd/IceCreamMan_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "18+",
-          "genres": [
-            "Šausmu filma"
-          ],
-          "startTime": "2026-08-09T21:25:00.0000000+03:00",
-          "serviceDate": "2026-08-09",
-          "auditorium": "3. zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304155/sald%C4%93juma_p%C4%81rdev%C4%93js?theatreAreaID=1014&dt=09.08.2026",
-          "availability": {
-            "freeSeats": 68,
-            "totalSeats": 70,
-            "takenSeats": 2,
-            "occupiedPercent": 3
-          }
-        },
         {
           "id": "apollo-516242",
           "source": "apollo",
@@ -214,7 +164,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304736/title/backrooms_everything_must_go/",
           "availability": {
-            "freeSeats": 218,
+            "freeSeats": 216,
             "totalSeats": 228
           }
         },
@@ -238,7 +188,10 @@
           "auditorium": "PEPSI auditorija",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 573,
+            "totalSeats": 602
+          }
         },
         {
           "id": "apollo-516081",
@@ -440,20 +393,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "cached",
-          "dataDate": "2026-08-10",
           "count": 51,
-          "fetchedAt": "2026-08-09T17:23:20.679Z",
-          "lastSuccessAt": "2026-08-09T17:23:20.679Z",
+          "status": "fresh",
+          "dataDate": "2026-08-10",
+          "fetchedAt": "2026-08-09T18:28:10.145Z",
+          "lastSuccessAt": "2026-08-09T18:28:10.145Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 93,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-10",
+          "count": 93,
           "fetchedAt": "2026-08-09T18:11:37.964Z",
           "lastSuccessAt": "2026-08-09T18:11:37.964Z",
           "error": null
@@ -462,9 +415,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 34,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-10",
+          "count": 34,
           "fetchedAt": "2026-08-09T18:11:37.964Z",
           "lastSuccessAt": "2026-08-09T18:11:37.964Z",
           "error": null
@@ -644,7 +597,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/?dt=10.08.2026",
           "availability": {
-            "freeSeats": 532,
+            "freeSeats": 526,
             "totalSeats": 602
           }
         },
@@ -1924,7 +1877,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304829/title/val%C4%ABtis_vincents/?dt=10.08.2026",
           "availability": {
-            "freeSeats": 77,
+            "freeSeats": 75,
             "totalSeats": 95
           }
         },
@@ -3433,7 +3386,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304736/title/backrooms_everything_must_go/?dt=10.08.2026",
           "availability": {
-            "freeSeats": 87,
+            "freeSeats": 85,
             "totalSeats": 98
           }
         },
@@ -4772,20 +4725,20 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/",
-      "status": "cached",
+      "count": 2,
+      "status": "fresh",
       "dataDate": "2026-08-09",
-      "count": 6,
-      "fetchedAt": "2026-08-09T17:23:20.679Z",
-      "lastSuccessAt": "2026-08-09T17:23:20.679Z",
+      "fetchedAt": "2026-08-09T18:28:10.145Z",
+      "lastSuccessAt": "2026-08-09T18:28:10.145Z",
       "error": null
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "count": 11,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-08-09",
+      "count": 10,
       "fetchedAt": "2026-08-09T18:11:37.964Z",
       "lastSuccessAt": "2026-08-09T18:11:37.964Z",
       "error": null
@@ -4794,9 +4747,9 @@
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "count": 4,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-08-09",
+      "count": 4,
       "fetchedAt": "2026-08-09T18:11:37.964Z",
       "lastSuccessAt": "2026-08-09T18:11:37.964Z",
       "error": null
@@ -4804,56 +4757,6 @@
   ],
   "warnings": [],
   "showtimes": [
-    {
-      "id": "cinamon-228082781",
-      "source": "cinamon",
-      "cinema": "Cinamon Alfa",
-      "title": "Apsēstība",
-      "originalTitle": "Obsession",
-      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1059812055",
-      "imdbRating": "7.9",
-      "imdbUrl": "",
-      "ageRating": "16+",
-      "genres": [
-        "Šausmu filma"
-      ],
-      "startTime": "2026-08-09T21:15:00+03:00",
-      "serviceDate": "2026-08-09",
-      "auditorium": "Zale 6",
-      "language": "",
-      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/apsestiba/lv",
-      "availability": {
-        "totalSeats": 78,
-        "freeSeats": 65,
-        "takenSeats": 13,
-        "occupiedPercent": 17
-      }
-    },
-    {
-      "id": "apollo-516267",
-      "source": "apollo",
-      "cinema": "Apollo Domina",
-      "title": "Saldējuma pārdevējs",
-      "originalTitle": "Ice Cream Man",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8595/landscape_qhd/IceCreamMan_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "18+",
-      "genres": [
-        "Šausmu filma"
-      ],
-      "startTime": "2026-08-09T21:25:00.0000000+03:00",
-      "serviceDate": "2026-08-09",
-      "auditorium": "3. zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304155/sald%C4%93juma_p%C4%81rdev%C4%93js?theatreAreaID=1014&dt=09.08.2026",
-      "availability": {
-        "freeSeats": 68,
-        "totalSeats": 70,
-        "takenSeats": 2,
-        "occupiedPercent": 3
-      }
-    },
     {
       "id": "apollo-516242",
       "source": "apollo",
@@ -4972,7 +4875,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304736/title/backrooms_everything_must_go/",
       "availability": {
-        "freeSeats": 218,
+        "freeSeats": 216,
         "totalSeats": 228
       }
     },
@@ -4996,7 +4899,10 @@
       "auditorium": "PEPSI auditorija",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 573,
+        "totalSeats": 602
+      }
     },
     {
       "id": "apollo-516081",
