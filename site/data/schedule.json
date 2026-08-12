@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T10:53:57.719Z",
+  "generatedAt": "2026-08-12T11:12:30.206Z",
   "timezone": "Europe/Riga",
   "date": "2026-08-12",
   "dates": [
@@ -14,9 +14,9 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "count": 40,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-12",
+          "count": 36,
           "fetchedAt": "2026-08-12T10:53:57.719Z",
           "lastSuccessAt": "2026-08-12T10:53:57.719Z",
           "error": null
@@ -25,98 +25,27 @@
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "status": "cached",
+          "count": 63,
+          "status": "fresh",
           "dataDate": "2026-08-12",
-          "count": 70,
-          "fetchedAt": "2026-08-12T10:12:02.090Z",
-          "lastSuccessAt": "2026-08-12T10:12:02.090Z",
+          "fetchedAt": "2026-08-12T11:12:30.206Z",
+          "lastSuccessAt": "2026-08-12T11:12:30.206Z",
           "error": null
         },
         {
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "status": "cached",
+          "count": 23,
+          "status": "fresh",
           "dataDate": "2026-08-12",
-          "count": 26,
-          "fetchedAt": "2026-08-12T10:12:02.090Z",
-          "lastSuccessAt": "2026-08-12T10:12:02.090Z",
+          "fetchedAt": "2026-08-12T11:12:30.206Z",
+          "lastSuccessAt": "2026-08-12T11:12:30.206Z",
           "error": null
         }
       ],
       "warnings": [],
       "showtimes": [
-        {
-          "id": "forum-436261",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Rotaļlietu stāsts 5",
-          "originalTitle": "Toy Story 5",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11209/portrait_medium/toy-story-plakats.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt29355505/",
-          "ageRating": "U",
-          "genres": [
-            "Piedzīvojumi",
-            "Komēdija",
-            "Animācija",
-            "Ģimenes filma"
-          ],
-          "startTime": "2026-08-12T14:00:00+03:00",
-          "serviceDate": "2026-08-12",
-          "auditorium": "Auditorija 6",
-          "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304667/title/rota%C4%BClietu_st%C4%81sts_5/",
-          "availability": {}
-        },
-        {
-          "id": "cinamon-1244795712",
-          "source": "cinamon",
-          "cinema": "Cinamon Alfa",
-          "title": "Minioni un mošķi",
-          "originalTitle": "Minions & Monsters",
-          "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1752605446",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "7+",
-          "genres": [
-            "Animācija"
-          ],
-          "startTime": "2026-08-12T14:00:00+03:00",
-          "serviceDate": "2026-08-12",
-          "auditorium": "Zale 3",
-          "language": "(latviešu valodā)",
-          "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/minioni-un-moski/lv",
-          "availability": {
-            "totalSeats": 184,
-            "freeSeats": 172,
-            "takenSeats": 12,
-            "occupiedPercent": 7
-          }
-        },
-        {
-          "id": "apollo-516167",
-          "source": "apollo",
-          "cinema": "Apollo Plaza",
-          "title": "Odiseja",
-          "originalTitle": "The Odyssey",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8419/landscape_qhd/LK_OD__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "16+",
-          "genres": [
-            "Piedzīvojumu filma",
-            "Vēsturiska"
-          ],
-          "startTime": "2026-08-12T14:05:00.0000000+03:00",
-          "serviceDate": "2026-08-12",
-          "auditorium": "8. Vintage zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=12.08.2026",
-          "availability": {
-            "freeSeats": 43
-          }
-        },
         {
           "id": "forum-436229",
           "source": "forum",
@@ -163,8 +92,8 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/odiseja/lv",
           "availability": {
             "totalSeats": 250,
-            "freeSeats": 236,
-            "takenSeats": 14,
+            "freeSeats": 235,
+            "takenSeats": 15,
             "occupiedPercent": 6
           }
         },
@@ -215,10 +144,10 @@
           "language": "Latviešu",
           "movieUrl": "https://www.apollokino.lv/event/304031/rota%C4%BClietu_st%C4%81sts_5?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 103,
+            "freeSeats": 92,
             "totalSeats": 127,
-            "takenSeats": 24,
-            "occupiedPercent": 19
+            "takenSeats": 35,
+            "occupiedPercent": 28
           }
         },
         {
@@ -242,7 +171,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 96
+            "freeSeats": 92
           }
         },
         {
@@ -290,10 +219,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 84,
+            "freeSeats": 57,
             "totalSeats": 277,
-            "takenSeats": 193,
-            "occupiedPercent": 70
+            "takenSeats": 220,
+            "occupiedPercent": 79
           }
         },
         {
@@ -316,7 +245,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 180
+            "freeSeats": 153
           }
         },
         {
@@ -387,7 +316,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 85
+            "freeSeats": 72
           }
         },
         {
@@ -410,9 +339,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/zirneklcilveks-jauna-diena/lv",
           "availability": {
             "totalSeats": 357,
-            "freeSeats": 337,
-            "takenSeats": 20,
-            "occupiedPercent": 6
+            "freeSeats": 332,
+            "takenSeats": 25,
+            "occupiedPercent": 7
           }
         },
         {
@@ -488,7 +417,7 @@
           "language": "Krievu",
           "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 142
+            "freeSeats": 126
           }
         },
         {
@@ -511,10 +440,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 65,
+            "freeSeats": 56,
             "totalSeats": 70,
-            "takenSeats": 5,
-            "occupiedPercent": 7
+            "takenSeats": 14,
+            "occupiedPercent": 20
           }
         },
         {
@@ -537,9 +466,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/minioni-un-moski/lv",
           "availability": {
             "totalSeats": 78,
-            "freeSeats": 71,
-            "takenSeats": 7,
-            "occupiedPercent": 9
+            "freeSeats": 72,
+            "takenSeats": 6,
+            "occupiedPercent": 8
           }
         },
         {
@@ -563,10 +492,10 @@
           "language": "Latviešu",
           "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 70,
+            "freeSeats": 62,
             "totalSeats": 70,
-            "takenSeats": 0,
-            "occupiedPercent": 0
+            "takenSeats": 8,
+            "occupiedPercent": 11
           }
         },
         {
@@ -589,7 +518,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 55
+            "freeSeats": 51
           }
         },
         {
@@ -637,7 +566,7 @@
           "language": "Krievu",
           "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 76
+            "freeSeats": 74
           }
         },
         {
@@ -660,7 +589,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 317
+            "freeSeats": 311
           }
         },
         {
@@ -683,10 +612,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 56,
+            "freeSeats": 40,
             "totalSeats": 227,
-            "takenSeats": 171,
-            "occupiedPercent": 75
+            "takenSeats": 187,
+            "occupiedPercent": 82
           }
         },
         {
@@ -736,7 +665,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304149/aps%C4%93st%C4%ABba?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 7
+            "freeSeats": 5
           }
         },
         {
@@ -784,9 +713,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/rotallietu-stasts-5/lv",
           "availability": {
             "totalSeats": 48,
-            "freeSeats": 35,
-            "takenSeats": 13,
-            "occupiedPercent": 27
+            "freeSeats": 29,
+            "takenSeats": 19,
+            "occupiedPercent": 40
           }
         },
         {
@@ -878,9 +807,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/minioni-un-moski/lv",
           "availability": {
             "totalSeats": 184,
-            "freeSeats": 178,
-            "takenSeats": 6,
-            "occupiedPercent": 3
+            "freeSeats": 176,
+            "takenSeats": 8,
+            "occupiedPercent": 4
           }
         },
         {
@@ -903,7 +832,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/303659/maikls?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 54
+            "freeSeats": 52
           }
         },
         {
@@ -926,9 +855,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/odiseja/lv",
           "availability": {
             "totalSeats": 163,
-            "freeSeats": 146,
-            "takenSeats": 17,
-            "occupiedPercent": 10
+            "freeSeats": 148,
+            "takenSeats": 15,
+            "occupiedPercent": 9
           }
         },
         {
@@ -1022,9 +951,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/saldejuma-pardevejs/lv",
           "availability": {
             "totalSeats": 93,
-            "freeSeats": 87,
-            "takenSeats": 6,
-            "occupiedPercent": 6
+            "freeSeats": 83,
+            "takenSeats": 10,
+            "occupiedPercent": 11
           }
         },
         {
@@ -1048,7 +977,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 107
+            "freeSeats": 105
           }
         },
         {
@@ -1119,10 +1048,10 @@
           "language": "Krievu",
           "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 114,
+            "freeSeats": 100,
             "totalSeats": 127,
-            "takenSeats": 13,
-            "occupiedPercent": 10
+            "takenSeats": 27,
+            "occupiedPercent": 21
           }
         },
         {
@@ -1170,10 +1099,10 @@
           "language": "Krievu",
           "movieUrl": "https://www.apollokino.lv/event/304037/vaiana?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 37,
+            "freeSeats": 32,
             "totalSeats": 90,
-            "takenSeats": 53,
-            "occupiedPercent": 59
+            "takenSeats": 58,
+            "occupiedPercent": 64
           }
         },
         {
@@ -1197,7 +1126,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 91
+            "freeSeats": 86
           }
         },
         {
@@ -1245,7 +1174,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 71
+            "freeSeats": 58
           }
         },
         {
@@ -1290,9 +1219,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/zirneklcilveks-jauna-diena/lv",
           "availability": {
             "totalSeats": 78,
-            "freeSeats": 65,
-            "takenSeats": 13,
-            "occupiedPercent": 17
+            "freeSeats": 66,
+            "takenSeats": 12,
+            "occupiedPercent": 15
           }
         },
         {
@@ -1338,7 +1267,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 10
+            "freeSeats": 12
           }
         },
         {
@@ -1362,7 +1291,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 78
+            "freeSeats": 74
           }
         },
         {
@@ -1385,10 +1314,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 58,
+            "freeSeats": 61,
             "totalSeats": 70,
-            "takenSeats": 12,
-            "occupiedPercent": 17
+            "takenSeats": 9,
+            "occupiedPercent": 13
           }
         },
         {
@@ -1411,7 +1340,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 167
+            "freeSeats": 164
           }
         },
         {
@@ -1458,7 +1387,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304124/ozolu_ielas_gals?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 40
+            "freeSeats": 39
           }
         },
         {
@@ -1484,10 +1413,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304124/ozolu_ielas_gals?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 53,
+            "freeSeats": 51,
             "totalSeats": 70,
-            "takenSeats": 17,
-            "occupiedPercent": 24
+            "takenSeats": 19,
+            "occupiedPercent": 27
           }
         },
         {
@@ -1510,9 +1439,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/odiseja/lv",
           "availability": {
             "totalSeats": 250,
-            "freeSeats": 233,
-            "takenSeats": 17,
-            "occupiedPercent": 7
+            "freeSeats": 229,
+            "takenSeats": 21,
+            "occupiedPercent": 8
           }
         },
         {
@@ -1535,9 +1464,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/zirneklcilveks-jauna-diena/lv",
           "availability": {
             "totalSeats": 357,
-            "freeSeats": 342,
-            "takenSeats": 15,
-            "occupiedPercent": 4
+            "freeSeats": 337,
+            "takenSeats": 20,
+            "occupiedPercent": 6
           }
         },
         {
@@ -1559,7 +1488,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304155/sald%C4%93juma_p%C4%81rdev%C4%93js?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 14
+            "freeSeats": 12
           }
         },
         {
@@ -1582,7 +1511,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304144/iel%C5%ABgums?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 48
+            "freeSeats": 41
           }
         },
         {
@@ -1605,10 +1534,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 55,
+            "freeSeats": 58,
             "totalSeats": 70,
-            "takenSeats": 15,
-            "occupiedPercent": 21
+            "takenSeats": 12,
+            "occupiedPercent": 17
           }
         },
         {
@@ -1631,9 +1560,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/minioni-un-moski/lv",
           "availability": {
             "totalSeats": 48,
-            "freeSeats": 42,
-            "takenSeats": 6,
-            "occupiedPercent": 13
+            "freeSeats": 40,
+            "takenSeats": 8,
+            "occupiedPercent": 17
           }
         },
         {
@@ -1682,7 +1611,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304174/tikai_viena_nakts?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 88
+            "freeSeats": 89
           }
         },
         {
@@ -1708,10 +1637,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304124/ozolu_ielas_gals?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 241,
+            "freeSeats": 235,
             "totalSeats": 277,
-            "takenSeats": 36,
-            "occupiedPercent": 13
+            "takenSeats": 42,
+            "occupiedPercent": 15
           }
         },
         {
@@ -1734,9 +1663,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/ozolu-ielas-gals/lv",
           "availability": {
             "totalSeats": 184,
-            "freeSeats": 175,
-            "takenSeats": 9,
-            "occupiedPercent": 5
+            "freeSeats": 176,
+            "takenSeats": 8,
+            "occupiedPercent": 4
           }
         },
         {
@@ -1759,9 +1688,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/tikai-viena-nakts/lv",
           "availability": {
             "totalSeats": 93,
-            "freeSeats": 86,
-            "takenSeats": 7,
-            "occupiedPercent": 8
+            "freeSeats": 87,
+            "takenSeats": 6,
+            "occupiedPercent": 6
           }
         },
         {
@@ -1807,33 +1736,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 47,
+            "freeSeats": 42,
             "totalSeats": 227,
-            "takenSeats": 180,
-            "occupiedPercent": 79
-          }
-        },
-        {
-          "id": "apollo-516006",
-          "source": "apollo",
-          "cinema": "Apollo Plaza",
-          "title": "Zirnekļcilvēks: Jauna diena",
-          "originalTitle": "Spider-Man: Brand New Day",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8505/landscape_qhd/SpiderMan-BND_LV_PPRef_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "12+",
-          "genres": [
-            "Piedzīvojumu filma",
-            "Fantastika"
-          ],
-          "startTime": "2026-08-12T18:45:00.0000000+03:00",
-          "serviceDate": "2026-08-12",
-          "auditorium": "1. zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
-          "availability": {
-            "freeSeats": 293
+            "takenSeats": 185,
+            "occupiedPercent": 81
           }
         },
         {
@@ -1858,10 +1764,33 @@
           "language": "Latviešu",
           "movieUrl": "https://www.apollokino.lv/event/304037/vaiana?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 108,
+            "freeSeats": 98,
             "totalSeats": 127,
-            "takenSeats": 19,
-            "occupiedPercent": 15
+            "takenSeats": 29,
+            "occupiedPercent": 23
+          }
+        },
+        {
+          "id": "apollo-516006",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Zirnekļcilvēks: Jauna diena",
+          "originalTitle": "Spider-Man: Brand New Day",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8505/landscape_qhd/SpiderMan-BND_LV_PPRef_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Piedzīvojumu filma",
+            "Fantastika"
+          ],
+          "startTime": "2026-08-12T18:45:00.0000000+03:00",
+          "serviceDate": "2026-08-12",
+          "auditorium": "1. zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
+          "availability": {
+            "freeSeats": 289
           }
         },
         {
@@ -1884,7 +1813,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 49
+            "freeSeats": 43
           }
         },
         {
@@ -1981,7 +1910,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304174/tikai_viena_nakts?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 69
+            "freeSeats": 72
           }
         },
         {
@@ -2144,10 +2073,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 28,
+            "freeSeats": 22,
             "totalSeats": 90,
-            "takenSeats": 62,
-            "occupiedPercent": 69
+            "takenSeats": 68,
+            "occupiedPercent": 76
           }
         },
         {
@@ -2169,7 +2098,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304155/sald%C4%93juma_p%C4%81rdev%C4%93js?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 75
+            "freeSeats": 73
           }
         },
         {
@@ -2239,9 +2168,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/zirneklcilveks-jauna-diena/lv",
           "availability": {
             "totalSeats": 163,
-            "freeSeats": 154,
-            "takenSeats": 9,
-            "occupiedPercent": 6
+            "freeSeats": 147,
+            "takenSeats": 16,
+            "occupiedPercent": 10
           }
         },
         {
@@ -2264,7 +2193,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/303659/maikls?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 15
+            "freeSeats": 8
           }
         },
         {
@@ -2287,7 +2216,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 37
+            "freeSeats": 34
           }
         },
         {
@@ -2408,7 +2337,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 44
+            "freeSeats": 30
           }
         },
         {
@@ -2437,29 +2366,6 @@
           }
         },
         {
-          "id": "apollo-516027",
-          "source": "apollo",
-          "cinema": "Apollo Plaza",
-          "title": "Zirnekļcilvēks: Jauna diena",
-          "originalTitle": "Spider-Man: Brand New Day",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8505/landscape_qhd/SpiderMan-BND_LV_PPRef_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "12+",
-          "genres": [
-            "Piedzīvojumu filma",
-            "Fantastika"
-          ],
-          "startTime": "2026-08-12T20:45:00.0000000+03:00",
-          "serviceDate": "2026-08-12",
-          "auditorium": "2. zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
-          "availability": {
-            "freeSeats": 183
-          }
-        },
-        {
           "id": "apollo-516120",
           "source": "apollo",
           "cinema": "Apollo Plaza",
@@ -2479,7 +2385,30 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304096/backrooms_bez_izejas?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 43
+            "freeSeats": 41
+          }
+        },
+        {
+          "id": "apollo-516027",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Zirnekļcilvēks: Jauna diena",
+          "originalTitle": "Spider-Man: Brand New Day",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8505/landscape_qhd/SpiderMan-BND_LV_PPRef_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Piedzīvojumu filma",
+            "Fantastika"
+          ],
+          "startTime": "2026-08-12T20:45:00.0000000+03:00",
+          "serviceDate": "2026-08-12",
+          "auditorium": "2. zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
+          "availability": {
+            "freeSeats": 184
           }
         },
         {
@@ -2577,10 +2506,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304124/ozolu_ielas_gals?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 251,
+            "freeSeats": 248,
             "totalSeats": 277,
-            "takenSeats": 26,
-            "occupiedPercent": 9
+            "takenSeats": 29,
+            "occupiedPercent": 10
           }
         },
         {
@@ -2674,7 +2603,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 69
+            "freeSeats": 72
           }
         },
         {
@@ -2696,10 +2625,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304155/sald%C4%93juma_p%C4%81rdev%C4%93js?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 115,
+            "freeSeats": 109,
             "totalSeats": 127,
-            "takenSeats": 12,
-            "occupiedPercent": 9
+            "takenSeats": 18,
+            "occupiedPercent": 14
           }
         },
         {
@@ -2764,7 +2693,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/303659/maikls?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 59
+            "freeSeats": 57
           }
         },
         {
@@ -2836,9 +2765,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/zirneklcilveks-jauna-diena/lv",
           "availability": {
             "totalSeats": 357,
-            "freeSeats": 346,
-            "takenSeats": 11,
-            "occupiedPercent": 3
+            "freeSeats": 349,
+            "takenSeats": 8,
+            "occupiedPercent": 2
           }
         },
         {
@@ -2885,7 +2814,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 73
+            "freeSeats": 71
           }
         },
         {
@@ -2908,10 +2837,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 143,
+            "freeSeats": 127,
             "totalSeats": 227,
-            "takenSeats": 84,
-            "occupiedPercent": 37
+            "takenSeats": 100,
+            "occupiedPercent": 44
           }
         },
         {
@@ -2934,7 +2863,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304154/%C4%BCaunie_miro%C5%86i_deg?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 32
+            "freeSeats": 34
           }
         },
         {
@@ -3004,7 +2933,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304155/sald%C4%93juma_p%C4%81rdev%C4%93js?theatreAreaID=1014&dt=12.08.2026",
           "availability": {
-            "freeSeats": 71
+            "freeSeats": 70
           }
         },
         {
@@ -3027,9 +2956,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/apsestiba/lv",
           "availability": {
             "totalSeats": 78,
-            "freeSeats": 70,
-            "takenSeats": 8,
-            "occupiedPercent": 10
+            "freeSeats": 64,
+            "takenSeats": 14,
+            "occupiedPercent": 18
           }
         }
       ]
@@ -3041,9 +2970,9 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "count": 52,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-13",
+          "count": 52,
           "fetchedAt": "2026-08-12T10:53:57.719Z",
           "lastSuccessAt": "2026-08-12T10:53:57.719Z",
           "error": null
@@ -3052,22 +2981,22 @@
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "status": "cached",
-          "dataDate": "2026-08-13",
           "count": 93,
-          "fetchedAt": "2026-08-12T10:12:02.090Z",
-          "lastSuccessAt": "2026-08-12T10:12:02.090Z",
+          "status": "fresh",
+          "dataDate": "2026-08-13",
+          "fetchedAt": "2026-08-12T11:12:30.206Z",
+          "lastSuccessAt": "2026-08-12T11:12:30.206Z",
           "error": null
         },
         {
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "status": "cached",
-          "dataDate": "2026-08-13",
           "count": 36,
-          "fetchedAt": "2026-08-12T10:12:02.090Z",
-          "lastSuccessAt": "2026-08-12T10:12:02.090Z",
+          "status": "fresh",
+          "dataDate": "2026-08-13",
+          "fetchedAt": "2026-08-12T11:12:30.206Z",
+          "lastSuccessAt": "2026-08-12T11:12:30.206Z",
           "error": null
         }
       ],
@@ -3177,6 +3106,30 @@
           }
         },
         {
+          "id": "apollo-515938",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Rotaļlietu stāsts 5",
+          "originalTitle": "Toy Story 5",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8461/landscape_qhd/LK_TS5__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "U",
+          "genres": [
+            "Komēdija",
+            "Piedzīvojumu filma",
+            "Animācija"
+          ],
+          "startTime": "2026-08-13T10:50:00.0000000+03:00",
+          "serviceDate": "2026-08-13",
+          "auditorium": "8. zāle Restorāns",
+          "language": "Krievu",
+          "movieUrl": "https://www.apollokino.lv/event/304031/rota%C4%BClietu_st%C4%81sts_5?theatreAreaID=1014&dt=13.08.2026",
+          "availability": {
+            "freeSeats": 40
+          }
+        },
+        {
           "id": "apollo-516287",
           "source": "apollo",
           "cinema": "Apollo Akropole",
@@ -3203,30 +3156,6 @@
             "totalSeats": 277,
             "takenSeats": 2,
             "occupiedPercent": 1
-          }
-        },
-        {
-          "id": "apollo-515938",
-          "source": "apollo",
-          "cinema": "Apollo Akropole",
-          "title": "Rotaļlietu stāsts 5",
-          "originalTitle": "Toy Story 5",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8461/landscape_qhd/LK_TS5__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "U",
-          "genres": [
-            "Komēdija",
-            "Piedzīvojumu filma",
-            "Animācija"
-          ],
-          "startTime": "2026-08-13T10:50:00.0000000+03:00",
-          "serviceDate": "2026-08-13",
-          "auditorium": "8. zāle Restorāns",
-          "language": "Krievu",
-          "movieUrl": "https://www.apollokino.lv/event/304031/rota%C4%BClietu_st%C4%81sts_5?theatreAreaID=1014&dt=13.08.2026",
-          "availability": {
-            "freeSeats": 40
           }
         },
         {
@@ -3632,9 +3561,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/vaiana/lv",
           "availability": {
             "totalSeats": 184,
-            "freeSeats": 178,
-            "takenSeats": 6,
-            "occupiedPercent": 3
+            "freeSeats": 177,
+            "takenSeats": 7,
+            "occupiedPercent": 4
           }
         },
         {
@@ -3823,7 +3752,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=13.08.2026",
           "availability": {
-            "freeSeats": 107
+            "freeSeats": 105
           }
         },
         {
@@ -4110,9 +4039,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/zirneklcilveks-jauna-diena/lv",
           "availability": {
             "totalSeats": 163,
-            "freeSeats": 153,
-            "takenSeats": 10,
-            "occupiedPercent": 6
+            "freeSeats": 155,
+            "takenSeats": 8,
+            "occupiedPercent": 5
           }
         },
         {
@@ -4235,9 +4164,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/vaiana/lv",
           "availability": {
             "totalSeats": 93,
-            "freeSeats": 85,
-            "takenSeats": 8,
-            "occupiedPercent": 9
+            "freeSeats": 82,
+            "takenSeats": 11,
+            "occupiedPercent": 12
           }
         },
         {
@@ -4490,10 +4419,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=13.08.2026",
           "availability": {
-            "freeSeats": 89,
+            "freeSeats": 85,
             "totalSeats": 90,
-            "takenSeats": 1,
-            "occupiedPercent": 1
+            "takenSeats": 5,
+            "occupiedPercent": 6
           }
         },
         {
@@ -4735,9 +4664,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/ielugums/lv",
           "availability": {
             "totalSeats": 78,
-            "freeSeats": 72,
-            "takenSeats": 6,
-            "occupiedPercent": 8
+            "freeSeats": 70,
+            "takenSeats": 8,
+            "occupiedPercent": 10
           }
         },
         {
@@ -4805,7 +4734,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=13.08.2026",
           "availability": {
-            "freeSeats": 200
+            "freeSeats": 202
           }
         },
         {
@@ -4899,10 +4828,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=13.08.2026",
           "availability": {
-            "freeSeats": 68,
+            "freeSeats": 65,
             "totalSeats": 70,
-            "takenSeats": 2,
-            "occupiedPercent": 3
+            "takenSeats": 5,
+            "occupiedPercent": 7
           }
         },
         {
@@ -5191,10 +5120,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=13.08.2026",
           "availability": {
-            "freeSeats": 164,
+            "freeSeats": 168,
             "totalSeats": 277,
-            "takenSeats": 113,
-            "occupiedPercent": 41
+            "takenSeats": 109,
+            "occupiedPercent": 39
           }
         },
         {
@@ -5294,10 +5223,10 @@
           "language": "Krievu",
           "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=13.08.2026",
           "availability": {
-            "freeSeats": 70,
+            "freeSeats": 68,
             "totalSeats": 70,
-            "takenSeats": 0,
-            "occupiedPercent": 0
+            "takenSeats": 2,
+            "occupiedPercent": 3
           }
         },
         {
@@ -5390,7 +5319,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/303659/maikls?theatreAreaID=1014&dt=13.08.2026",
           "availability": {
-            "freeSeats": 57
+            "freeSeats": 59
           }
         },
         {
@@ -5463,7 +5392,7 @@
           "language": "Krievu",
           "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=13.08.2026",
           "availability": {
-            "freeSeats": 103
+            "freeSeats": 105
           }
         },
         {
@@ -5509,9 +5438,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/zirneklcilveks-jauna-diena/lv",
           "availability": {
             "totalSeats": 163,
-            "freeSeats": 145,
-            "takenSeats": 18,
-            "occupiedPercent": 11
+            "freeSeats": 147,
+            "takenSeats": 16,
+            "occupiedPercent": 10
           }
         },
         {
@@ -5628,10 +5557,10 @@
           "language": "Krievu",
           "movieUrl": "https://www.apollokino.lv/event/304037/vaiana?theatreAreaID=1014&dt=13.08.2026",
           "availability": {
-            "freeSeats": 88,
+            "freeSeats": 86,
             "totalSeats": 90,
-            "takenSeats": 2,
-            "occupiedPercent": 2
+            "takenSeats": 4,
+            "occupiedPercent": 4
           }
         },
         {
@@ -5831,7 +5760,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=13.08.2026",
           "availability": {
-            "freeSeats": 190
+            "freeSeats": 186
           }
         },
         {
@@ -5899,7 +5828,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=13.08.2026",
           "availability": {
-            "freeSeats": 143
+            "freeSeats": 141
           }
         },
         {
@@ -5948,8 +5877,8 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/odiseja/lv",
           "availability": {
             "totalSeats": 250,
-            "freeSeats": 224,
-            "takenSeats": 26,
+            "freeSeats": 226,
+            "takenSeats": 24,
             "occupiedPercent": 10
           }
         },
@@ -6021,7 +5950,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304155/sald%C4%93juma_p%C4%81rdev%C4%93js?theatreAreaID=1014&dt=13.08.2026",
           "availability": {
-            "freeSeats": 36
+            "freeSeats": 34
           }
         },
         {
@@ -6167,7 +6096,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304174/tikai_viena_nakts?theatreAreaID=1014&dt=13.08.2026",
           "availability": {
-            "freeSeats": 107
+            "freeSeats": 105
           }
         },
         {
@@ -6244,26 +6173,29 @@
           "availability": {}
         },
         {
-          "id": "apollo-516186",
+          "id": "apollo-515913",
           "source": "apollo",
-          "cinema": "Apollo Plaza",
-          "title": "Odiseja",
-          "originalTitle": "The Odyssey",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8419/landscape_qhd/LK_OD__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "cinema": "Apollo Akropole",
+          "title": "Zirnekļcilvēks: Jauna diena",
+          "originalTitle": "Spider-Man: Brand New Day",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8505/landscape_qhd/SpiderMan-BND_LV_PPRef_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
           "imdbRating": "",
           "imdbUrl": "",
-          "ageRating": "16+",
+          "ageRating": "12+",
           "genres": [
             "Piedzīvojumu filma",
-            "Vēsturiska"
+            "Fantastika"
           ],
           "startTime": "2026-08-13T18:45:00.0000000+03:00",
           "serviceDate": "2026-08-13",
-          "auditorium": "4. zāle",
+          "auditorium": "2. zāle",
           "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=13.08.2026",
+          "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=13.08.2026",
           "availability": {
-            "freeSeats": 47
+            "freeSeats": 170,
+            "totalSeats": 227,
+            "takenSeats": 57,
+            "occupiedPercent": 25
           }
         },
         {
@@ -6290,29 +6222,26 @@
           }
         },
         {
-          "id": "apollo-515913",
+          "id": "apollo-516186",
           "source": "apollo",
-          "cinema": "Apollo Akropole",
-          "title": "Zirnekļcilvēks: Jauna diena",
-          "originalTitle": "Spider-Man: Brand New Day",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8505/landscape_qhd/SpiderMan-BND_LV_PPRef_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "cinema": "Apollo Plaza",
+          "title": "Odiseja",
+          "originalTitle": "The Odyssey",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8419/landscape_qhd/LK_OD__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
           "imdbRating": "",
           "imdbUrl": "",
-          "ageRating": "12+",
+          "ageRating": "16+",
           "genres": [
             "Piedzīvojumu filma",
-            "Fantastika"
+            "Vēsturiska"
           ],
           "startTime": "2026-08-13T18:45:00.0000000+03:00",
           "serviceDate": "2026-08-13",
-          "auditorium": "2. zāle",
+          "auditorium": "4. zāle",
           "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=13.08.2026",
+          "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=13.08.2026",
           "availability": {
-            "freeSeats": 172,
-            "totalSeats": 227,
-            "takenSeats": 55,
-            "occupiedPercent": 24
+            "freeSeats": 47
           }
         },
         {
@@ -6457,9 +6386,9 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304124/ozolu_ielas_gals?theatreAreaID=1014&dt=13.08.2026",
           "availability": {
-            "freeSeats": 275,
+            "freeSeats": 273,
             "totalSeats": 277,
-            "takenSeats": 2,
+            "takenSeats": 4,
             "occupiedPercent": 1
           }
         },
@@ -6576,10 +6505,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=13.08.2026",
           "availability": {
-            "freeSeats": 74,
+            "freeSeats": 73,
             "totalSeats": 90,
-            "takenSeats": 16,
-            "occupiedPercent": 18
+            "takenSeats": 17,
+            "occupiedPercent": 19
           }
         },
         {
@@ -6865,29 +6794,6 @@
           }
         },
         {
-          "id": "apollo-516194",
-          "source": "apollo",
-          "cinema": "Apollo Plaza",
-          "title": "Sātans Pradas brunčos 2",
-          "originalTitle": "The Devil Wears Prada 2",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8462/landscape_qhd/LK_DP2__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "16+",
-          "genres": [
-            "Komēdija",
-            "Drāma"
-          ],
-          "startTime": "2026-08-13T20:45:00.0000000+03:00",
-          "serviceDate": "2026-08-13",
-          "auditorium": "6. zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304032/s%C4%81tans_pradas_brun%C4%8Dos_2?theatreAreaID=1014&dt=13.08.2026",
-          "availability": {
-            "freeSeats": 52
-          }
-        },
-        {
           "id": "apollo-516178",
           "source": "apollo",
           "cinema": "Apollo Plaza",
@@ -6908,6 +6814,29 @@
           "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=13.08.2026",
           "availability": {
             "freeSeats": 180
+          }
+        },
+        {
+          "id": "apollo-516194",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Sātans Pradas brunčos 2",
+          "originalTitle": "The Devil Wears Prada 2",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8462/landscape_qhd/LK_DP2__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "16+",
+          "genres": [
+            "Komēdija",
+            "Drāma"
+          ],
+          "startTime": "2026-08-13T20:45:00.0000000+03:00",
+          "serviceDate": "2026-08-13",
+          "auditorium": "6. zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304032/s%C4%81tans_pradas_brun%C4%8Dos_2?theatreAreaID=1014&dt=13.08.2026",
+          "availability": {
+            "freeSeats": 52
           }
         },
         {
@@ -7217,8 +7146,8 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/zirneklcilveks-jauna-diena/lv",
           "availability": {
             "totalSeats": 357,
-            "freeSeats": 351,
-            "takenSeats": 6,
+            "freeSeats": 349,
+            "takenSeats": 8,
             "occupiedPercent": 2
           }
         },
@@ -7290,10 +7219,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=13.08.2026",
           "availability": {
-            "freeSeats": 153,
+            "freeSeats": 154,
             "totalSeats": 277,
-            "takenSeats": 124,
-            "occupiedPercent": 45
+            "takenSeats": 123,
+            "occupiedPercent": 44
           }
         },
         {
@@ -7338,7 +7267,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304149/aps%C4%93st%C4%ABba?theatreAreaID=1014&dt=13.08.2026",
           "availability": {
-            "freeSeats": 36
+            "freeSeats": 34
           }
         },
         {
@@ -7384,10 +7313,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=13.08.2026",
           "availability": {
-            "freeSeats": 221,
+            "freeSeats": 219,
             "totalSeats": 227,
-            "takenSeats": 6,
-            "occupiedPercent": 3
+            "takenSeats": 8,
+            "occupiedPercent": 4
           }
         },
         {
@@ -7495,9 +7424,9 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/",
-      "count": 40,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-08-12",
+      "count": 36,
       "fetchedAt": "2026-08-12T10:53:57.719Z",
       "lastSuccessAt": "2026-08-12T10:53:57.719Z",
       "error": null
@@ -7506,98 +7435,27 @@
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "status": "cached",
+      "count": 63,
+      "status": "fresh",
       "dataDate": "2026-08-12",
-      "count": 70,
-      "fetchedAt": "2026-08-12T10:12:02.090Z",
-      "lastSuccessAt": "2026-08-12T10:12:02.090Z",
+      "fetchedAt": "2026-08-12T11:12:30.206Z",
+      "lastSuccessAt": "2026-08-12T11:12:30.206Z",
       "error": null
     },
     {
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "status": "cached",
+      "count": 23,
+      "status": "fresh",
       "dataDate": "2026-08-12",
-      "count": 26,
-      "fetchedAt": "2026-08-12T10:12:02.090Z",
-      "lastSuccessAt": "2026-08-12T10:12:02.090Z",
+      "fetchedAt": "2026-08-12T11:12:30.206Z",
+      "lastSuccessAt": "2026-08-12T11:12:30.206Z",
       "error": null
     }
   ],
   "warnings": [],
   "showtimes": [
-    {
-      "id": "forum-436261",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Rotaļlietu stāsts 5",
-      "originalTitle": "Toy Story 5",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11209/portrait_medium/toy-story-plakats.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt29355505/",
-      "ageRating": "U",
-      "genres": [
-        "Piedzīvojumi",
-        "Komēdija",
-        "Animācija",
-        "Ģimenes filma"
-      ],
-      "startTime": "2026-08-12T14:00:00+03:00",
-      "serviceDate": "2026-08-12",
-      "auditorium": "Auditorija 6",
-      "language": "Latviešu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304667/title/rota%C4%BClietu_st%C4%81sts_5/",
-      "availability": {}
-    },
-    {
-      "id": "cinamon-1244795712",
-      "source": "cinamon",
-      "cinema": "Cinamon Alfa",
-      "title": "Minioni un mošķi",
-      "originalTitle": "Minions & Monsters",
-      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1752605446",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "7+",
-      "genres": [
-        "Animācija"
-      ],
-      "startTime": "2026-08-12T14:00:00+03:00",
-      "serviceDate": "2026-08-12",
-      "auditorium": "Zale 3",
-      "language": "(latviešu valodā)",
-      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/minioni-un-moski/lv",
-      "availability": {
-        "totalSeats": 184,
-        "freeSeats": 172,
-        "takenSeats": 12,
-        "occupiedPercent": 7
-      }
-    },
-    {
-      "id": "apollo-516167",
-      "source": "apollo",
-      "cinema": "Apollo Plaza",
-      "title": "Odiseja",
-      "originalTitle": "The Odyssey",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8419/landscape_qhd/LK_OD__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "16+",
-      "genres": [
-        "Piedzīvojumu filma",
-        "Vēsturiska"
-      ],
-      "startTime": "2026-08-12T14:05:00.0000000+03:00",
-      "serviceDate": "2026-08-12",
-      "auditorium": "8. Vintage zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=12.08.2026",
-      "availability": {
-        "freeSeats": 43
-      }
-    },
     {
       "id": "forum-436229",
       "source": "forum",
@@ -7644,8 +7502,8 @@
       "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/odiseja/lv",
       "availability": {
         "totalSeats": 250,
-        "freeSeats": 236,
-        "takenSeats": 14,
+        "freeSeats": 235,
+        "takenSeats": 15,
         "occupiedPercent": 6
       }
     },
@@ -7696,10 +7554,10 @@
       "language": "Latviešu",
       "movieUrl": "https://www.apollokino.lv/event/304031/rota%C4%BClietu_st%C4%81sts_5?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 103,
+        "freeSeats": 92,
         "totalSeats": 127,
-        "takenSeats": 24,
-        "occupiedPercent": 19
+        "takenSeats": 35,
+        "occupiedPercent": 28
       }
     },
     {
@@ -7723,7 +7581,7 @@
       "language": "Latviešu",
       "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 96
+        "freeSeats": 92
       }
     },
     {
@@ -7771,10 +7629,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 84,
+        "freeSeats": 57,
         "totalSeats": 277,
-        "takenSeats": 193,
-        "occupiedPercent": 70
+        "takenSeats": 220,
+        "occupiedPercent": 79
       }
     },
     {
@@ -7797,7 +7655,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 180
+        "freeSeats": 153
       }
     },
     {
@@ -7868,7 +7726,7 @@
       "language": "Latviešu",
       "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 85
+        "freeSeats": 72
       }
     },
     {
@@ -7891,9 +7749,9 @@
       "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/zirneklcilveks-jauna-diena/lv",
       "availability": {
         "totalSeats": 357,
-        "freeSeats": 337,
-        "takenSeats": 20,
-        "occupiedPercent": 6
+        "freeSeats": 332,
+        "takenSeats": 25,
+        "occupiedPercent": 7
       }
     },
     {
@@ -7969,7 +7827,7 @@
       "language": "Krievu",
       "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 142
+        "freeSeats": 126
       }
     },
     {
@@ -7992,10 +7850,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 65,
+        "freeSeats": 56,
         "totalSeats": 70,
-        "takenSeats": 5,
-        "occupiedPercent": 7
+        "takenSeats": 14,
+        "occupiedPercent": 20
       }
     },
     {
@@ -8018,9 +7876,9 @@
       "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/minioni-un-moski/lv",
       "availability": {
         "totalSeats": 78,
-        "freeSeats": 71,
-        "takenSeats": 7,
-        "occupiedPercent": 9
+        "freeSeats": 72,
+        "takenSeats": 6,
+        "occupiedPercent": 8
       }
     },
     {
@@ -8044,10 +7902,10 @@
       "language": "Latviešu",
       "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 70,
+        "freeSeats": 62,
         "totalSeats": 70,
-        "takenSeats": 0,
-        "occupiedPercent": 0
+        "takenSeats": 8,
+        "occupiedPercent": 11
       }
     },
     {
@@ -8070,7 +7928,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 55
+        "freeSeats": 51
       }
     },
     {
@@ -8118,7 +7976,7 @@
       "language": "Krievu",
       "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 76
+        "freeSeats": 74
       }
     },
     {
@@ -8141,7 +7999,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 317
+        "freeSeats": 311
       }
     },
     {
@@ -8164,10 +8022,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 56,
+        "freeSeats": 40,
         "totalSeats": 227,
-        "takenSeats": 171,
-        "occupiedPercent": 75
+        "takenSeats": 187,
+        "occupiedPercent": 82
       }
     },
     {
@@ -8217,7 +8075,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304149/aps%C4%93st%C4%ABba?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 7
+        "freeSeats": 5
       }
     },
     {
@@ -8265,9 +8123,9 @@
       "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/rotallietu-stasts-5/lv",
       "availability": {
         "totalSeats": 48,
-        "freeSeats": 35,
-        "takenSeats": 13,
-        "occupiedPercent": 27
+        "freeSeats": 29,
+        "takenSeats": 19,
+        "occupiedPercent": 40
       }
     },
     {
@@ -8359,9 +8217,9 @@
       "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/minioni-un-moski/lv",
       "availability": {
         "totalSeats": 184,
-        "freeSeats": 178,
-        "takenSeats": 6,
-        "occupiedPercent": 3
+        "freeSeats": 176,
+        "takenSeats": 8,
+        "occupiedPercent": 4
       }
     },
     {
@@ -8384,7 +8242,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/303659/maikls?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 54
+        "freeSeats": 52
       }
     },
     {
@@ -8407,9 +8265,9 @@
       "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/odiseja/lv",
       "availability": {
         "totalSeats": 163,
-        "freeSeats": 146,
-        "takenSeats": 17,
-        "occupiedPercent": 10
+        "freeSeats": 148,
+        "takenSeats": 15,
+        "occupiedPercent": 9
       }
     },
     {
@@ -8503,9 +8361,9 @@
       "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/saldejuma-pardevejs/lv",
       "availability": {
         "totalSeats": 93,
-        "freeSeats": 87,
-        "takenSeats": 6,
-        "occupiedPercent": 6
+        "freeSeats": 83,
+        "takenSeats": 10,
+        "occupiedPercent": 11
       }
     },
     {
@@ -8529,7 +8387,7 @@
       "language": "Latviešu",
       "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 107
+        "freeSeats": 105
       }
     },
     {
@@ -8600,10 +8458,10 @@
       "language": "Krievu",
       "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 114,
+        "freeSeats": 100,
         "totalSeats": 127,
-        "takenSeats": 13,
-        "occupiedPercent": 10
+        "takenSeats": 27,
+        "occupiedPercent": 21
       }
     },
     {
@@ -8651,10 +8509,10 @@
       "language": "Krievu",
       "movieUrl": "https://www.apollokino.lv/event/304037/vaiana?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 37,
+        "freeSeats": 32,
         "totalSeats": 90,
-        "takenSeats": 53,
-        "occupiedPercent": 59
+        "takenSeats": 58,
+        "occupiedPercent": 64
       }
     },
     {
@@ -8678,7 +8536,7 @@
       "language": "Latviešu",
       "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 91
+        "freeSeats": 86
       }
     },
     {
@@ -8726,7 +8584,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 71
+        "freeSeats": 58
       }
     },
     {
@@ -8771,9 +8629,9 @@
       "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/zirneklcilveks-jauna-diena/lv",
       "availability": {
         "totalSeats": 78,
-        "freeSeats": 65,
-        "takenSeats": 13,
-        "occupiedPercent": 17
+        "freeSeats": 66,
+        "takenSeats": 12,
+        "occupiedPercent": 15
       }
     },
     {
@@ -8819,7 +8677,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 10
+        "freeSeats": 12
       }
     },
     {
@@ -8843,7 +8701,7 @@
       "language": "Latviešu",
       "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 78
+        "freeSeats": 74
       }
     },
     {
@@ -8866,10 +8724,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 58,
+        "freeSeats": 61,
         "totalSeats": 70,
-        "takenSeats": 12,
-        "occupiedPercent": 17
+        "takenSeats": 9,
+        "occupiedPercent": 13
       }
     },
     {
@@ -8892,7 +8750,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 167
+        "freeSeats": 164
       }
     },
     {
@@ -8939,7 +8797,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304124/ozolu_ielas_gals?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 40
+        "freeSeats": 39
       }
     },
     {
@@ -8965,10 +8823,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304124/ozolu_ielas_gals?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 53,
+        "freeSeats": 51,
         "totalSeats": 70,
-        "takenSeats": 17,
-        "occupiedPercent": 24
+        "takenSeats": 19,
+        "occupiedPercent": 27
       }
     },
     {
@@ -8991,9 +8849,9 @@
       "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/odiseja/lv",
       "availability": {
         "totalSeats": 250,
-        "freeSeats": 233,
-        "takenSeats": 17,
-        "occupiedPercent": 7
+        "freeSeats": 229,
+        "takenSeats": 21,
+        "occupiedPercent": 8
       }
     },
     {
@@ -9016,9 +8874,9 @@
       "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/zirneklcilveks-jauna-diena/lv",
       "availability": {
         "totalSeats": 357,
-        "freeSeats": 342,
-        "takenSeats": 15,
-        "occupiedPercent": 4
+        "freeSeats": 337,
+        "takenSeats": 20,
+        "occupiedPercent": 6
       }
     },
     {
@@ -9040,7 +8898,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304155/sald%C4%93juma_p%C4%81rdev%C4%93js?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 14
+        "freeSeats": 12
       }
     },
     {
@@ -9063,7 +8921,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304144/iel%C5%ABgums?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 48
+        "freeSeats": 41
       }
     },
     {
@@ -9086,10 +8944,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 55,
+        "freeSeats": 58,
         "totalSeats": 70,
-        "takenSeats": 15,
-        "occupiedPercent": 21
+        "takenSeats": 12,
+        "occupiedPercent": 17
       }
     },
     {
@@ -9112,9 +8970,9 @@
       "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/minioni-un-moski/lv",
       "availability": {
         "totalSeats": 48,
-        "freeSeats": 42,
-        "takenSeats": 6,
-        "occupiedPercent": 13
+        "freeSeats": 40,
+        "takenSeats": 8,
+        "occupiedPercent": 17
       }
     },
     {
@@ -9163,7 +9021,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304174/tikai_viena_nakts?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 88
+        "freeSeats": 89
       }
     },
     {
@@ -9189,10 +9047,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304124/ozolu_ielas_gals?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 241,
+        "freeSeats": 235,
         "totalSeats": 277,
-        "takenSeats": 36,
-        "occupiedPercent": 13
+        "takenSeats": 42,
+        "occupiedPercent": 15
       }
     },
     {
@@ -9215,9 +9073,9 @@
       "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/ozolu-ielas-gals/lv",
       "availability": {
         "totalSeats": 184,
-        "freeSeats": 175,
-        "takenSeats": 9,
-        "occupiedPercent": 5
+        "freeSeats": 176,
+        "takenSeats": 8,
+        "occupiedPercent": 4
       }
     },
     {
@@ -9240,9 +9098,9 @@
       "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/tikai-viena-nakts/lv",
       "availability": {
         "totalSeats": 93,
-        "freeSeats": 86,
-        "takenSeats": 7,
-        "occupiedPercent": 8
+        "freeSeats": 87,
+        "takenSeats": 6,
+        "occupiedPercent": 6
       }
     },
     {
@@ -9288,33 +9146,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 47,
+        "freeSeats": 42,
         "totalSeats": 227,
-        "takenSeats": 180,
-        "occupiedPercent": 79
-      }
-    },
-    {
-      "id": "apollo-516006",
-      "source": "apollo",
-      "cinema": "Apollo Plaza",
-      "title": "Zirnekļcilvēks: Jauna diena",
-      "originalTitle": "Spider-Man: Brand New Day",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8505/landscape_qhd/SpiderMan-BND_LV_PPRef_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "12+",
-      "genres": [
-        "Piedzīvojumu filma",
-        "Fantastika"
-      ],
-      "startTime": "2026-08-12T18:45:00.0000000+03:00",
-      "serviceDate": "2026-08-12",
-      "auditorium": "1. zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
-      "availability": {
-        "freeSeats": 293
+        "takenSeats": 185,
+        "occupiedPercent": 81
       }
     },
     {
@@ -9339,10 +9174,33 @@
       "language": "Latviešu",
       "movieUrl": "https://www.apollokino.lv/event/304037/vaiana?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 108,
+        "freeSeats": 98,
         "totalSeats": 127,
-        "takenSeats": 19,
-        "occupiedPercent": 15
+        "takenSeats": 29,
+        "occupiedPercent": 23
+      }
+    },
+    {
+      "id": "apollo-516006",
+      "source": "apollo",
+      "cinema": "Apollo Plaza",
+      "title": "Zirnekļcilvēks: Jauna diena",
+      "originalTitle": "Spider-Man: Brand New Day",
+      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8505/landscape_qhd/SpiderMan-BND_LV_PPRef_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+      "imdbRating": "",
+      "imdbUrl": "",
+      "ageRating": "12+",
+      "genres": [
+        "Piedzīvojumu filma",
+        "Fantastika"
+      ],
+      "startTime": "2026-08-12T18:45:00.0000000+03:00",
+      "serviceDate": "2026-08-12",
+      "auditorium": "1. zāle",
+      "language": "Angļu",
+      "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
+      "availability": {
+        "freeSeats": 289
       }
     },
     {
@@ -9365,7 +9223,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 49
+        "freeSeats": 43
       }
     },
     {
@@ -9462,7 +9320,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304174/tikai_viena_nakts?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 69
+        "freeSeats": 72
       }
     },
     {
@@ -9625,10 +9483,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 28,
+        "freeSeats": 22,
         "totalSeats": 90,
-        "takenSeats": 62,
-        "occupiedPercent": 69
+        "takenSeats": 68,
+        "occupiedPercent": 76
       }
     },
     {
@@ -9650,7 +9508,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304155/sald%C4%93juma_p%C4%81rdev%C4%93js?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 75
+        "freeSeats": 73
       }
     },
     {
@@ -9720,9 +9578,9 @@
       "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/zirneklcilveks-jauna-diena/lv",
       "availability": {
         "totalSeats": 163,
-        "freeSeats": 154,
-        "takenSeats": 9,
-        "occupiedPercent": 6
+        "freeSeats": 147,
+        "takenSeats": 16,
+        "occupiedPercent": 10
       }
     },
     {
@@ -9745,7 +9603,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/303659/maikls?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 15
+        "freeSeats": 8
       }
     },
     {
@@ -9768,7 +9626,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 37
+        "freeSeats": 34
       }
     },
     {
@@ -9889,7 +9747,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 44
+        "freeSeats": 30
       }
     },
     {
@@ -9918,29 +9776,6 @@
       }
     },
     {
-      "id": "apollo-516027",
-      "source": "apollo",
-      "cinema": "Apollo Plaza",
-      "title": "Zirnekļcilvēks: Jauna diena",
-      "originalTitle": "Spider-Man: Brand New Day",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8505/landscape_qhd/SpiderMan-BND_LV_PPRef_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "12+",
-      "genres": [
-        "Piedzīvojumu filma",
-        "Fantastika"
-      ],
-      "startTime": "2026-08-12T20:45:00.0000000+03:00",
-      "serviceDate": "2026-08-12",
-      "auditorium": "2. zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
-      "availability": {
-        "freeSeats": 183
-      }
-    },
-    {
       "id": "apollo-516120",
       "source": "apollo",
       "cinema": "Apollo Plaza",
@@ -9960,7 +9795,30 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304096/backrooms_bez_izejas?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 43
+        "freeSeats": 41
+      }
+    },
+    {
+      "id": "apollo-516027",
+      "source": "apollo",
+      "cinema": "Apollo Plaza",
+      "title": "Zirnekļcilvēks: Jauna diena",
+      "originalTitle": "Spider-Man: Brand New Day",
+      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8505/landscape_qhd/SpiderMan-BND_LV_PPRef_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+      "imdbRating": "",
+      "imdbUrl": "",
+      "ageRating": "12+",
+      "genres": [
+        "Piedzīvojumu filma",
+        "Fantastika"
+      ],
+      "startTime": "2026-08-12T20:45:00.0000000+03:00",
+      "serviceDate": "2026-08-12",
+      "auditorium": "2. zāle",
+      "language": "Angļu",
+      "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
+      "availability": {
+        "freeSeats": 184
       }
     },
     {
@@ -10058,10 +9916,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304124/ozolu_ielas_gals?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 251,
+        "freeSeats": 248,
         "totalSeats": 277,
-        "takenSeats": 26,
-        "occupiedPercent": 9
+        "takenSeats": 29,
+        "occupiedPercent": 10
       }
     },
     {
@@ -10155,7 +10013,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 69
+        "freeSeats": 72
       }
     },
     {
@@ -10177,10 +10035,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304155/sald%C4%93juma_p%C4%81rdev%C4%93js?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 115,
+        "freeSeats": 109,
         "totalSeats": 127,
-        "takenSeats": 12,
-        "occupiedPercent": 9
+        "takenSeats": 18,
+        "occupiedPercent": 14
       }
     },
     {
@@ -10245,7 +10103,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/303659/maikls?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 59
+        "freeSeats": 57
       }
     },
     {
@@ -10317,9 +10175,9 @@
       "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/zirneklcilveks-jauna-diena/lv",
       "availability": {
         "totalSeats": 357,
-        "freeSeats": 346,
-        "takenSeats": 11,
-        "occupiedPercent": 3
+        "freeSeats": 349,
+        "takenSeats": 8,
+        "occupiedPercent": 2
       }
     },
     {
@@ -10366,7 +10224,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 73
+        "freeSeats": 71
       }
     },
     {
@@ -10389,10 +10247,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 143,
+        "freeSeats": 127,
         "totalSeats": 227,
-        "takenSeats": 84,
-        "occupiedPercent": 37
+        "takenSeats": 100,
+        "occupiedPercent": 44
       }
     },
     {
@@ -10415,7 +10273,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304154/%C4%BCaunie_miro%C5%86i_deg?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 32
+        "freeSeats": 34
       }
     },
     {
@@ -10485,7 +10343,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304155/sald%C4%93juma_p%C4%81rdev%C4%93js?theatreAreaID=1014&dt=12.08.2026",
       "availability": {
-        "freeSeats": 71
+        "freeSeats": 70
       }
     },
     {
@@ -10508,9 +10366,9 @@
       "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/apsestiba/lv",
       "availability": {
         "totalSeats": 78,
-        "freeSeats": 70,
-        "takenSeats": 8,
-        "occupiedPercent": 10
+        "freeSeats": 64,
+        "takenSeats": 14,
+        "occupiedPercent": 18
       }
     }
   ]
