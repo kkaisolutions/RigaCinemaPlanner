@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T01:13:52.683Z",
+  "generatedAt": "2026-08-14T02:12:02.003Z",
   "timezone": "Europe/Riga",
   "date": "2026-08-14",
   "dates": [
@@ -14,9 +14,9 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "count": 54,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-14",
+          "count": 54,
           "fetchedAt": "2026-08-14T01:13:52.683Z",
           "lastSuccessAt": "2026-08-14T01:13:52.683Z",
           "error": null
@@ -25,22 +25,22 @@
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "status": "stale",
-          "dataDate": "2026-08-14",
           "count": 95,
-          "fetchedAt": "2026-08-13T22:12:07.902Z",
-          "lastSuccessAt": "2026-08-13T22:12:07.902Z",
+          "status": "fresh",
+          "dataDate": "2026-08-14",
+          "fetchedAt": "2026-08-14T02:12:02.003Z",
+          "lastSuccessAt": "2026-08-14T02:12:02.003Z",
           "error": null
         },
         {
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "status": "stale",
-          "dataDate": "2026-08-14",
           "count": 38,
-          "fetchedAt": "2026-08-13T22:12:07.902Z",
-          "lastSuccessAt": "2026-08-13T22:12:07.902Z",
+          "status": "fresh",
+          "dataDate": "2026-08-14",
+          "fetchedAt": "2026-08-14T02:12:02.003Z",
+          "lastSuccessAt": "2026-08-14T02:12:02.003Z",
           "error": null
         }
       ],
@@ -225,31 +225,6 @@
           }
         },
         {
-          "id": "cinamon-340351458",
-          "source": "cinamon",
-          "cinema": "Cinamon Alfa",
-          "title": "Ozolu ielas gals",
-          "originalTitle": "The End of Oak Street",
-          "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1046967331",
-          "imdbRating": "N/A",
-          "imdbUrl": "",
-          "ageRating": "16+",
-          "genres": [
-            "Piedzīvojumi"
-          ],
-          "startTime": "2026-08-14T11:00:00+03:00",
-          "serviceDate": "2026-08-14",
-          "auditorium": "Zale 5",
-          "language": "",
-          "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/ozolu-ielas-gals/lv",
-          "availability": {
-            "totalSeats": 93,
-            "freeSeats": 87,
-            "takenSeats": 6,
-            "occupiedPercent": 6
-          }
-        },
-        {
           "id": "cinamon-261354063",
           "source": "cinamon",
           "cinema": "Cinamon Alfa",
@@ -272,6 +247,31 @@
             "freeSeats": 342,
             "takenSeats": 15,
             "occupiedPercent": 4
+          }
+        },
+        {
+          "id": "cinamon-340351458",
+          "source": "cinamon",
+          "cinema": "Cinamon Alfa",
+          "title": "Ozolu ielas gals",
+          "originalTitle": "The End of Oak Street",
+          "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1046967331",
+          "imdbRating": "N/A",
+          "imdbUrl": "",
+          "ageRating": "16+",
+          "genres": [
+            "Piedzīvojumi"
+          ],
+          "startTime": "2026-08-14T11:00:00+03:00",
+          "serviceDate": "2026-08-14",
+          "auditorium": "Zale 5",
+          "language": "",
+          "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/ozolu-ielas-gals/lv",
+          "availability": {
+            "totalSeats": 93,
+            "freeSeats": 87,
+            "takenSeats": 6,
+            "occupiedPercent": 6
           }
         },
         {
@@ -648,7 +648,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304124/ozolu_ielas_gals?theatreAreaID=1014&dt=14.08.2026",
           "availability": {
-            "freeSeats": 57
+            "freeSeats": 58
           }
         },
         {
@@ -916,9 +916,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/kepu-patrula-dinozauru-filma/lv",
           "availability": {
             "totalSeats": 184,
-            "freeSeats": 176,
-            "takenSeats": 8,
-            "occupiedPercent": 4
+            "freeSeats": 174,
+            "takenSeats": 10,
+            "occupiedPercent": 5
           }
         },
         {
@@ -1699,10 +1699,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304124/ozolu_ielas_gals?theatreAreaID=1014&dt=14.08.2026",
           "availability": {
-            "freeSeats": 89,
+            "freeSeats": 90,
             "totalSeats": 90,
-            "takenSeats": 1,
-            "occupiedPercent": 1
+            "takenSeats": 0,
+            "occupiedPercent": 0
           }
         },
         {
@@ -1818,9 +1818,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/zirneklcilveks-jauna-diena/lv",
           "availability": {
             "totalSeats": 250,
-            "freeSeats": 229,
-            "takenSeats": 21,
-            "occupiedPercent": 8
+            "freeSeats": 233,
+            "takenSeats": 17,
+            "occupiedPercent": 7
           }
         },
         {
@@ -2082,10 +2082,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=14.08.2026",
           "availability": {
-            "freeSeats": 195,
+            "freeSeats": 192,
             "totalSeats": 277,
-            "takenSeats": 82,
-            "occupiedPercent": 30
+            "takenSeats": 85,
+            "occupiedPercent": 31
           }
         },
         {
@@ -2501,7 +2501,7 @@
           "language": "Krievu",
           "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=14.08.2026",
           "availability": {
-            "freeSeats": 106
+            "freeSeats": 104
           }
         },
         {
@@ -2719,9 +2719,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/zirneklcilveks-jauna-diena/lv",
           "availability": {
             "totalSeats": 78,
-            "freeSeats": 68,
-            "takenSeats": 10,
-            "occupiedPercent": 13
+            "freeSeats": 70,
+            "takenSeats": 8,
+            "occupiedPercent": 10
           }
         },
         {
@@ -3183,7 +3183,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=14.08.2026",
           "availability": {
-            "freeSeats": 143
+            "freeSeats": 145
           }
         },
         {
@@ -3253,7 +3253,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304174/tikai_viena_nakts?theatreAreaID=1014&dt=14.08.2026",
           "availability": {
-            "freeSeats": 97
+            "freeSeats": 95
           }
         },
         {
@@ -3370,7 +3370,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=14.08.2026",
           "availability": {
-            "freeSeats": 311
+            "freeSeats": 309
           }
         },
         {
@@ -3902,9 +3902,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/zirneklcilveks-jauna-diena/lv",
           "availability": {
             "totalSeats": 250,
-            "freeSeats": 244,
-            "takenSeats": 6,
-            "occupiedPercent": 2
+            "freeSeats": 239,
+            "takenSeats": 11,
+            "occupiedPercent": 4
           }
         },
         {
@@ -4044,9 +4044,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/awarapan-2/lv",
           "availability": {
             "totalSeats": 78,
-            "freeSeats": 42,
-            "takenSeats": 36,
-            "occupiedPercent": 46
+            "freeSeats": 44,
+            "takenSeats": 34,
+            "occupiedPercent": 44
           }
         },
         {
@@ -4212,7 +4212,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304174/tikai_viena_nakts?theatreAreaID=1014&dt=14.08.2026",
           "availability": {
-            "freeSeats": 107
+            "freeSeats": 109
           }
         },
         {
@@ -4236,10 +4236,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304174/tikai_viena_nakts?theatreAreaID=1014&dt=14.08.2026",
           "availability": {
-            "freeSeats": 64,
+            "freeSeats": 68,
             "totalSeats": 70,
-            "takenSeats": 6,
-            "occupiedPercent": 9
+            "takenSeats": 2,
+            "occupiedPercent": 3
           }
         },
         {
@@ -4613,9 +4613,9 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "count": 56,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-15",
+          "count": 56,
           "fetchedAt": "2026-08-14T01:13:52.683Z",
           "lastSuccessAt": "2026-08-14T01:13:52.683Z",
           "error": null
@@ -4624,22 +4624,22 @@
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "status": "stale",
-          "dataDate": "2026-08-15",
           "count": 95,
-          "fetchedAt": "2026-08-13T22:12:07.902Z",
-          "lastSuccessAt": "2026-08-13T22:12:07.902Z",
+          "status": "fresh",
+          "dataDate": "2026-08-15",
+          "fetchedAt": "2026-08-14T02:12:02.003Z",
+          "lastSuccessAt": "2026-08-14T02:12:02.003Z",
           "error": null
         },
         {
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "status": "stale",
-          "dataDate": "2026-08-15",
           "count": 38,
-          "fetchedAt": "2026-08-13T22:12:07.902Z",
-          "lastSuccessAt": "2026-08-13T22:12:07.902Z",
+          "status": "fresh",
+          "dataDate": "2026-08-15",
+          "fetchedAt": "2026-08-14T02:12:02.003Z",
+          "lastSuccessAt": "2026-08-14T02:12:02.003Z",
           "error": null
         }
       ],
@@ -4847,31 +4847,6 @@
           }
         },
         {
-          "id": "cinamon-1959423800",
-          "source": "cinamon",
-          "cinema": "Cinamon Alfa",
-          "title": "Ozolu ielas gals",
-          "originalTitle": "The End of Oak Street",
-          "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1046967331",
-          "imdbRating": "N/A",
-          "imdbUrl": "",
-          "ageRating": "16+",
-          "genres": [
-            "Piedzīvojumi"
-          ],
-          "startTime": "2026-08-15T11:00:00+03:00",
-          "serviceDate": "2026-08-15",
-          "auditorium": "Zale 5",
-          "language": "",
-          "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/ozolu-ielas-gals/lv",
-          "availability": {
-            "totalSeats": 93,
-            "freeSeats": 87,
-            "takenSeats": 6,
-            "occupiedPercent": 6
-          }
-        },
-        {
           "id": "cinamon-1638428510",
           "source": "cinamon",
           "cinema": "Cinamon Alfa",
@@ -4894,6 +4869,31 @@
             "freeSeats": 347,
             "takenSeats": 10,
             "occupiedPercent": 3
+          }
+        },
+        {
+          "id": "cinamon-1959423800",
+          "source": "cinamon",
+          "cinema": "Cinamon Alfa",
+          "title": "Ozolu ielas gals",
+          "originalTitle": "The End of Oak Street",
+          "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1046967331",
+          "imdbRating": "N/A",
+          "imdbUrl": "",
+          "ageRating": "16+",
+          "genres": [
+            "Piedzīvojumi"
+          ],
+          "startTime": "2026-08-15T11:00:00+03:00",
+          "serviceDate": "2026-08-15",
+          "auditorium": "Zale 5",
+          "language": "",
+          "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/ozolu-ielas-gals/lv",
+          "availability": {
+            "totalSeats": 93,
+            "freeSeats": 87,
+            "takenSeats": 6,
+            "occupiedPercent": 6
           }
         },
         {
@@ -9273,9 +9273,9 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/",
-      "count": 54,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-08-14",
+      "count": 54,
       "fetchedAt": "2026-08-14T01:13:52.683Z",
       "lastSuccessAt": "2026-08-14T01:13:52.683Z",
       "error": null
@@ -9284,22 +9284,22 @@
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "status": "stale",
-      "dataDate": "2026-08-14",
       "count": 95,
-      "fetchedAt": "2026-08-13T22:12:07.902Z",
-      "lastSuccessAt": "2026-08-13T22:12:07.902Z",
+      "status": "fresh",
+      "dataDate": "2026-08-14",
+      "fetchedAt": "2026-08-14T02:12:02.003Z",
+      "lastSuccessAt": "2026-08-14T02:12:02.003Z",
       "error": null
     },
     {
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "status": "stale",
-      "dataDate": "2026-08-14",
       "count": 38,
-      "fetchedAt": "2026-08-13T22:12:07.902Z",
-      "lastSuccessAt": "2026-08-13T22:12:07.902Z",
+      "status": "fresh",
+      "dataDate": "2026-08-14",
+      "fetchedAt": "2026-08-14T02:12:02.003Z",
+      "lastSuccessAt": "2026-08-14T02:12:02.003Z",
       "error": null
     }
   ],
@@ -9484,31 +9484,6 @@
       }
     },
     {
-      "id": "cinamon-340351458",
-      "source": "cinamon",
-      "cinema": "Cinamon Alfa",
-      "title": "Ozolu ielas gals",
-      "originalTitle": "The End of Oak Street",
-      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1046967331",
-      "imdbRating": "N/A",
-      "imdbUrl": "",
-      "ageRating": "16+",
-      "genres": [
-        "Piedzīvojumi"
-      ],
-      "startTime": "2026-08-14T11:00:00+03:00",
-      "serviceDate": "2026-08-14",
-      "auditorium": "Zale 5",
-      "language": "",
-      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/ozolu-ielas-gals/lv",
-      "availability": {
-        "totalSeats": 93,
-        "freeSeats": 87,
-        "takenSeats": 6,
-        "occupiedPercent": 6
-      }
-    },
-    {
       "id": "cinamon-261354063",
       "source": "cinamon",
       "cinema": "Cinamon Alfa",
@@ -9531,6 +9506,31 @@
         "freeSeats": 342,
         "takenSeats": 15,
         "occupiedPercent": 4
+      }
+    },
+    {
+      "id": "cinamon-340351458",
+      "source": "cinamon",
+      "cinema": "Cinamon Alfa",
+      "title": "Ozolu ielas gals",
+      "originalTitle": "The End of Oak Street",
+      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1046967331",
+      "imdbRating": "N/A",
+      "imdbUrl": "",
+      "ageRating": "16+",
+      "genres": [
+        "Piedzīvojumi"
+      ],
+      "startTime": "2026-08-14T11:00:00+03:00",
+      "serviceDate": "2026-08-14",
+      "auditorium": "Zale 5",
+      "language": "",
+      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/ozolu-ielas-gals/lv",
+      "availability": {
+        "totalSeats": 93,
+        "freeSeats": 87,
+        "takenSeats": 6,
+        "occupiedPercent": 6
       }
     },
     {
@@ -9907,7 +9907,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304124/ozolu_ielas_gals?theatreAreaID=1014&dt=14.08.2026",
       "availability": {
-        "freeSeats": 57
+        "freeSeats": 58
       }
     },
     {
@@ -10175,9 +10175,9 @@
       "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/kepu-patrula-dinozauru-filma/lv",
       "availability": {
         "totalSeats": 184,
-        "freeSeats": 176,
-        "takenSeats": 8,
-        "occupiedPercent": 4
+        "freeSeats": 174,
+        "takenSeats": 10,
+        "occupiedPercent": 5
       }
     },
     {
@@ -10958,10 +10958,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304124/ozolu_ielas_gals?theatreAreaID=1014&dt=14.08.2026",
       "availability": {
-        "freeSeats": 89,
+        "freeSeats": 90,
         "totalSeats": 90,
-        "takenSeats": 1,
-        "occupiedPercent": 1
+        "takenSeats": 0,
+        "occupiedPercent": 0
       }
     },
     {
@@ -11077,9 +11077,9 @@
       "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/zirneklcilveks-jauna-diena/lv",
       "availability": {
         "totalSeats": 250,
-        "freeSeats": 229,
-        "takenSeats": 21,
-        "occupiedPercent": 8
+        "freeSeats": 233,
+        "takenSeats": 17,
+        "occupiedPercent": 7
       }
     },
     {
@@ -11341,10 +11341,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=14.08.2026",
       "availability": {
-        "freeSeats": 195,
+        "freeSeats": 192,
         "totalSeats": 277,
-        "takenSeats": 82,
-        "occupiedPercent": 30
+        "takenSeats": 85,
+        "occupiedPercent": 31
       }
     },
     {
@@ -11760,7 +11760,7 @@
       "language": "Krievu",
       "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=14.08.2026",
       "availability": {
-        "freeSeats": 106
+        "freeSeats": 104
       }
     },
     {
@@ -11978,9 +11978,9 @@
       "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/zirneklcilveks-jauna-diena/lv",
       "availability": {
         "totalSeats": 78,
-        "freeSeats": 68,
-        "takenSeats": 10,
-        "occupiedPercent": 13
+        "freeSeats": 70,
+        "takenSeats": 8,
+        "occupiedPercent": 10
       }
     },
     {
@@ -12442,7 +12442,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=14.08.2026",
       "availability": {
-        "freeSeats": 143
+        "freeSeats": 145
       }
     },
     {
@@ -12512,7 +12512,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304174/tikai_viena_nakts?theatreAreaID=1014&dt=14.08.2026",
       "availability": {
-        "freeSeats": 97
+        "freeSeats": 95
       }
     },
     {
@@ -12629,7 +12629,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=14.08.2026",
       "availability": {
-        "freeSeats": 311
+        "freeSeats": 309
       }
     },
     {
@@ -13161,9 +13161,9 @@
       "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/zirneklcilveks-jauna-diena/lv",
       "availability": {
         "totalSeats": 250,
-        "freeSeats": 244,
-        "takenSeats": 6,
-        "occupiedPercent": 2
+        "freeSeats": 239,
+        "takenSeats": 11,
+        "occupiedPercent": 4
       }
     },
     {
@@ -13303,9 +13303,9 @@
       "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/awarapan-2/lv",
       "availability": {
         "totalSeats": 78,
-        "freeSeats": 42,
-        "takenSeats": 36,
-        "occupiedPercent": 46
+        "freeSeats": 44,
+        "takenSeats": 34,
+        "occupiedPercent": 44
       }
     },
     {
@@ -13471,7 +13471,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304174/tikai_viena_nakts?theatreAreaID=1014&dt=14.08.2026",
       "availability": {
-        "freeSeats": 107
+        "freeSeats": 109
       }
     },
     {
@@ -13495,10 +13495,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304174/tikai_viena_nakts?theatreAreaID=1014&dt=14.08.2026",
       "availability": {
-        "freeSeats": 64,
+        "freeSeats": 68,
         "totalSeats": 70,
-        "takenSeats": 6,
-        "occupiedPercent": 9
+        "takenSeats": 2,
+        "occupiedPercent": 3
       }
     },
     {
