@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T11:11:57.064Z",
+  "generatedAt": "2026-08-15T11:12:00.647Z",
   "timezone": "Europe/Riga",
   "date": "2026-08-15",
   "dates": [
@@ -14,20 +14,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "cached",
+          "count": 38,
+          "status": "fresh",
           "dataDate": "2026-08-15",
-          "count": 42,
-          "fetchedAt": "2026-08-15T10:14:36.283Z",
-          "lastSuccessAt": "2026-08-15T10:14:36.283Z",
+          "fetchedAt": "2026-08-15T11:12:00.647Z",
+          "lastSuccessAt": "2026-08-15T11:12:00.647Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 69,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-15",
+          "count": 67,
           "fetchedAt": "2026-08-15T11:11:57.064Z",
           "lastSuccessAt": "2026-08-15T11:11:57.064Z",
           "error": null
@@ -36,9 +36,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 24,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-15",
+          "count": 24,
           "fetchedAt": "2026-08-15T11:11:57.064Z",
           "lastSuccessAt": "2026-08-15T11:11:57.064Z",
           "error": null
@@ -218,7 +218,10 @@
           "auditorium": "PEPSI auditorija",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 551,
+            "totalSeats": 602
+          }
         },
         {
           "id": "forum-436399",
@@ -239,32 +242,12 @@
           "startTime": "2026-08-15T14:45:00+03:00",
           "serviceDate": "2026-08-15",
           "auditorium": "Auditorija 7",
-          "language": "Latviešu",
+          "language": "Krievu",
           "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
-          "availability": {}
-        },
-        {
-          "id": "forum-436446",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Ozolu ielas gals",
-          "originalTitle": "The End of Oak Street",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11443/portrait_medium/oak-street-plakats.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt27165187/",
-          "ageRating": "16+",
-          "genres": [
-            "Trilleris",
-            "Piedzīvojumi",
-            "Mistika",
-            "Fantastika"
-          ],
-          "startTime": "2026-08-15T14:50:00+03:00",
-          "serviceDate": "2026-08-15",
-          "auditorium": "Auditorija 9",
-          "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304869/title/ozolu_ielas_gals/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 223,
+            "totalSeats": 228
+          }
         },
         {
           "id": "forum-436415",
@@ -287,7 +270,36 @@
           "auditorium": "Auditorija 14",
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304685/title/%C4%B7epu_patru%C4%BCa_dinozauru_filma/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 179,
+            "totalSeats": 183
+          }
+        },
+        {
+          "id": "forum-436446",
+          "source": "forum",
+          "cinema": "Forum Cinemas",
+          "title": "Ozolu ielas gals",
+          "originalTitle": "The End of Oak Street",
+          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11443/portrait_medium/oak-street-plakats.jpg",
+          "imdbRating": "",
+          "imdbUrl": "https://www.imdb.com/title/tt27165187/",
+          "ageRating": "16+",
+          "genres": [
+            "Trilleris",
+            "Piedzīvojumi",
+            "Mistika",
+            "Fantastika"
+          ],
+          "startTime": "2026-08-15T14:50:00+03:00",
+          "serviceDate": "2026-08-15",
+          "auditorium": "Auditorija 9",
+          "language": "Angļu",
+          "movieUrl": "https://www.forumcinemas.lv/event/304869/title/ozolu_ielas_gals/",
+          "availability": {
+            "freeSeats": 90,
+            "totalSeats": 98
+          }
         },
         {
           "id": "apollo-516420",
@@ -360,7 +372,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
           "availability": {
-            "freeSeats": 91,
+            "freeSeats": 82,
             "totalSeats": 109
           }
         },
@@ -455,7 +467,7 @@
           "startTime": "2026-08-15T15:10:00+03:00",
           "serviceDate": "2026-08-15",
           "auditorium": "Auditorija 13",
-          "language": "Latviešu",
+          "language": "Krievu",
           "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
           "availability": {}
         },
@@ -923,7 +935,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304665/title/s%C4%81tans_pradas_brun%C4%8Dos_2/",
           "availability": {
-            "freeSeats": 96,
+            "freeSeats": 95,
             "totalSeats": 98
           }
         },
@@ -1334,7 +1346,7 @@
           "language": "Japāņu",
           "movieUrl": "https://www.forumcinemas.lv/event/304611/title/ce%C4%BCojo%C5%A1%C4%81_pils_2004/",
           "availability": {
-            "freeSeats": 60,
+            "freeSeats": 54,
             "totalSeats": 129
           }
         },
@@ -1457,7 +1469,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/301956/title/labais_%C4%BCaunais_un_rieb%C4%ABgais_1966/",
           "availability": {
-            "freeSeats": 119,
+            "freeSeats": 116,
             "totalSeats": 234
           }
         },
@@ -2117,7 +2129,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/302012/title/la_la_land_kalifornijas_sap%C5%86i_2016/",
           "availability": {
-            "freeSeats": 136,
+            "freeSeats": 134,
             "totalSeats": 228
           }
         },
@@ -2240,7 +2252,10 @@
           "auditorium": "Auditorija 9",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304809/title/aps%C4%93st%C4%ABba/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 90,
+            "totalSeats": 98
+          }
         },
         {
           "id": "forum-436405",
@@ -3167,20 +3182,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "cached",
-          "dataDate": "2026-08-16",
           "count": 55,
-          "fetchedAt": "2026-08-15T10:14:36.283Z",
-          "lastSuccessAt": "2026-08-15T10:14:36.283Z",
+          "status": "fresh",
+          "dataDate": "2026-08-16",
+          "fetchedAt": "2026-08-15T11:12:00.647Z",
+          "lastSuccessAt": "2026-08-15T11:12:00.647Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 94,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-16",
+          "count": 94,
           "fetchedAt": "2026-08-15T11:11:57.064Z",
           "lastSuccessAt": "2026-08-15T11:11:57.064Z",
           "error": null
@@ -3189,9 +3204,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 36,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-16",
+          "count": 36,
           "fetchedAt": "2026-08-15T11:11:57.064Z",
           "lastSuccessAt": "2026-08-15T11:11:57.064Z",
           "error": null
@@ -4634,7 +4649,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304841/title/tikai_viena_nakts/?dt=16.08.2026",
           "availability": {
-            "freeSeats": 97,
+            "freeSeats": 96,
             "totalSeats": 98
           }
         },
@@ -7727,20 +7742,20 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/",
-      "status": "cached",
+      "count": 38,
+      "status": "fresh",
       "dataDate": "2026-08-15",
-      "count": 42,
-      "fetchedAt": "2026-08-15T10:14:36.283Z",
-      "lastSuccessAt": "2026-08-15T10:14:36.283Z",
+      "fetchedAt": "2026-08-15T11:12:00.647Z",
+      "lastSuccessAt": "2026-08-15T11:12:00.647Z",
       "error": null
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "count": 69,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-08-15",
+      "count": 67,
       "fetchedAt": "2026-08-15T11:11:57.064Z",
       "lastSuccessAt": "2026-08-15T11:11:57.064Z",
       "error": null
@@ -7749,9 +7764,9 @@
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "count": 24,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-08-15",
+      "count": 24,
       "fetchedAt": "2026-08-15T11:11:57.064Z",
       "lastSuccessAt": "2026-08-15T11:11:57.064Z",
       "error": null
@@ -7931,7 +7946,10 @@
       "auditorium": "PEPSI auditorija",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 551,
+        "totalSeats": 602
+      }
     },
     {
       "id": "forum-436399",
@@ -7952,32 +7970,12 @@
       "startTime": "2026-08-15T14:45:00+03:00",
       "serviceDate": "2026-08-15",
       "auditorium": "Auditorija 7",
-      "language": "Latviešu",
+      "language": "Krievu",
       "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
-      "availability": {}
-    },
-    {
-      "id": "forum-436446",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Ozolu ielas gals",
-      "originalTitle": "The End of Oak Street",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11443/portrait_medium/oak-street-plakats.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt27165187/",
-      "ageRating": "16+",
-      "genres": [
-        "Trilleris",
-        "Piedzīvojumi",
-        "Mistika",
-        "Fantastika"
-      ],
-      "startTime": "2026-08-15T14:50:00+03:00",
-      "serviceDate": "2026-08-15",
-      "auditorium": "Auditorija 9",
-      "language": "Angļu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304869/title/ozolu_ielas_gals/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 223,
+        "totalSeats": 228
+      }
     },
     {
       "id": "forum-436415",
@@ -8000,7 +7998,36 @@
       "auditorium": "Auditorija 14",
       "language": "Latviešu",
       "movieUrl": "https://www.forumcinemas.lv/event/304685/title/%C4%B7epu_patru%C4%BCa_dinozauru_filma/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 179,
+        "totalSeats": 183
+      }
+    },
+    {
+      "id": "forum-436446",
+      "source": "forum",
+      "cinema": "Forum Cinemas",
+      "title": "Ozolu ielas gals",
+      "originalTitle": "The End of Oak Street",
+      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11443/portrait_medium/oak-street-plakats.jpg",
+      "imdbRating": "",
+      "imdbUrl": "https://www.imdb.com/title/tt27165187/",
+      "ageRating": "16+",
+      "genres": [
+        "Trilleris",
+        "Piedzīvojumi",
+        "Mistika",
+        "Fantastika"
+      ],
+      "startTime": "2026-08-15T14:50:00+03:00",
+      "serviceDate": "2026-08-15",
+      "auditorium": "Auditorija 9",
+      "language": "Angļu",
+      "movieUrl": "https://www.forumcinemas.lv/event/304869/title/ozolu_ielas_gals/",
+      "availability": {
+        "freeSeats": 90,
+        "totalSeats": 98
+      }
     },
     {
       "id": "apollo-516420",
@@ -8073,7 +8100,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
       "availability": {
-        "freeSeats": 91,
+        "freeSeats": 82,
         "totalSeats": 109
       }
     },
@@ -8168,7 +8195,7 @@
       "startTime": "2026-08-15T15:10:00+03:00",
       "serviceDate": "2026-08-15",
       "auditorium": "Auditorija 13",
-      "language": "Latviešu",
+      "language": "Krievu",
       "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
       "availability": {}
     },
@@ -8636,7 +8663,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304665/title/s%C4%81tans_pradas_brun%C4%8Dos_2/",
       "availability": {
-        "freeSeats": 96,
+        "freeSeats": 95,
         "totalSeats": 98
       }
     },
@@ -9047,7 +9074,7 @@
       "language": "Japāņu",
       "movieUrl": "https://www.forumcinemas.lv/event/304611/title/ce%C4%BCojo%C5%A1%C4%81_pils_2004/",
       "availability": {
-        "freeSeats": 60,
+        "freeSeats": 54,
         "totalSeats": 129
       }
     },
@@ -9170,7 +9197,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/301956/title/labais_%C4%BCaunais_un_rieb%C4%ABgais_1966/",
       "availability": {
-        "freeSeats": 119,
+        "freeSeats": 116,
         "totalSeats": 234
       }
     },
@@ -9830,7 +9857,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/302012/title/la_la_land_kalifornijas_sap%C5%86i_2016/",
       "availability": {
-        "freeSeats": 136,
+        "freeSeats": 134,
         "totalSeats": 228
       }
     },
@@ -9953,7 +9980,10 @@
       "auditorium": "Auditorija 9",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304809/title/aps%C4%93st%C4%ABba/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 90,
+        "totalSeats": 98
+      }
     },
     {
       "id": "forum-436405",
