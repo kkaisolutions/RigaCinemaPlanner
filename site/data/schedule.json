@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T12:11:58.602Z",
+  "generatedAt": "2026-08-16T12:21:47.839Z",
   "timezone": "Europe/Riga",
   "date": "2026-08-16",
   "dates": [
@@ -14,20 +14,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "cached",
+          "count": 31,
+          "status": "fresh",
           "dataDate": "2026-08-16",
-          "count": 41,
-          "fetchedAt": "2026-08-16T11:12:38.105Z",
-          "lastSuccessAt": "2026-08-16T11:12:38.105Z",
+          "fetchedAt": "2026-08-16T12:21:47.839Z",
+          "lastSuccessAt": "2026-08-16T12:21:47.839Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 57,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-16",
+          "count": 54,
           "fetchedAt": "2026-08-16T12:11:58.602Z",
           "lastSuccessAt": "2026-08-16T12:11:58.602Z",
           "error": null
@@ -36,9 +36,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 19,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-16",
+          "count": 19,
           "fetchedAt": "2026-08-16T12:11:58.602Z",
           "lastSuccessAt": "2026-08-16T12:11:58.602Z",
           "error": null
@@ -46,32 +46,6 @@
       ],
       "warnings": [],
       "showtimes": [
-        {
-          "id": "apollo-516390",
-          "source": "apollo",
-          "cinema": "Apollo Akropole",
-          "title": "Ķepu patruļa: Dinozauru filma",
-          "originalTitle": "Paw Patrol: The Dino Movie",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8439/landscape_qhd/LK_PP__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "7+",
-          "genres": [
-            "Animācija",
-            "Ģimenes filma"
-          ],
-          "startTime": "2026-08-16T15:20:00.0000000+03:00",
-          "serviceDate": "2026-08-16",
-          "auditorium": "2. zāle",
-          "language": "Latviešu",
-          "movieUrl": "https://www.apollokino.lv/event/304012/%C4%B7epu_patru%C4%BCa_dinozauru_filma?theatreAreaID=1014&dt=16.08.2026",
-          "availability": {
-            "freeSeats": 192,
-            "totalSeats": 227,
-            "takenSeats": 35,
-            "occupiedPercent": 15
-          }
-        },
         {
           "id": "apollo-516919",
           "source": "apollo",
@@ -120,7 +94,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304841/title/tikai_viena_nakts/",
           "availability": {
-            "freeSeats": 121,
+            "freeSeats": 118,
             "totalSeats": 127
           }
         },
@@ -246,7 +220,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304869/title/ozolu_ielas_gals/",
           "availability": {
-            "freeSeats": 177,
+            "freeSeats": 167,
             "totalSeats": 183
           }
         },
@@ -270,7 +244,10 @@
           "auditorium": "Auditorija 2",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 362,
+            "totalSeats": 427
+          }
         },
         {
           "id": "cinamon-1787124542",
@@ -318,7 +295,10 @@
           "auditorium": "DELFI LUX auditorija",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 75,
+            "totalSeats": 109
+          }
         },
         {
           "id": "forum-436476",
@@ -339,9 +319,12 @@
           "startTime": "2026-08-16T16:15:00+03:00",
           "serviceDate": "2026-08-16",
           "auditorium": "Auditorija 9",
-          "language": "Latviešu",
+          "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 93,
+            "totalSeats": 98
+          }
         },
         {
           "id": "apollo-516555",
@@ -459,7 +442,10 @@
           "auditorium": "Auditorija 11",
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304685/title/%C4%B7epu_patru%C4%BCa_dinozauru_filma/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 227,
+            "totalSeats": 234
+          }
         },
         {
           "id": "apollo-516475",
@@ -515,28 +501,6 @@
           }
         },
         {
-          "id": "forum-436531",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Tikai viena nakts",
-          "originalTitle": "One Night Only",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11412/portrait_medium/One-Night-Only-plakats-v2.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt37853455/",
-          "ageRating": "16+",
-          "genres": [
-            "Komēdija",
-            "Drāma",
-            "Romantika"
-          ],
-          "startTime": "2026-08-16T16:35:00+03:00",
-          "serviceDate": "2026-08-16",
-          "auditorium": "Auditorija 10",
-          "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304841/title/tikai_viena_nakts/",
-          "availability": {}
-        },
-        {
           "id": "forum-436472",
           "source": "forum",
           "cinema": "Forum Cinemas",
@@ -556,7 +520,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304809/title/aps%C4%93st%C4%ABba/",
           "availability": {
-            "freeSeats": 91,
+            "freeSeats": 89,
             "totalSeats": 98
           }
         },
@@ -682,7 +646,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/303990/title/maikls/",
           "availability": {
-            "freeSeats": 84,
+            "freeSeats": 81,
             "totalSeats": 96
           }
         },
@@ -802,7 +766,7 @@
           "language": "Japāņu",
           "movieUrl": "https://www.forumcinemas.lv/event/304579/title/mans_kaimi%C5%86%C5%A1_totoro_1988/",
           "availability": {
-            "freeSeats": 64,
+            "freeSeats": 59,
             "totalSeats": 129
           }
         },
@@ -1176,28 +1140,6 @@
           }
         },
         {
-          "id": "forum-436504",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Tikai viena nakts",
-          "originalTitle": "One Night Only",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11412/portrait_medium/One-Night-Only-plakats-v2.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt37853455/",
-          "ageRating": "16+",
-          "genres": [
-            "Komēdija",
-            "Drāma",
-            "Romantika"
-          ],
-          "startTime": "2026-08-16T18:25:00+03:00",
-          "serviceDate": "2026-08-16",
-          "auditorium": "Auditorija 9",
-          "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304841/title/tikai_viena_nakts/",
-          "availability": {}
-        },
-        {
           "id": "forum-436474",
           "source": "forum",
           "cinema": "Forum Cinemas",
@@ -1216,7 +1158,10 @@
           "auditorium": "Auditorija 14",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304784/title/iel%C5%ABgums/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 179,
+            "totalSeats": 183
+          }
         },
         {
           "id": "apollo-513015",
@@ -1483,7 +1428,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304815/title/telma_un_lu%C4%ABze_1991/",
           "availability": {
-            "freeSeats": 555,
+            "freeSeats": 554,
             "totalSeats": 602
           }
         },
@@ -1944,28 +1889,6 @@
           }
         },
         {
-          "id": "forum-436532",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Tikai viena nakts",
-          "originalTitle": "One Night Only",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11412/portrait_medium/One-Night-Only-plakats-v2.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt37853455/",
-          "ageRating": "16+",
-          "genres": [
-            "Komēdija",
-            "Drāma",
-            "Romantika"
-          ],
-          "startTime": "2026-08-16T20:35:00+03:00",
-          "serviceDate": "2026-08-16",
-          "auditorium": "Auditorija 8",
-          "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304841/title/tikai_viena_nakts/",
-          "availability": {}
-        },
-        {
           "id": "apollo-516691",
           "source": "apollo",
           "cinema": "Apollo Plaza",
@@ -2078,7 +2001,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304736/title/backrooms_everything_must_go/",
           "availability": {
-            "freeSeats": 96,
+            "freeSeats": 94,
             "totalSeats": 98
           }
         },
@@ -2654,20 +2577,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "cached",
-          "dataDate": "2026-08-17",
           "count": 56,
-          "fetchedAt": "2026-08-16T11:12:38.105Z",
-          "lastSuccessAt": "2026-08-16T11:12:38.105Z",
+          "status": "fresh",
+          "dataDate": "2026-08-17",
+          "fetchedAt": "2026-08-16T12:21:47.839Z",
+          "lastSuccessAt": "2026-08-16T12:21:47.839Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 95,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-17",
+          "count": 95,
           "fetchedAt": "2026-08-16T12:11:58.602Z",
           "lastSuccessAt": "2026-08-16T12:11:58.602Z",
           "error": null
@@ -2676,9 +2599,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 38,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-17",
+          "count": 38,
           "fetchedAt": "2026-08-16T12:11:58.602Z",
           "lastSuccessAt": "2026-08-16T12:11:58.602Z",
           "error": null
@@ -7309,20 +7232,20 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/",
-      "status": "cached",
+      "count": 31,
+      "status": "fresh",
       "dataDate": "2026-08-16",
-      "count": 41,
-      "fetchedAt": "2026-08-16T11:12:38.105Z",
-      "lastSuccessAt": "2026-08-16T11:12:38.105Z",
+      "fetchedAt": "2026-08-16T12:21:47.839Z",
+      "lastSuccessAt": "2026-08-16T12:21:47.839Z",
       "error": null
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "count": 57,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-08-16",
+      "count": 54,
       "fetchedAt": "2026-08-16T12:11:58.602Z",
       "lastSuccessAt": "2026-08-16T12:11:58.602Z",
       "error": null
@@ -7331,9 +7254,9 @@
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "count": 19,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-08-16",
+      "count": 19,
       "fetchedAt": "2026-08-16T12:11:58.602Z",
       "lastSuccessAt": "2026-08-16T12:11:58.602Z",
       "error": null
@@ -7341,32 +7264,6 @@
   ],
   "warnings": [],
   "showtimes": [
-    {
-      "id": "apollo-516390",
-      "source": "apollo",
-      "cinema": "Apollo Akropole",
-      "title": "Ķepu patruļa: Dinozauru filma",
-      "originalTitle": "Paw Patrol: The Dino Movie",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8439/landscape_qhd/LK_PP__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "7+",
-      "genres": [
-        "Animācija",
-        "Ģimenes filma"
-      ],
-      "startTime": "2026-08-16T15:20:00.0000000+03:00",
-      "serviceDate": "2026-08-16",
-      "auditorium": "2. zāle",
-      "language": "Latviešu",
-      "movieUrl": "https://www.apollokino.lv/event/304012/%C4%B7epu_patru%C4%BCa_dinozauru_filma?theatreAreaID=1014&dt=16.08.2026",
-      "availability": {
-        "freeSeats": 192,
-        "totalSeats": 227,
-        "takenSeats": 35,
-        "occupiedPercent": 15
-      }
-    },
     {
       "id": "apollo-516919",
       "source": "apollo",
@@ -7415,7 +7312,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304841/title/tikai_viena_nakts/",
       "availability": {
-        "freeSeats": 121,
+        "freeSeats": 118,
         "totalSeats": 127
       }
     },
@@ -7541,7 +7438,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304869/title/ozolu_ielas_gals/",
       "availability": {
-        "freeSeats": 177,
+        "freeSeats": 167,
         "totalSeats": 183
       }
     },
@@ -7565,7 +7462,10 @@
       "auditorium": "Auditorija 2",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 362,
+        "totalSeats": 427
+      }
     },
     {
       "id": "cinamon-1787124542",
@@ -7613,7 +7513,10 @@
       "auditorium": "DELFI LUX auditorija",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 75,
+        "totalSeats": 109
+      }
     },
     {
       "id": "forum-436476",
@@ -7634,9 +7537,12 @@
       "startTime": "2026-08-16T16:15:00+03:00",
       "serviceDate": "2026-08-16",
       "auditorium": "Auditorija 9",
-      "language": "Latviešu",
+      "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 93,
+        "totalSeats": 98
+      }
     },
     {
       "id": "apollo-516555",
@@ -7754,7 +7660,10 @@
       "auditorium": "Auditorija 11",
       "language": "Latviešu",
       "movieUrl": "https://www.forumcinemas.lv/event/304685/title/%C4%B7epu_patru%C4%BCa_dinozauru_filma/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 227,
+        "totalSeats": 234
+      }
     },
     {
       "id": "apollo-516475",
@@ -7810,28 +7719,6 @@
       }
     },
     {
-      "id": "forum-436531",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Tikai viena nakts",
-      "originalTitle": "One Night Only",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11412/portrait_medium/One-Night-Only-plakats-v2.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt37853455/",
-      "ageRating": "16+",
-      "genres": [
-        "Komēdija",
-        "Drāma",
-        "Romantika"
-      ],
-      "startTime": "2026-08-16T16:35:00+03:00",
-      "serviceDate": "2026-08-16",
-      "auditorium": "Auditorija 10",
-      "language": "Angļu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304841/title/tikai_viena_nakts/",
-      "availability": {}
-    },
-    {
       "id": "forum-436472",
       "source": "forum",
       "cinema": "Forum Cinemas",
@@ -7851,7 +7738,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304809/title/aps%C4%93st%C4%ABba/",
       "availability": {
-        "freeSeats": 91,
+        "freeSeats": 89,
         "totalSeats": 98
       }
     },
@@ -7977,7 +7864,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/303990/title/maikls/",
       "availability": {
-        "freeSeats": 84,
+        "freeSeats": 81,
         "totalSeats": 96
       }
     },
@@ -8097,7 +7984,7 @@
       "language": "Japāņu",
       "movieUrl": "https://www.forumcinemas.lv/event/304579/title/mans_kaimi%C5%86%C5%A1_totoro_1988/",
       "availability": {
-        "freeSeats": 64,
+        "freeSeats": 59,
         "totalSeats": 129
       }
     },
@@ -8471,28 +8358,6 @@
       }
     },
     {
-      "id": "forum-436504",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Tikai viena nakts",
-      "originalTitle": "One Night Only",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11412/portrait_medium/One-Night-Only-plakats-v2.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt37853455/",
-      "ageRating": "16+",
-      "genres": [
-        "Komēdija",
-        "Drāma",
-        "Romantika"
-      ],
-      "startTime": "2026-08-16T18:25:00+03:00",
-      "serviceDate": "2026-08-16",
-      "auditorium": "Auditorija 9",
-      "language": "Angļu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304841/title/tikai_viena_nakts/",
-      "availability": {}
-    },
-    {
       "id": "forum-436474",
       "source": "forum",
       "cinema": "Forum Cinemas",
@@ -8511,7 +8376,10 @@
       "auditorium": "Auditorija 14",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304784/title/iel%C5%ABgums/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 179,
+        "totalSeats": 183
+      }
     },
     {
       "id": "apollo-513015",
@@ -8778,7 +8646,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304815/title/telma_un_lu%C4%ABze_1991/",
       "availability": {
-        "freeSeats": 555,
+        "freeSeats": 554,
         "totalSeats": 602
       }
     },
@@ -9239,28 +9107,6 @@
       }
     },
     {
-      "id": "forum-436532",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Tikai viena nakts",
-      "originalTitle": "One Night Only",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11412/portrait_medium/One-Night-Only-plakats-v2.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt37853455/",
-      "ageRating": "16+",
-      "genres": [
-        "Komēdija",
-        "Drāma",
-        "Romantika"
-      ],
-      "startTime": "2026-08-16T20:35:00+03:00",
-      "serviceDate": "2026-08-16",
-      "auditorium": "Auditorija 8",
-      "language": "Angļu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304841/title/tikai_viena_nakts/",
-      "availability": {}
-    },
-    {
       "id": "apollo-516691",
       "source": "apollo",
       "cinema": "Apollo Plaza",
@@ -9373,7 +9219,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304736/title/backrooms_everything_must_go/",
       "availability": {
-        "freeSeats": 96,
+        "freeSeats": 94,
         "totalSeats": 98
       }
     },
