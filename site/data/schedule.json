@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T20:11:35.678Z",
+  "generatedAt": "2026-08-17T20:17:00.980Z",
   "timezone": "Europe/Riga",
   "date": "2026-08-17",
   "dates": [
@@ -19,15 +19,15 @@
           "count": 0,
           "fetchedAt": "2026-08-17T18:26:01.857Z",
           "lastSuccessAt": "2026-08-17T18:26:01.857Z",
-          "error": null
+          "error": "forum failed: Forum Cinemas did not return its 2026-08-17 schedule page"
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 0,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-17",
+          "count": 0,
           "fetchedAt": "2026-08-17T20:11:35.678Z",
           "lastSuccessAt": "2026-08-17T20:11:35.678Z",
           "error": null
@@ -36,9 +36,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 0,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-17",
+          "count": 0,
           "fetchedAt": "2026-08-17T20:11:35.678Z",
           "lastSuccessAt": "2026-08-17T20:11:35.678Z",
           "error": null
@@ -54,20 +54,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "cached",
-          "dataDate": "2026-08-18",
           "count": 52,
-          "fetchedAt": "2026-08-17T19:21:12.275Z",
-          "lastSuccessAt": "2026-08-17T19:21:12.275Z",
+          "status": "fresh",
+          "dataDate": "2026-08-18",
+          "fetchedAt": "2026-08-17T20:17:00.980Z",
+          "lastSuccessAt": "2026-08-17T20:17:00.980Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 95,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-18",
+          "count": 95,
           "fetchedAt": "2026-08-17T20:11:35.678Z",
           "lastSuccessAt": "2026-08-17T20:11:35.678Z",
           "error": null
@@ -76,9 +76,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 38,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-18",
+          "count": 38,
           "fetchedAt": "2026-08-17T20:11:35.678Z",
           "lastSuccessAt": "2026-08-17T20:11:35.678Z",
           "error": null
@@ -3254,7 +3254,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/301956/title/labais_%C4%BCaunais_un_rieb%C4%ABgais_1966/",
           "availability": {
-            "freeSeats": 157,
+            "freeSeats": 152,
             "totalSeats": 234
           }
         },
@@ -3809,7 +3809,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304809/title/aps%C4%93st%C4%ABba/",
           "availability": {
-            "freeSeats": 94,
+            "freeSeats": 92,
             "totalSeats": 96
           }
         },
@@ -4627,15 +4627,15 @@
       "count": 0,
       "fetchedAt": "2026-08-17T18:26:01.857Z",
       "lastSuccessAt": "2026-08-17T18:26:01.857Z",
-      "error": null
+      "error": "forum failed: Forum Cinemas did not return its 2026-08-17 schedule page"
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "count": 0,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-08-17",
+      "count": 0,
       "fetchedAt": "2026-08-17T20:11:35.678Z",
       "lastSuccessAt": "2026-08-17T20:11:35.678Z",
       "error": null
@@ -4644,9 +4644,9 @@
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "count": 0,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-08-17",
+      "count": 0,
       "fetchedAt": "2026-08-17T20:11:35.678Z",
       "lastSuccessAt": "2026-08-17T20:11:35.678Z",
       "error": null
