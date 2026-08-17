@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T12:19:24.294Z",
+  "generatedAt": "2026-08-17T12:26:27.452Z",
   "timezone": "Europe/Riga",
   "date": "2026-08-17",
   "dates": [
@@ -14,20 +14,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "cached",
-          "dataDate": "2026-08-17",
           "count": 38,
-          "fetchedAt": "2026-08-17T11:17:59.296Z",
-          "lastSuccessAt": "2026-08-17T11:17:59.296Z",
+          "status": "fresh",
+          "dataDate": "2026-08-17",
+          "fetchedAt": "2026-08-17T12:26:27.452Z",
+          "lastSuccessAt": "2026-08-17T12:26:27.452Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 59,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-17",
+          "count": 55,
           "fetchedAt": "2026-08-17T12:19:24.294Z",
           "lastSuccessAt": "2026-08-17T12:19:24.294Z",
           "error": null
@@ -36,9 +36,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 21,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-17",
+          "count": 21,
           "fetchedAt": "2026-08-17T12:19:24.294Z",
           "lastSuccessAt": "2026-08-17T12:19:24.294Z",
           "error": null
@@ -46,79 +46,6 @@
       ],
       "warnings": [],
       "showtimes": [
-        {
-          "id": "forum-436536",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Ķepu patruļa: Dinozauru filma",
-          "originalTitle": "Paw Patrol: The Dino Movie",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11231/portrait_medium/Paw-Patrol-8-9-August-plakats.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt29356163/",
-          "ageRating": "7+",
-          "genres": [
-            "Piedzīvojumi",
-            "Komēdija",
-            "Animācija",
-            "Ģimenes filma"
-          ],
-          "startTime": "2026-08-17T15:20:00+03:00",
-          "serviceDate": "2026-08-17",
-          "auditorium": "Auditorija 12",
-          "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304685/title/%C4%B7epu_patru%C4%BCa_dinozauru_filma/",
-          "availability": {}
-        },
-        {
-          "id": "apollo-516395",
-          "source": "apollo",
-          "cinema": "Apollo Akropole",
-          "title": "Ķepu patruļa: Dinozauru filma",
-          "originalTitle": "Paw Patrol: The Dino Movie",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8439/landscape_qhd/LK_PP__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "7+",
-          "genres": [
-            "Animācija",
-            "Ģimenes filma"
-          ],
-          "startTime": "2026-08-17T15:20:00.0000000+03:00",
-          "serviceDate": "2026-08-17",
-          "auditorium": "2. zāle",
-          "language": "Latviešu",
-          "movieUrl": "https://www.apollokino.lv/event/304012/%C4%B7epu_patru%C4%BCa_dinozauru_filma?theatreAreaID=1014&dt=17.08.2026",
-          "availability": {
-            "freeSeats": 170,
-            "totalSeats": 227,
-            "takenSeats": 57,
-            "occupiedPercent": 25
-          }
-        },
-        {
-          "id": "apollo-516865",
-          "source": "apollo",
-          "cinema": "Apollo Plaza",
-          "title": "Tikai viena nakts",
-          "originalTitle": "One Night Only",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8613/landscape_qhd/LK_ONO__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "16+",
-          "genres": [
-            "Komēdija",
-            "Drāma",
-            "Romantika"
-          ],
-          "startTime": "2026-08-17T15:20:00.0000000+03:00",
-          "serviceDate": "2026-08-17",
-          "auditorium": "8. Vintage zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304174/tikai_viena_nakts?theatreAreaID=1014&dt=17.08.2026",
-          "availability": {
-            "freeSeats": 26
-          }
-        },
         {
           "id": "apollo-516959",
           "source": "apollo",
@@ -219,9 +146,12 @@
           "startTime": "2026-08-17T15:50:00+03:00",
           "serviceDate": "2026-08-17",
           "auditorium": "Auditorija 9",
-          "language": "Latviešu",
+          "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 96,
+            "totalSeats": 98
+          }
         },
         {
           "id": "apollo-516592",
@@ -320,7 +250,10 @@
           "auditorium": "Auditorija 2",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 383,
+            "totalSeats": 427
+          }
         },
         {
           "id": "cinamon-1776322121",
@@ -367,7 +300,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304784/title/iel%C5%ABgums/",
           "availability": {
-            "freeSeats": 86,
+            "freeSeats": 84,
             "totalSeats": 95
           }
         },
@@ -395,6 +328,29 @@
             "takenSeats": 20,
             "occupiedPercent": 42
           }
+        },
+        {
+          "id": "forum-436624",
+          "source": "forum",
+          "cinema": "Forum Cinemas",
+          "title": "Ķepu patruļa: Dinozauru filma",
+          "originalTitle": "Paw Patrol: The Dino Movie",
+          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11231/portrait_medium/Paw-Patrol-8-9-August-plakats.jpg",
+          "imdbRating": "",
+          "imdbUrl": "https://www.imdb.com/title/tt29356163/",
+          "ageRating": "7+",
+          "genres": [
+            "Piedzīvojumi",
+            "Komēdija",
+            "Animācija",
+            "Ģimenes filma"
+          ],
+          "startTime": "2026-08-17T16:15:00+03:00",
+          "serviceDate": "2026-08-17",
+          "auditorium": "Auditorija 7",
+          "language": "Latviešu",
+          "movieUrl": "https://www.forumcinemas.lv/event/304685/title/%C4%B7epu_patru%C4%BCa_dinozauru_filma/",
+          "availability": {}
         },
         {
           "id": "forum-436542",
@@ -464,7 +420,10 @@
           "auditorium": "Auditorija 4 LUX",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 66,
+            "totalSeats": 91
+          }
         },
         {
           "id": "apollo-516721",
@@ -511,7 +470,10 @@
           "auditorium": "Auditorija 7",
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304685/title/%C4%B7epu_patru%C4%BCa_dinozauru_filma/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 228,
+            "totalSeats": 228
+          }
         },
         {
           "id": "forum-436531",
@@ -534,7 +496,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304841/title/tikai_viena_nakts/",
           "availability": {
-            "freeSeats": 110,
+            "freeSeats": 105,
             "totalSeats": 127
           }
         },
@@ -682,7 +644,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304869/title/ozolu_ielas_gals/",
           "availability": {
-            "freeSeats": 169,
+            "freeSeats": 168,
             "totalSeats": 183
           }
         },
@@ -786,6 +748,29 @@
           "availability": {}
         },
         {
+          "id": "forum-436628",
+          "source": "forum",
+          "cinema": "Forum Cinemas",
+          "title": "Ķepu patruļa: Dinozauru filma",
+          "originalTitle": "Paw Patrol: The Dino Movie",
+          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11231/portrait_medium/Paw-Patrol-8-9-August-plakats.jpg",
+          "imdbRating": "",
+          "imdbUrl": "https://www.imdb.com/title/tt29356163/",
+          "ageRating": "7+",
+          "genres": [
+            "Piedzīvojumi",
+            "Komēdija",
+            "Animācija",
+            "Ģimenes filma"
+          ],
+          "startTime": "2026-08-17T17:15:00+03:00",
+          "serviceDate": "2026-08-17",
+          "auditorium": "Auditorija 8",
+          "language": "Latviešu",
+          "movieUrl": "https://www.forumcinemas.lv/event/304685/title/%C4%B7epu_patru%C4%BCa_dinozauru_filma/",
+          "availability": {}
+        },
+        {
           "id": "forum-436508",
           "source": "forum",
           "cinema": "Forum Cinemas",
@@ -804,7 +789,7 @@
           "startTime": "2026-08-17T17:30:00+03:00",
           "serviceDate": "2026-08-17",
           "auditorium": "Auditorija 6",
-          "language": "Latviešu",
+          "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
           "availability": {}
         },
@@ -1366,7 +1351,10 @@
           "auditorium": "Auditorija 5",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/303990/title/maikls/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 87,
+            "totalSeats": 95
+          }
         },
         {
           "id": "apollo-516745",
@@ -1748,7 +1736,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304665/title/s%C4%81tans_pradas_brun%C4%8Dos_2/",
           "availability": {
-            "freeSeats": 78,
+            "freeSeats": 76,
             "totalSeats": 96
           }
         },
@@ -2681,20 +2669,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "cached",
-          "dataDate": "2026-08-18",
           "count": 52,
-          "fetchedAt": "2026-08-17T11:17:59.296Z",
-          "lastSuccessAt": "2026-08-17T11:17:59.296Z",
+          "status": "fresh",
+          "dataDate": "2026-08-18",
+          "fetchedAt": "2026-08-17T12:26:27.452Z",
+          "lastSuccessAt": "2026-08-17T12:26:27.452Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 95,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-18",
+          "count": 95,
           "fetchedAt": "2026-08-17T12:19:24.294Z",
           "lastSuccessAt": "2026-08-17T12:19:24.294Z",
           "error": null
@@ -2703,9 +2691,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 38,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-18",
+          "count": 38,
           "fetchedAt": "2026-08-17T12:19:24.294Z",
           "lastSuccessAt": "2026-08-17T12:19:24.294Z",
           "error": null
@@ -5602,7 +5590,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304804/title/nt_live_the_audience/?dt=18.08.2026",
           "availability": {
-            "freeSeats": 32,
+            "freeSeats": 31,
             "totalSeats": 91
           }
         },
@@ -7249,20 +7237,20 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/",
-      "status": "cached",
-      "dataDate": "2026-08-17",
       "count": 38,
-      "fetchedAt": "2026-08-17T11:17:59.296Z",
-      "lastSuccessAt": "2026-08-17T11:17:59.296Z",
+      "status": "fresh",
+      "dataDate": "2026-08-17",
+      "fetchedAt": "2026-08-17T12:26:27.452Z",
+      "lastSuccessAt": "2026-08-17T12:26:27.452Z",
       "error": null
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "count": 59,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-08-17",
+      "count": 55,
       "fetchedAt": "2026-08-17T12:19:24.294Z",
       "lastSuccessAt": "2026-08-17T12:19:24.294Z",
       "error": null
@@ -7271,9 +7259,9 @@
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "count": 21,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-08-17",
+      "count": 21,
       "fetchedAt": "2026-08-17T12:19:24.294Z",
       "lastSuccessAt": "2026-08-17T12:19:24.294Z",
       "error": null
@@ -7281,79 +7269,6 @@
   ],
   "warnings": [],
   "showtimes": [
-    {
-      "id": "forum-436536",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Ķepu patruļa: Dinozauru filma",
-      "originalTitle": "Paw Patrol: The Dino Movie",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11231/portrait_medium/Paw-Patrol-8-9-August-plakats.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt29356163/",
-      "ageRating": "7+",
-      "genres": [
-        "Piedzīvojumi",
-        "Komēdija",
-        "Animācija",
-        "Ģimenes filma"
-      ],
-      "startTime": "2026-08-17T15:20:00+03:00",
-      "serviceDate": "2026-08-17",
-      "auditorium": "Auditorija 12",
-      "language": "Latviešu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304685/title/%C4%B7epu_patru%C4%BCa_dinozauru_filma/",
-      "availability": {}
-    },
-    {
-      "id": "apollo-516395",
-      "source": "apollo",
-      "cinema": "Apollo Akropole",
-      "title": "Ķepu patruļa: Dinozauru filma",
-      "originalTitle": "Paw Patrol: The Dino Movie",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8439/landscape_qhd/LK_PP__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "7+",
-      "genres": [
-        "Animācija",
-        "Ģimenes filma"
-      ],
-      "startTime": "2026-08-17T15:20:00.0000000+03:00",
-      "serviceDate": "2026-08-17",
-      "auditorium": "2. zāle",
-      "language": "Latviešu",
-      "movieUrl": "https://www.apollokino.lv/event/304012/%C4%B7epu_patru%C4%BCa_dinozauru_filma?theatreAreaID=1014&dt=17.08.2026",
-      "availability": {
-        "freeSeats": 170,
-        "totalSeats": 227,
-        "takenSeats": 57,
-        "occupiedPercent": 25
-      }
-    },
-    {
-      "id": "apollo-516865",
-      "source": "apollo",
-      "cinema": "Apollo Plaza",
-      "title": "Tikai viena nakts",
-      "originalTitle": "One Night Only",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8613/landscape_qhd/LK_ONO__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "16+",
-      "genres": [
-        "Komēdija",
-        "Drāma",
-        "Romantika"
-      ],
-      "startTime": "2026-08-17T15:20:00.0000000+03:00",
-      "serviceDate": "2026-08-17",
-      "auditorium": "8. Vintage zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304174/tikai_viena_nakts?theatreAreaID=1014&dt=17.08.2026",
-      "availability": {
-        "freeSeats": 26
-      }
-    },
     {
       "id": "apollo-516959",
       "source": "apollo",
@@ -7454,9 +7369,12 @@
       "startTime": "2026-08-17T15:50:00+03:00",
       "serviceDate": "2026-08-17",
       "auditorium": "Auditorija 9",
-      "language": "Latviešu",
+      "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 96,
+        "totalSeats": 98
+      }
     },
     {
       "id": "apollo-516592",
@@ -7555,7 +7473,10 @@
       "auditorium": "Auditorija 2",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 383,
+        "totalSeats": 427
+      }
     },
     {
       "id": "cinamon-1776322121",
@@ -7602,7 +7523,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304784/title/iel%C5%ABgums/",
       "availability": {
-        "freeSeats": 86,
+        "freeSeats": 84,
         "totalSeats": 95
       }
     },
@@ -7630,6 +7551,29 @@
         "takenSeats": 20,
         "occupiedPercent": 42
       }
+    },
+    {
+      "id": "forum-436624",
+      "source": "forum",
+      "cinema": "Forum Cinemas",
+      "title": "Ķepu patruļa: Dinozauru filma",
+      "originalTitle": "Paw Patrol: The Dino Movie",
+      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11231/portrait_medium/Paw-Patrol-8-9-August-plakats.jpg",
+      "imdbRating": "",
+      "imdbUrl": "https://www.imdb.com/title/tt29356163/",
+      "ageRating": "7+",
+      "genres": [
+        "Piedzīvojumi",
+        "Komēdija",
+        "Animācija",
+        "Ģimenes filma"
+      ],
+      "startTime": "2026-08-17T16:15:00+03:00",
+      "serviceDate": "2026-08-17",
+      "auditorium": "Auditorija 7",
+      "language": "Latviešu",
+      "movieUrl": "https://www.forumcinemas.lv/event/304685/title/%C4%B7epu_patru%C4%BCa_dinozauru_filma/",
+      "availability": {}
     },
     {
       "id": "forum-436542",
@@ -7699,7 +7643,10 @@
       "auditorium": "Auditorija 4 LUX",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 66,
+        "totalSeats": 91
+      }
     },
     {
       "id": "apollo-516721",
@@ -7746,7 +7693,10 @@
       "auditorium": "Auditorija 7",
       "language": "Latviešu",
       "movieUrl": "https://www.forumcinemas.lv/event/304685/title/%C4%B7epu_patru%C4%BCa_dinozauru_filma/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 228,
+        "totalSeats": 228
+      }
     },
     {
       "id": "forum-436531",
@@ -7769,7 +7719,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304841/title/tikai_viena_nakts/",
       "availability": {
-        "freeSeats": 110,
+        "freeSeats": 105,
         "totalSeats": 127
       }
     },
@@ -7917,7 +7867,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304869/title/ozolu_ielas_gals/",
       "availability": {
-        "freeSeats": 169,
+        "freeSeats": 168,
         "totalSeats": 183
       }
     },
@@ -8021,6 +7971,29 @@
       "availability": {}
     },
     {
+      "id": "forum-436628",
+      "source": "forum",
+      "cinema": "Forum Cinemas",
+      "title": "Ķepu patruļa: Dinozauru filma",
+      "originalTitle": "Paw Patrol: The Dino Movie",
+      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11231/portrait_medium/Paw-Patrol-8-9-August-plakats.jpg",
+      "imdbRating": "",
+      "imdbUrl": "https://www.imdb.com/title/tt29356163/",
+      "ageRating": "7+",
+      "genres": [
+        "Piedzīvojumi",
+        "Komēdija",
+        "Animācija",
+        "Ģimenes filma"
+      ],
+      "startTime": "2026-08-17T17:15:00+03:00",
+      "serviceDate": "2026-08-17",
+      "auditorium": "Auditorija 8",
+      "language": "Latviešu",
+      "movieUrl": "https://www.forumcinemas.lv/event/304685/title/%C4%B7epu_patru%C4%BCa_dinozauru_filma/",
+      "availability": {}
+    },
+    {
       "id": "forum-436508",
       "source": "forum",
       "cinema": "Forum Cinemas",
@@ -8039,7 +8012,7 @@
       "startTime": "2026-08-17T17:30:00+03:00",
       "serviceDate": "2026-08-17",
       "auditorium": "Auditorija 6",
-      "language": "Latviešu",
+      "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
       "availability": {}
     },
@@ -8601,7 +8574,10 @@
       "auditorium": "Auditorija 5",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/303990/title/maikls/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 87,
+        "totalSeats": 95
+      }
     },
     {
       "id": "apollo-516745",
@@ -8983,7 +8959,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304665/title/s%C4%81tans_pradas_brun%C4%8Dos_2/",
       "availability": {
-        "freeSeats": 78,
+        "freeSeats": 76,
         "totalSeats": 96
       }
     },
