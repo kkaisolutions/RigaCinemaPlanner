@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T20:11:40.251Z",
+  "generatedAt": "2026-08-18T20:14:10.534Z",
   "timezone": "Europe/Riga",
   "date": "2026-08-18",
   "dates": [
@@ -19,15 +19,15 @@
           "count": 0,
           "fetchedAt": "2026-08-18T18:25:21.476Z",
           "lastSuccessAt": "2026-08-18T18:25:21.476Z",
-          "error": null
+          "error": "forum failed: Forum Cinemas did not return its 2026-08-18 schedule page"
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 0,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-18",
+          "count": 0,
           "fetchedAt": "2026-08-18T20:11:40.251Z",
           "lastSuccessAt": "2026-08-18T20:11:40.251Z",
           "error": null
@@ -36,9 +36,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 0,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-18",
+          "count": 0,
           "fetchedAt": "2026-08-18T20:11:40.251Z",
           "lastSuccessAt": "2026-08-18T20:11:40.251Z",
           "error": null
@@ -54,20 +54,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "cached",
-          "dataDate": "2026-08-19",
           "count": 53,
-          "fetchedAt": "2026-08-18T19:21:46.707Z",
-          "lastSuccessAt": "2026-08-18T19:21:46.707Z",
+          "status": "fresh",
+          "dataDate": "2026-08-19",
+          "fetchedAt": "2026-08-18T20:14:10.534Z",
+          "lastSuccessAt": "2026-08-18T20:14:10.534Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 96,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-19",
+          "count": 96,
           "fetchedAt": "2026-08-18T20:11:40.251Z",
           "lastSuccessAt": "2026-08-18T20:11:40.251Z",
           "error": null
@@ -76,9 +76,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 38,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-19",
+          "count": 38,
           "fetchedAt": "2026-08-18T20:11:40.251Z",
           "lastSuccessAt": "2026-08-18T20:11:40.251Z",
           "error": null
@@ -256,7 +256,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
           "availability": {
-            "freeSeats": 553,
+            "freeSeats": 551,
             "totalSeats": 602
           }
         },
@@ -380,10 +380,7 @@
           "auditorium": "Auditorija 12",
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
-          "availability": {
-            "freeSeats": 176,
-            "totalSeats": 183
-          }
+          "availability": {}
         },
         {
           "id": "apollo-516809",
@@ -534,7 +531,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304667/title/rota%C4%BClietu_st%C4%81sts_5/",
           "availability": {
-            "freeSeats": 88,
+            "freeSeats": 87,
             "totalSeats": 95
           }
         },
@@ -3699,7 +3696,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/302224/title/terminators_1984/",
           "availability": {
-            "freeSeats": 32,
+            "freeSeats": 31,
             "totalSeats": 183
           }
         },
@@ -4669,15 +4666,15 @@
       "count": 0,
       "fetchedAt": "2026-08-18T18:25:21.476Z",
       "lastSuccessAt": "2026-08-18T18:25:21.476Z",
-      "error": null
+      "error": "forum failed: Forum Cinemas did not return its 2026-08-18 schedule page"
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "count": 0,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-08-18",
+      "count": 0,
       "fetchedAt": "2026-08-18T20:11:40.251Z",
       "lastSuccessAt": "2026-08-18T20:11:40.251Z",
       "error": null
@@ -4686,9 +4683,9 @@
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "count": 0,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-08-18",
+      "count": 0,
       "fetchedAt": "2026-08-18T20:11:40.251Z",
       "lastSuccessAt": "2026-08-18T20:11:40.251Z",
       "error": null
