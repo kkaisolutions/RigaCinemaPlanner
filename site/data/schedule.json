@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T00:49:57.845Z",
+  "generatedAt": "2026-08-21T02:12:04.275Z",
   "timezone": "Europe/Riga",
   "date": "2026-08-21",
   "dates": [
@@ -14,9 +14,9 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "count": 56,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-21",
+          "count": 56,
           "fetchedAt": "2026-08-21T00:49:57.845Z",
           "lastSuccessAt": "2026-08-21T00:49:57.845Z",
           "error": null
@@ -25,22 +25,22 @@
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "status": "stale",
-          "dataDate": "2026-08-21",
           "count": 102,
-          "fetchedAt": "2026-08-20T22:12:15.448Z",
-          "lastSuccessAt": "2026-08-20T22:12:15.448Z",
+          "status": "fresh",
+          "dataDate": "2026-08-21",
+          "fetchedAt": "2026-08-21T02:12:04.275Z",
+          "lastSuccessAt": "2026-08-21T02:12:04.275Z",
           "error": null
         },
         {
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "status": "stale",
-          "dataDate": "2026-08-21",
           "count": 40,
-          "fetchedAt": "2026-08-20T22:12:15.448Z",
-          "lastSuccessAt": "2026-08-20T22:12:15.448Z",
+          "status": "fresh",
+          "dataDate": "2026-08-21",
+          "fetchedAt": "2026-08-21T02:12:04.275Z",
+          "lastSuccessAt": "2026-08-21T02:12:04.275Z",
           "error": null
         }
       ],
@@ -126,7 +126,7 @@
           "title": "Rotaļlietu stāsts 5",
           "originalTitle": "Toy Story 5",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1073416592",
-          "imdbRating": "7.5",
+          "imdbRating": "",
           "imdbUrl": "",
           "ageRating": "U",
           "genres": [
@@ -201,7 +201,7 @@
           "title": "Ķepu patruļa: Dinozauru filma",
           "originalTitle": "PAW Patrol: The Dino Movie",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-          "imdbRating": "",
+          "imdbRating": "6.2",
           "imdbUrl": "",
           "ageRating": "7+",
           "genres": [
@@ -339,10 +339,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=21.08.2026",
           "availability": {
-            "freeSeats": 241,
+            "freeSeats": 239,
             "totalSeats": 277,
-            "takenSeats": 36,
-            "occupiedPercent": 13
+            "takenSeats": 38,
+            "occupiedPercent": 14
           }
         },
         {
@@ -366,32 +366,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304173/dumpis?theatreAreaID=1014&dt=21.08.2026",
           "availability": {
-            "freeSeats": 49
-          }
-        },
-        {
-          "id": "cinamon-1725118962",
-          "source": "cinamon",
-          "cinema": "Cinamon Alfa",
-          "title": "Ķepu patruļa: Dinozauru filma",
-          "originalTitle": "PAW Patrol: The Dino Movie",
-          "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "7+",
-          "genres": [
-            "Animācija"
-          ],
-          "startTime": "2026-08-21T11:00:00+03:00",
-          "serviceDate": "2026-08-21",
-          "auditorium": "Zale 5",
-          "language": "(krievu valodā)",
-          "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/kepu-patrula-dinozauru-filma/lv",
-          "availability": {
-            "totalSeats": 93,
-            "freeSeats": 87,
-            "takenSeats": 6,
-            "occupiedPercent": 6
+            "freeSeats": 48
           }
         },
         {
@@ -401,7 +376,7 @@
           "title": "Zirnekļcilvēks: Jauna diena",
           "originalTitle": "Spider-Man: Brand New Day",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=531892269",
-          "imdbRating": "",
+          "imdbRating": "8.1",
           "imdbUrl": "",
           "ageRating": "12+",
           "genres": [
@@ -417,6 +392,31 @@
             "freeSeats": 244,
             "takenSeats": 6,
             "occupiedPercent": 2
+          }
+        },
+        {
+          "id": "cinamon-1725118962",
+          "source": "cinamon",
+          "cinema": "Cinamon Alfa",
+          "title": "Ķepu patruļa: Dinozauru filma",
+          "originalTitle": "PAW Patrol: The Dino Movie",
+          "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
+          "imdbRating": "6.2",
+          "imdbUrl": "",
+          "ageRating": "7+",
+          "genres": [
+            "Animācija"
+          ],
+          "startTime": "2026-08-21T11:00:00+03:00",
+          "serviceDate": "2026-08-21",
+          "auditorium": "Zale 5",
+          "language": "(krievu valodā)",
+          "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/kepu-patrula-dinozauru-filma/lv",
+          "availability": {
+            "totalSeats": 93,
+            "freeSeats": 87,
+            "takenSeats": 6,
+            "occupiedPercent": 6
           }
         },
         {
@@ -1157,7 +1157,7 @@
           "title": "Zirnekļcilvēks: Jauna diena",
           "originalTitle": "Spider-Man: Brand New Day",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=531892269",
-          "imdbRating": "",
+          "imdbRating": "8.1",
           "imdbUrl": "",
           "ageRating": "12+",
           "genres": [
@@ -1235,7 +1235,7 @@
           "title": "Ķepu patruļa: Dinozauru filma",
           "originalTitle": "PAW Patrol: The Dino Movie",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-          "imdbRating": "",
+          "imdbRating": "6.2",
           "imdbUrl": "",
           "ageRating": "7+",
           "genres": [
@@ -1643,7 +1643,7 @@
           "title": "Ķepu patruļa: Dinozauru filma",
           "originalTitle": "PAW Patrol: The Dino Movie",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-          "imdbRating": "",
+          "imdbRating": "6.2",
           "imdbUrl": "",
           "ageRating": "7+",
           "genres": [
@@ -1668,7 +1668,7 @@
           "title": "Zirnekļcilvēks: Jauna diena",
           "originalTitle": "Spider-Man: Brand New Day",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=531892269",
-          "imdbRating": "",
+          "imdbRating": "8.1",
           "imdbUrl": "",
           "ageRating": "12+",
           "genres": [
@@ -1889,7 +1889,7 @@
           "title": "Rotaļlietu stāsts 5",
           "originalTitle": "Toy Story 5",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1073416592",
-          "imdbRating": "7.5",
+          "imdbRating": "",
           "imdbUrl": "",
           "ageRating": "U",
           "genres": [
@@ -1927,10 +1927,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=21.08.2026",
           "availability": {
-            "freeSeats": 68,
+            "freeSeats": 66,
             "totalSeats": 70,
-            "takenSeats": 2,
-            "occupiedPercent": 3
+            "takenSeats": 4,
+            "occupiedPercent": 6
           }
         },
         {
@@ -2124,7 +2124,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304157/astr%C4%81ls_no_t%C4%81lienes?theatreAreaID=1014&dt=21.08.2026",
           "availability": {
-            "freeSeats": 48
+            "freeSeats": 46
           }
         },
         {
@@ -2232,7 +2232,7 @@
           "title": "Ķepu patruļa: Dinozauru filma",
           "originalTitle": "PAW Patrol: The Dino Movie",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-          "imdbRating": "",
+          "imdbRating": "6.2",
           "imdbUrl": "",
           "ageRating": "7+",
           "genres": [
@@ -2452,7 +2452,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304157/astr%C4%81ls_no_t%C4%81lienes?theatreAreaID=1014&dt=21.08.2026",
           "availability": {
-            "freeSeats": 35
+            "freeSeats": 29
           }
         },
         {
@@ -2547,9 +2547,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/spa-brivdienas/lv",
           "availability": {
             "totalSeats": 163,
-            "freeSeats": 151,
-            "takenSeats": 12,
-            "occupiedPercent": 7
+            "freeSeats": 153,
+            "takenSeats": 10,
+            "occupiedPercent": 6
           }
         },
         {
@@ -2582,7 +2582,7 @@
           "title": "Ķepu patruļa: Dinozauru filma",
           "originalTitle": "PAW Patrol: The Dino Movie",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-          "imdbRating": "",
+          "imdbRating": "6.2",
           "imdbUrl": "",
           "ageRating": "7+",
           "genres": [
@@ -2799,7 +2799,7 @@
           "title": "Zirnekļcilvēks: Jauna diena",
           "originalTitle": "Spider-Man: Brand New Day",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=531892269",
-          "imdbRating": "",
+          "imdbRating": "8.1",
           "imdbUrl": "",
           "ageRating": "12+",
           "genres": [
@@ -2900,7 +2900,7 @@
           "title": "Ķepu patruļa: Dinozauru filma",
           "originalTitle": "PAW Patrol: The Dino Movie",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-          "imdbRating": "",
+          "imdbRating": "6.2",
           "imdbUrl": "",
           "ageRating": "7+",
           "genres": [
@@ -3124,7 +3124,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.apollokino.lv/event/304012/%C4%B7epu_patru%C4%BCa_dinozauru_filma?theatreAreaID=1014&dt=21.08.2026",
           "availability": {
-            "freeSeats": 100
+            "freeSeats": 102
           }
         },
         {
@@ -3209,7 +3209,7 @@
           "title": "Zirnekļcilvēks: Jauna diena",
           "originalTitle": "Spider-Man: Brand New Day",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=531892269",
-          "imdbRating": "",
+          "imdbRating": "8.1",
           "imdbUrl": "",
           "ageRating": "12+",
           "genres": [
@@ -3543,7 +3543,7 @@
           "title": "Ķepu patruļa: Dinozauru filma",
           "originalTitle": "PAW Patrol: The Dino Movie",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-          "imdbRating": "",
+          "imdbRating": "6.2",
           "imdbUrl": "",
           "ageRating": "7+",
           "genres": [
@@ -3703,31 +3703,6 @@
           }
         },
         {
-          "id": "cinamon-1885754011",
-          "source": "cinamon",
-          "cinema": "Cinamon Alfa",
-          "title": "Ozolu ielas gals",
-          "originalTitle": "The End of Oak Street",
-          "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1046967331",
-          "imdbRating": "N/A",
-          "imdbUrl": "",
-          "ageRating": "16+",
-          "genres": [
-            "Piedzīvojumi"
-          ],
-          "startTime": "2026-08-21T19:20:00+03:00",
-          "serviceDate": "2026-08-21",
-          "auditorium": "Zale 8",
-          "language": "",
-          "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/ozolu-ielas-gals/lv",
-          "availability": {
-            "totalSeats": 48,
-            "freeSeats": 40,
-            "takenSeats": 8,
-            "occupiedPercent": 17
-          }
-        },
-        {
           "id": "cinamon-953458269",
           "source": "cinamon",
           "cinema": "Cinamon Alfa",
@@ -3750,6 +3725,31 @@
             "freeSeats": 176,
             "takenSeats": 8,
             "occupiedPercent": 4
+          }
+        },
+        {
+          "id": "cinamon-1885754011",
+          "source": "cinamon",
+          "cinema": "Cinamon Alfa",
+          "title": "Ozolu ielas gals",
+          "originalTitle": "The End of Oak Street",
+          "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1046967331",
+          "imdbRating": "N/A",
+          "imdbUrl": "",
+          "ageRating": "16+",
+          "genres": [
+            "Piedzīvojumi"
+          ],
+          "startTime": "2026-08-21T19:20:00+03:00",
+          "serviceDate": "2026-08-21",
+          "auditorium": "Zale 8",
+          "language": "",
+          "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/ozolu-ielas-gals/lv",
+          "availability": {
+            "totalSeats": 48,
+            "freeSeats": 40,
+            "takenSeats": 8,
+            "occupiedPercent": 17
           }
         },
         {
@@ -3818,7 +3818,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304157/astr%C4%81ls_no_t%C4%81lienes?theatreAreaID=1014&dt=21.08.2026",
           "availability": {
-            "freeSeats": 138
+            "freeSeats": 136
           }
         },
         {
@@ -3867,10 +3867,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304173/dumpis?theatreAreaID=1014&dt=21.08.2026",
           "availability": {
-            "freeSeats": 74,
+            "freeSeats": 76,
             "totalSeats": 90,
-            "takenSeats": 16,
-            "occupiedPercent": 18
+            "takenSeats": 14,
+            "occupiedPercent": 16
           }
         },
         {
@@ -4001,7 +4001,7 @@
           "title": "Zirnekļcilvēks: Jauna diena",
           "originalTitle": "Spider-Man: Brand New Day",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=531892269",
-          "imdbRating": "",
+          "imdbRating": "8.1",
           "imdbUrl": "",
           "ageRating": "12+",
           "genres": [
@@ -4224,7 +4224,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304157/astr%C4%81ls_no_t%C4%81lienes?theatreAreaID=1014&dt=21.08.2026",
           "availability": {
-            "freeSeats": 91
+            "freeSeats": 90
           }
         },
         {
@@ -4320,9 +4320,9 @@
           "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/bethlehem-kudumba-unit/lv",
           "availability": {
             "totalSeats": 78,
-            "freeSeats": 17,
-            "takenSeats": 61,
-            "occupiedPercent": 78
+            "freeSeats": 16,
+            "takenSeats": 62,
+            "occupiedPercent": 79
           }
         },
         {
@@ -4401,7 +4401,7 @@
           "title": "Zirnekļcilvēks: Jauna diena",
           "originalTitle": "Spider-Man: Brand New Day",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=531892269",
-          "imdbRating": "",
+          "imdbRating": "8.1",
           "imdbUrl": "",
           "ageRating": "12+",
           "genres": [
@@ -4634,7 +4634,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=21.08.2026",
           "availability": {
-            "freeSeats": 341
+            "freeSeats": 339
           }
         },
         {
@@ -4835,9 +4835,9 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "count": 55,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-22",
+          "count": 55,
           "fetchedAt": "2026-08-21T00:49:57.845Z",
           "lastSuccessAt": "2026-08-21T00:49:57.845Z",
           "error": null
@@ -4846,22 +4846,22 @@
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "status": "stale",
-          "dataDate": "2026-08-22",
           "count": 102,
-          "fetchedAt": "2026-08-20T22:12:15.448Z",
-          "lastSuccessAt": "2026-08-20T22:12:15.448Z",
+          "status": "fresh",
+          "dataDate": "2026-08-22",
+          "fetchedAt": "2026-08-21T02:12:04.275Z",
+          "lastSuccessAt": "2026-08-21T02:12:04.275Z",
           "error": null
         },
         {
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "status": "stale",
-          "dataDate": "2026-08-22",
           "count": 41,
-          "fetchedAt": "2026-08-20T22:12:15.448Z",
-          "lastSuccessAt": "2026-08-20T22:12:15.448Z",
+          "status": "fresh",
+          "dataDate": "2026-08-22",
+          "fetchedAt": "2026-08-21T02:12:04.275Z",
+          "lastSuccessAt": "2026-08-21T02:12:04.275Z",
           "error": null
         }
       ],
@@ -4947,7 +4947,7 @@
           "title": "Rotaļlietu stāsts 5",
           "originalTitle": "Toy Story 5",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1073416592",
-          "imdbRating": "7.5",
+          "imdbRating": "",
           "imdbUrl": "",
           "ageRating": "U",
           "genres": [
@@ -5143,7 +5143,7 @@
           "title": "Zirnekļcilvēks: Jauna diena",
           "originalTitle": "Spider-Man: Brand New Day",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=531892269",
-          "imdbRating": "",
+          "imdbRating": "8.1",
           "imdbUrl": "",
           "ageRating": "12+",
           "genres": [
@@ -5194,7 +5194,7 @@
           "title": "Ķepu patruļa: Dinozauru filma",
           "originalTitle": "PAW Patrol: The Dino Movie",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-          "imdbRating": "",
+          "imdbRating": "6.2",
           "imdbUrl": "",
           "ageRating": "7+",
           "genres": [
@@ -5289,7 +5289,7 @@
           "title": "Ķepu patruļa: Dinozauru filma",
           "originalTitle": "PAW Patrol: The Dino Movie",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-          "imdbRating": "",
+          "imdbRating": "6.2",
           "imdbUrl": "",
           "ageRating": "7+",
           "genres": [
@@ -5981,7 +5981,7 @@
           "title": "Zirnekļcilvēks: Jauna diena",
           "originalTitle": "Spider-Man: Brand New Day",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=531892269",
-          "imdbRating": "",
+          "imdbRating": "8.1",
           "imdbUrl": "",
           "ageRating": "12+",
           "genres": [
@@ -6280,7 +6280,7 @@
           "title": "Ķepu patruļa: Dinozauru filma",
           "originalTitle": "PAW Patrol: The Dino Movie",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-          "imdbRating": "",
+          "imdbRating": "6.2",
           "imdbUrl": "",
           "ageRating": "7+",
           "genres": [
@@ -6495,7 +6495,7 @@
           "title": "Ķepu patruļa: Dinozauru filma",
           "originalTitle": "PAW Patrol: The Dino Movie",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-          "imdbRating": "",
+          "imdbRating": "6.2",
           "imdbUrl": "",
           "ageRating": "7+",
           "genres": [
@@ -6520,7 +6520,7 @@
           "title": "Zirnekļcilvēks: Jauna diena",
           "originalTitle": "Spider-Man: Brand New Day",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=531892269",
-          "imdbRating": "",
+          "imdbRating": "8.1",
           "imdbUrl": "",
           "ageRating": "12+",
           "genres": [
@@ -6719,7 +6719,7 @@
           "title": "Rotaļlietu stāsts 5",
           "originalTitle": "Toy Story 5",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1073416592",
-          "imdbRating": "7.5",
+          "imdbRating": "",
           "imdbUrl": "",
           "ageRating": "U",
           "genres": [
@@ -7266,7 +7266,7 @@
           "title": "Ķepu patruļa: Dinozauru filma",
           "originalTitle": "PAW Patrol: The Dino Movie",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-          "imdbRating": "",
+          "imdbRating": "6.2",
           "imdbUrl": "",
           "ageRating": "7+",
           "genres": [
@@ -7433,7 +7433,7 @@
           "title": "Ķepu patruļa: Dinozauru filma",
           "originalTitle": "PAW Patrol: The Dino Movie",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-          "imdbRating": "",
+          "imdbRating": "6.2",
           "imdbUrl": "",
           "ageRating": "7+",
           "genres": [
@@ -7703,7 +7703,7 @@
           "title": "Zirnekļcilvēks: Jauna diena",
           "originalTitle": "Spider-Man: Brand New Day",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=531892269",
-          "imdbRating": "",
+          "imdbRating": "8.1",
           "imdbUrl": "",
           "ageRating": "12+",
           "genres": [
@@ -7750,7 +7750,7 @@
           "title": "Ķepu patruļa: Dinozauru filma",
           "originalTitle": "PAW Patrol: The Dino Movie",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-          "imdbRating": "",
+          "imdbRating": "6.2",
           "imdbUrl": "",
           "ageRating": "7+",
           "genres": [
@@ -8116,7 +8116,7 @@
           "title": "Zirnekļcilvēks: Jauna diena",
           "originalTitle": "Spider-Man: Brand New Day",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=531892269",
-          "imdbRating": "",
+          "imdbRating": "8.1",
           "imdbUrl": "",
           "ageRating": "12+",
           "genres": [
@@ -8353,7 +8353,7 @@
           "title": "Ķepu patruļa: Dinozauru filma",
           "originalTitle": "PAW Patrol: The Dino Movie",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-          "imdbRating": "",
+          "imdbRating": "6.2",
           "imdbUrl": "",
           "ageRating": "7+",
           "genres": [
@@ -8536,31 +8536,6 @@
           }
         },
         {
-          "id": "cinamon-500731969",
-          "source": "cinamon",
-          "cinema": "Cinamon Alfa",
-          "title": "Spa brīvdienas",
-          "originalTitle": "Spa Weekend",
-          "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=292804645",
-          "imdbRating": "N/A",
-          "imdbUrl": "",
-          "ageRating": "12+",
-          "genres": [
-            "Komēdija"
-          ],
-          "startTime": "2026-08-22T19:20:00+03:00",
-          "serviceDate": "2026-08-22",
-          "auditorium": "Zale 3",
-          "language": "",
-          "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/spa-brivdienas/lv",
-          "availability": {
-            "totalSeats": 184,
-            "freeSeats": 178,
-            "takenSeats": 6,
-            "occupiedPercent": 3
-          }
-        },
-        {
           "id": "cinamon-1433773199",
           "source": "cinamon",
           "cinema": "Cinamon Alfa",
@@ -8583,6 +8558,31 @@
             "freeSeats": 42,
             "takenSeats": 6,
             "occupiedPercent": 13
+          }
+        },
+        {
+          "id": "cinamon-500731969",
+          "source": "cinamon",
+          "cinema": "Cinamon Alfa",
+          "title": "Spa brīvdienas",
+          "originalTitle": "Spa Weekend",
+          "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=292804645",
+          "imdbRating": "N/A",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Komēdija"
+          ],
+          "startTime": "2026-08-22T19:20:00+03:00",
+          "serviceDate": "2026-08-22",
+          "auditorium": "Zale 3",
+          "language": "",
+          "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/spa-brivdienas/lv",
+          "availability": {
+            "totalSeats": 184,
+            "freeSeats": 178,
+            "takenSeats": 6,
+            "occupiedPercent": 3
           }
         },
         {
@@ -8904,7 +8904,7 @@
           "title": "Zirnekļcilvēks: Jauna diena",
           "originalTitle": "Spider-Man: Brand New Day",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=531892269",
-          "imdbRating": "",
+          "imdbRating": "8.1",
           "imdbUrl": "",
           "ageRating": "12+",
           "genres": [
@@ -9331,7 +9331,7 @@
           "title": "Zirnekļcilvēks: Jauna diena",
           "originalTitle": "Spider-Man: Brand New Day",
           "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=531892269",
-          "imdbRating": "",
+          "imdbRating": "8.1",
           "imdbUrl": "",
           "ageRating": "12+",
           "genres": [
@@ -9671,9 +9671,9 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/",
-      "count": 56,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-08-21",
+      "count": 56,
       "fetchedAt": "2026-08-21T00:49:57.845Z",
       "lastSuccessAt": "2026-08-21T00:49:57.845Z",
       "error": null
@@ -9682,22 +9682,22 @@
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "status": "stale",
-      "dataDate": "2026-08-21",
       "count": 102,
-      "fetchedAt": "2026-08-20T22:12:15.448Z",
-      "lastSuccessAt": "2026-08-20T22:12:15.448Z",
+      "status": "fresh",
+      "dataDate": "2026-08-21",
+      "fetchedAt": "2026-08-21T02:12:04.275Z",
+      "lastSuccessAt": "2026-08-21T02:12:04.275Z",
       "error": null
     },
     {
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "status": "stale",
-      "dataDate": "2026-08-21",
       "count": 40,
-      "fetchedAt": "2026-08-20T22:12:15.448Z",
-      "lastSuccessAt": "2026-08-20T22:12:15.448Z",
+      "status": "fresh",
+      "dataDate": "2026-08-21",
+      "fetchedAt": "2026-08-21T02:12:04.275Z",
+      "lastSuccessAt": "2026-08-21T02:12:04.275Z",
       "error": null
     }
   ],
@@ -9783,7 +9783,7 @@
       "title": "Rotaļlietu stāsts 5",
       "originalTitle": "Toy Story 5",
       "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1073416592",
-      "imdbRating": "7.5",
+      "imdbRating": "",
       "imdbUrl": "",
       "ageRating": "U",
       "genres": [
@@ -9858,7 +9858,7 @@
       "title": "Ķepu patruļa: Dinozauru filma",
       "originalTitle": "PAW Patrol: The Dino Movie",
       "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-      "imdbRating": "",
+      "imdbRating": "6.2",
       "imdbUrl": "",
       "ageRating": "7+",
       "genres": [
@@ -9996,10 +9996,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=21.08.2026",
       "availability": {
-        "freeSeats": 241,
+        "freeSeats": 239,
         "totalSeats": 277,
-        "takenSeats": 36,
-        "occupiedPercent": 13
+        "takenSeats": 38,
+        "occupiedPercent": 14
       }
     },
     {
@@ -10023,32 +10023,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304173/dumpis?theatreAreaID=1014&dt=21.08.2026",
       "availability": {
-        "freeSeats": 49
-      }
-    },
-    {
-      "id": "cinamon-1725118962",
-      "source": "cinamon",
-      "cinema": "Cinamon Alfa",
-      "title": "Ķepu patruļa: Dinozauru filma",
-      "originalTitle": "PAW Patrol: The Dino Movie",
-      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "7+",
-      "genres": [
-        "Animācija"
-      ],
-      "startTime": "2026-08-21T11:00:00+03:00",
-      "serviceDate": "2026-08-21",
-      "auditorium": "Zale 5",
-      "language": "(krievu valodā)",
-      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/kepu-patrula-dinozauru-filma/lv",
-      "availability": {
-        "totalSeats": 93,
-        "freeSeats": 87,
-        "takenSeats": 6,
-        "occupiedPercent": 6
+        "freeSeats": 48
       }
     },
     {
@@ -10058,7 +10033,7 @@
       "title": "Zirnekļcilvēks: Jauna diena",
       "originalTitle": "Spider-Man: Brand New Day",
       "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=531892269",
-      "imdbRating": "",
+      "imdbRating": "8.1",
       "imdbUrl": "",
       "ageRating": "12+",
       "genres": [
@@ -10074,6 +10049,31 @@
         "freeSeats": 244,
         "takenSeats": 6,
         "occupiedPercent": 2
+      }
+    },
+    {
+      "id": "cinamon-1725118962",
+      "source": "cinamon",
+      "cinema": "Cinamon Alfa",
+      "title": "Ķepu patruļa: Dinozauru filma",
+      "originalTitle": "PAW Patrol: The Dino Movie",
+      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
+      "imdbRating": "6.2",
+      "imdbUrl": "",
+      "ageRating": "7+",
+      "genres": [
+        "Animācija"
+      ],
+      "startTime": "2026-08-21T11:00:00+03:00",
+      "serviceDate": "2026-08-21",
+      "auditorium": "Zale 5",
+      "language": "(krievu valodā)",
+      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/kepu-patrula-dinozauru-filma/lv",
+      "availability": {
+        "totalSeats": 93,
+        "freeSeats": 87,
+        "takenSeats": 6,
+        "occupiedPercent": 6
       }
     },
     {
@@ -10814,7 +10814,7 @@
       "title": "Zirnekļcilvēks: Jauna diena",
       "originalTitle": "Spider-Man: Brand New Day",
       "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=531892269",
-      "imdbRating": "",
+      "imdbRating": "8.1",
       "imdbUrl": "",
       "ageRating": "12+",
       "genres": [
@@ -10892,7 +10892,7 @@
       "title": "Ķepu patruļa: Dinozauru filma",
       "originalTitle": "PAW Patrol: The Dino Movie",
       "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-      "imdbRating": "",
+      "imdbRating": "6.2",
       "imdbUrl": "",
       "ageRating": "7+",
       "genres": [
@@ -11300,7 +11300,7 @@
       "title": "Ķepu patruļa: Dinozauru filma",
       "originalTitle": "PAW Patrol: The Dino Movie",
       "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-      "imdbRating": "",
+      "imdbRating": "6.2",
       "imdbUrl": "",
       "ageRating": "7+",
       "genres": [
@@ -11325,7 +11325,7 @@
       "title": "Zirnekļcilvēks: Jauna diena",
       "originalTitle": "Spider-Man: Brand New Day",
       "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=531892269",
-      "imdbRating": "",
+      "imdbRating": "8.1",
       "imdbUrl": "",
       "ageRating": "12+",
       "genres": [
@@ -11546,7 +11546,7 @@
       "title": "Rotaļlietu stāsts 5",
       "originalTitle": "Toy Story 5",
       "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1073416592",
-      "imdbRating": "7.5",
+      "imdbRating": "",
       "imdbUrl": "",
       "ageRating": "U",
       "genres": [
@@ -11584,10 +11584,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=21.08.2026",
       "availability": {
-        "freeSeats": 68,
+        "freeSeats": 66,
         "totalSeats": 70,
-        "takenSeats": 2,
-        "occupiedPercent": 3
+        "takenSeats": 4,
+        "occupiedPercent": 6
       }
     },
     {
@@ -11781,7 +11781,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304157/astr%C4%81ls_no_t%C4%81lienes?theatreAreaID=1014&dt=21.08.2026",
       "availability": {
-        "freeSeats": 48
+        "freeSeats": 46
       }
     },
     {
@@ -11889,7 +11889,7 @@
       "title": "Ķepu patruļa: Dinozauru filma",
       "originalTitle": "PAW Patrol: The Dino Movie",
       "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-      "imdbRating": "",
+      "imdbRating": "6.2",
       "imdbUrl": "",
       "ageRating": "7+",
       "genres": [
@@ -12109,7 +12109,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304157/astr%C4%81ls_no_t%C4%81lienes?theatreAreaID=1014&dt=21.08.2026",
       "availability": {
-        "freeSeats": 35
+        "freeSeats": 29
       }
     },
     {
@@ -12204,9 +12204,9 @@
       "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/spa-brivdienas/lv",
       "availability": {
         "totalSeats": 163,
-        "freeSeats": 151,
-        "takenSeats": 12,
-        "occupiedPercent": 7
+        "freeSeats": 153,
+        "takenSeats": 10,
+        "occupiedPercent": 6
       }
     },
     {
@@ -12239,7 +12239,7 @@
       "title": "Ķepu patruļa: Dinozauru filma",
       "originalTitle": "PAW Patrol: The Dino Movie",
       "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-      "imdbRating": "",
+      "imdbRating": "6.2",
       "imdbUrl": "",
       "ageRating": "7+",
       "genres": [
@@ -12456,7 +12456,7 @@
       "title": "Zirnekļcilvēks: Jauna diena",
       "originalTitle": "Spider-Man: Brand New Day",
       "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=531892269",
-      "imdbRating": "",
+      "imdbRating": "8.1",
       "imdbUrl": "",
       "ageRating": "12+",
       "genres": [
@@ -12557,7 +12557,7 @@
       "title": "Ķepu patruļa: Dinozauru filma",
       "originalTitle": "PAW Patrol: The Dino Movie",
       "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-      "imdbRating": "",
+      "imdbRating": "6.2",
       "imdbUrl": "",
       "ageRating": "7+",
       "genres": [
@@ -12781,7 +12781,7 @@
       "language": "Latviešu",
       "movieUrl": "https://www.apollokino.lv/event/304012/%C4%B7epu_patru%C4%BCa_dinozauru_filma?theatreAreaID=1014&dt=21.08.2026",
       "availability": {
-        "freeSeats": 100
+        "freeSeats": 102
       }
     },
     {
@@ -12866,7 +12866,7 @@
       "title": "Zirnekļcilvēks: Jauna diena",
       "originalTitle": "Spider-Man: Brand New Day",
       "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=531892269",
-      "imdbRating": "",
+      "imdbRating": "8.1",
       "imdbUrl": "",
       "ageRating": "12+",
       "genres": [
@@ -13200,7 +13200,7 @@
       "title": "Ķepu patruļa: Dinozauru filma",
       "originalTitle": "PAW Patrol: The Dino Movie",
       "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-      "imdbRating": "",
+      "imdbRating": "6.2",
       "imdbUrl": "",
       "ageRating": "7+",
       "genres": [
@@ -13360,31 +13360,6 @@
       }
     },
     {
-      "id": "cinamon-1885754011",
-      "source": "cinamon",
-      "cinema": "Cinamon Alfa",
-      "title": "Ozolu ielas gals",
-      "originalTitle": "The End of Oak Street",
-      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1046967331",
-      "imdbRating": "N/A",
-      "imdbUrl": "",
-      "ageRating": "16+",
-      "genres": [
-        "Piedzīvojumi"
-      ],
-      "startTime": "2026-08-21T19:20:00+03:00",
-      "serviceDate": "2026-08-21",
-      "auditorium": "Zale 8",
-      "language": "",
-      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/ozolu-ielas-gals/lv",
-      "availability": {
-        "totalSeats": 48,
-        "freeSeats": 40,
-        "takenSeats": 8,
-        "occupiedPercent": 17
-      }
-    },
-    {
       "id": "cinamon-953458269",
       "source": "cinamon",
       "cinema": "Cinamon Alfa",
@@ -13407,6 +13382,31 @@
         "freeSeats": 176,
         "takenSeats": 8,
         "occupiedPercent": 4
+      }
+    },
+    {
+      "id": "cinamon-1885754011",
+      "source": "cinamon",
+      "cinema": "Cinamon Alfa",
+      "title": "Ozolu ielas gals",
+      "originalTitle": "The End of Oak Street",
+      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1046967331",
+      "imdbRating": "N/A",
+      "imdbUrl": "",
+      "ageRating": "16+",
+      "genres": [
+        "Piedzīvojumi"
+      ],
+      "startTime": "2026-08-21T19:20:00+03:00",
+      "serviceDate": "2026-08-21",
+      "auditorium": "Zale 8",
+      "language": "",
+      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/ozolu-ielas-gals/lv",
+      "availability": {
+        "totalSeats": 48,
+        "freeSeats": 40,
+        "takenSeats": 8,
+        "occupiedPercent": 17
       }
     },
     {
@@ -13475,7 +13475,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304157/astr%C4%81ls_no_t%C4%81lienes?theatreAreaID=1014&dt=21.08.2026",
       "availability": {
-        "freeSeats": 138
+        "freeSeats": 136
       }
     },
     {
@@ -13524,10 +13524,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304173/dumpis?theatreAreaID=1014&dt=21.08.2026",
       "availability": {
-        "freeSeats": 74,
+        "freeSeats": 76,
         "totalSeats": 90,
-        "takenSeats": 16,
-        "occupiedPercent": 18
+        "takenSeats": 14,
+        "occupiedPercent": 16
       }
     },
     {
@@ -13658,7 +13658,7 @@
       "title": "Zirnekļcilvēks: Jauna diena",
       "originalTitle": "Spider-Man: Brand New Day",
       "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=531892269",
-      "imdbRating": "",
+      "imdbRating": "8.1",
       "imdbUrl": "",
       "ageRating": "12+",
       "genres": [
@@ -13881,7 +13881,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304157/astr%C4%81ls_no_t%C4%81lienes?theatreAreaID=1014&dt=21.08.2026",
       "availability": {
-        "freeSeats": 91
+        "freeSeats": 90
       }
     },
     {
@@ -13977,9 +13977,9 @@
       "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/bethlehem-kudumba-unit/lv",
       "availability": {
         "totalSeats": 78,
-        "freeSeats": 17,
-        "takenSeats": 61,
-        "occupiedPercent": 78
+        "freeSeats": 16,
+        "takenSeats": 62,
+        "occupiedPercent": 79
       }
     },
     {
@@ -14058,7 +14058,7 @@
       "title": "Zirnekļcilvēks: Jauna diena",
       "originalTitle": "Spider-Man: Brand New Day",
       "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=531892269",
-      "imdbRating": "",
+      "imdbRating": "8.1",
       "imdbUrl": "",
       "ageRating": "12+",
       "genres": [
@@ -14291,7 +14291,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=21.08.2026",
       "availability": {
-        "freeSeats": 341
+        "freeSeats": 339
       }
     },
     {
