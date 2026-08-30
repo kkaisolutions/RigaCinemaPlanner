@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T18:11:38.740Z",
+  "generatedAt": "2026-08-30T18:18:31.705Z",
   "timezone": "Europe/Riga",
   "date": "2026-08-30",
   "dates": [
@@ -14,20 +14,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "stale",
+          "count": 3,
+          "status": "fresh",
           "dataDate": "2026-08-30",
-          "count": 7,
-          "fetchedAt": "2026-08-30T14:09:27.835Z",
-          "lastSuccessAt": "2026-08-30T14:09:27.835Z",
+          "fetchedAt": "2026-08-30T18:18:31.705Z",
+          "lastSuccessAt": "2026-08-30T18:18:31.705Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 12,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-30",
+          "count": 11,
           "fetchedAt": "2026-08-30T18:11:38.740Z",
           "lastSuccessAt": "2026-08-30T18:11:38.740Z",
           "error": null
@@ -36,9 +36,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 3,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-30",
+          "count": 3,
           "fetchedAt": "2026-08-30T18:11:38.740Z",
           "lastSuccessAt": "2026-08-30T18:11:38.740Z",
           "error": null
@@ -46,31 +46,6 @@
       ],
       "warnings": [],
       "showtimes": [
-        {
-          "id": "cinamon-236829783",
-          "source": "cinamon",
-          "cinema": "Cinamon Alfa",
-          "title": "Zirnekļcilvēks: Jauna diena",
-          "originalTitle": "Spider-Man: Brand New Day",
-          "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=531892269",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "12+",
-          "genres": [
-            "Piedzīvojumi"
-          ],
-          "startTime": "2026-08-30T21:15:00+03:00",
-          "serviceDate": "2026-08-30",
-          "auditorium": "Zale 7",
-          "language": "",
-          "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/zirneklcilveks-jauna-diena/lv",
-          "availability": {
-            "totalSeats": 78,
-            "freeSeats": 62,
-            "takenSeats": 16,
-            "occupiedPercent": 21
-          }
-        },
         {
           "id": "forum-437278",
           "source": "forum",
@@ -90,7 +65,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304871/title/spa_br%C4%ABvdienas/",
           "availability": {
-            "freeSeats": 94,
+            "freeSeats": 89,
             "totalSeats": 96
           }
         },
@@ -137,7 +112,10 @@
           "auditorium": "Auditorija 13",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304842/title/p%C4%93d%C4%93jie_dz%C4%ABvie/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 123,
+            "totalSeats": 129
+          }
         },
         {
           "id": "cinamon-1073207011",
@@ -207,7 +185,10 @@
           "auditorium": "Auditorija 11",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304870/title/astr%C4%81ls_no_t%C4%81lienes/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 223,
+            "totalSeats": 234
+          }
         },
         {
           "id": "apollo-517987",
@@ -459,20 +440,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "stale",
-          "dataDate": "2026-08-31",
           "count": 57,
-          "fetchedAt": "2026-08-30T14:09:27.835Z",
-          "lastSuccessAt": "2026-08-30T14:09:27.835Z",
+          "status": "fresh",
+          "dataDate": "2026-08-31",
+          "fetchedAt": "2026-08-30T18:18:31.705Z",
+          "lastSuccessAt": "2026-08-30T18:18:31.705Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 95,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-31",
+          "count": 95,
           "fetchedAt": "2026-08-30T18:11:38.740Z",
           "lastSuccessAt": "2026-08-30T18:11:38.740Z",
           "error": null
@@ -481,9 +462,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 41,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-08-31",
+          "count": 41,
           "fetchedAt": "2026-08-30T18:11:38.740Z",
           "lastSuccessAt": "2026-08-30T18:11:38.740Z",
           "error": null
@@ -658,7 +639,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/?dt=31.08.2026",
           "availability": {
-            "freeSeats": 558,
+            "freeSeats": 555,
             "totalSeats": 602
           }
         },
@@ -783,7 +764,7 @@
           "language": "Krievu",
           "movieUrl": "https://www.forumcinemas.lv/event/304685/title/%C4%B7epu_patru%C4%BCa_dinozauru_filma/?dt=31.08.2026",
           "availability": {
-            "freeSeats": 129,
+            "freeSeats": 127,
             "totalSeats": 129
           }
         },
@@ -1030,7 +1011,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304813/title/laim%C4%ABgie/?dt=31.08.2026",
           "availability": {
-            "freeSeats": 180,
+            "freeSeats": 174,
             "totalSeats": 183
           }
         },
@@ -1180,7 +1161,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/?dt=31.08.2026",
           "availability": {
-            "freeSeats": 92,
+            "freeSeats": 89,
             "totalSeats": 95
           }
         },
@@ -1714,7 +1695,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304870/title/astr%C4%81ls_no_t%C4%81lienes/?dt=31.08.2026",
           "availability": {
-            "freeSeats": 125,
+            "freeSeats": 121,
             "totalSeats": 129
           }
         },
@@ -2755,7 +2736,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304809/title/aps%C4%93st%C4%ABba/?dt=31.08.2026",
           "availability": {
-            "freeSeats": 98,
+            "freeSeats": 96,
             "totalSeats": 98
           }
         },
@@ -4862,7 +4843,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304736/title/backrooms_everything_must_go/?dt=31.08.2026",
           "availability": {
-            "freeSeats": 181,
+            "freeSeats": 177,
             "totalSeats": 183
           }
         },
@@ -5161,20 +5142,20 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/",
-      "status": "stale",
+      "count": 3,
+      "status": "fresh",
       "dataDate": "2026-08-30",
-      "count": 7,
-      "fetchedAt": "2026-08-30T14:09:27.835Z",
-      "lastSuccessAt": "2026-08-30T14:09:27.835Z",
+      "fetchedAt": "2026-08-30T18:18:31.705Z",
+      "lastSuccessAt": "2026-08-30T18:18:31.705Z",
       "error": null
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "count": 12,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-08-30",
+      "count": 11,
       "fetchedAt": "2026-08-30T18:11:38.740Z",
       "lastSuccessAt": "2026-08-30T18:11:38.740Z",
       "error": null
@@ -5183,9 +5164,9 @@
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "count": 3,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-08-30",
+      "count": 3,
       "fetchedAt": "2026-08-30T18:11:38.740Z",
       "lastSuccessAt": "2026-08-30T18:11:38.740Z",
       "error": null
@@ -5193,31 +5174,6 @@
   ],
   "warnings": [],
   "showtimes": [
-    {
-      "id": "cinamon-236829783",
-      "source": "cinamon",
-      "cinema": "Cinamon Alfa",
-      "title": "Zirnekļcilvēks: Jauna diena",
-      "originalTitle": "Spider-Man: Brand New Day",
-      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=531892269",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "12+",
-      "genres": [
-        "Piedzīvojumi"
-      ],
-      "startTime": "2026-08-30T21:15:00+03:00",
-      "serviceDate": "2026-08-30",
-      "auditorium": "Zale 7",
-      "language": "",
-      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/zirneklcilveks-jauna-diena/lv",
-      "availability": {
-        "totalSeats": 78,
-        "freeSeats": 62,
-        "takenSeats": 16,
-        "occupiedPercent": 21
-      }
-    },
     {
       "id": "forum-437278",
       "source": "forum",
@@ -5237,7 +5193,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304871/title/spa_br%C4%ABvdienas/",
       "availability": {
-        "freeSeats": 94,
+        "freeSeats": 89,
         "totalSeats": 96
       }
     },
@@ -5284,7 +5240,10 @@
       "auditorium": "Auditorija 13",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304842/title/p%C4%93d%C4%93jie_dz%C4%ABvie/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 123,
+        "totalSeats": 129
+      }
     },
     {
       "id": "cinamon-1073207011",
@@ -5354,7 +5313,10 @@
       "auditorium": "Auditorija 11",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304870/title/astr%C4%81ls_no_t%C4%81lienes/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 223,
+        "totalSeats": 234
+      }
     },
     {
       "id": "apollo-517987",
