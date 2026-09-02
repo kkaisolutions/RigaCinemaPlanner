@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T18:11:43.737Z",
+  "generatedAt": "2026-09-02T18:16:45.445Z",
   "timezone": "Europe/Riga",
   "date": "2026-09-02",
   "dates": [
@@ -14,20 +14,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "stale",
+          "count": 3,
+          "status": "fresh",
           "dataDate": "2026-09-02",
-          "count": 9,
-          "fetchedAt": "2026-09-02T14:50:25.518Z",
-          "lastSuccessAt": "2026-09-02T14:50:25.518Z",
+          "fetchedAt": "2026-09-02T18:16:45.445Z",
+          "lastSuccessAt": "2026-09-02T18:16:45.445Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 15,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-09-02",
+          "count": 14,
           "fetchedAt": "2026-09-02T18:11:43.737Z",
           "lastSuccessAt": "2026-09-02T18:11:43.737Z",
           "error": null
@@ -36,9 +36,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 5,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-09-02",
+          "count": 5,
           "fetchedAt": "2026-09-02T18:11:43.737Z",
           "lastSuccessAt": "2026-09-02T18:11:43.737Z",
           "error": null
@@ -46,54 +46,6 @@
       ],
       "warnings": [],
       "showtimes": [
-        {
-          "id": "forum-437435",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Dumpis",
-          "originalTitle": "Mutiny",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11440/portrait_medium/Mutiny-Dumpis-plakats.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt32338669/",
-          "ageRating": "16+",
-          "genres": [
-            "Trilleris",
-            "Detektīvs",
-            "Asa sižeta filma"
-          ],
-          "startTime": "2026-09-02T21:15:00+03:00",
-          "serviceDate": "2026-09-02",
-          "auditorium": "Centrs, Auditorija 13",
-          "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304867/title/dumpis/",
-          "availability": {}
-        },
-        {
-          "id": "apollo-518200",
-          "source": "apollo",
-          "cinema": "Apollo Domina",
-          "title": "Idioti",
-          "originalTitle": "Idiots",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8603/landscape_qhd/Idiots_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "16+",
-          "genres": [
-            "Komēdija",
-            "Detektīvfilma"
-          ],
-          "startTime": "2026-09-02T21:15:00.0000000+03:00",
-          "serviceDate": "2026-09-02",
-          "auditorium": "2. zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304164/idioti?theatreAreaID=1014&dt=02.09.2026",
-          "availability": {
-            "freeSeats": 56,
-            "totalSeats": 70,
-            "takenSeats": 14,
-            "occupiedPercent": 20
-          }
-        },
         {
           "id": "forum-437390",
           "source": "forum",
@@ -114,7 +66,10 @@
           "auditorium": "Centrs, DELFI LUX auditorija",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304882/title/tonijs/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 105,
+            "totalSeats": 109
+          }
         },
         {
           "id": "apollo-518300",
@@ -256,7 +211,10 @@
           "auditorium": "Centrs, Auditorija 10",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304845/title/idioti/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 122,
+            "totalSeats": 127
+          }
         },
         {
           "id": "cinamon-767569756",
@@ -383,28 +341,6 @@
             "takenSeats": 10,
             "occupiedPercent": 21
           }
-        },
-        {
-          "id": "forum-437474",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Tonijs",
-          "originalTitle": "Tony",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11457/portrait_medium/Tony-Tonijs-plakats.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt33095251/",
-          "ageRating": "16+",
-          "genres": [
-            "Komēdija",
-            "Drāma",
-            "Biogrāfija"
-          ],
-          "startTime": "2026-09-02T21:50:00+03:00",
-          "serviceDate": "2026-09-02",
-          "auditorium": "Centrs, Auditorija 4 LUX",
-          "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304882/title/tonijs/",
-          "availability": {}
         },
         {
           "id": "apollo-518095",
@@ -609,20 +545,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "stale",
-          "dataDate": "2026-09-03",
           "count": 40,
-          "fetchedAt": "2026-09-02T14:50:25.518Z",
-          "lastSuccessAt": "2026-09-02T14:50:25.518Z",
+          "status": "fresh",
+          "dataDate": "2026-09-03",
+          "fetchedAt": "2026-09-02T18:16:45.445Z",
+          "lastSuccessAt": "2026-09-02T18:16:45.445Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 94,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-09-03",
+          "count": 94,
           "fetchedAt": "2026-09-02T18:11:43.737Z",
           "lastSuccessAt": "2026-09-02T18:11:43.737Z",
           "error": null
@@ -631,9 +567,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 40,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-09-03",
+          "count": 40,
           "fetchedAt": "2026-09-02T18:11:43.737Z",
           "lastSuccessAt": "2026-09-02T18:11:43.737Z",
           "error": null
@@ -1723,7 +1659,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/?dt=03.09.2026",
           "availability": {
-            "freeSeats": 70,
+            "freeSeats": 68,
             "totalSeats": 109
           }
         },
@@ -2751,7 +2687,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304871/title/spa_br%C4%ABvdienas/?dt=03.09.2026",
           "availability": {
-            "freeSeats": 96,
+            "freeSeats": 94,
             "totalSeats": 98
           }
         },
@@ -3108,7 +3044,7 @@
           "language": "Angļu un franču valodā",
           "movieUrl": "https://www.forumcinemas.lv/event/304890/title/amerik%C4%81%C5%86u_sapnis/?dt=03.09.2026",
           "availability": {
-            "freeSeats": 92,
+            "freeSeats": 91,
             "totalSeats": 96
           }
         },
@@ -3385,7 +3321,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/301956/title/labais_%C4%BCaunais_un_rieb%C4%ABgais_1966/?dt=03.09.2026",
           "availability": {
-            "freeSeats": 205,
+            "freeSeats": 194,
             "totalSeats": 234
           }
         },
@@ -3693,7 +3629,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304870/title/astr%C4%81ls_no_t%C4%81lienes/?dt=03.09.2026",
           "availability": {
-            "freeSeats": 92,
+            "freeSeats": 87,
             "totalSeats": 98
           }
         },
@@ -4877,20 +4813,20 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/",
-      "status": "stale",
+      "count": 3,
+      "status": "fresh",
       "dataDate": "2026-09-02",
-      "count": 9,
-      "fetchedAt": "2026-09-02T14:50:25.518Z",
-      "lastSuccessAt": "2026-09-02T14:50:25.518Z",
+      "fetchedAt": "2026-09-02T18:16:45.445Z",
+      "lastSuccessAt": "2026-09-02T18:16:45.445Z",
       "error": null
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "count": 15,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-09-02",
+      "count": 14,
       "fetchedAt": "2026-09-02T18:11:43.737Z",
       "lastSuccessAt": "2026-09-02T18:11:43.737Z",
       "error": null
@@ -4899,9 +4835,9 @@
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "count": 5,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-09-02",
+      "count": 5,
       "fetchedAt": "2026-09-02T18:11:43.737Z",
       "lastSuccessAt": "2026-09-02T18:11:43.737Z",
       "error": null
@@ -4909,54 +4845,6 @@
   ],
   "warnings": [],
   "showtimes": [
-    {
-      "id": "forum-437435",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Dumpis",
-      "originalTitle": "Mutiny",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11440/portrait_medium/Mutiny-Dumpis-plakats.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt32338669/",
-      "ageRating": "16+",
-      "genres": [
-        "Trilleris",
-        "Detektīvs",
-        "Asa sižeta filma"
-      ],
-      "startTime": "2026-09-02T21:15:00+03:00",
-      "serviceDate": "2026-09-02",
-      "auditorium": "Centrs, Auditorija 13",
-      "language": "Angļu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304867/title/dumpis/",
-      "availability": {}
-    },
-    {
-      "id": "apollo-518200",
-      "source": "apollo",
-      "cinema": "Apollo Domina",
-      "title": "Idioti",
-      "originalTitle": "Idiots",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8603/landscape_qhd/Idiots_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "16+",
-      "genres": [
-        "Komēdija",
-        "Detektīvfilma"
-      ],
-      "startTime": "2026-09-02T21:15:00.0000000+03:00",
-      "serviceDate": "2026-09-02",
-      "auditorium": "2. zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304164/idioti?theatreAreaID=1014&dt=02.09.2026",
-      "availability": {
-        "freeSeats": 56,
-        "totalSeats": 70,
-        "takenSeats": 14,
-        "occupiedPercent": 20
-      }
-    },
     {
       "id": "forum-437390",
       "source": "forum",
@@ -4977,7 +4865,10 @@
       "auditorium": "Centrs, DELFI LUX auditorija",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304882/title/tonijs/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 105,
+        "totalSeats": 109
+      }
     },
     {
       "id": "apollo-518300",
@@ -5119,7 +5010,10 @@
       "auditorium": "Centrs, Auditorija 10",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304845/title/idioti/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 122,
+        "totalSeats": 127
+      }
     },
     {
       "id": "cinamon-767569756",
@@ -5246,28 +5140,6 @@
         "takenSeats": 10,
         "occupiedPercent": 21
       }
-    },
-    {
-      "id": "forum-437474",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Tonijs",
-      "originalTitle": "Tony",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11457/portrait_medium/Tony-Tonijs-plakats.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt33095251/",
-      "ageRating": "16+",
-      "genres": [
-        "Komēdija",
-        "Drāma",
-        "Biogrāfija"
-      ],
-      "startTime": "2026-09-02T21:50:00+03:00",
-      "serviceDate": "2026-09-02",
-      "auditorium": "Centrs, Auditorija 4 LUX",
-      "language": "Angļu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304882/title/tonijs/",
-      "availability": {}
     },
     {
       "id": "apollo-518095",
