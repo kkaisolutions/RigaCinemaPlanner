@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T07:12:07.734Z",
+  "generatedAt": "2026-09-03T07:33:09.216Z",
   "timezone": "Europe/Riga",
   "date": "2026-09-03",
   "dates": [
@@ -14,20 +14,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "stale",
-          "dataDate": "2026-09-03",
           "count": 40,
-          "fetchedAt": "2026-09-03T02:17:38.186Z",
-          "lastSuccessAt": "2026-09-03T02:17:38.186Z",
+          "status": "fresh",
+          "dataDate": "2026-09-03",
+          "fetchedAt": "2026-09-03T07:33:09.216Z",
+          "lastSuccessAt": "2026-09-03T07:33:09.216Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 94,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-09-03",
+          "count": 94,
           "fetchedAt": "2026-09-03T07:12:07.734Z",
           "lastSuccessAt": "2026-09-03T07:12:07.734Z",
           "error": null
@@ -36,9 +36,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 40,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-09-03",
+          "count": 40,
           "fetchedAt": "2026-09-03T07:12:07.734Z",
           "lastSuccessAt": "2026-09-03T07:12:07.734Z",
           "error": null
@@ -46,81 +46,6 @@
       ],
       "warnings": [],
       "showtimes": [
-        {
-          "id": "cinamon-212455717",
-          "source": "cinamon",
-          "cinema": "Cinamon Alfa",
-          "title": "Laimīgie",
-          "originalTitle": "Laimīgie",
-          "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=467720202",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "U",
-          "genres": [
-            "Animācija"
-          ],
-          "startTime": "2026-09-03T10:15:00+03:00",
-          "serviceDate": "2026-09-03",
-          "auditorium": "Zale 4",
-          "language": "(latviešu valodā)",
-          "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/laimigie/lv",
-          "availability": {
-            "totalSeats": 163,
-            "freeSeats": 155,
-            "takenSeats": 8,
-            "occupiedPercent": 5
-          }
-        },
-        {
-          "id": "cinamon-1964777215",
-          "source": "cinamon",
-          "cinema": "Cinamon Alfa",
-          "title": "Ķepu patruļa: Dinozauru filma",
-          "originalTitle": "PAW Patrol: The Dino Movie",
-          "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "7+",
-          "genres": [
-            "Animācija"
-          ],
-          "startTime": "2026-09-03T10:20:00+03:00",
-          "serviceDate": "2026-09-03",
-          "auditorium": "Zale 6",
-          "language": "(krievu valodā)",
-          "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/kepu-patrula-dinozauru-filma/lv",
-          "availability": {
-            "totalSeats": 78,
-            "freeSeats": 72,
-            "takenSeats": 6,
-            "occupiedPercent": 8
-          }
-        },
-        {
-          "id": "cinamon-1372972050",
-          "source": "cinamon",
-          "cinema": "Cinamon Alfa",
-          "title": "Rotaļlietu stāsts 5",
-          "originalTitle": "Toy Story 5",
-          "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1073416592",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "U",
-          "genres": [
-            "Animācija"
-          ],
-          "startTime": "2026-09-03T10:30:00+03:00",
-          "serviceDate": "2026-09-03",
-          "auditorium": "Zale 3",
-          "language": "(latviešu valodā)",
-          "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/rotallietu-stasts-5/lv",
-          "availability": {
-            "totalSeats": 184,
-            "freeSeats": 178,
-            "takenSeats": 6,
-            "occupiedPercent": 3
-          }
-        },
         {
           "id": "apollo-518104",
           "source": "apollo",
@@ -1128,7 +1053,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
           "availability": {
-            "freeSeats": 68,
+            "freeSeats": 67,
             "totalSeats": 109
           }
         },
@@ -1618,7 +1543,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
           "availability": {
-            "freeSeats": 389,
+            "freeSeats": 387,
             "totalSeats": 427
           }
         },
@@ -2156,7 +2081,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304871/title/spa_br%C4%ABvdienas/",
           "availability": {
-            "freeSeats": 94,
+            "freeSeats": 93,
             "totalSeats": 98
           }
         },
@@ -2513,7 +2438,7 @@
           "language": "Angļu un franču valodā",
           "movieUrl": "https://www.forumcinemas.lv/event/304890/title/amerik%C4%81%C5%86u_sapnis/",
           "availability": {
-            "freeSeats": 89,
+            "freeSeats": 87,
             "totalSeats": 96
           }
         },
@@ -3098,7 +3023,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304870/title/astr%C4%81ls_no_t%C4%81lienes/",
           "availability": {
-            "freeSeats": 82,
+            "freeSeats": 80,
             "totalSeats": 98
           }
         },
@@ -4283,20 +4208,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "stale",
-          "dataDate": "2026-09-04",
           "count": 45,
-          "fetchedAt": "2026-09-03T02:17:38.186Z",
-          "lastSuccessAt": "2026-09-03T02:17:38.186Z",
+          "status": "fresh",
+          "dataDate": "2026-09-04",
+          "fetchedAt": "2026-09-03T07:33:09.216Z",
+          "lastSuccessAt": "2026-09-03T07:33:09.216Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 96,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-09-04",
+          "count": 96,
           "fetchedAt": "2026-09-03T07:12:07.734Z",
           "lastSuccessAt": "2026-09-03T07:12:07.734Z",
           "error": null
@@ -4305,9 +4230,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 40,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-09-04",
+          "count": 40,
           "fetchedAt": "2026-09-03T07:12:07.734Z",
           "lastSuccessAt": "2026-09-03T07:12:07.734Z",
           "error": null
@@ -5490,9 +5415,12 @@
           "startTime": "2026-09-04T14:10:00+03:00",
           "serviceDate": "2026-09-04",
           "auditorium": "Centrs, Auditorija 7",
-          "language": "Latviešu",
+          "language": "Krievu",
           "movieUrl": "https://www.forumcinemas.lv/event/304685/title/%C4%B7epu_patru%C4%BCa_dinozauru_filma/?dt=04.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 228,
+            "totalSeats": 228
+          }
         },
         {
           "id": "cinamon-453783448",
@@ -5713,7 +5641,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304813/title/laim%C4%ABgie/?dt=04.09.2026",
           "availability": {
-            "freeSeats": 94,
+            "freeSeats": 90,
             "totalSeats": 96
           }
         },
@@ -5787,7 +5715,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304882/title/tonijs/?dt=04.09.2026",
           "availability": {
-            "freeSeats": 107,
+            "freeSeats": 106,
             "totalSeats": 109
           }
         },
@@ -6109,7 +6037,10 @@
           "auditorium": "Centrs, Auditorija 10",
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304886/title/koijots_pret_acme/?dt=04.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 127,
+            "totalSeats": 127
+          }
         },
         {
           "id": "apollo-518859",
@@ -6452,7 +6383,10 @@
           "auditorium": "Centrs, Auditorija 7",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/?dt=04.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 228,
+            "totalSeats": 228
+          }
         },
         {
           "id": "forum-437550",
@@ -6548,7 +6482,10 @@
           "auditorium": "Centrs, Auditorija 5",
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304813/title/laim%C4%ABgie/?dt=04.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 95,
+            "totalSeats": 95
+          }
         },
         {
           "id": "forum-437510",
@@ -6569,7 +6506,7 @@
           "language": "Franču",
           "movieUrl": "https://www.forumcinemas.lv/event/304909/title/santjago_ce%C4%BCa_terapija/?dt=04.09.2026",
           "availability": {
-            "freeSeats": 94,
+            "freeSeats": 93,
             "totalSeats": 96
           }
         },
@@ -6690,7 +6627,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304665/title/s%C4%81tans_pradas_brun%C4%8Dos_2/?dt=04.09.2026",
           "availability": {
-            "freeSeats": 98,
+            "freeSeats": 97,
             "totalSeats": 98
           }
         },
@@ -6738,7 +6675,10 @@
           "auditorium": "Centrs, DELFI LUX auditorija",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304882/title/tonijs/?dt=04.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 107,
+            "totalSeats": 109
+          }
         },
         {
           "id": "apollo-518954",
@@ -6885,7 +6825,10 @@
           "auditorium": "Centrs, Auditorija 2",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/?dt=04.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 425,
+            "totalSeats": 427
+          }
         },
         {
           "id": "apollo-518532",
@@ -6928,7 +6871,10 @@
           "auditorium": "Centrs, Auditorija 12",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304845/title/idioti/?dt=04.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 183,
+            "totalSeats": 183
+          }
         },
         {
           "id": "apollo-518411",
@@ -7027,7 +6973,10 @@
           "auditorium": "Centrs, Auditorija 10",
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304886/title/koijots_pret_acme/?dt=04.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 127,
+            "totalSeats": 127
+          }
         },
         {
           "id": "apollo-518429",
@@ -7149,7 +7098,10 @@
           "auditorium": "Centrs, Auditorija 8",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304867/title/dumpis/?dt=04.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 98,
+            "totalSeats": 98
+          }
         },
         {
           "id": "apollo-518861",
@@ -7267,7 +7219,10 @@
           "auditorium": "Centrs, Auditorija 11",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304870/title/astr%C4%81ls_no_t%C4%81lienes/?dt=04.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 232,
+            "totalSeats": 234
+          }
         },
         {
           "id": "apollo-518984",
@@ -7390,7 +7345,10 @@
           "auditorium": "Centrs, PEPSI auditorija",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/?dt=04.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 593,
+            "totalSeats": 602
+          }
         },
         {
           "id": "apollo-518892",
@@ -7482,7 +7440,10 @@
           "auditorium": "Centrs, Auditorija 4 LUX",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304882/title/tonijs/?dt=04.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 89,
+            "totalSeats": 91
+          }
         },
         {
           "id": "apollo-518469",
@@ -7575,7 +7536,10 @@
           "auditorium": "Centrs, Auditorija 6",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304842/title/p%C4%93d%C4%93jie_dz%C4%ABvie/?dt=04.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 94,
+            "totalSeats": 96
+          }
         },
         {
           "id": "apollo-518449",
@@ -7715,7 +7679,10 @@
           "auditorium": "Centrs, Auditorija 7",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/?dt=04.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 228,
+            "totalSeats": 228
+          }
         },
         {
           "id": "cinamon-1967933234",
@@ -7764,7 +7731,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/301878/title/pa_asmeni_skrejo%C5%A1ais_1982/?dt=04.09.2026",
           "availability": {
-            "freeSeats": 71,
+            "freeSeats": 70,
             "totalSeats": 109
           }
         },
@@ -7891,7 +7858,10 @@
           "auditorium": "Centrs, Auditorija 12",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/?dt=04.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 183,
+            "totalSeats": 183
+          }
         },
         {
           "id": "apollo-518924",
@@ -8028,7 +7998,10 @@
           "auditorium": "Centrs, Auditorija 10",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304845/title/idioti/?dt=04.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 126,
+            "totalSeats": 127
+          }
         },
         {
           "id": "apollo-518556",
@@ -8128,7 +8101,10 @@
           "auditorium": "Centrs, Auditorija 2",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/?dt=04.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 427,
+            "totalSeats": 427
+          }
         },
         {
           "id": "apollo-519018",
@@ -8254,7 +8230,10 @@
           "auditorium": "Centrs, Auditorija 11",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304870/title/astr%C4%81ls_no_t%C4%81lienes/?dt=04.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 234,
+            "totalSeats": 234
+          }
         },
         {
           "id": "apollo-518759",
@@ -8375,7 +8354,10 @@
           "auditorium": "Centrs, Auditorija 13",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304867/title/dumpis/?dt=04.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 129,
+            "totalSeats": 129
+          }
         },
         {
           "id": "cinamon-1560392827",
@@ -8518,7 +8500,10 @@
           "auditorium": "Centrs, Auditorija 4 LUX",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304882/title/tonijs/?dt=04.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 91,
+            "totalSeats": 91
+          }
         },
         {
           "id": "apollo-518733",
@@ -8722,20 +8707,20 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/",
-      "status": "stale",
-      "dataDate": "2026-09-03",
       "count": 40,
-      "fetchedAt": "2026-09-03T02:17:38.186Z",
-      "lastSuccessAt": "2026-09-03T02:17:38.186Z",
+      "status": "fresh",
+      "dataDate": "2026-09-03",
+      "fetchedAt": "2026-09-03T07:33:09.216Z",
+      "lastSuccessAt": "2026-09-03T07:33:09.216Z",
       "error": null
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "count": 94,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-09-03",
+      "count": 94,
       "fetchedAt": "2026-09-03T07:12:07.734Z",
       "lastSuccessAt": "2026-09-03T07:12:07.734Z",
       "error": null
@@ -8744,9 +8729,9 @@
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "count": 40,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-09-03",
+      "count": 40,
       "fetchedAt": "2026-09-03T07:12:07.734Z",
       "lastSuccessAt": "2026-09-03T07:12:07.734Z",
       "error": null
@@ -8754,81 +8739,6 @@
   ],
   "warnings": [],
   "showtimes": [
-    {
-      "id": "cinamon-212455717",
-      "source": "cinamon",
-      "cinema": "Cinamon Alfa",
-      "title": "Laimīgie",
-      "originalTitle": "Laimīgie",
-      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=467720202",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "U",
-      "genres": [
-        "Animācija"
-      ],
-      "startTime": "2026-09-03T10:15:00+03:00",
-      "serviceDate": "2026-09-03",
-      "auditorium": "Zale 4",
-      "language": "(latviešu valodā)",
-      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/laimigie/lv",
-      "availability": {
-        "totalSeats": 163,
-        "freeSeats": 155,
-        "takenSeats": 8,
-        "occupiedPercent": 5
-      }
-    },
-    {
-      "id": "cinamon-1964777215",
-      "source": "cinamon",
-      "cinema": "Cinamon Alfa",
-      "title": "Ķepu patruļa: Dinozauru filma",
-      "originalTitle": "PAW Patrol: The Dino Movie",
-      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=438098502",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "7+",
-      "genres": [
-        "Animācija"
-      ],
-      "startTime": "2026-09-03T10:20:00+03:00",
-      "serviceDate": "2026-09-03",
-      "auditorium": "Zale 6",
-      "language": "(krievu valodā)",
-      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/kepu-patrula-dinozauru-filma/lv",
-      "availability": {
-        "totalSeats": 78,
-        "freeSeats": 72,
-        "takenSeats": 6,
-        "occupiedPercent": 8
-      }
-    },
-    {
-      "id": "cinamon-1372972050",
-      "source": "cinamon",
-      "cinema": "Cinamon Alfa",
-      "title": "Rotaļlietu stāsts 5",
-      "originalTitle": "Toy Story 5",
-      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=1073416592",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "U",
-      "genres": [
-        "Animācija"
-      ],
-      "startTime": "2026-09-03T10:30:00+03:00",
-      "serviceDate": "2026-09-03",
-      "auditorium": "Zale 3",
-      "language": "(latviešu valodā)",
-      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/rotallietu-stasts-5/lv",
-      "availability": {
-        "totalSeats": 184,
-        "freeSeats": 178,
-        "takenSeats": 6,
-        "occupiedPercent": 3
-      }
-    },
     {
       "id": "apollo-518104",
       "source": "apollo",
@@ -9836,7 +9746,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
       "availability": {
-        "freeSeats": 68,
+        "freeSeats": 67,
         "totalSeats": 109
       }
     },
@@ -10326,7 +10236,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
       "availability": {
-        "freeSeats": 389,
+        "freeSeats": 387,
         "totalSeats": 427
       }
     },
@@ -10864,7 +10774,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304871/title/spa_br%C4%ABvdienas/",
       "availability": {
-        "freeSeats": 94,
+        "freeSeats": 93,
         "totalSeats": 98
       }
     },
@@ -11221,7 +11131,7 @@
       "language": "Angļu un franču valodā",
       "movieUrl": "https://www.forumcinemas.lv/event/304890/title/amerik%C4%81%C5%86u_sapnis/",
       "availability": {
-        "freeSeats": 89,
+        "freeSeats": 87,
         "totalSeats": 96
       }
     },
@@ -11806,7 +11716,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304870/title/astr%C4%81ls_no_t%C4%81lienes/",
       "availability": {
-        "freeSeats": 82,
+        "freeSeats": 80,
         "totalSeats": 98
       }
     },
