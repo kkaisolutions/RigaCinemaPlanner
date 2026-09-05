@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T16:12:18.817Z",
+  "generatedAt": "2026-09-05T16:25:16.636Z",
   "timezone": "Europe/Riga",
   "date": "2026-09-05",
   "dates": [
@@ -14,20 +14,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "stale",
+          "count": 37,
+          "status": "fresh",
           "dataDate": "2026-09-05",
-          "count": 16,
-          "fetchedAt": "2026-09-05T13:08:18.532Z",
-          "lastSuccessAt": "2026-09-05T13:08:18.532Z",
+          "fetchedAt": "2026-09-05T16:25:16.636Z",
+          "lastSuccessAt": "2026-09-05T16:25:16.636Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 28,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-09-05",
+          "count": 26,
           "fetchedAt": "2026-09-05T16:12:18.817Z",
           "lastSuccessAt": "2026-09-05T16:12:18.817Z",
           "error": null
@@ -36,9 +36,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 11,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-09-05",
+          "count": 11,
           "fetchedAt": "2026-09-05T16:12:18.817Z",
           "lastSuccessAt": "2026-09-05T16:12:18.817Z",
           "error": null
@@ -46,54 +46,6 @@
       ],
       "warnings": [],
       "showtimes": [
-        {
-          "id": "apollo-518378",
-          "source": "apollo",
-          "cinema": "Apollo Akropole",
-          "title": "Zirnekļcilvēks: Jauna diena",
-          "originalTitle": "Spider-Man: Brand New Day",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8505/landscape_qhd/SpiderMan-BND_LV_PPRef_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "12+",
-          "genres": [
-            "Piedzīvojumu filma",
-            "Fantastika"
-          ],
-          "startTime": "2026-09-05T19:15:00.0000000+03:00",
-          "serviceDate": "2026-09-05",
-          "auditorium": "4. Kronenbourg 1664 Blanc zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=05.09.2026",
-          "availability": {
-            "freeSeats": 108
-          }
-        },
-        {
-          "id": "cinamon-416564922",
-          "source": "cinamon",
-          "cinema": "Cinamon Alfa",
-          "title": "Idioti",
-          "originalTitle": "Idiots",
-          "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=765778382",
-          "imdbRating": "6.2",
-          "imdbUrl": "",
-          "ageRating": "16+",
-          "genres": [
-            "Komēdija"
-          ],
-          "startTime": "2026-09-05T19:20:00+03:00",
-          "serviceDate": "2026-09-05",
-          "auditorium": "Zale 8",
-          "language": "",
-          "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/idioti/lv",
-          "availability": {
-            "totalSeats": 48,
-            "freeSeats": 24,
-            "takenSeats": 24,
-            "occupiedPercent": 50
-          }
-        },
         {
           "id": "forum-437564",
           "source": "forum",
@@ -114,7 +66,10 @@
           "auditorium": "Centrs, 8. aud.",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304867/title/dumpis/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 82,
+            "totalSeats": 98
+          }
         },
         {
           "id": "apollo-518399",
@@ -161,6 +116,28 @@
           "availability": {
             "freeSeats": 13
           }
+        },
+        {
+          "id": "forum-437698",
+          "source": "forum",
+          "cinema": "Forum Cinemas",
+          "title": "Uzbrukums",
+          "originalTitle": "Onslaught",
+          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11454/portrait_medium/Onslaught-plakats.jpg",
+          "imdbRating": "",
+          "imdbUrl": "https://www.imdb.com/title/tt32268691/",
+          "ageRating": "16+",
+          "genres": [
+            "Trilleris",
+            "Šausmu filma",
+            "Asa sižeta filma"
+          ],
+          "startTime": "2026-09-05T19:35:00+03:00",
+          "serviceDate": "2026-09-05",
+          "auditorium": "Centrs, 8. aud.",
+          "language": "Angļu",
+          "movieUrl": "https://www.forumcinemas.lv/event/304878/title/uzbrukums/",
+          "availability": {}
         },
         {
           "id": "apollo-518703",
@@ -235,6 +212,28 @@
           }
         },
         {
+          "id": "forum-437731",
+          "source": "forum",
+          "cinema": "Forum Cinemas",
+          "title": "Dumpis",
+          "originalTitle": "Mutiny",
+          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11440/portrait_medium/Mutiny-Dumpis-plakats.jpg",
+          "imdbRating": "",
+          "imdbUrl": "https://www.imdb.com/title/tt32338669/",
+          "ageRating": "16+",
+          "genres": [
+            "Trilleris",
+            "Detektīvs",
+            "Asa sižeta filma"
+          ],
+          "startTime": "2026-09-05T19:45:00+03:00",
+          "serviceDate": "2026-09-05",
+          "auditorium": "Centrs, 14. aud.",
+          "language": "Angļu",
+          "movieUrl": "https://www.forumcinemas.lv/event/304867/title/dumpis/",
+          "availability": {}
+        },
+        {
           "id": "forum-437577",
           "source": "forum",
           "cinema": "Forum Cinemas",
@@ -254,7 +253,10 @@
           "auditorium": "Centrs, 14. aud.",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304879/title/kritiens_2/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 150,
+            "totalSeats": 183
+          }
         },
         {
           "id": "cinamon-1094365820",
@@ -352,7 +354,10 @@
           "auditorium": "Centrs, 12. aud.",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 159,
+            "totalSeats": 183
+          }
         },
         {
           "id": "apollo-519050",
@@ -401,6 +406,32 @@
           "auditorium": "Centrs, DELFI LUX aud.",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
+          "availability": {
+            "freeSeats": 82,
+            "totalSeats": 109
+          }
+        },
+        {
+          "id": "forum-437666",
+          "source": "forum",
+          "cinema": "Forum Cinemas",
+          "title": "Odiseja",
+          "originalTitle": "The Odyssey",
+          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11365/portrait_medium/odyssey-plakats.jpg",
+          "imdbRating": "",
+          "imdbUrl": "https://www.imdb.com/title/tt33764258/",
+          "ageRating": "16+",
+          "genres": [
+            "Piedzīvojumi",
+            "Drāma",
+            "Asa sižeta filma",
+            "Vēsturiska"
+          ],
+          "startTime": "2026-09-05T20:20:00+03:00",
+          "serviceDate": "2026-09-05",
+          "auditorium": "Centrs, 4 LUX aud.",
+          "language": "Angļu",
+          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
           "availability": {}
         },
         {
@@ -423,7 +454,10 @@
           "auditorium": "Centrs, 13. aud.",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304870/title/astr%C4%81ls_no_t%C4%81lienes/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 92,
+            "totalSeats": 129
+          }
         },
         {
           "id": "forum-437186",
@@ -446,9 +480,53 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/302211/title/terminators_2_pastar%C4%81_diena_pagarin%C4%81t%C4%81_versija_1991/",
           "availability": {
-            "freeSeats": 264,
+            "freeSeats": 239,
             "totalSeats": 427
           }
+        },
+        {
+          "id": "forum-437664",
+          "source": "forum",
+          "cinema": "Forum Cinemas",
+          "title": "Tonijs",
+          "originalTitle": "Tony",
+          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11457/portrait_medium/Tony-Tonijs-plakats.jpg",
+          "imdbRating": "",
+          "imdbUrl": "https://www.imdb.com/title/tt33095251/",
+          "ageRating": "16+",
+          "genres": [
+            "Komēdija",
+            "Drāma",
+            "Biogrāfija"
+          ],
+          "startTime": "2026-09-05T20:30:00+03:00",
+          "serviceDate": "2026-09-05",
+          "auditorium": "Centrs, DELFI LUX aud.",
+          "language": "Angļu",
+          "movieUrl": "https://www.forumcinemas.lv/event/304882/title/tonijs/",
+          "availability": {}
+        },
+        {
+          "id": "forum-437721",
+          "source": "forum",
+          "cinema": "Forum Cinemas",
+          "title": "Astrāls: No tālienes",
+          "originalTitle": "Insidious: Out of the Further",
+          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11445/portrait_medium/insidious-plakats.jpg",
+          "imdbRating": "",
+          "imdbUrl": "https://www.imdb.com/title/tt32393988/",
+          "ageRating": "16+",
+          "genres": [
+            "Trilleris",
+            "Šausmu filma",
+            "Mistika"
+          ],
+          "startTime": "2026-09-05T20:35:00+03:00",
+          "serviceDate": "2026-09-05",
+          "auditorium": "Centrs, 12. aud.",
+          "language": "Angļu",
+          "movieUrl": "https://www.forumcinemas.lv/event/304870/title/astr%C4%81ls_no_t%C4%81lienes/",
+          "availability": {}
         },
         {
           "id": "forum-437568",
@@ -471,7 +549,10 @@
           "auditorium": "Centrs, 10. aud.",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304842/title/p%C4%93d%C4%93jie_dz%C4%ABvie/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 125,
+            "totalSeats": 127
+          }
         },
         {
           "id": "forum-437540",
@@ -493,7 +574,10 @@
           "auditorium": "Centrs, 4 LUX aud.",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304882/title/tonijs/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 78,
+            "totalSeats": 91
+          }
         },
         {
           "id": "apollo-518707",
@@ -544,6 +628,51 @@
           }
         },
         {
+          "id": "forum-437728",
+          "source": "forum",
+          "cinema": "Forum Cinemas",
+          "title": "Pēdējie dzīvie",
+          "originalTitle": "The Dog Stars",
+          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11413/portrait_medium/The-dog-stars-plakats.jpg",
+          "imdbRating": "",
+          "imdbUrl": "https://www.imdb.com/title/tt21285562/",
+          "ageRating": "16+",
+          "genres": [
+            "Trilleris",
+            "Drāma",
+            "Asa sižeta filma",
+            "Fantastika"
+          ],
+          "startTime": "2026-09-05T20:55:00+03:00",
+          "serviceDate": "2026-09-05",
+          "auditorium": "Centrs, 13. aud.",
+          "language": "Angļu",
+          "movieUrl": "https://www.forumcinemas.lv/event/304842/title/p%C4%93d%C4%93jie_dz%C4%ABvie/",
+          "availability": {}
+        },
+        {
+          "id": "forum-437661",
+          "source": "forum",
+          "cinema": "Forum Cinemas",
+          "title": "Zirnekļcilvēks: Jauna diena",
+          "originalTitle": "Spider-Man: Brand New Day",
+          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11377/portrait_medium/Spider-Man-Brand-New-Day-plakats.jpg",
+          "imdbRating": "",
+          "imdbUrl": "https://www.imdb.com/title/tt22084616/",
+          "ageRating": "12+",
+          "genres": [
+            "Piedzīvojumi",
+            "Fantāzija",
+            "Fantastika"
+          ],
+          "startTime": "2026-09-05T21:00:00+03:00",
+          "serviceDate": "2026-09-05",
+          "auditorium": "Centrs, 2. aud.",
+          "language": "Angļu",
+          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
+          "availability": {}
+        },
+        {
           "id": "apollo-518710",
           "source": "apollo",
           "cinema": "Apollo Plaza",
@@ -589,6 +718,28 @@
           "availability": {
             "freeSeats": 32
           }
+        },
+        {
+          "id": "forum-437717",
+          "source": "forum",
+          "cinema": "Forum Cinemas",
+          "title": "Kritiens 2",
+          "originalTitle": "Fall 2: Deadpoint",
+          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11444/portrait_medium/Fall-2-plakats-v2.jpg",
+          "imdbRating": "",
+          "imdbUrl": "https://www.imdb.com/title/tt31192372/",
+          "ageRating": "12+",
+          "genres": [
+            "Trilleris",
+            "Piedzīvojumi",
+            "Drāma"
+          ],
+          "startTime": "2026-09-05T21:10:00+03:00",
+          "serviceDate": "2026-09-05",
+          "auditorium": "Centrs, 11. aud.",
+          "language": "Angļu",
+          "movieUrl": "https://www.forumcinemas.lv/event/304879/title/kritiens_2/",
+          "availability": {}
         },
         {
           "id": "apollo-518990",
@@ -840,7 +991,10 @@
           "auditorium": "Centrs, 9. aud.",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304878/title/uzbrukums/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 96,
+            "totalSeats": 98
+          }
         },
         {
           "id": "cinamon-375866709",
@@ -886,7 +1040,10 @@
           "auditorium": "Centrs, 6. aud.",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304845/title/idioti/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 96,
+            "totalSeats": 96
+          }
         },
         {
           "id": "apollo-518400",
@@ -1008,6 +1165,49 @@
           }
         },
         {
+          "id": "forum-437699",
+          "source": "forum",
+          "cinema": "Forum Cinemas",
+          "title": "Uzbrukums",
+          "originalTitle": "Onslaught",
+          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11454/portrait_medium/Onslaught-plakats.jpg",
+          "imdbRating": "",
+          "imdbUrl": "https://www.imdb.com/title/tt32268691/",
+          "ageRating": "16+",
+          "genres": [
+            "Trilleris",
+            "Šausmu filma",
+            "Asa sižeta filma"
+          ],
+          "startTime": "2026-09-05T21:55:00+03:00",
+          "serviceDate": "2026-09-05",
+          "auditorium": "Centrs, 8. aud.",
+          "language": "Angļu",
+          "movieUrl": "https://www.forumcinemas.lv/event/304878/title/uzbrukums/",
+          "availability": {}
+        },
+        {
+          "id": "forum-437713",
+          "source": "forum",
+          "cinema": "Forum Cinemas",
+          "title": "Idioti",
+          "originalTitle": "Idiots",
+          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11416/portrait_medium/idiots-plakats.jpg",
+          "imdbRating": "",
+          "imdbUrl": "https://www.imdb.com/title/tt6628920/",
+          "ageRating": "16+",
+          "genres": [
+            "Komēdija",
+            "Detektīvs"
+          ],
+          "startTime": "2026-09-05T21:55:00+03:00",
+          "serviceDate": "2026-09-05",
+          "auditorium": "Centrs, 10. aud.",
+          "language": "Angļu",
+          "movieUrl": "https://www.forumcinemas.lv/event/304845/title/idioti/",
+          "availability": {}
+        },
+        {
           "id": "forum-437586",
           "source": "forum",
           "cinema": "Forum Cinemas",
@@ -1027,7 +1227,10 @@
           "auditorium": "Centrs, 8. aud.",
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304879/title/kritiens_2/",
-          "availability": {}
+          "availability": {
+            "freeSeats": 89,
+            "totalSeats": 98
+          }
         },
         {
           "id": "apollo-518720",
@@ -1210,20 +1413,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "stale",
-          "dataDate": "2026-09-06",
           "count": 59,
-          "fetchedAt": "2026-09-05T13:08:18.532Z",
-          "lastSuccessAt": "2026-09-05T13:08:18.532Z",
+          "status": "fresh",
+          "dataDate": "2026-09-06",
+          "fetchedAt": "2026-09-05T16:25:16.636Z",
+          "lastSuccessAt": "2026-09-05T16:25:16.636Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 97,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-09-06",
+          "count": 97,
           "fetchedAt": "2026-09-05T16:12:18.817Z",
           "lastSuccessAt": "2026-09-05T16:12:18.817Z",
           "error": null
@@ -1232,9 +1435,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 38,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-09-06",
+          "count": 38,
           "fetchedAt": "2026-09-05T16:12:18.817Z",
           "lastSuccessAt": "2026-09-05T16:12:18.817Z",
           "error": null
@@ -1662,7 +1865,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/?dt=06.09.2026",
           "availability": {
-            "freeSeats": 556,
+            "freeSeats": 549,
             "totalSeats": 602
           }
         },
@@ -1860,7 +2063,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304886/title/koijots_pret_acme/?dt=06.09.2026",
           "availability": {
-            "freeSeats": 122,
+            "freeSeats": 119,
             "totalSeats": 127
           }
         },
@@ -2591,7 +2794,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304879/title/kritiens_2/?dt=06.09.2026",
           "availability": {
-            "freeSeats": 90,
+            "freeSeats": 87,
             "totalSeats": 98
           }
         },
@@ -2759,7 +2962,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304867/title/dumpis/?dt=06.09.2026",
           "availability": {
-            "freeSeats": 93,
+            "freeSeats": 91,
             "totalSeats": 96
           }
         },
@@ -4108,7 +4311,7 @@
           "language": "Japāņu",
           "movieUrl": "https://www.forumcinemas.lv/event/304633/title/princese_mononoke_1997/?dt=06.09.2026",
           "availability": {
-            "freeSeats": 112,
+            "freeSeats": 109,
             "totalSeats": 129
           }
         },
@@ -4785,7 +4988,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/302060/title/vilcienvakte_1996/?dt=06.09.2026",
           "availability": {
-            "freeSeats": 82,
+            "freeSeats": 75,
             "totalSeats": 228
           }
         },
@@ -5950,20 +6153,20 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/",
-      "status": "stale",
+      "count": 37,
+      "status": "fresh",
       "dataDate": "2026-09-05",
-      "count": 16,
-      "fetchedAt": "2026-09-05T13:08:18.532Z",
-      "lastSuccessAt": "2026-09-05T13:08:18.532Z",
+      "fetchedAt": "2026-09-05T16:25:16.636Z",
+      "lastSuccessAt": "2026-09-05T16:25:16.636Z",
       "error": null
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "count": 28,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-09-05",
+      "count": 26,
       "fetchedAt": "2026-09-05T16:12:18.817Z",
       "lastSuccessAt": "2026-09-05T16:12:18.817Z",
       "error": null
@@ -5972,9 +6175,9 @@
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "count": 11,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-09-05",
+      "count": 11,
       "fetchedAt": "2026-09-05T16:12:18.817Z",
       "lastSuccessAt": "2026-09-05T16:12:18.817Z",
       "error": null
@@ -5982,54 +6185,6 @@
   ],
   "warnings": [],
   "showtimes": [
-    {
-      "id": "apollo-518378",
-      "source": "apollo",
-      "cinema": "Apollo Akropole",
-      "title": "Zirnekļcilvēks: Jauna diena",
-      "originalTitle": "Spider-Man: Brand New Day",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8505/landscape_qhd/SpiderMan-BND_LV_PPRef_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "12+",
-      "genres": [
-        "Piedzīvojumu filma",
-        "Fantastika"
-      ],
-      "startTime": "2026-09-05T19:15:00.0000000+03:00",
-      "serviceDate": "2026-09-05",
-      "auditorium": "4. Kronenbourg 1664 Blanc zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=05.09.2026",
-      "availability": {
-        "freeSeats": 108
-      }
-    },
-    {
-      "id": "cinamon-416564922",
-      "source": "cinamon",
-      "cinema": "Cinamon Alfa",
-      "title": "Idioti",
-      "originalTitle": "Idiots",
-      "posterUrl": "https://cinamonkino.com/api/page/film-poster?film_id=765778382",
-      "imdbRating": "6.2",
-      "imdbUrl": "",
-      "ageRating": "16+",
-      "genres": [
-        "Komēdija"
-      ],
-      "startTime": "2026-09-05T19:20:00+03:00",
-      "serviceDate": "2026-09-05",
-      "auditorium": "Zale 8",
-      "language": "",
-      "movieUrl": "https://cinamonkino.com/akropole-alfa/filma/idioti/lv",
-      "availability": {
-        "totalSeats": 48,
-        "freeSeats": 24,
-        "takenSeats": 24,
-        "occupiedPercent": 50
-      }
-    },
     {
       "id": "forum-437564",
       "source": "forum",
@@ -6050,7 +6205,10 @@
       "auditorium": "Centrs, 8. aud.",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304867/title/dumpis/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 82,
+        "totalSeats": 98
+      }
     },
     {
       "id": "apollo-518399",
@@ -6097,6 +6255,28 @@
       "availability": {
         "freeSeats": 13
       }
+    },
+    {
+      "id": "forum-437698",
+      "source": "forum",
+      "cinema": "Forum Cinemas",
+      "title": "Uzbrukums",
+      "originalTitle": "Onslaught",
+      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11454/portrait_medium/Onslaught-plakats.jpg",
+      "imdbRating": "",
+      "imdbUrl": "https://www.imdb.com/title/tt32268691/",
+      "ageRating": "16+",
+      "genres": [
+        "Trilleris",
+        "Šausmu filma",
+        "Asa sižeta filma"
+      ],
+      "startTime": "2026-09-05T19:35:00+03:00",
+      "serviceDate": "2026-09-05",
+      "auditorium": "Centrs, 8. aud.",
+      "language": "Angļu",
+      "movieUrl": "https://www.forumcinemas.lv/event/304878/title/uzbrukums/",
+      "availability": {}
     },
     {
       "id": "apollo-518703",
@@ -6171,6 +6351,28 @@
       }
     },
     {
+      "id": "forum-437731",
+      "source": "forum",
+      "cinema": "Forum Cinemas",
+      "title": "Dumpis",
+      "originalTitle": "Mutiny",
+      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11440/portrait_medium/Mutiny-Dumpis-plakats.jpg",
+      "imdbRating": "",
+      "imdbUrl": "https://www.imdb.com/title/tt32338669/",
+      "ageRating": "16+",
+      "genres": [
+        "Trilleris",
+        "Detektīvs",
+        "Asa sižeta filma"
+      ],
+      "startTime": "2026-09-05T19:45:00+03:00",
+      "serviceDate": "2026-09-05",
+      "auditorium": "Centrs, 14. aud.",
+      "language": "Angļu",
+      "movieUrl": "https://www.forumcinemas.lv/event/304867/title/dumpis/",
+      "availability": {}
+    },
+    {
       "id": "forum-437577",
       "source": "forum",
       "cinema": "Forum Cinemas",
@@ -6190,7 +6392,10 @@
       "auditorium": "Centrs, 14. aud.",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304879/title/kritiens_2/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 150,
+        "totalSeats": 183
+      }
     },
     {
       "id": "cinamon-1094365820",
@@ -6288,7 +6493,10 @@
       "auditorium": "Centrs, 12. aud.",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 159,
+        "totalSeats": 183
+      }
     },
     {
       "id": "apollo-519050",
@@ -6337,6 +6545,32 @@
       "auditorium": "Centrs, DELFI LUX aud.",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
+      "availability": {
+        "freeSeats": 82,
+        "totalSeats": 109
+      }
+    },
+    {
+      "id": "forum-437666",
+      "source": "forum",
+      "cinema": "Forum Cinemas",
+      "title": "Odiseja",
+      "originalTitle": "The Odyssey",
+      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11365/portrait_medium/odyssey-plakats.jpg",
+      "imdbRating": "",
+      "imdbUrl": "https://www.imdb.com/title/tt33764258/",
+      "ageRating": "16+",
+      "genres": [
+        "Piedzīvojumi",
+        "Drāma",
+        "Asa sižeta filma",
+        "Vēsturiska"
+      ],
+      "startTime": "2026-09-05T20:20:00+03:00",
+      "serviceDate": "2026-09-05",
+      "auditorium": "Centrs, 4 LUX aud.",
+      "language": "Angļu",
+      "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
       "availability": {}
     },
     {
@@ -6359,7 +6593,10 @@
       "auditorium": "Centrs, 13. aud.",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304870/title/astr%C4%81ls_no_t%C4%81lienes/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 92,
+        "totalSeats": 129
+      }
     },
     {
       "id": "forum-437186",
@@ -6382,9 +6619,53 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/302211/title/terminators_2_pastar%C4%81_diena_pagarin%C4%81t%C4%81_versija_1991/",
       "availability": {
-        "freeSeats": 264,
+        "freeSeats": 239,
         "totalSeats": 427
       }
+    },
+    {
+      "id": "forum-437664",
+      "source": "forum",
+      "cinema": "Forum Cinemas",
+      "title": "Tonijs",
+      "originalTitle": "Tony",
+      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11457/portrait_medium/Tony-Tonijs-plakats.jpg",
+      "imdbRating": "",
+      "imdbUrl": "https://www.imdb.com/title/tt33095251/",
+      "ageRating": "16+",
+      "genres": [
+        "Komēdija",
+        "Drāma",
+        "Biogrāfija"
+      ],
+      "startTime": "2026-09-05T20:30:00+03:00",
+      "serviceDate": "2026-09-05",
+      "auditorium": "Centrs, DELFI LUX aud.",
+      "language": "Angļu",
+      "movieUrl": "https://www.forumcinemas.lv/event/304882/title/tonijs/",
+      "availability": {}
+    },
+    {
+      "id": "forum-437721",
+      "source": "forum",
+      "cinema": "Forum Cinemas",
+      "title": "Astrāls: No tālienes",
+      "originalTitle": "Insidious: Out of the Further",
+      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11445/portrait_medium/insidious-plakats.jpg",
+      "imdbRating": "",
+      "imdbUrl": "https://www.imdb.com/title/tt32393988/",
+      "ageRating": "16+",
+      "genres": [
+        "Trilleris",
+        "Šausmu filma",
+        "Mistika"
+      ],
+      "startTime": "2026-09-05T20:35:00+03:00",
+      "serviceDate": "2026-09-05",
+      "auditorium": "Centrs, 12. aud.",
+      "language": "Angļu",
+      "movieUrl": "https://www.forumcinemas.lv/event/304870/title/astr%C4%81ls_no_t%C4%81lienes/",
+      "availability": {}
     },
     {
       "id": "forum-437568",
@@ -6407,7 +6688,10 @@
       "auditorium": "Centrs, 10. aud.",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304842/title/p%C4%93d%C4%93jie_dz%C4%ABvie/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 125,
+        "totalSeats": 127
+      }
     },
     {
       "id": "forum-437540",
@@ -6429,7 +6713,10 @@
       "auditorium": "Centrs, 4 LUX aud.",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304882/title/tonijs/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 78,
+        "totalSeats": 91
+      }
     },
     {
       "id": "apollo-518707",
@@ -6480,6 +6767,51 @@
       }
     },
     {
+      "id": "forum-437728",
+      "source": "forum",
+      "cinema": "Forum Cinemas",
+      "title": "Pēdējie dzīvie",
+      "originalTitle": "The Dog Stars",
+      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11413/portrait_medium/The-dog-stars-plakats.jpg",
+      "imdbRating": "",
+      "imdbUrl": "https://www.imdb.com/title/tt21285562/",
+      "ageRating": "16+",
+      "genres": [
+        "Trilleris",
+        "Drāma",
+        "Asa sižeta filma",
+        "Fantastika"
+      ],
+      "startTime": "2026-09-05T20:55:00+03:00",
+      "serviceDate": "2026-09-05",
+      "auditorium": "Centrs, 13. aud.",
+      "language": "Angļu",
+      "movieUrl": "https://www.forumcinemas.lv/event/304842/title/p%C4%93d%C4%93jie_dz%C4%ABvie/",
+      "availability": {}
+    },
+    {
+      "id": "forum-437661",
+      "source": "forum",
+      "cinema": "Forum Cinemas",
+      "title": "Zirnekļcilvēks: Jauna diena",
+      "originalTitle": "Spider-Man: Brand New Day",
+      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11377/portrait_medium/Spider-Man-Brand-New-Day-plakats.jpg",
+      "imdbRating": "",
+      "imdbUrl": "https://www.imdb.com/title/tt22084616/",
+      "ageRating": "12+",
+      "genres": [
+        "Piedzīvojumi",
+        "Fantāzija",
+        "Fantastika"
+      ],
+      "startTime": "2026-09-05T21:00:00+03:00",
+      "serviceDate": "2026-09-05",
+      "auditorium": "Centrs, 2. aud.",
+      "language": "Angļu",
+      "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
+      "availability": {}
+    },
+    {
       "id": "apollo-518710",
       "source": "apollo",
       "cinema": "Apollo Plaza",
@@ -6525,6 +6857,28 @@
       "availability": {
         "freeSeats": 32
       }
+    },
+    {
+      "id": "forum-437717",
+      "source": "forum",
+      "cinema": "Forum Cinemas",
+      "title": "Kritiens 2",
+      "originalTitle": "Fall 2: Deadpoint",
+      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11444/portrait_medium/Fall-2-plakats-v2.jpg",
+      "imdbRating": "",
+      "imdbUrl": "https://www.imdb.com/title/tt31192372/",
+      "ageRating": "12+",
+      "genres": [
+        "Trilleris",
+        "Piedzīvojumi",
+        "Drāma"
+      ],
+      "startTime": "2026-09-05T21:10:00+03:00",
+      "serviceDate": "2026-09-05",
+      "auditorium": "Centrs, 11. aud.",
+      "language": "Angļu",
+      "movieUrl": "https://www.forumcinemas.lv/event/304879/title/kritiens_2/",
+      "availability": {}
     },
     {
       "id": "apollo-518990",
@@ -6776,7 +7130,10 @@
       "auditorium": "Centrs, 9. aud.",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304878/title/uzbrukums/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 96,
+        "totalSeats": 98
+      }
     },
     {
       "id": "cinamon-375866709",
@@ -6822,7 +7179,10 @@
       "auditorium": "Centrs, 6. aud.",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304845/title/idioti/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 96,
+        "totalSeats": 96
+      }
     },
     {
       "id": "apollo-518400",
@@ -6944,6 +7304,49 @@
       }
     },
     {
+      "id": "forum-437699",
+      "source": "forum",
+      "cinema": "Forum Cinemas",
+      "title": "Uzbrukums",
+      "originalTitle": "Onslaught",
+      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11454/portrait_medium/Onslaught-plakats.jpg",
+      "imdbRating": "",
+      "imdbUrl": "https://www.imdb.com/title/tt32268691/",
+      "ageRating": "16+",
+      "genres": [
+        "Trilleris",
+        "Šausmu filma",
+        "Asa sižeta filma"
+      ],
+      "startTime": "2026-09-05T21:55:00+03:00",
+      "serviceDate": "2026-09-05",
+      "auditorium": "Centrs, 8. aud.",
+      "language": "Angļu",
+      "movieUrl": "https://www.forumcinemas.lv/event/304878/title/uzbrukums/",
+      "availability": {}
+    },
+    {
+      "id": "forum-437713",
+      "source": "forum",
+      "cinema": "Forum Cinemas",
+      "title": "Idioti",
+      "originalTitle": "Idiots",
+      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11416/portrait_medium/idiots-plakats.jpg",
+      "imdbRating": "",
+      "imdbUrl": "https://www.imdb.com/title/tt6628920/",
+      "ageRating": "16+",
+      "genres": [
+        "Komēdija",
+        "Detektīvs"
+      ],
+      "startTime": "2026-09-05T21:55:00+03:00",
+      "serviceDate": "2026-09-05",
+      "auditorium": "Centrs, 10. aud.",
+      "language": "Angļu",
+      "movieUrl": "https://www.forumcinemas.lv/event/304845/title/idioti/",
+      "availability": {}
+    },
+    {
       "id": "forum-437586",
       "source": "forum",
       "cinema": "Forum Cinemas",
@@ -6963,7 +7366,10 @@
       "auditorium": "Centrs, 8. aud.",
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304879/title/kritiens_2/",
-      "availability": {}
+      "availability": {
+        "freeSeats": 89,
+        "totalSeats": 98
+      }
     },
     {
       "id": "apollo-518720",
