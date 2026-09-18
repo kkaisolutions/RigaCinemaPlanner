@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T23:49:15.881Z",
+  "generatedAt": "2026-09-18T02:12:02.264Z",
   "timezone": "Europe/Riga",
   "date": "2026-09-18",
   "dates": [
@@ -14,9 +14,9 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "count": 43,
-          "status": "fresh",
+          "status": "stale",
           "dataDate": "2026-09-18",
+          "count": 43,
           "fetchedAt": "2026-09-17T23:49:15.881Z",
           "lastSuccessAt": "2026-09-17T23:49:15.881Z",
           "error": null
@@ -25,22 +25,22 @@
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "status": "stale",
-          "dataDate": "2026-09-18",
           "count": 98,
-          "fetchedAt": "2026-09-17T22:12:02.653Z",
-          "lastSuccessAt": "2026-09-17T22:12:02.653Z",
+          "status": "fresh",
+          "dataDate": "2026-09-18",
+          "fetchedAt": "2026-09-18T02:12:02.264Z",
+          "lastSuccessAt": "2026-09-18T02:12:02.264Z",
           "error": null
         },
         {
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "status": "stale",
-          "dataDate": "2026-09-18",
           "count": 0,
-          "fetchedAt": "2026-09-17T22:12:02.653Z",
-          "lastSuccessAt": "2026-09-17T22:12:02.653Z",
+          "status": "fresh",
+          "dataDate": "2026-09-18",
+          "fetchedAt": "2026-09-18T02:12:02.264Z",
+          "lastSuccessAt": "2026-09-18T02:12:02.264Z",
           "error": null
         }
       ],
@@ -1100,10 +1100,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304162/nez%C5%ABdo%C5%A1ais_%C4%BCaunums?theatreAreaID=1014&dt=18.09.2026",
           "availability": {
-            "freeSeats": 268,
+            "freeSeats": 267,
             "totalSeats": 277,
-            "takenSeats": 9,
-            "occupiedPercent": 3
+            "takenSeats": 10,
+            "occupiedPercent": 4
           }
         },
         {
@@ -1872,7 +1872,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304162/nez%C5%ABdo%C5%A1ais_%C4%BCaunums?theatreAreaID=1014&dt=18.09.2026",
           "availability": {
-            "freeSeats": 74
+            "freeSeats": 73
           }
         },
         {
@@ -2578,7 +2578,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304188/kritiens_2?theatreAreaID=1014&dt=18.09.2026",
           "availability": {
-            "freeSeats": 69
+            "freeSeats": 71
           }
         },
         {
@@ -2648,7 +2648,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=18.09.2026",
           "availability": {
-            "freeSeats": 103
+            "freeSeats": 101
           }
         },
         {
@@ -3410,9 +3410,9 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "count": 60,
-          "status": "fresh",
+          "status": "stale",
           "dataDate": "2026-09-19",
+          "count": 60,
           "fetchedAt": "2026-09-17T23:49:15.881Z",
           "lastSuccessAt": "2026-09-17T23:49:15.881Z",
           "error": null
@@ -3421,27 +3421,49 @@
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "status": "stale",
+          "count": 101,
+          "status": "fresh",
           "dataDate": "2026-09-19",
-          "count": 15,
-          "fetchedAt": "2026-09-17T22:12:02.653Z",
-          "lastSuccessAt": "2026-09-17T22:12:02.653Z",
+          "fetchedAt": "2026-09-18T02:12:02.264Z",
+          "lastSuccessAt": "2026-09-18T02:12:02.264Z",
           "error": null
         },
         {
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "status": "stale",
-          "dataDate": "2026-09-19",
           "count": 0,
-          "fetchedAt": "2026-09-17T22:12:02.653Z",
-          "lastSuccessAt": "2026-09-17T22:12:02.653Z",
+          "status": "fresh",
+          "dataDate": "2026-09-19",
+          "fetchedAt": "2026-09-18T02:12:02.264Z",
+          "lastSuccessAt": "2026-09-18T02:12:02.264Z",
           "error": null
         }
       ],
       "warnings": [],
       "showtimes": [
+        {
+          "id": "apollo-519970",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Meitene mākoņos",
+          "originalTitle": "La fille dans les nuages",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8652/landscape_qhd/GirlInTheClouds_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "U",
+          "genres": [
+            "Animācija"
+          ],
+          "startTime": "2026-09-19T10:50:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "7. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304211/meitene_m%C4%81ko%C5%86os?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 78
+          }
+        },
         {
           "id": "apollo-520478",
           "source": "apollo",
@@ -3460,7 +3482,7 @@
           "serviceDate": "2026-09-19",
           "auditorium": "1. zāle",
           "language": "Latviešu",
-          "movieUrl": "https://www.apollokino.lv/event/304012/%C4%B7epu_patru%C4%BCa_dinozauru_filma?theatreAreaID=1015&dt=19.09.2026",
+          "movieUrl": "https://www.apollokino.lv/event/304012/%C4%B7epu_patru%C4%BCa_dinozauru_filma?theatreAreaID=1014&dt=19.09.2026",
           "availability": {
             "freeSeats": 70,
             "totalSeats": 70,
@@ -3493,6 +3515,29 @@
           }
         },
         {
+          "id": "apollo-519955",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Uļa",
+          "originalTitle": "Uļa",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8610/landscape_qhd/NewProject(18).png?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Drāma",
+            "Biogrāfija"
+          ],
+          "startTime": "2026-09-19T11:00:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "8. Vintage zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 42
+          }
+        },
+        {
           "id": "apollo-520489",
           "source": "apollo",
           "cinema": "Apollo Domina",
@@ -3510,12 +3555,59 @@
           "serviceDate": "2026-09-19",
           "auditorium": "2. zāle",
           "language": "Latviešu",
-          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1015&dt=19.09.2026",
+          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=19.09.2026",
           "availability": {
             "freeSeats": 70,
             "totalSeats": 70,
             "takenSeats": 0,
             "occupiedPercent": 0
+          }
+        },
+        {
+          "id": "apollo-519919",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Dzīvnieku ferma",
+          "originalTitle": "Animal Farm",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8601/landscape_qhd/AnimalFarm_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "7+",
+          "genres": [
+            "Animācija"
+          ],
+          "startTime": "2026-09-19T11:00:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "3. Radio SWH zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304161/dz%C4%ABvnieku_ferma?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 106
+          }
+        },
+        {
+          "id": "apollo-519946",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Praktiskā maģija 2",
+          "originalTitle": "Practical Magic 2",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8599/landscape_qhd/NewProject(28).png?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Komēdija",
+            "Drāma",
+            "Romantika",
+            "Fantastika"
+          ],
+          "startTime": "2026-09-19T11:00:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "7. zāle Restorāns",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304158/praktisk%C4%81_ma%C4%A3ija_2?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 38
           }
         },
         {
@@ -3541,6 +3633,28 @@
           "availability": {
             "freeSeats": 96,
             "totalSeats": 96
+          }
+        },
+        {
+          "id": "apollo-519965",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Dzīvnieku ferma",
+          "originalTitle": "Animal Farm",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8601/landscape_qhd/AnimalFarm_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "7+",
+          "genres": [
+            "Animācija"
+          ],
+          "startTime": "2026-09-19T11:05:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "3. zāle",
+          "language": "Krievu",
+          "movieUrl": "https://www.apollokino.lv/event/304161/dz%C4%ABvnieku_ferma?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 109
           }
         },
         {
@@ -3619,6 +3733,31 @@
           }
         },
         {
+          "id": "apollo-519929",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Meitene mākoņos",
+          "originalTitle": "La fille dans les nuages",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8652/landscape_qhd/GirlInTheClouds_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "U",
+          "genres": [
+            "Animācija"
+          ],
+          "startTime": "2026-09-19T11:15:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "5. zāle",
+          "language": "Krievu",
+          "movieUrl": "https://www.apollokino.lv/event/304211/meitene_m%C4%81ko%C5%86os?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 85,
+            "totalSeats": 90,
+            "takenSeats": 5,
+            "occupiedPercent": 6
+          }
+        },
+        {
           "id": "forum-438589",
           "source": "forum",
           "cinema": "Forum Cinemas",
@@ -3641,6 +3780,29 @@
           "availability": {
             "freeSeats": 127,
             "totalSeats": 127
+          }
+        },
+        {
+          "id": "apollo-519957",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Ķepu patruļa: Dinozauru filma",
+          "originalTitle": "PAW Patrol: The Dino Movie",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8439/landscape_qhd/LK_PP__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "7+",
+          "genres": [
+            "Animācija",
+            "Ģimenes filma"
+          ],
+          "startTime": "2026-09-19T11:20:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "2. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304012/%C4%B7epu_patru%C4%BCa_dinozauru_filma?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 193
           }
         },
         {
@@ -3669,6 +3831,33 @@
           }
         },
         {
+          "id": "apollo-519936",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Minioni un mošķi",
+          "originalTitle": "Minions & Monsters",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8371/landscape_qhd/LK_MN3__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "7+",
+          "genres": [
+            "Piedzīvojumu filma",
+            "Animācija",
+            "Ģimenes filma"
+          ],
+          "startTime": "2026-09-19T11:30:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "9. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 119,
+            "totalSeats": 127,
+            "takenSeats": 8,
+            "occupiedPercent": 6
+          }
+        },
+        {
           "id": "forum-438557",
           "source": "forum",
           "cinema": "Forum Cinemas",
@@ -3692,6 +3881,56 @@
           "availability": {
             "freeSeats": 183,
             "totalSeats": 183
+          }
+        },
+        {
+          "id": "apollo-520161",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Koijots pret ACME",
+          "originalTitle": "Coyote vs Acme",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8631/landscape_qhd/3840_2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "7+",
+          "genres": [
+            "Komēdija",
+            "Piedzīvojumu filma",
+            "Ģimenes filma"
+          ],
+          "startTime": "2026-09-19T11:40:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "6. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304192/koijots_pret_acme?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 52
+          }
+        },
+        {
+          "id": "apollo-519915",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Uļa",
+          "originalTitle": "Uļa",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8610/landscape_qhd/NewProject(18).png?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Drāma",
+            "Biogrāfija"
+          ],
+          "startTime": "2026-09-19T11:50:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "2. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 200,
+            "totalSeats": 227,
+            "takenSeats": 27,
+            "occupiedPercent": 12
           }
         },
         {
@@ -3746,6 +3985,121 @@
           }
         },
         {
+          "id": "apollo-519924",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Dzīvnieku ferma",
+          "originalTitle": "Animal Farm",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8601/landscape_qhd/AnimalFarm_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "7+",
+          "genres": [
+            "Animācija"
+          ],
+          "startTime": "2026-09-19T12:00:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "4. Kronenbourg 1664 Blanc zāle",
+          "language": "Krievu",
+          "movieUrl": "https://www.apollokino.lv/event/304161/dz%C4%ABvnieku_ferma?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 169
+          }
+        },
+        {
+          "id": "apollo-519954",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Uļa",
+          "originalTitle": "Uļa",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8610/landscape_qhd/NewProject(18).png?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Drāma",
+            "Biogrāfija"
+          ],
+          "startTime": "2026-09-19T12:00:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "1. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 337
+          }
+        },
+        {
+          "id": "apollo-520151",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Zirnekļcilvēks: Jauna diena",
+          "originalTitle": "Spider-Man: Brand New Day",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8505/landscape_qhd/SpiderMan-BND_LV_PPRef_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Piedzīvojumu filma",
+            "Fantastika"
+          ],
+          "startTime": "2026-09-19T12:00:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "4. zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 64
+          }
+        },
+        {
+          "id": "apollo-519966",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Laimīgie",
+          "originalTitle": "Laimīgie",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8619/landscape_qhd/1080x1920_poster_LV.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "U",
+          "genres": [
+            "Piedzīvojumu filma",
+            "Animācija",
+            "Ģimenes filma"
+          ],
+          "startTime": "2026-09-19T12:00:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "5. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304176/laim%C4%ABgie?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 57
+          }
+        },
+        {
+          "id": "apollo-519943",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Odiseja",
+          "originalTitle": "The Odyssey",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8419/landscape_qhd/LK_OD__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "16+",
+          "genres": [
+            "Piedzīvojumu filma",
+            "Vēsturiska"
+          ],
+          "startTime": "2026-09-19T12:05:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "6. Zvaigžņu zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 38
+          }
+        },
+        {
           "id": "forum-437846",
           "source": "forum",
           "cinema": "Forum Cinemas",
@@ -3768,6 +4122,29 @@
           "availability": {
             "freeSeats": 388,
             "totalSeats": 427
+          }
+        },
+        {
+          "id": "apollo-519932",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Zirnekļcilvēks: Jauna diena",
+          "originalTitle": "Spider-Man: Brand New Day",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8505/landscape_qhd/SpiderMan-BND_LV_PPRef_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Piedzīvojumu filma",
+            "Fantastika"
+          ],
+          "startTime": "2026-09-19T12:10:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "8. zāle Restorāns",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 36
           }
         },
         {
@@ -3797,6 +4174,31 @@
           }
         },
         {
+          "id": "apollo-519819",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Nezūdošais ļaunums",
+          "originalTitle": "Resident Evil",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8602/landscape_qhd/ResidentEvil_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "16+",
+          "genres": [
+            "Šausmu filma"
+          ],
+          "startTime": "2026-09-19T12:30:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "1. IMAX zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304162/nez%C5%ABdo%C5%A1ais_%C4%BCaunums?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 266,
+            "totalSeats": 277,
+            "takenSeats": 11,
+            "occupiedPercent": 4
+          }
+        },
+        {
           "id": "apollo-520497",
           "source": "apollo",
           "cinema": "Apollo Domina",
@@ -3813,7 +4215,7 @@
           "serviceDate": "2026-09-19",
           "auditorium": "3. zāle",
           "language": "Latviešu",
-          "movieUrl": "https://www.apollokino.lv/event/304161/dz%C4%ABvnieku_ferma?theatreAreaID=1015&dt=19.09.2026",
+          "movieUrl": "https://www.apollokino.lv/event/304161/dz%C4%ABvnieku_ferma?theatreAreaID=1014&dt=19.09.2026",
           "availability": {
             "freeSeats": 70,
             "totalSeats": 70,
@@ -3873,6 +4275,30 @@
           }
         },
         {
+          "id": "apollo-519969",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Minioni un mošķi",
+          "originalTitle": "Minions & Monsters",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8371/landscape_qhd/LK_MN3__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "7+",
+          "genres": [
+            "Piedzīvojumu filma",
+            "Animācija",
+            "Ģimenes filma"
+          ],
+          "startTime": "2026-09-19T12:55:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "7. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 76
+          }
+        },
+        {
           "id": "apollo-520477",
           "source": "apollo",
           "cinema": "Apollo Domina",
@@ -3891,12 +4317,109 @@
           "serviceDate": "2026-09-19",
           "auditorium": "1. zāle",
           "language": "Latviešu",
-          "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1015&dt=19.09.2026",
+          "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=19.09.2026",
           "availability": {
             "freeSeats": 70,
             "totalSeats": 70,
             "takenSeats": 0,
             "occupiedPercent": 0
+          }
+        },
+        {
+          "id": "apollo-519916",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Ķepu patruļa: Dinozauru filma",
+          "originalTitle": "PAW Patrol: The Dino Movie",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8439/landscape_qhd/LK_PP__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "7+",
+          "genres": [
+            "Animācija",
+            "Ģimenes filma"
+          ],
+          "startTime": "2026-09-19T13:10:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "3. Radio SWH zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304012/%C4%B7epu_patru%C4%BCa_dinozauru_filma?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 109
+          }
+        },
+        {
+          "id": "apollo-519962",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Ķepu patruļa: Dinozauru filma",
+          "originalTitle": "PAW Patrol: The Dino Movie",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8439/landscape_qhd/LK_PP__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "7+",
+          "genres": [
+            "Animācija",
+            "Ģimenes filma"
+          ],
+          "startTime": "2026-09-19T13:15:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "3. zāle",
+          "language": "Krievu",
+          "movieUrl": "https://www.apollokino.lv/event/304012/%C4%B7epu_patru%C4%BCa_dinozauru_filma?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 107
+          }
+        },
+        {
+          "id": "apollo-519928",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Koijots pret ACME",
+          "originalTitle": "Coyote vs Acme",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8631/landscape_qhd/3840_2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "7+",
+          "genres": [
+            "Komēdija",
+            "Piedzīvojumu filma",
+            "Ģimenes filma"
+          ],
+          "startTime": "2026-09-19T13:20:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "5. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304192/koijots_pret_acme?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 79,
+            "totalSeats": 90,
+            "takenSeats": 11,
+            "occupiedPercent": 12
+          }
+        },
+        {
+          "id": "apollo-519975",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Kritiens 2",
+          "originalTitle": "Fall 2: Deadpoint",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8627/landscape_qhd/LK_FL2__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Drāma",
+            "Piedzīvojumu filma",
+            "Trilleris"
+          ],
+          "startTime": "2026-09-19T13:20:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "8. Vintage zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304188/kritiens_2?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 33
           }
         },
         {
@@ -3942,12 +4465,34 @@
           "serviceDate": "2026-09-19",
           "auditorium": "2. zāle",
           "language": "Latviešu",
-          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1015&dt=19.09.2026",
+          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=19.09.2026",
           "availability": {
             "freeSeats": 58,
             "totalSeats": 70,
             "takenSeats": 12,
             "occupiedPercent": 17
+          }
+        },
+        {
+          "id": "apollo-519959",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Dzīvnieku ferma",
+          "originalTitle": "Animal Farm",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8601/landscape_qhd/AnimalFarm_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "7+",
+          "genres": [
+            "Animācija"
+          ],
+          "startTime": "2026-09-19T13:30:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "2. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304161/dz%C4%ABvnieku_ferma?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 202
           }
         },
         {
@@ -3973,6 +4518,33 @@
           "availability": {
             "freeSeats": 234,
             "totalSeats": 234
+          }
+        },
+        {
+          "id": "apollo-519937",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Minioni un mošķi",
+          "originalTitle": "Minions & Monsters",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8371/landscape_qhd/LK_MN3__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "7+",
+          "genres": [
+            "Piedzīvojumu filma",
+            "Animācija",
+            "Ģimenes filma"
+          ],
+          "startTime": "2026-09-19T13:35:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "9. zāle",
+          "language": "Krievu",
+          "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 123,
+            "totalSeats": 127,
+            "takenSeats": 4,
+            "occupiedPercent": 3
           }
         },
         {
@@ -4023,6 +4595,50 @@
           "availability": {
             "freeSeats": 98,
             "totalSeats": 98
+          }
+        },
+        {
+          "id": "apollo-519945",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Spa brīvdienas",
+          "originalTitle": "Spa Weekend",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8596/landscape_qhd/SpaWeekend_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Komēdija"
+          ],
+          "startTime": "2026-09-19T13:45:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "7. zāle Restorāns",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304156/spa_br%C4%ABvdienas?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 40
+          }
+        },
+        {
+          "id": "apollo-519968",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Meitene mākoņos",
+          "originalTitle": "La fille dans les nuages",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8652/landscape_qhd/GirlInTheClouds_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "U",
+          "genres": [
+            "Animācija"
+          ],
+          "startTime": "2026-09-19T13:50:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "5. zāle",
+          "language": "Krievu",
+          "movieUrl": "https://www.apollokino.lv/event/304211/meitene_m%C4%81ko%C5%86os?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 57
           }
         },
         {
@@ -4100,6 +4716,31 @@
           "availability": {}
         },
         {
+          "id": "apollo-520157",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Vaiana",
+          "originalTitle": "Moana",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8467/landscape_qhd/LK_VN__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "7+",
+          "genres": [
+            "Komēdija",
+            "Asa sižeta filma",
+            "Piedzīvojumu filma",
+            "Ģimenes filma"
+          ],
+          "startTime": "2026-09-19T14:00:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "6. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304037/vaiana?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 50
+          }
+        },
+        {
           "id": "forum-438541",
           "source": "forum",
           "cinema": "Forum Cinemas",
@@ -4122,6 +4763,78 @@
           "availability": {
             "freeSeats": 91,
             "totalSeats": 91
+          }
+        },
+        {
+          "id": "apollo-519914",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Uļa",
+          "originalTitle": "Uļa",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8610/landscape_qhd/NewProject(18).png?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Drāma",
+            "Biogrāfija"
+          ],
+          "startTime": "2026-09-19T14:10:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "2. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 221,
+            "totalSeats": 227,
+            "takenSeats": 6,
+            "occupiedPercent": 3
+          }
+        },
+        {
+          "id": "apollo-519921",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Ķepu patruļa: Dinozauru filma",
+          "originalTitle": "PAW Patrol: The Dino Movie",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8439/landscape_qhd/LK_PP__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "7+",
+          "genres": [
+            "Animācija",
+            "Ģimenes filma"
+          ],
+          "startTime": "2026-09-19T14:10:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "4. Kronenbourg 1664 Blanc zāle",
+          "language": "Krievu",
+          "movieUrl": "https://www.apollokino.lv/event/304012/%C4%B7epu_patru%C4%BCa_dinozauru_filma?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 171
+          }
+        },
+        {
+          "id": "apollo-519953",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Uļa",
+          "originalTitle": "Uļa",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8610/landscape_qhd/NewProject(18).png?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Drāma",
+            "Biogrāfija"
+          ],
+          "startTime": "2026-09-19T14:20:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "1. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 323
           }
         },
         {
@@ -4175,6 +4888,31 @@
           }
         },
         {
+          "id": "apollo-519820",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Nezūdošais ļaunums",
+          "originalTitle": "Resident Evil",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8602/landscape_qhd/ResidentEvil_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "16+",
+          "genres": [
+            "Šausmu filma"
+          ],
+          "startTime": "2026-09-19T14:45:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "1. IMAX zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304162/nez%C5%ABdo%C5%A1ais_%C4%BCaunums?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 255,
+            "totalSeats": 277,
+            "takenSeats": 22,
+            "occupiedPercent": 8
+          }
+        },
+        {
           "id": "forum-438575",
           "source": "forum",
           "cinema": "Forum Cinemas",
@@ -4214,12 +4952,105 @@
           "serviceDate": "2026-09-19",
           "auditorium": "3. zāle",
           "language": "Krievu",
-          "movieUrl": "https://www.apollokino.lv/event/304161/dz%C4%ABvnieku_ferma?theatreAreaID=1015&dt=19.09.2026",
+          "movieUrl": "https://www.apollokino.lv/event/304161/dz%C4%ABvnieku_ferma?theatreAreaID=1014&dt=19.09.2026",
           "availability": {
             "freeSeats": 51,
             "totalSeats": 70,
             "takenSeats": 19,
             "occupiedPercent": 27
+          }
+        },
+        {
+          "id": "apollo-519971",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Meitene mākoņos",
+          "originalTitle": "La fille dans les nuages",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8652/landscape_qhd/GirlInTheClouds_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "U",
+          "genres": [
+            "Animācija"
+          ],
+          "startTime": "2026-09-19T15:00:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "7. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304211/meitene_m%C4%81ko%C5%86os?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 78
+          }
+        },
+        {
+          "id": "apollo-520154",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Praktiskā maģija 2",
+          "originalTitle": "Practical Magic 2",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8599/landscape_qhd/NewProject(28).png?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Komēdija",
+            "Drāma",
+            "Romantika",
+            "Fantastika"
+          ],
+          "startTime": "2026-09-19T15:00:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "4. zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304158/praktisk%C4%81_ma%C4%A3ija_2?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 69
+          }
+        },
+        {
+          "id": "apollo-519920",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Dzīvnieku ferma",
+          "originalTitle": "Animal Farm",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8601/landscape_qhd/AnimalFarm_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "7+",
+          "genres": [
+            "Animācija"
+          ],
+          "startTime": "2026-09-19T15:15:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "3. Radio SWH zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304161/dz%C4%ABvnieku_ferma?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 107
+          }
+        },
+        {
+          "id": "apollo-519935",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Kritiens 2",
+          "originalTitle": "Fall 2: Deadpoint",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8627/landscape_qhd/LK_FL2__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Drāma",
+            "Piedzīvojumu filma",
+            "Trilleris"
+          ],
+          "startTime": "2026-09-19T15:15:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "8. zāle Restorāns",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304188/kritiens_2?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 38
           }
         },
         {
@@ -4247,6 +5078,28 @@
           }
         },
         {
+          "id": "apollo-519964",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Dzīvnieku ferma",
+          "originalTitle": "Animal Farm",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8601/landscape_qhd/AnimalFarm_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "7+",
+          "genres": [
+            "Animācija"
+          ],
+          "startTime": "2026-09-19T15:20:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "3. zāle",
+          "language": "Krievu",
+          "movieUrl": "https://www.apollokino.lv/event/304161/dz%C4%ABvnieku_ferma?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 109
+          }
+        },
+        {
           "id": "apollo-520481",
           "source": "apollo",
           "cinema": "Apollo Domina",
@@ -4265,7 +5118,7 @@
           "serviceDate": "2026-09-19",
           "auditorium": "1. zāle",
           "language": "Latviešu",
-          "movieUrl": "https://www.apollokino.lv/event/304192/koijots_pret_acme?theatreAreaID=1015&dt=19.09.2026",
+          "movieUrl": "https://www.apollokino.lv/event/304192/koijots_pret_acme?theatreAreaID=1014&dt=19.09.2026",
           "availability": {
             "freeSeats": 67,
             "totalSeats": 70,
@@ -4299,6 +5152,104 @@
           }
         },
         {
+          "id": "apollo-519974",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Uļa",
+          "originalTitle": "Uļa",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8610/landscape_qhd/NewProject(18).png?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Drāma",
+            "Biogrāfija"
+          ],
+          "startTime": "2026-09-19T15:35:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "8. Vintage zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 31
+          }
+        },
+        {
+          "id": "apollo-519938",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Minioni un mošķi",
+          "originalTitle": "Minions & Monsters",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8371/landscape_qhd/LK_MN3__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "7+",
+          "genres": [
+            "Piedzīvojumu filma",
+            "Animācija",
+            "Ģimenes filma"
+          ],
+          "startTime": "2026-09-19T15:40:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "9. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 124,
+            "totalSeats": 127,
+            "takenSeats": 3,
+            "occupiedPercent": 2
+          }
+        },
+        {
+          "id": "apollo-519931",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Zirnekļcilvēks: Jauna diena",
+          "originalTitle": "Spider-Man: Brand New Day",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8505/landscape_qhd/SpiderMan-BND_LV_PPRef_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Piedzīvojumu filma",
+            "Fantastika"
+          ],
+          "startTime": "2026-09-19T15:40:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "6. Zvaigžņu zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 41
+          }
+        },
+        {
+          "id": "apollo-519930",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Meitene mākoņos",
+          "originalTitle": "La fille dans les nuages",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8652/landscape_qhd/GirlInTheClouds_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "U",
+          "genres": [
+            "Animācija"
+          ],
+          "startTime": "2026-09-19T15:40:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "5. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304211/meitene_m%C4%81ko%C5%86os?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 90,
+            "totalSeats": 90,
+            "takenSeats": 0,
+            "occupiedPercent": 0
+          }
+        },
+        {
           "id": "forum-438573",
           "source": "forum",
           "cinema": "Forum Cinemas",
@@ -4321,6 +5272,29 @@
           "availability": {
             "freeSeats": 125,
             "totalSeats": 129
+          }
+        },
+        {
+          "id": "apollo-519958",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Ķepu patruļa: Dinozauru filma",
+          "originalTitle": "PAW Patrol: The Dino Movie",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8439/landscape_qhd/LK_PP__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "7+",
+          "genres": [
+            "Animācija",
+            "Ģimenes filma"
+          ],
+          "startTime": "2026-09-19T15:50:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "2. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304012/%C4%B7epu_patru%C4%BCa_dinozauru_filma?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 206
           }
         },
         {
@@ -4349,6 +5323,54 @@
           }
         },
         {
+          "id": "apollo-519967",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Koijots pret ACME",
+          "originalTitle": "Coyote vs Acme",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8631/landscape_qhd/3840_2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "7+",
+          "genres": [
+            "Komēdija",
+            "Piedzīvojumu filma",
+            "Ģimenes filma"
+          ],
+          "startTime": "2026-09-19T15:55:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "5. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304192/koijots_pret_acme?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 59
+          }
+        },
+        {
+          "id": "apollo-519947",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Pēdējie dzīvie",
+          "originalTitle": "The Dog Stars",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8621/landscape_qhd/LK_DS__Apollo_ID28_3840x2160px.jpg.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "16+",
+          "genres": [
+            "Piedzīvojumu filma",
+            "Trilleris",
+            "Fantastika"
+          ],
+          "startTime": "2026-09-19T16:00:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "7. zāle Restorāns",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304182/p%C4%93d%C4%93jie_dz%C4%ABvie?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 36
+          }
+        },
+        {
           "id": "apollo-520487",
           "source": "apollo",
           "cinema": "Apollo Domina",
@@ -4366,7 +5388,7 @@
           "serviceDate": "2026-09-19",
           "auditorium": "2. zāle",
           "language": "Latviešu",
-          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1015&dt=19.09.2026",
+          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=19.09.2026",
           "availability": {
             "freeSeats": 67,
             "totalSeats": 70,
@@ -4422,6 +5444,28 @@
           "availability": {
             "freeSeats": 98,
             "totalSeats": 98
+          }
+        },
+        {
+          "id": "apollo-519925",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Dzīvnieku ferma",
+          "originalTitle": "Animal Farm",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8601/landscape_qhd/AnimalFarm_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "7+",
+          "genres": [
+            "Animācija"
+          ],
+          "startTime": "2026-09-19T16:15:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "4. Kronenbourg 1664 Blanc zāle",
+          "language": "Krievu",
+          "movieUrl": "https://www.apollokino.lv/event/304161/dz%C4%ABvnieku_ferma?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 167
           }
         },
         {
@@ -4499,6 +5543,54 @@
           }
         },
         {
+          "id": "apollo-519913",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Uļa",
+          "originalTitle": "Uļa",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8610/landscape_qhd/NewProject(18).png?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Drāma",
+            "Biogrāfija"
+          ],
+          "startTime": "2026-09-19T16:30:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "2. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 208,
+            "totalSeats": 227,
+            "takenSeats": 19,
+            "occupiedPercent": 8
+          }
+        },
+        {
+          "id": "apollo-520158",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Spa brīvdienas",
+          "originalTitle": "Spa Weekend",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8596/landscape_qhd/SpaWeekend_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Komēdija"
+          ],
+          "startTime": "2026-09-19T16:30:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "6. zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304156/spa_br%C4%ABvdienas?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 44
+          }
+        },
+        {
           "id": "forum-438538",
           "source": "forum",
           "cinema": "Forum Cinemas",
@@ -4550,6 +5642,76 @@
           }
         },
         {
+          "id": "apollo-515658",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Uļa",
+          "originalTitle": "Uļa",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8610/landscape_qhd/NewProject(18).png?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Drāma",
+            "Biogrāfija"
+          ],
+          "startTime": "2026-09-19T17:00:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "1. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 52
+          }
+        },
+        {
+          "id": "apollo-519821",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Nezūdošais ļaunums",
+          "originalTitle": "Resident Evil",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8602/landscape_qhd/ResidentEvil_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "16+",
+          "genres": [
+            "Šausmu filma"
+          ],
+          "startTime": "2026-09-19T17:00:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "1. IMAX zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304162/nez%C5%ABdo%C5%A1ais_%C4%BCaunums?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 250,
+            "totalSeats": 277,
+            "takenSeats": 27,
+            "occupiedPercent": 10
+          }
+        },
+        {
+          "id": "apollo-520162",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Nezūdošais ļaunums",
+          "originalTitle": "Resident Evil",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8602/landscape_qhd/ResidentEvil_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "16+",
+          "genres": [
+            "Šausmu filma"
+          ],
+          "startTime": "2026-09-19T17:05:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "7. zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304162/nez%C5%ABdo%C5%A1ais_%C4%BCaunums?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 67
+          }
+        },
+        {
           "id": "forum-437848",
           "source": "forum",
           "cinema": "Forum Cinemas",
@@ -4591,12 +5753,80 @@
           "serviceDate": "2026-09-19",
           "auditorium": "3. zāle",
           "language": "Latviešu",
-          "movieUrl": "https://www.apollokino.lv/event/304161/dz%C4%ABvnieku_ferma?theatreAreaID=1015&dt=19.09.2026",
+          "movieUrl": "https://www.apollokino.lv/event/304161/dz%C4%ABvnieku_ferma?theatreAreaID=1014&dt=19.09.2026",
           "availability": {
             "freeSeats": 70,
             "totalSeats": 70,
             "takenSeats": 0,
             "occupiedPercent": 0
+          }
+        },
+        {
+          "id": "apollo-519917",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Ķepu patruļa: Dinozauru filma",
+          "originalTitle": "PAW Patrol: The Dino Movie",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8439/landscape_qhd/LK_PP__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "7+",
+          "genres": [
+            "Animācija",
+            "Ģimenes filma"
+          ],
+          "startTime": "2026-09-19T17:25:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "3. Radio SWH zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304012/%C4%B7epu_patru%C4%BCa_dinozauru_filma?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 109
+          }
+        },
+        {
+          "id": "apollo-519950",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Uļa",
+          "originalTitle": "Uļa",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8610/landscape_qhd/NewProject(18).png?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Drāma",
+            "Biogrāfija"
+          ],
+          "startTime": "2026-09-19T17:25:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "8. zāle Restorāns",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 38
+          }
+        },
+        {
+          "id": "apollo-519963",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Dzīvnieku ferma",
+          "originalTitle": "Animal Farm",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8601/landscape_qhd/AnimalFarm_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "7+",
+          "genres": [
+            "Animācija"
+          ],
+          "startTime": "2026-09-19T17:30:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "3. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304161/dz%C4%ABvnieku_ferma?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 98
           }
         },
         {
@@ -4651,6 +5881,82 @@
           }
         },
         {
+          "id": "apollo-519941",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Koijots pret ACME",
+          "originalTitle": "Coyote vs Acme",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8631/landscape_qhd/3840_2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "7+",
+          "genres": [
+            "Komēdija",
+            "Piedzīvojumu filma",
+            "Ģimenes filma"
+          ],
+          "startTime": "2026-09-19T17:45:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "9. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304192/koijots_pret_acme?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 127,
+            "totalSeats": 127,
+            "takenSeats": 0,
+            "occupiedPercent": 0
+          }
+        },
+        {
+          "id": "apollo-520152",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Zirnekļcilvēks: Jauna diena",
+          "originalTitle": "Spider-Man: Brand New Day",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8505/landscape_qhd/SpiderMan-BND_LV_PPRef_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Piedzīvojumu filma",
+            "Fantastika"
+          ],
+          "startTime": "2026-09-19T17:45:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "4. zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 71
+          }
+        },
+        {
+          "id": "apollo-519926",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Zirnekļcilvēks: Jauna diena",
+          "originalTitle": "Spider-Man: Brand New Day",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8505/landscape_qhd/SpiderMan-BND_LV_PPRef_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Piedzīvojumu filma",
+            "Fantastika"
+          ],
+          "startTime": "2026-09-19T17:45:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "5. zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 86,
+            "totalSeats": 90,
+            "takenSeats": 4,
+            "occupiedPercent": 4
+          }
+        },
+        {
           "id": "apollo-520480",
           "source": "apollo",
           "cinema": "Apollo Domina",
@@ -4669,12 +5975,35 @@
           "serviceDate": "2026-09-19",
           "auditorium": "1. zāle",
           "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304188/kritiens_2?theatreAreaID=1015&dt=19.09.2026",
+          "movieUrl": "https://www.apollokino.lv/event/304188/kritiens_2?theatreAreaID=1014&dt=19.09.2026",
           "availability": {
             "freeSeats": 70,
             "totalSeats": 70,
             "takenSeats": 0,
             "occupiedPercent": 0
+          }
+        },
+        {
+          "id": "apollo-519972",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Odiseja",
+          "originalTitle": "The Odyssey",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8419/landscape_qhd/LK_OD__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "16+",
+          "genres": [
+            "Piedzīvojumu filma",
+            "Vēsturiska"
+          ],
+          "startTime": "2026-09-19T17:55:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "8. Vintage zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 40
           }
         },
         {
@@ -4699,6 +6028,29 @@
           "availability": {
             "freeSeats": 68,
             "totalSeats": 109
+          }
+        },
+        {
+          "id": "apollo-519960",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Uļa",
+          "originalTitle": "Uļa",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8610/landscape_qhd/NewProject(18).png?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Drāma",
+            "Biogrāfija"
+          ],
+          "startTime": "2026-09-19T18:00:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "2. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 202
           }
         },
         {
@@ -4727,6 +6079,29 @@
           }
         },
         {
+          "id": "apollo-520156",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Ātrā piegāde",
+          "originalTitle": "Runner",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8625/landscape_qhd/LK_RN__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Asa sižeta filma",
+            "Trilleris"
+          ],
+          "startTime": "2026-09-19T18:15:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "5. zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304186/%C4%81tr%C4%81_pieg%C4%81de?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 49
+          }
+        },
+        {
           "id": "forum-438567",
           "source": "forum",
           "cinema": "Forum Cinemas",
@@ -4749,6 +6124,29 @@
           "availability": {
             "freeSeats": 94,
             "totalSeats": 96
+          }
+        },
+        {
+          "id": "apollo-519922",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Ķepu patruļa: Dinozauru filma",
+          "originalTitle": "PAW Patrol: The Dino Movie",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8439/landscape_qhd/LK_PP__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "7+",
+          "genres": [
+            "Animācija",
+            "Ģimenes filma"
+          ],
+          "startTime": "2026-09-19T18:25:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "4. Kronenbourg 1664 Blanc zāle",
+          "language": "Krievu",
+          "movieUrl": "https://www.apollokino.lv/event/304012/%C4%B7epu_patru%C4%BCa_dinozauru_filma?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 169
           }
         },
         {
@@ -4792,7 +6190,7 @@
           "serviceDate": "2026-09-19",
           "auditorium": "2. zāle",
           "language": "Latviešu",
-          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1015&dt=19.09.2026",
+          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=19.09.2026",
           "availability": {
             "freeSeats": 57,
             "totalSeats": 70,
@@ -4826,6 +6224,29 @@
           }
         },
         {
+          "id": "apollo-519944",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Odiseja",
+          "originalTitle": "The Odyssey",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8419/landscape_qhd/LK_OD__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "16+",
+          "genres": [
+            "Piedzīvojumu filma",
+            "Vēsturiska"
+          ],
+          "startTime": "2026-09-19T18:40:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "7. zāle Restorāns",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 26
+          }
+        },
+        {
           "id": "forum-438572",
           "source": "forum",
           "cinema": "Forum Cinemas",
@@ -4846,6 +6267,54 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304886/title/koijots_pret_acme/?dt=19.09.2026",
           "availability": {}
+        },
+        {
+          "id": "apollo-519933",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Praktiskā maģija 2",
+          "originalTitle": "Practical Magic 2",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8599/landscape_qhd/NewProject(28).png?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Komēdija",
+            "Drāma",
+            "Romantika",
+            "Fantastika"
+          ],
+          "startTime": "2026-09-19T18:45:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "6. Zvaigžņu zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304158/praktisk%C4%81_ma%C4%A3ija_2?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 44
+          }
+        },
+        {
+          "id": "apollo-520159",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Astrāls: No Tālienes",
+          "originalTitle": "Insidious: Out of the Further",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8597/landscape_qhd/Insidious6_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "16+",
+          "genres": [
+            "Šausmu filma",
+            "Mistika"
+          ],
+          "startTime": "2026-09-19T18:45:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "6. zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304157/astr%C4%81ls_no_t%C4%81lienes?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 38
+          }
         },
         {
           "id": "forum-438448",
@@ -4872,6 +6341,32 @@
           }
         },
         {
+          "id": "apollo-519911",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Uļa",
+          "originalTitle": "Uļa",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8610/landscape_qhd/NewProject(18).png?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Drāma",
+            "Biogrāfija"
+          ],
+          "startTime": "2026-09-19T18:50:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "2. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 208,
+            "totalSeats": 227,
+            "takenSeats": 19,
+            "occupiedPercent": 8
+          }
+        },
+        {
           "id": "forum-437844",
           "source": "forum",
           "cinema": "Forum Cinemas",
@@ -4893,6 +6388,55 @@
           "availability": {
             "freeSeats": 580,
             "totalSeats": 602
+          }
+        },
+        {
+          "id": "apollo-519822",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Nezūdošais ļaunums",
+          "originalTitle": "Resident Evil",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8602/landscape_qhd/ResidentEvil_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "16+",
+          "genres": [
+            "Šausmu filma"
+          ],
+          "startTime": "2026-09-19T19:15:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "1. IMAX zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304162/nez%C5%ABdo%C5%A1ais_%C4%BCaunums?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 251,
+            "totalSeats": 277,
+            "takenSeats": 26,
+            "occupiedPercent": 9
+          }
+        },
+        {
+          "id": "apollo-520164",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Kritiens 2",
+          "originalTitle": "Fall 2: Deadpoint",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8627/landscape_qhd/LK_FL2__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Drāma",
+            "Piedzīvojumu filma",
+            "Trilleris"
+          ],
+          "startTime": "2026-09-19T19:15:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "7. zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304188/kritiens_2?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 73
           }
         },
         {
@@ -4938,12 +6482,35 @@
           "serviceDate": "2026-09-19",
           "auditorium": "3. zāle",
           "language": "Latviešu",
-          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1015&dt=19.09.2026",
+          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=19.09.2026",
           "availability": {
             "freeSeats": 59,
             "totalSeats": 70,
             "takenSeats": 11,
             "occupiedPercent": 16
+          }
+        },
+        {
+          "id": "apollo-519918",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Zirnekļcilvēks: Jauna diena",
+          "originalTitle": "Spider-Man: Brand New Day",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8505/landscape_qhd/SpiderMan-BND_LV_PPRef_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Piedzīvojumu filma",
+            "Fantastika"
+          ],
+          "startTime": "2026-09-19T19:30:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "3. Radio SWH zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 105
           }
         },
         {
@@ -4973,6 +6540,51 @@
           }
         },
         {
+          "id": "apollo-519951",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Uļa",
+          "originalTitle": "Uļa",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8610/landscape_qhd/NewProject(18).png?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Drāma",
+            "Biogrāfija"
+          ],
+          "startTime": "2026-09-19T19:40:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "1. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 329
+          }
+        },
+        {
+          "id": "apollo-520149",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Nezūdošais ļaunums",
+          "originalTitle": "Resident Evil",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8602/landscape_qhd/ResidentEvil_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "16+",
+          "genres": [
+            "Šausmu filma"
+          ],
+          "startTime": "2026-09-19T19:40:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "3. zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304162/nez%C5%ABdo%C5%A1ais_%C4%BCaunums?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 102
+          }
+        },
+        {
           "id": "forum-438532",
           "source": "forum",
           "cinema": "Forum Cinemas",
@@ -4996,6 +6608,29 @@
           "availability": {
             "freeSeats": 183,
             "totalSeats": 183
+          }
+        },
+        {
+          "id": "apollo-519949",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Ātrā piegāde",
+          "originalTitle": "Runner",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8625/landscape_qhd/LK_RN__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Asa sižeta filma",
+            "Trilleris"
+          ],
+          "startTime": "2026-09-19T19:45:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "8. zāle Restorāns",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304186/%C4%81tr%C4%81_pieg%C4%81de?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 36
           }
         },
         {
@@ -5024,6 +6659,33 @@
           }
         },
         {
+          "id": "apollo-519939",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Kritiens 2",
+          "originalTitle": "Fall 2: Deadpoint",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8627/landscape_qhd/LK_FL2__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Drāma",
+            "Piedzīvojumu filma",
+            "Trilleris"
+          ],
+          "startTime": "2026-09-19T20:00:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "9. zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304188/kritiens_2?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 127,
+            "totalSeats": 127,
+            "takenSeats": 0,
+            "occupiedPercent": 0
+          }
+        },
+        {
           "id": "apollo-520479",
           "source": "apollo",
           "cinema": "Apollo Domina",
@@ -5041,12 +6703,81 @@
           "serviceDate": "2026-09-19",
           "auditorium": "1. zāle",
           "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1015&dt=19.09.2026",
+          "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=19.09.2026",
           "availability": {
             "freeSeats": 70,
             "totalSeats": 70,
             "takenSeats": 0,
             "occupiedPercent": 0
+          }
+        },
+        {
+          "id": "apollo-520155",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Odiseja",
+          "originalTitle": "The Odyssey",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8419/landscape_qhd/LK_OD__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "16+",
+          "genres": [
+            "Piedzīvojumu filma",
+            "Vēsturiska"
+          ],
+          "startTime": "2026-09-19T20:30:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "5. zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 56
+          }
+        },
+        {
+          "id": "apollo-519961",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Uļa",
+          "originalTitle": "Uļa",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8610/landscape_qhd/NewProject(18).png?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Drāma",
+            "Biogrāfija"
+          ],
+          "startTime": "2026-09-19T20:30:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "2. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 204
+          }
+        },
+        {
+          "id": "apollo-519923",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Zirnekļcilvēks: Jauna diena",
+          "originalTitle": "Spider-Man: Brand New Day",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8505/landscape_qhd/SpiderMan-BND_LV_PPRef_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Piedzīvojumu filma",
+            "Fantastika"
+          ],
+          "startTime": "2026-09-19T20:30:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "4. Kronenbourg 1664 Blanc zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 165
           }
         },
         {
@@ -5071,6 +6802,56 @@
           "availability": {
             "freeSeats": 109,
             "totalSeats": 109
+          }
+        },
+        {
+          "id": "apollo-520153",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Zirnekļcilvēks: Jauna diena",
+          "originalTitle": "Spider-Man: Brand New Day",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8505/landscape_qhd/SpiderMan-BND_LV_PPRef_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Piedzīvojumu filma",
+            "Fantastika"
+          ],
+          "startTime": "2026-09-19T20:45:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "4. zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 71
+          }
+        },
+        {
+          "id": "apollo-519927",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Dumpis",
+          "originalTitle": "Mutiny",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8612/landscape_qhd/LK_MT__Apollo_ID28_3840x2160px.jpg.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "16+",
+          "genres": [
+            "Asa sižeta filma",
+            "Trilleris",
+            "Kriminālfilma"
+          ],
+          "startTime": "2026-09-19T20:50:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "5. zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304173/dumpis?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 82,
+            "totalSeats": 90,
+            "takenSeats": 8,
+            "occupiedPercent": 9
           }
         },
         {
@@ -5116,7 +6897,7 @@
           "serviceDate": "2026-09-19",
           "auditorium": "2. zāle",
           "language": "Latviešu",
-          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1015&dt=19.09.2026",
+          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=19.09.2026",
           "availability": {
             "freeSeats": 70,
             "totalSeats": 70,
@@ -5147,6 +6928,55 @@
           "availability": {
             "freeSeats": 96,
             "totalSeats": 96
+          }
+        },
+        {
+          "id": "apollo-519912",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Uļa",
+          "originalTitle": "Uļa",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8610/landscape_qhd/NewProject(18).png?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Drāma",
+            "Biogrāfija"
+          ],
+          "startTime": "2026-09-19T21:10:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "2. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 213,
+            "totalSeats": 227,
+            "takenSeats": 14,
+            "occupiedPercent": 6
+          }
+        },
+        {
+          "id": "apollo-520160",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Idioti",
+          "originalTitle": "Idiots",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8603/landscape_qhd/Idiots_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "16+",
+          "genres": [
+            "Komēdija",
+            "Detektīvfilma"
+          ],
+          "startTime": "2026-09-19T21:10:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "6. zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304164/idioti?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 52
           }
         },
         {
@@ -5198,6 +7028,31 @@
           }
         },
         {
+          "id": "apollo-519973",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Praktiskā maģija 2",
+          "originalTitle": "Practical Magic 2",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8599/landscape_qhd/NewProject(28).png?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Komēdija",
+            "Drāma",
+            "Romantika",
+            "Fantastika"
+          ],
+          "startTime": "2026-09-19T21:25:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "8. Vintage zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304158/praktisk%C4%81_ma%C4%A3ija_2?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 40
+          }
+        },
+        {
           "id": "forum-438580",
           "source": "forum",
           "cinema": "Forum Cinemas",
@@ -5223,6 +7078,78 @@
           }
         },
         {
+          "id": "apollo-520163",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Pēdējie dzīvie",
+          "originalTitle": "The Dog Stars",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8621/landscape_qhd/LK_DS__Apollo_ID28_3840x2160px.jpg.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "16+",
+          "genres": [
+            "Piedzīvojumu filma",
+            "Trilleris",
+            "Fantastika"
+          ],
+          "startTime": "2026-09-19T21:30:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "7. zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304182/p%C4%93d%C4%93jie_dz%C4%ABvie?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 76
+          }
+        },
+        {
+          "id": "apollo-519823",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Nezūdošais ļaunums",
+          "originalTitle": "Resident Evil",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8602/landscape_qhd/ResidentEvil_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "16+",
+          "genres": [
+            "Šausmu filma"
+          ],
+          "startTime": "2026-09-19T21:30:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "1. IMAX zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304162/nez%C5%ABdo%C5%A1ais_%C4%BCaunums?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 267,
+            "totalSeats": 277,
+            "takenSeats": 10,
+            "occupiedPercent": 4
+          }
+        },
+        {
+          "id": "apollo-519942",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Odiseja",
+          "originalTitle": "The Odyssey",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8419/landscape_qhd/LK_OD__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "16+",
+          "genres": [
+            "Piedzīvojumu filma",
+            "Vēsturiska"
+          ],
+          "startTime": "2026-09-19T21:30:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "6. Zvaigžņu zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 46
+          }
+        },
+        {
           "id": "forum-438543",
           "source": "forum",
           "cinema": "Forum Cinemas",
@@ -5245,6 +7172,28 @@
           "availability": {
             "freeSeats": 228,
             "totalSeats": 228
+          }
+        },
+        {
+          "id": "apollo-520150",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Nezūdošais ļaunums",
+          "originalTitle": "Resident Evil",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8602/landscape_qhd/ResidentEvil_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "16+",
+          "genres": [
+            "Šausmu filma"
+          ],
+          "startTime": "2026-09-19T21:50:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "3. zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304162/nez%C5%ABdo%C5%A1ais_%C4%BCaunums?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 106
           }
         },
         {
@@ -5298,6 +7247,29 @@
           }
         },
         {
+          "id": "apollo-519952",
+          "source": "apollo",
+          "cinema": "Apollo Plaza",
+          "title": "Uļa",
+          "originalTitle": "Uļa",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8610/landscape_qhd/NewProject(18).png?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Drāma",
+            "Biogrāfija"
+          ],
+          "startTime": "2026-09-19T22:00:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "1. zāle",
+          "language": "Latviešu",
+          "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 343
+          }
+        },
+        {
           "id": "apollo-520498",
           "source": "apollo",
           "cinema": "Apollo Domina",
@@ -5314,12 +7286,87 @@
           "serviceDate": "2026-09-19",
           "auditorium": "3. zāle",
           "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304162/nez%C5%ABdo%C5%A1ais_%C4%BCaunums?theatreAreaID=1015&dt=19.09.2026",
+          "movieUrl": "https://www.apollokino.lv/event/304162/nez%C5%ABdo%C5%A1ais_%C4%BCaunums?theatreAreaID=1014&dt=19.09.2026",
           "availability": {
             "freeSeats": 63,
             "totalSeats": 70,
             "takenSeats": 7,
             "occupiedPercent": 10
+          }
+        },
+        {
+          "id": "apollo-519948",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Idioti",
+          "originalTitle": "Idiots",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8603/landscape_qhd/Idiots_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "16+",
+          "genres": [
+            "Komēdija",
+            "Detektīvfilma"
+          ],
+          "startTime": "2026-09-19T22:05:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "8. zāle Restorāns",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304164/idioti?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 40
+          }
+        },
+        {
+          "id": "apollo-519934",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Praktiskā maģija 2",
+          "originalTitle": "Practical Magic 2",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8599/landscape_qhd/NewProject(28).png?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Komēdija",
+            "Drāma",
+            "Romantika",
+            "Fantastika"
+          ],
+          "startTime": "2026-09-19T22:10:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "7. zāle Restorāns",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304158/praktisk%C4%81_ma%C4%A3ija_2?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 40
+          }
+        },
+        {
+          "id": "apollo-519940",
+          "source": "apollo",
+          "cinema": "Apollo Akropole",
+          "title": "Kritiens 2",
+          "originalTitle": "Fall 2: Deadpoint",
+          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8627/landscape_qhd/LK_FL2__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
+          "imdbRating": "",
+          "imdbUrl": "",
+          "ageRating": "12+",
+          "genres": [
+            "Drāma",
+            "Piedzīvojumu filma",
+            "Trilleris"
+          ],
+          "startTime": "2026-09-19T22:15:00.0000000+03:00",
+          "serviceDate": "2026-09-19",
+          "auditorium": "9. zāle",
+          "language": "Angļu",
+          "movieUrl": "https://www.apollokino.lv/event/304188/kritiens_2?theatreAreaID=1014&dt=19.09.2026",
+          "availability": {
+            "freeSeats": 127,
+            "totalSeats": 127,
+            "takenSeats": 0,
+            "occupiedPercent": 0
           }
         }
       ]
@@ -5330,9 +7377,9 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/",
-      "count": 43,
-      "status": "fresh",
+      "status": "stale",
       "dataDate": "2026-09-18",
+      "count": 43,
       "fetchedAt": "2026-09-17T23:49:15.881Z",
       "lastSuccessAt": "2026-09-17T23:49:15.881Z",
       "error": null
@@ -5341,22 +7388,22 @@
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "status": "stale",
-      "dataDate": "2026-09-18",
       "count": 98,
-      "fetchedAt": "2026-09-17T22:12:02.653Z",
-      "lastSuccessAt": "2026-09-17T22:12:02.653Z",
+      "status": "fresh",
+      "dataDate": "2026-09-18",
+      "fetchedAt": "2026-09-18T02:12:02.264Z",
+      "lastSuccessAt": "2026-09-18T02:12:02.264Z",
       "error": null
     },
     {
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "status": "stale",
-      "dataDate": "2026-09-18",
       "count": 0,
-      "fetchedAt": "2026-09-17T22:12:02.653Z",
-      "lastSuccessAt": "2026-09-17T22:12:02.653Z",
+      "status": "fresh",
+      "dataDate": "2026-09-18",
+      "fetchedAt": "2026-09-18T02:12:02.264Z",
+      "lastSuccessAt": "2026-09-18T02:12:02.264Z",
       "error": null
     }
   ],
@@ -6416,10 +8463,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304162/nez%C5%ABdo%C5%A1ais_%C4%BCaunums?theatreAreaID=1014&dt=18.09.2026",
       "availability": {
-        "freeSeats": 268,
+        "freeSeats": 267,
         "totalSeats": 277,
-        "takenSeats": 9,
-        "occupiedPercent": 3
+        "takenSeats": 10,
+        "occupiedPercent": 4
       }
     },
     {
@@ -7188,7 +9235,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304162/nez%C5%ABdo%C5%A1ais_%C4%BCaunums?theatreAreaID=1014&dt=18.09.2026",
       "availability": {
-        "freeSeats": 74
+        "freeSeats": 73
       }
     },
     {
@@ -7894,7 +9941,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304188/kritiens_2?theatreAreaID=1014&dt=18.09.2026",
       "availability": {
-        "freeSeats": 69
+        "freeSeats": 71
       }
     },
     {
@@ -7964,7 +10011,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=18.09.2026",
       "availability": {
-        "freeSeats": 103
+        "freeSeats": 101
       }
     },
     {
