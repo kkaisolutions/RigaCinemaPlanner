@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T19:11:35.347Z",
+  "generatedAt": "2026-09-19T19:49:08.529Z",
   "timezone": "Europe/Riga",
   "date": "2026-09-19",
   "dates": [
@@ -16,18 +16,18 @@
           "url": "https://www.forumcinemas.lv/",
           "status": "stale",
           "dataDate": "2026-09-19",
-          "count": 6,
+          "count": 0,
           "fetchedAt": "2026-09-19T17:37:13.091Z",
           "lastSuccessAt": "2026-09-19T17:37:13.091Z",
-          "error": null
+          "error": "forum failed: Forum Cinemas did not return its 2026-09-19 schedule page"
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 3,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-09-19",
+          "count": 1,
           "fetchedAt": "2026-09-19T19:11:35.347Z",
           "lastSuccessAt": "2026-09-19T19:11:35.347Z",
           "error": null
@@ -36,44 +36,16 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 0,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-09-19",
+          "count": 0,
           "fetchedAt": "2026-09-19T19:11:35.347Z",
           "lastSuccessAt": "2026-09-19T19:11:35.347Z",
           "error": null
         }
       ],
       "warnings": [],
-      "showtimes": [
-        {
-          "id": "apollo-519940",
-          "source": "apollo",
-          "cinema": "Apollo Akropole",
-          "title": "Kritiens 2",
-          "originalTitle": "Fall 2: Deadpoint",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8627/landscape_qhd/LK_FL2__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "12+",
-          "genres": [
-            "Drāma",
-            "Piedzīvojumu filma",
-            "Trilleris"
-          ],
-          "startTime": "2026-09-19T22:15:00.0000000+03:00",
-          "serviceDate": "2026-09-19",
-          "auditorium": "9. zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304188/kritiens_2?theatreAreaID=1014&dt=19.09.2026",
-          "availability": {
-            "freeSeats": 106,
-            "totalSeats": 127,
-            "takenSeats": 21,
-            "occupiedPercent": 17
-          }
-        }
-      ]
+      "showtimes": []
     },
     "2026-09-20": {
       "date": "2026-09-20",
@@ -82,20 +54,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "stale",
-          "dataDate": "2026-09-20",
           "count": 59,
-          "fetchedAt": "2026-09-19T17:37:13.091Z",
-          "lastSuccessAt": "2026-09-19T17:37:13.091Z",
+          "status": "fresh",
+          "dataDate": "2026-09-20",
+          "fetchedAt": "2026-09-19T19:49:08.529Z",
+          "lastSuccessAt": "2026-09-19T19:49:08.529Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 100,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-09-20",
+          "count": 100,
           "fetchedAt": "2026-09-19T19:11:35.347Z",
           "lastSuccessAt": "2026-09-19T19:11:35.347Z",
           "error": null
@@ -104,9 +76,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 0,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-09-20",
+          "count": 0,
           "fetchedAt": "2026-09-19T19:11:35.347Z",
           "lastSuccessAt": "2026-09-19T19:11:35.347Z",
           "error": null
@@ -156,7 +128,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 2. aud.",
           "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304908/title/dz%C4%ABvnieku_ferma/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304908/title/dz%C4%ABvnieku_ferma/",
           "availability": {
             "freeSeats": 393,
             "totalSeats": 427
@@ -274,7 +246,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 12. aud.",
           "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304907/title/meitene_m%C4%81ko%C5%86os/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304907/title/meitene_m%C4%81ko%C5%86os/",
           "availability": {
             "freeSeats": 183,
             "totalSeats": 183
@@ -320,7 +292,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, DELFI LUX aud.",
           "language": "Latviešu / krievu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/",
           "availability": {
             "freeSeats": 81,
             "totalSeats": 109
@@ -346,9 +318,9 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 11. aud.",
           "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
           "availability": {
-            "freeSeats": 225,
+            "freeSeats": 223,
             "totalSeats": 234
           }
         },
@@ -397,7 +369,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 7. aud.",
           "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304908/title/dz%C4%ABvnieku_ferma/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304908/title/dz%C4%ABvnieku_ferma/",
           "availability": {}
         },
         {
@@ -442,9 +414,9 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 5. aud.",
           "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304813/title/laim%C4%ABgie/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304813/title/laim%C4%ABgie/",
           "availability": {
-            "freeSeats": 83,
+            "freeSeats": 78,
             "totalSeats": 95
           }
         },
@@ -467,7 +439,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 8. aud.",
           "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304907/title/meitene_m%C4%81ko%C5%86os/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304907/title/meitene_m%C4%81ko%C5%86os/",
           "availability": {}
         },
         {
@@ -516,9 +488,9 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 10. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304887/title/nez%C5%ABdo%C5%A1ais_%C4%BCaunums/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304887/title/nez%C5%ABdo%C5%A1ais_%C4%BCaunums/",
           "availability": {
-            "freeSeats": 120,
+            "freeSeats": 119,
             "totalSeats": 127
           }
         },
@@ -541,9 +513,9 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 13. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
           "availability": {
-            "freeSeats": 116,
+            "freeSeats": 114,
             "totalSeats": 129
           }
         },
@@ -588,7 +560,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 9. aud.",
           "language": "Franču",
-          "movieUrl": "https://www.forumcinemas.lv/event/304909/title/santjago_ce%C4%BCa_terapija/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304909/title/santjago_ce%C4%BCa_terapija/",
           "availability": {
             "freeSeats": 91,
             "totalSeats": 98
@@ -780,7 +752,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 4 LUX aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304812/title/praktisk%C4%81_ma%C4%A3ija_2/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304812/title/praktisk%C4%81_ma%C4%A3ija_2/",
           "availability": {
             "freeSeats": 79,
             "totalSeats": 91
@@ -827,7 +799,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, PEPSI aud.",
           "language": "Latviešu / krievu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/",
           "availability": {}
         },
         {
@@ -924,7 +896,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 6. aud.",
           "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/",
           "availability": {}
         },
         {
@@ -946,7 +918,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 14. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304870/title/astr%C4%81ls_no_t%C4%81lienes/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304870/title/astr%C4%81ls_no_t%C4%81lienes/",
           "availability": {
             "freeSeats": 183,
             "totalSeats": 183
@@ -1043,7 +1015,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 12. aud.",
           "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304908/title/dz%C4%ABvnieku_ferma/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304908/title/dz%C4%ABvnieku_ferma/",
           "availability": {}
         },
         {
@@ -1116,7 +1088,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 5. aud.",
           "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304813/title/laim%C4%ABgie/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304813/title/laim%C4%ABgie/",
           "availability": {}
         },
         {
@@ -1186,7 +1158,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 2. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304887/title/nez%C5%ABdo%C5%A1ais_%C4%BCaunums/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304887/title/nez%C5%ABdo%C5%A1ais_%C4%BCaunums/",
           "availability": {}
         },
         {
@@ -1236,9 +1208,9 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 11. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
           "availability": {
-            "freeSeats": 230,
+            "freeSeats": 226,
             "totalSeats": 234
           }
         },
@@ -1262,9 +1234,9 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 8. aud.",
           "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304685/title/%C4%B7epu_patru%C4%BCa_dinozauru_filma/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304685/title/%C4%B7epu_patru%C4%BCa_dinozauru_filma/",
           "availability": {
-            "freeSeats": 96,
+            "freeSeats": 93,
             "totalSeats": 98
           }
         },
@@ -1310,7 +1282,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 7. aud.",
           "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304908/title/dz%C4%ABvnieku_ferma/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304908/title/dz%C4%ABvnieku_ferma/",
           "availability": {}
         },
         {
@@ -1333,7 +1305,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, DELFI LUX aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304812/title/praktisk%C4%81_ma%C4%A3ija_2/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304812/title/praktisk%C4%81_ma%C4%A3ija_2/",
           "availability": {}
         },
         {
@@ -1380,7 +1352,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 10. aud.",
           "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304907/title/meitene_m%C4%81ko%C5%86os/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304907/title/meitene_m%C4%81ko%C5%86os/",
           "availability": {}
         },
         {
@@ -1499,7 +1471,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 9. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304871/title/spa_br%C4%ABvdienas/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304871/title/spa_br%C4%ABvdienas/",
           "availability": {
             "freeSeats": 98,
             "totalSeats": 98
@@ -1575,7 +1547,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 13. aud.",
           "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304908/title/dz%C4%ABvnieku_ferma/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304908/title/dz%C4%ABvnieku_ferma/",
           "availability": {}
         },
         {
@@ -1643,7 +1615,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, PEPSI aud.",
           "language": "Latviešu / krievu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/",
           "availability": {}
         },
         {
@@ -1665,7 +1637,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 4 LUX aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304882/title/tonijs/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304882/title/tonijs/",
           "availability": {
             "freeSeats": 86,
             "totalSeats": 91
@@ -1758,7 +1730,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 6. aud.",
           "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304886/title/koijots_pret_acme/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304886/title/koijots_pret_acme/",
           "availability": {
             "freeSeats": 96,
             "totalSeats": 96
@@ -1783,7 +1755,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 5. aud.",
           "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304813/title/laim%C4%ABgie/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304813/title/laim%C4%ABgie/",
           "availability": {}
         },
         {
@@ -1903,7 +1875,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 12. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
           "availability": {}
         },
         {
@@ -1926,7 +1898,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 14. aud.",
           "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304908/title/dz%C4%ABvnieku_ferma/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304908/title/dz%C4%ABvnieku_ferma/",
           "availability": {}
         },
         {
@@ -1995,7 +1967,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 2. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304887/title/nez%C5%ABdo%C5%A1ais_%C4%BCaunums/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304887/title/nez%C5%ABdo%C5%A1ais_%C4%BCaunums/",
           "availability": {}
         },
         {
@@ -2067,9 +2039,9 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 8. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304879/title/kritiens_2/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304879/title/kritiens_2/",
           "availability": {
-            "freeSeats": 97,
+            "freeSeats": 95,
             "totalSeats": 98
           }
         },
@@ -2113,9 +2085,9 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 7. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304888/title/oasis_dont_look_back_in_anger/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304888/title/oasis_dont_look_back_in_anger/",
           "availability": {
-            "freeSeats": 203,
+            "freeSeats": 201,
             "totalSeats": 228
           }
         },
@@ -2139,7 +2111,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 10. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
           "availability": {}
         },
         {
@@ -2257,7 +2229,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, DELFI LUX aud.",
           "language": "Latviešu / krievu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/",
           "availability": {}
         },
         {
@@ -2326,7 +2298,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 9. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304873/title/%C4%81tr%C4%81_pieg%C4%81de/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304873/title/%C4%81tr%C4%81_pieg%C4%81de/",
           "availability": {
             "freeSeats": 98,
             "totalSeats": 98
@@ -2422,7 +2394,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 13. aud.",
           "language": "Japāņu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304581/title/navsika_no_v%C4%93ju_ielejas_1984/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304581/title/navsika_no_v%C4%93ju_ielejas_1984/",
           "availability": {
             "freeSeats": 112,
             "totalSeats": 129
@@ -2469,7 +2441,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 5. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304882/title/tonijs/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304882/title/tonijs/",
           "availability": {}
         },
         {
@@ -2491,7 +2463,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 11. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304887/title/nez%C5%ABdo%C5%A1ais_%C4%BCaunums/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304887/title/nez%C5%ABdo%C5%A1ais_%C4%BCaunums/",
           "availability": {}
         },
         {
@@ -2590,7 +2562,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 4 LUX aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304812/title/praktisk%C4%81_ma%C4%A3ija_2/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304812/title/praktisk%C4%81_ma%C4%A3ija_2/",
           "availability": {}
         },
         {
@@ -2633,9 +2605,9 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, PEPSI aud.",
           "language": "Dažādas val.",
-          "movieUrl": "https://www.forumcinemas.lv/event/304835/title/met_opera_20_gadi_uz_kino_ekr%C4%81niem_sv%C4%93tku_svin%C4%ABbas/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304835/title/met_opera_20_gadi_uz_kino_ekr%C4%81niem_sv%C4%93tku_svin%C4%ABbas/",
           "availability": {
-            "freeSeats": 335,
+            "freeSeats": 332,
             "totalSeats": 602
           }
         },
@@ -2681,7 +2653,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 6. aud.",
           "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304886/title/koijots_pret_acme/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304886/title/koijots_pret_acme/",
           "availability": {}
         },
         {
@@ -2726,7 +2698,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 14. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
           "availability": {}
         },
         {
@@ -2770,7 +2742,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 2. aud.",
           "language": "Latviešu / krievu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/",
           "availability": {}
         },
         {
@@ -2818,7 +2790,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 8. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304870/title/astr%C4%81ls_no_t%C4%81lienes/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304870/title/astr%C4%81ls_no_t%C4%81lienes/",
           "availability": {}
         },
         {
@@ -2937,7 +2909,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 12. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304887/title/nez%C5%ABdo%C5%A1ais_%C4%BCaunums/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304887/title/nez%C5%ABdo%C5%A1ais_%C4%BCaunums/",
           "availability": {}
         },
         {
@@ -2959,9 +2931,9 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 7. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/302060/title/vilcienvakte_1996/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/302060/title/vilcienvakte_1996/",
           "availability": {
-            "freeSeats": 184,
+            "freeSeats": 180,
             "totalSeats": 228
           }
         },
@@ -3104,7 +3076,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, DELFI LUX aud.",
           "language": "Latviešu / krievu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/",
           "availability": {}
         },
         {
@@ -3170,7 +3142,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 9. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304845/title/idioti/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304845/title/idioti/",
           "availability": {
             "freeSeats": 98,
             "totalSeats": 98
@@ -3196,7 +3168,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 11. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304807/title/odiseja/",
           "availability": {}
         },
         {
@@ -3272,7 +3244,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 10. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304879/title/kritiens_2/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304879/title/kritiens_2/",
           "availability": {}
         },
         {
@@ -3294,7 +3266,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 13. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304882/title/tonijs/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304882/title/tonijs/",
           "availability": {}
         },
         {
@@ -3385,7 +3357,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 6. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304905/title/d-diena_pirms_v%C4%93tras/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304905/title/d-diena_pirms_v%C4%93tras/",
           "availability": {
             "freeSeats": 96,
             "totalSeats": 96
@@ -3459,7 +3431,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 4 LUX aud.",
           "language": "Latviešu / krievu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/",
           "availability": {}
         },
         {
@@ -3556,7 +3528,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 2. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304887/title/nez%C5%ABdo%C5%A1ais_%C4%BCaunums/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304887/title/nez%C5%ABdo%C5%A1ais_%C4%BCaunums/",
           "availability": {}
         },
         {
@@ -3578,7 +3550,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 8. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304873/title/%C4%81tr%C4%81_pieg%C4%81de/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304873/title/%C4%81tr%C4%81_pieg%C4%81de/",
           "availability": {}
         },
         {
@@ -3697,7 +3669,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 12. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304879/title/kritiens_2/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304879/title/kritiens_2/",
           "availability": {}
         },
         {
@@ -3719,7 +3691,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 7. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304870/title/astr%C4%81ls_no_t%C4%81lienes/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304870/title/astr%C4%81ls_no_t%C4%81lienes/",
           "availability": {}
         },
         {
@@ -3764,7 +3736,7 @@
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 14. aud.",
           "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304867/title/dumpis/?dt=20.09.2026",
+          "movieUrl": "https://www.forumcinemas.lv/event/304867/title/dumpis/",
           "availability": {
             "freeSeats": 183,
             "totalSeats": 183
@@ -3902,18 +3874,18 @@
       "url": "https://www.forumcinemas.lv/",
       "status": "stale",
       "dataDate": "2026-09-19",
-      "count": 6,
+      "count": 0,
       "fetchedAt": "2026-09-19T17:37:13.091Z",
       "lastSuccessAt": "2026-09-19T17:37:13.091Z",
-      "error": null
+      "error": "forum failed: Forum Cinemas did not return its 2026-09-19 schedule page"
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "count": 3,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-09-19",
+      "count": 1,
       "fetchedAt": "2026-09-19T19:11:35.347Z",
       "lastSuccessAt": "2026-09-19T19:11:35.347Z",
       "error": null
@@ -3922,42 +3894,14 @@
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "count": 0,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-09-19",
+      "count": 0,
       "fetchedAt": "2026-09-19T19:11:35.347Z",
       "lastSuccessAt": "2026-09-19T19:11:35.347Z",
       "error": null
     }
   ],
   "warnings": [],
-  "showtimes": [
-    {
-      "id": "apollo-519940",
-      "source": "apollo",
-      "cinema": "Apollo Akropole",
-      "title": "Kritiens 2",
-      "originalTitle": "Fall 2: Deadpoint",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8627/landscape_qhd/LK_FL2__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "12+",
-      "genres": [
-        "Drāma",
-        "Piedzīvojumu filma",
-        "Trilleris"
-      ],
-      "startTime": "2026-09-19T22:15:00.0000000+03:00",
-      "serviceDate": "2026-09-19",
-      "auditorium": "9. zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304188/kritiens_2?theatreAreaID=1014&dt=19.09.2026",
-      "availability": {
-        "freeSeats": 106,
-        "totalSeats": 127,
-        "takenSeats": 21,
-        "occupiedPercent": 17
-      }
-    }
-  ]
+  "showtimes": []
 }
