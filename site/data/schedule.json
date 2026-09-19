@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T22:12:01.897Z",
+  "generatedAt": "2026-09-19T23:55:40.821Z",
   "timezone": "Europe/Riga",
   "date": "2026-09-20",
   "dates": [
@@ -14,20 +14,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "cached",
-          "dataDate": "2026-09-20",
           "count": 96,
-          "fetchedAt": "2026-09-19T21:58:27.049Z",
-          "lastSuccessAt": "2026-09-19T21:58:27.049Z",
+          "status": "fresh",
+          "dataDate": "2026-09-20",
+          "fetchedAt": "2026-09-19T23:55:40.821Z",
+          "lastSuccessAt": "2026-09-19T23:55:40.821Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 100,
-          "status": "fresh",
+          "status": "stale",
           "dataDate": "2026-09-20",
+          "count": 100,
           "fetchedAt": "2026-09-19T22:12:01.897Z",
           "lastSuccessAt": "2026-09-19T22:12:01.897Z",
           "error": null
@@ -36,9 +36,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 0,
-          "status": "fresh",
+          "status": "stale",
           "dataDate": "2026-09-20",
+          "count": 0,
           "fetchedAt": "2026-09-19T22:12:01.897Z",
           "lastSuccessAt": "2026-09-19T22:12:01.897Z",
           "error": null
@@ -328,9 +328,12 @@
           "startTime": "2026-09-20T11:20:00+03:00",
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 7. aud.",
-          "language": "Latviešu",
+          "language": "Krievu",
           "movieUrl": "https://www.forumcinemas.lv/event/304908/title/dz%C4%ABvnieku_ferma/?dt=20.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 228,
+            "totalSeats": 228
+          }
         },
         {
           "id": "apollo-520265",
@@ -760,7 +763,10 @@
           "auditorium": "Centrs, PEPSI aud.",
           "language": "Latviešu / krievu",
           "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/?dt=20.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 505,
+            "totalSeats": 602
+          }
         },
         {
           "id": "apollo-519824",
@@ -855,9 +861,12 @@
           "startTime": "2026-09-20T13:00:00+03:00",
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 6. aud.",
-          "language": "Latviešu",
+          "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/?dt=20.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 96,
+            "totalSeats": 96
+          }
         },
         {
           "id": "forum-438602",
@@ -976,7 +985,10 @@
           "auditorium": "Centrs, 12. aud.",
           "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304908/title/dz%C4%ABvnieku_ferma/?dt=20.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 183,
+            "totalSeats": 183
+          }
         },
         {
           "id": "apollo-520053",
@@ -1247,9 +1259,12 @@
           "startTime": "2026-09-20T13:55:00+03:00",
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 7. aud.",
-          "language": "Latviešu",
+          "language": "Krievu",
           "movieUrl": "https://www.forumcinemas.lv/event/304908/title/dz%C4%ABvnieku_ferma/?dt=20.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 220,
+            "totalSeats": 228
+          }
         },
         {
           "id": "forum-438664",
@@ -1579,7 +1594,7 @@
           "startTime": "2026-09-20T14:35:00+03:00",
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 10. aud.",
-          "language": "Angļu",
+          "language": "Latviešu",
           "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/?dt=20.09.2026",
           "availability": {}
         },
@@ -1655,29 +1670,6 @@
           }
         },
         {
-          "id": "forum-438623",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Dzīvnieku ferma",
-          "originalTitle": "Animal Farm",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11486/portrait_medium/animal-farm-plakats.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt2467700/",
-          "ageRating": "7+",
-          "genres": [
-            "Piedzīvojumi",
-            "Animācija",
-            "Drāma",
-            "Ģimenes"
-          ],
-          "startTime": "2026-09-20T15:00:00+03:00",
-          "serviceDate": "2026-09-20",
-          "auditorium": "Centrs, 13. aud.",
-          "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304908/title/dz%C4%ABvnieku_ferma/?dt=20.09.2026",
-          "availability": {}
-        },
-        {
           "id": "forum-438642",
           "source": "forum",
           "cinema": "Forum Cinemas",
@@ -1698,6 +1690,32 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/?dt=20.09.2026",
           "availability": {}
+        },
+        {
+          "id": "forum-438623",
+          "source": "forum",
+          "cinema": "Forum Cinemas",
+          "title": "Dzīvnieku ferma",
+          "originalTitle": "Animal Farm",
+          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11486/portrait_medium/animal-farm-plakats.jpg",
+          "imdbRating": "",
+          "imdbUrl": "https://www.imdb.com/title/tt2467700/",
+          "ageRating": "7+",
+          "genres": [
+            "Piedzīvojumi",
+            "Animācija",
+            "Drāma",
+            "Ģimenes"
+          ],
+          "startTime": "2026-09-20T15:00:00+03:00",
+          "serviceDate": "2026-09-20",
+          "auditorium": "Centrs, 13. aud.",
+          "language": "Latviešu",
+          "movieUrl": "https://www.forumcinemas.lv/event/304908/title/dz%C4%ABvnieku_ferma/?dt=20.09.2026",
+          "availability": {
+            "freeSeats": 129,
+            "totalSeats": 129
+          }
         },
         {
           "id": "apollo-520371",
@@ -1787,7 +1805,10 @@
           "auditorium": "Centrs, PEPSI aud.",
           "language": "Latviešu / krievu",
           "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/?dt=20.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 516,
+            "totalSeats": 602
+          }
         },
         {
           "id": "forum-438605",
@@ -2140,9 +2161,12 @@
           "startTime": "2026-09-20T15:50:00+03:00",
           "serviceDate": "2026-09-20",
           "auditorium": "Centrs, 14. aud.",
-          "language": "Latviešu",
+          "language": "Krievu",
           "movieUrl": "https://www.forumcinemas.lv/event/304908/title/dz%C4%ABvnieku_ferma/?dt=20.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 183,
+            "totalSeats": 183
+          }
         },
         {
           "id": "apollo-520266",
@@ -2527,27 +2551,6 @@
           }
         },
         {
-          "id": "forum-438458",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Uļa",
-          "originalTitle": "Uļa",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11421/portrait_medium/ula-plakats.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt14173636/",
-          "ageRating": "12+",
-          "genres": [
-            "Drāma",
-            "Biogrāfija"
-          ],
-          "startTime": "2026-09-20T17:00:00+03:00",
-          "serviceDate": "2026-09-20",
-          "auditorium": "Centrs, DELFI LUX aud.",
-          "language": "Latviešu / krievu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/?dt=20.09.2026",
-          "availability": {}
-        },
-        {
           "id": "forum-438658",
           "source": "forum",
           "cinema": "Forum Cinemas",
@@ -2568,6 +2571,30 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/304879/title/kritiens_2/?dt=20.09.2026",
           "availability": {}
+        },
+        {
+          "id": "forum-438458",
+          "source": "forum",
+          "cinema": "Forum Cinemas",
+          "title": "Uļa",
+          "originalTitle": "Uļa",
+          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11421/portrait_medium/ula-plakats.jpg",
+          "imdbRating": "",
+          "imdbUrl": "https://www.imdb.com/title/tt14173636/",
+          "ageRating": "12+",
+          "genres": [
+            "Drāma",
+            "Biogrāfija"
+          ],
+          "startTime": "2026-09-20T17:00:00+03:00",
+          "serviceDate": "2026-09-20",
+          "auditorium": "Centrs, DELFI LUX aud.",
+          "language": "Latviešu / krievu",
+          "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/?dt=20.09.2026",
+          "availability": {
+            "freeSeats": 52,
+            "totalSeats": 109
+          }
         },
         {
           "id": "apollo-519826",
@@ -3270,7 +3297,10 @@
           "auditorium": "Centrs, 2. aud.",
           "language": "Latviešu / krievu",
           "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/?dt=20.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 379,
+            "totalSeats": 427
+          }
         },
         {
           "id": "apollo-520493",
@@ -3680,7 +3710,7 @@
           }
         },
         {
-          "id": "forum-438457",
+          "id": "forum-438471",
           "source": "forum",
           "cinema": "Forum Cinemas",
           "title": "Uļa",
@@ -3701,7 +3731,7 @@
           "availability": {}
         },
         {
-          "id": "forum-438471",
+          "id": "forum-438457",
           "source": "forum",
           "cinema": "Forum Cinemas",
           "title": "Uļa",
@@ -3719,7 +3749,10 @@
           "auditorium": "Centrs, DELFI LUX aud.",
           "language": "Latviešu / krievu",
           "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/?dt=20.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 93,
+            "totalSeats": 109
+          }
         },
         {
           "id": "apollo-520290",
@@ -4150,7 +4183,10 @@
           "auditorium": "Centrs, 4 LUX aud.",
           "language": "Latviešu / krievu",
           "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/?dt=20.09.2026",
-          "availability": {}
+          "availability": {
+            "freeSeats": 91,
+            "totalSeats": 91
+          }
         },
         {
           "id": "forum-438667",
@@ -4712,20 +4748,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "cached",
-          "dataDate": "2026-09-21",
           "count": 43,
-          "fetchedAt": "2026-09-19T21:58:27.049Z",
-          "lastSuccessAt": "2026-09-19T21:58:27.049Z",
+          "status": "fresh",
+          "dataDate": "2026-09-21",
+          "fetchedAt": "2026-09-19T23:55:40.821Z",
+          "lastSuccessAt": "2026-09-19T23:55:40.821Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 98,
-          "status": "fresh",
+          "status": "stale",
           "dataDate": "2026-09-21",
+          "count": 98,
           "fetchedAt": "2026-09-19T22:12:01.897Z",
           "lastSuccessAt": "2026-09-19T22:12:01.897Z",
           "error": null
@@ -4734,9 +4770,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 0,
-          "status": "fresh",
+          "status": "stale",
           "dataDate": "2026-09-21",
+          "count": 0,
           "fetchedAt": "2026-09-19T22:12:01.897Z",
           "lastSuccessAt": "2026-09-19T22:12:01.897Z",
           "error": null
@@ -8121,20 +8157,20 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/",
-      "status": "cached",
-      "dataDate": "2026-09-20",
       "count": 96,
-      "fetchedAt": "2026-09-19T21:58:27.049Z",
-      "lastSuccessAt": "2026-09-19T21:58:27.049Z",
+      "status": "fresh",
+      "dataDate": "2026-09-20",
+      "fetchedAt": "2026-09-19T23:55:40.821Z",
+      "lastSuccessAt": "2026-09-19T23:55:40.821Z",
       "error": null
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "count": 100,
-      "status": "fresh",
+      "status": "stale",
       "dataDate": "2026-09-20",
+      "count": 100,
       "fetchedAt": "2026-09-19T22:12:01.897Z",
       "lastSuccessAt": "2026-09-19T22:12:01.897Z",
       "error": null
@@ -8143,9 +8179,9 @@
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "count": 0,
-      "status": "fresh",
+      "status": "stale",
       "dataDate": "2026-09-20",
+      "count": 0,
       "fetchedAt": "2026-09-19T22:12:01.897Z",
       "lastSuccessAt": "2026-09-19T22:12:01.897Z",
       "error": null
@@ -8435,9 +8471,12 @@
       "startTime": "2026-09-20T11:20:00+03:00",
       "serviceDate": "2026-09-20",
       "auditorium": "Centrs, 7. aud.",
-      "language": "Latviešu",
+      "language": "Krievu",
       "movieUrl": "https://www.forumcinemas.lv/event/304908/title/dz%C4%ABvnieku_ferma/?dt=20.09.2026",
-      "availability": {}
+      "availability": {
+        "freeSeats": 228,
+        "totalSeats": 228
+      }
     },
     {
       "id": "apollo-520265",
@@ -8867,7 +8906,10 @@
       "auditorium": "Centrs, PEPSI aud.",
       "language": "Latviešu / krievu",
       "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/?dt=20.09.2026",
-      "availability": {}
+      "availability": {
+        "freeSeats": 505,
+        "totalSeats": 602
+      }
     },
     {
       "id": "apollo-519824",
@@ -8962,9 +9004,12 @@
       "startTime": "2026-09-20T13:00:00+03:00",
       "serviceDate": "2026-09-20",
       "auditorium": "Centrs, 6. aud.",
-      "language": "Latviešu",
+      "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/?dt=20.09.2026",
-      "availability": {}
+      "availability": {
+        "freeSeats": 96,
+        "totalSeats": 96
+      }
     },
     {
       "id": "forum-438602",
@@ -9083,7 +9128,10 @@
       "auditorium": "Centrs, 12. aud.",
       "language": "Latviešu",
       "movieUrl": "https://www.forumcinemas.lv/event/304908/title/dz%C4%ABvnieku_ferma/?dt=20.09.2026",
-      "availability": {}
+      "availability": {
+        "freeSeats": 183,
+        "totalSeats": 183
+      }
     },
     {
       "id": "apollo-520053",
@@ -9354,9 +9402,12 @@
       "startTime": "2026-09-20T13:55:00+03:00",
       "serviceDate": "2026-09-20",
       "auditorium": "Centrs, 7. aud.",
-      "language": "Latviešu",
+      "language": "Krievu",
       "movieUrl": "https://www.forumcinemas.lv/event/304908/title/dz%C4%ABvnieku_ferma/?dt=20.09.2026",
-      "availability": {}
+      "availability": {
+        "freeSeats": 220,
+        "totalSeats": 228
+      }
     },
     {
       "id": "forum-438664",
@@ -9686,7 +9737,7 @@
       "startTime": "2026-09-20T14:35:00+03:00",
       "serviceDate": "2026-09-20",
       "auditorium": "Centrs, 10. aud.",
-      "language": "Angļu",
+      "language": "Latviešu",
       "movieUrl": "https://www.forumcinemas.lv/event/304684/title/minioni_un_mo%C5%A1%C4%B7i/?dt=20.09.2026",
       "availability": {}
     },
@@ -9762,29 +9813,6 @@
       }
     },
     {
-      "id": "forum-438623",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Dzīvnieku ferma",
-      "originalTitle": "Animal Farm",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11486/portrait_medium/animal-farm-plakats.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt2467700/",
-      "ageRating": "7+",
-      "genres": [
-        "Piedzīvojumi",
-        "Animācija",
-        "Drāma",
-        "Ģimenes"
-      ],
-      "startTime": "2026-09-20T15:00:00+03:00",
-      "serviceDate": "2026-09-20",
-      "auditorium": "Centrs, 13. aud.",
-      "language": "Latviešu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304908/title/dz%C4%ABvnieku_ferma/?dt=20.09.2026",
-      "availability": {}
-    },
-    {
       "id": "forum-438642",
       "source": "forum",
       "cinema": "Forum Cinemas",
@@ -9805,6 +9833,32 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/?dt=20.09.2026",
       "availability": {}
+    },
+    {
+      "id": "forum-438623",
+      "source": "forum",
+      "cinema": "Forum Cinemas",
+      "title": "Dzīvnieku ferma",
+      "originalTitle": "Animal Farm",
+      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11486/portrait_medium/animal-farm-plakats.jpg",
+      "imdbRating": "",
+      "imdbUrl": "https://www.imdb.com/title/tt2467700/",
+      "ageRating": "7+",
+      "genres": [
+        "Piedzīvojumi",
+        "Animācija",
+        "Drāma",
+        "Ģimenes"
+      ],
+      "startTime": "2026-09-20T15:00:00+03:00",
+      "serviceDate": "2026-09-20",
+      "auditorium": "Centrs, 13. aud.",
+      "language": "Latviešu",
+      "movieUrl": "https://www.forumcinemas.lv/event/304908/title/dz%C4%ABvnieku_ferma/?dt=20.09.2026",
+      "availability": {
+        "freeSeats": 129,
+        "totalSeats": 129
+      }
     },
     {
       "id": "apollo-520371",
@@ -9894,7 +9948,10 @@
       "auditorium": "Centrs, PEPSI aud.",
       "language": "Latviešu / krievu",
       "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/?dt=20.09.2026",
-      "availability": {}
+      "availability": {
+        "freeSeats": 516,
+        "totalSeats": 602
+      }
     },
     {
       "id": "forum-438605",
@@ -10247,9 +10304,12 @@
       "startTime": "2026-09-20T15:50:00+03:00",
       "serviceDate": "2026-09-20",
       "auditorium": "Centrs, 14. aud.",
-      "language": "Latviešu",
+      "language": "Krievu",
       "movieUrl": "https://www.forumcinemas.lv/event/304908/title/dz%C4%ABvnieku_ferma/?dt=20.09.2026",
-      "availability": {}
+      "availability": {
+        "freeSeats": 183,
+        "totalSeats": 183
+      }
     },
     {
       "id": "apollo-520266",
@@ -10634,27 +10694,6 @@
       }
     },
     {
-      "id": "forum-438458",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Uļa",
-      "originalTitle": "Uļa",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11421/portrait_medium/ula-plakats.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt14173636/",
-      "ageRating": "12+",
-      "genres": [
-        "Drāma",
-        "Biogrāfija"
-      ],
-      "startTime": "2026-09-20T17:00:00+03:00",
-      "serviceDate": "2026-09-20",
-      "auditorium": "Centrs, DELFI LUX aud.",
-      "language": "Latviešu / krievu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/?dt=20.09.2026",
-      "availability": {}
-    },
-    {
       "id": "forum-438658",
       "source": "forum",
       "cinema": "Forum Cinemas",
@@ -10675,6 +10714,30 @@
       "language": "Angļu",
       "movieUrl": "https://www.forumcinemas.lv/event/304879/title/kritiens_2/?dt=20.09.2026",
       "availability": {}
+    },
+    {
+      "id": "forum-438458",
+      "source": "forum",
+      "cinema": "Forum Cinemas",
+      "title": "Uļa",
+      "originalTitle": "Uļa",
+      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11421/portrait_medium/ula-plakats.jpg",
+      "imdbRating": "",
+      "imdbUrl": "https://www.imdb.com/title/tt14173636/",
+      "ageRating": "12+",
+      "genres": [
+        "Drāma",
+        "Biogrāfija"
+      ],
+      "startTime": "2026-09-20T17:00:00+03:00",
+      "serviceDate": "2026-09-20",
+      "auditorium": "Centrs, DELFI LUX aud.",
+      "language": "Latviešu / krievu",
+      "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/?dt=20.09.2026",
+      "availability": {
+        "freeSeats": 52,
+        "totalSeats": 109
+      }
     },
     {
       "id": "apollo-519826",
@@ -11377,7 +11440,10 @@
       "auditorium": "Centrs, 2. aud.",
       "language": "Latviešu / krievu",
       "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/?dt=20.09.2026",
-      "availability": {}
+      "availability": {
+        "freeSeats": 379,
+        "totalSeats": 427
+      }
     },
     {
       "id": "apollo-520493",
@@ -11787,7 +11853,7 @@
       }
     },
     {
-      "id": "forum-438457",
+      "id": "forum-438471",
       "source": "forum",
       "cinema": "Forum Cinemas",
       "title": "Uļa",
@@ -11808,7 +11874,7 @@
       "availability": {}
     },
     {
-      "id": "forum-438471",
+      "id": "forum-438457",
       "source": "forum",
       "cinema": "Forum Cinemas",
       "title": "Uļa",
@@ -11826,7 +11892,10 @@
       "auditorium": "Centrs, DELFI LUX aud.",
       "language": "Latviešu / krievu",
       "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/?dt=20.09.2026",
-      "availability": {}
+      "availability": {
+        "freeSeats": 93,
+        "totalSeats": 109
+      }
     },
     {
       "id": "apollo-520290",
@@ -12257,7 +12326,10 @@
       "auditorium": "Centrs, 4 LUX aud.",
       "language": "Latviešu / krievu",
       "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/?dt=20.09.2026",
-      "availability": {}
+      "availability": {
+        "freeSeats": 91,
+        "totalSeats": 91
+      }
     },
     {
       "id": "forum-438667",
