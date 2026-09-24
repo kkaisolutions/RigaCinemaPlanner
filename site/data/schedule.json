@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T22:12:07.166Z",
+  "generatedAt": "2026-09-24T00:08:33.603Z",
   "timezone": "Europe/Riga",
   "date": "2026-09-24",
   "dates": [
@@ -14,20 +14,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "cached",
-          "dataDate": "2026-09-24",
           "count": 38,
-          "fetchedAt": "2026-09-23T21:54:53.838Z",
-          "lastSuccessAt": "2026-09-23T21:54:53.838Z",
+          "status": "fresh",
+          "dataDate": "2026-09-24",
+          "fetchedAt": "2026-09-24T00:08:33.603Z",
+          "lastSuccessAt": "2026-09-24T00:08:33.603Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 98,
-          "status": "fresh",
+          "status": "stale",
           "dataDate": "2026-09-24",
+          "count": 98,
           "fetchedAt": "2026-09-23T22:12:07.166Z",
           "lastSuccessAt": "2026-09-23T22:12:07.166Z",
           "error": null
@@ -36,9 +36,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 0,
-          "status": "fresh",
+          "status": "stale",
           "dataDate": "2026-09-24",
+          "count": 0,
           "fetchedAt": "2026-09-23T22:12:07.166Z",
           "lastSuccessAt": "2026-09-23T22:12:07.166Z",
           "error": null
@@ -792,31 +792,6 @@
           }
         },
         {
-          "id": "forum-438763",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Meitene mākoņos",
-          "originalTitle": "La Fille dans les nuages",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11485/portrait_medium/girl-in-the-clouds-plakats.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt20259240/",
-          "ageRating": "U",
-          "genres": [
-            "Piedzīvojumi",
-            "Animācija",
-            "Fantāzija"
-          ],
-          "startTime": "2026-09-24T14:00:00+03:00",
-          "serviceDate": "2026-09-24",
-          "auditorium": "Centrs, 8. aud.",
-          "language": "Latviešu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304907/title/meitene_m%C4%81ko%C5%86os/",
-          "availability": {
-            "freeSeats": 36,
-            "totalSeats": 98
-          }
-        },
-        {
           "id": "forum-438501",
           "source": "forum",
           "cinema": "Forum Cinemas",
@@ -837,6 +812,31 @@
           "availability": {
             "freeSeats": 234,
             "totalSeats": 234
+          }
+        },
+        {
+          "id": "forum-438763",
+          "source": "forum",
+          "cinema": "Forum Cinemas",
+          "title": "Meitene mākoņos",
+          "originalTitle": "La Fille dans les nuages",
+          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11485/portrait_medium/girl-in-the-clouds-plakats.jpg",
+          "imdbRating": "",
+          "imdbUrl": "https://www.imdb.com/title/tt20259240/",
+          "ageRating": "U",
+          "genres": [
+            "Piedzīvojumi",
+            "Animācija",
+            "Fantāzija"
+          ],
+          "startTime": "2026-09-24T14:00:00+03:00",
+          "serviceDate": "2026-09-24",
+          "auditorium": "Centrs, 8. aud.",
+          "language": "Latviešu",
+          "movieUrl": "https://www.forumcinemas.lv/event/304907/title/meitene_m%C4%81ko%C5%86os/",
+          "availability": {
+            "freeSeats": 35,
+            "totalSeats": 98
           }
         },
         {
@@ -3353,20 +3353,20 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "status": "cached",
-          "dataDate": "2026-09-25",
           "count": 44,
-          "fetchedAt": "2026-09-23T21:54:53.838Z",
-          "lastSuccessAt": "2026-09-23T21:54:53.838Z",
+          "status": "fresh",
+          "dataDate": "2026-09-25",
+          "fetchedAt": "2026-09-24T00:08:33.603Z",
+          "lastSuccessAt": "2026-09-24T00:08:33.603Z",
           "error": null
         },
         {
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "count": 99,
-          "status": "fresh",
+          "status": "stale",
           "dataDate": "2026-09-25",
+          "count": 99,
           "fetchedAt": "2026-09-23T22:12:07.166Z",
           "lastSuccessAt": "2026-09-23T22:12:07.166Z",
           "error": null
@@ -3375,9 +3375,9 @@
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "count": 0,
-          "status": "fresh",
+          "status": "stale",
           "dataDate": "2026-09-25",
+          "count": 0,
           "fetchedAt": "2026-09-23T22:12:07.166Z",
           "lastSuccessAt": "2026-09-23T22:12:07.166Z",
           "error": null
@@ -5601,7 +5601,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.forumcinemas.lv/event/301864/title/slepen%C4%81_pirmizr%C4%81de/?dt=25.09.2026",
           "availability": {
-            "freeSeats": 310,
+            "freeSeats": 308,
             "totalSeats": 427
           }
         },
@@ -6872,20 +6872,20 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/",
-      "status": "cached",
-      "dataDate": "2026-09-24",
       "count": 38,
-      "fetchedAt": "2026-09-23T21:54:53.838Z",
-      "lastSuccessAt": "2026-09-23T21:54:53.838Z",
+      "status": "fresh",
+      "dataDate": "2026-09-24",
+      "fetchedAt": "2026-09-24T00:08:33.603Z",
+      "lastSuccessAt": "2026-09-24T00:08:33.603Z",
       "error": null
     },
     {
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "count": 98,
-      "status": "fresh",
+      "status": "stale",
       "dataDate": "2026-09-24",
+      "count": 98,
       "fetchedAt": "2026-09-23T22:12:07.166Z",
       "lastSuccessAt": "2026-09-23T22:12:07.166Z",
       "error": null
@@ -6894,9 +6894,9 @@
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "count": 0,
-      "status": "fresh",
+      "status": "stale",
       "dataDate": "2026-09-24",
+      "count": 0,
       "fetchedAt": "2026-09-23T22:12:07.166Z",
       "lastSuccessAt": "2026-09-23T22:12:07.166Z",
       "error": null
@@ -7650,31 +7650,6 @@
       }
     },
     {
-      "id": "forum-438763",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Meitene mākoņos",
-      "originalTitle": "La Fille dans les nuages",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11485/portrait_medium/girl-in-the-clouds-plakats.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt20259240/",
-      "ageRating": "U",
-      "genres": [
-        "Piedzīvojumi",
-        "Animācija",
-        "Fantāzija"
-      ],
-      "startTime": "2026-09-24T14:00:00+03:00",
-      "serviceDate": "2026-09-24",
-      "auditorium": "Centrs, 8. aud.",
-      "language": "Latviešu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304907/title/meitene_m%C4%81ko%C5%86os/",
-      "availability": {
-        "freeSeats": 36,
-        "totalSeats": 98
-      }
-    },
-    {
       "id": "forum-438501",
       "source": "forum",
       "cinema": "Forum Cinemas",
@@ -7695,6 +7670,31 @@
       "availability": {
         "freeSeats": 234,
         "totalSeats": 234
+      }
+    },
+    {
+      "id": "forum-438763",
+      "source": "forum",
+      "cinema": "Forum Cinemas",
+      "title": "Meitene mākoņos",
+      "originalTitle": "La Fille dans les nuages",
+      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11485/portrait_medium/girl-in-the-clouds-plakats.jpg",
+      "imdbRating": "",
+      "imdbUrl": "https://www.imdb.com/title/tt20259240/",
+      "ageRating": "U",
+      "genres": [
+        "Piedzīvojumi",
+        "Animācija",
+        "Fantāzija"
+      ],
+      "startTime": "2026-09-24T14:00:00+03:00",
+      "serviceDate": "2026-09-24",
+      "auditorium": "Centrs, 8. aud.",
+      "language": "Latviešu",
+      "movieUrl": "https://www.forumcinemas.lv/event/304907/title/meitene_m%C4%81ko%C5%86os/",
+      "availability": {
+        "freeSeats": 35,
+        "totalSeats": 98
       }
     },
     {
