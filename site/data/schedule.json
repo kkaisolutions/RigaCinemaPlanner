@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T17:31:11.096Z",
+  "generatedAt": "2026-09-26T18:12:07.618Z",
   "timezone": "Europe/Riga",
   "date": "2026-09-26",
   "dates": [
@@ -14,9 +14,9 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "count": 10,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-09-26",
+          "count": 9,
           "fetchedAt": "2026-09-26T17:31:11.096Z",
           "lastSuccessAt": "2026-09-26T17:31:11.096Z",
           "error": null
@@ -25,301 +25,27 @@
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "status": "cached",
+          "count": 13,
+          "status": "fresh",
           "dataDate": "2026-09-26",
-          "count": 19,
-          "fetchedAt": "2026-09-26T17:12:17.972Z",
-          "lastSuccessAt": "2026-09-26T17:12:17.972Z",
+          "fetchedAt": "2026-09-26T18:12:07.618Z",
+          "lastSuccessAt": "2026-09-26T18:12:07.618Z",
           "error": null
         },
         {
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "status": "cached",
-          "dataDate": "2026-09-26",
           "count": 0,
-          "fetchedAt": "2026-09-26T17:12:17.972Z",
-          "lastSuccessAt": "2026-09-26T17:12:17.972Z",
+          "status": "fresh",
+          "dataDate": "2026-09-26",
+          "fetchedAt": "2026-09-26T18:12:07.618Z",
+          "lastSuccessAt": "2026-09-26T18:12:07.618Z",
           "error": null
         }
       ],
       "warnings": [],
       "showtimes": [
-        {
-          "id": "forum-439166",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Skarbās zemes sirdī",
-          "originalTitle": "Heart of the Beast",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11455/portrait_medium/Heart-of-the-Beast-plakats.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt7526136/",
-          "ageRating": "12+",
-          "genres": [
-            "Trilleris",
-            "Piedzīvojumi",
-            "Drāma",
-            "Asa sižeta"
-          ],
-          "startTime": "2026-09-26T20:35:00+03:00",
-          "serviceDate": "2026-09-26",
-          "auditorium": "Centrs, 4 LUX aud.",
-          "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304880/title/skarb%C4%81s_zemes_sird%C4%AB/",
-          "availability": {
-            "freeSeats": 59,
-            "totalSeats": 91
-          }
-        },
-        {
-          "id": "apollo-520642",
-          "source": "apollo",
-          "cinema": "Apollo Plaza",
-          "title": "Zirnekļcilvēks: Jauna diena",
-          "originalTitle": "Spider-Man: Brand New Day",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8505/landscape_qhd/SpiderMan-BND_LV_PPRef_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "12+",
-          "genres": [
-            "Piedzīvojumu filma",
-            "Fantastika"
-          ],
-          "startTime": "2026-09-26T20:45:00.0000000+03:00",
-          "serviceDate": "2026-09-26",
-          "auditorium": "5. zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=26.09.2026",
-          "availability": {
-            "freeSeats": 27
-          }
-        },
-        {
-          "id": "apollo-520588",
-          "source": "apollo",
-          "cinema": "Apollo Akropole",
-          "title": "Atriebēji: Noslēgums. Papildināts",
-          "originalTitle": "Avengers: Endgame Encore",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8663/landscape_qhd/LK_AE__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "12+",
-          "genres": [
-            "Asa sižeta filma",
-            "Zinātniska fantastika",
-            "Piedzīvojumu filma"
-          ],
-          "startTime": "2026-09-26T20:45:00.0000000+03:00",
-          "serviceDate": "2026-09-26",
-          "auditorium": "2. zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304221/atrieb%C4%93ji_nosl%C4%93gums_papildin%C4%81ts?theatreAreaID=1014&dt=26.09.2026",
-          "availability": {
-            "freeSeats": 188,
-            "totalSeats": 227,
-            "takenSeats": 39,
-            "occupiedPercent": 17
-          }
-        },
-        {
-          "id": "apollo-520659",
-          "source": "apollo",
-          "cinema": "Apollo Plaza",
-          "title": "Odiseja",
-          "originalTitle": "The Odyssey",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8419/landscape_qhd/LK_OD__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "16+",
-          "genres": [
-            "Piedzīvojumu filma",
-            "Vēsturiska"
-          ],
-          "startTime": "2026-09-26T20:45:00.0000000+03:00",
-          "serviceDate": "2026-09-26",
-          "auditorium": "8. Vintage zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=26.09.2026",
-          "availability": {
-            "freeSeats": 12
-          }
-        },
-        {
-          "id": "forum-439092",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Uļa",
-          "originalTitle": "Uļa",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11421/portrait_medium/ula-plakats.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt14173636/",
-          "ageRating": "12+",
-          "genres": [
-            "Drāma",
-            "Biogrāfija"
-          ],
-          "startTime": "2026-09-26T20:50:00+03:00",
-          "serviceDate": "2026-09-26",
-          "auditorium": "Centrs, 2. aud.",
-          "language": "Latviešu / krievu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/",
-          "availability": {
-            "freeSeats": 384,
-            "totalSeats": 427
-          }
-        },
-        {
-          "id": "apollo-519893",
-          "source": "apollo",
-          "cinema": "Apollo Plaza",
-          "title": "Skarbās zemes sirdī",
-          "originalTitle": "Heart of the Beast",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8622/landscape_qhd/LK_HB__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "12+",
-          "genres": [
-            "Drāma",
-            "Asa sižeta filma",
-            "Piedzīvojumu filma",
-            "Trilleris"
-          ],
-          "startTime": "2026-09-26T20:50:00.0000000+03:00",
-          "serviceDate": "2026-09-26",
-          "auditorium": "3. zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304183/skarb%C4%81s_zemes_sird%C4%AB?theatreAreaID=1014&dt=26.09.2026",
-          "availability": {
-            "freeSeats": 41
-          }
-        },
-        {
-          "id": "forum-439132",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Zirnekļcilvēks: Jauna diena",
-          "originalTitle": "Spider-Man: Brand New Day",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11377/portrait_medium/Spider-Man-Brand-New-Day-plakats.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt22084616/",
-          "ageRating": "12+",
-          "genres": [
-            "Piedzīvojumi",
-            "Fantāzija",
-            "Fantastika"
-          ],
-          "startTime": "2026-09-26T21:00:00+03:00",
-          "serviceDate": "2026-09-26",
-          "auditorium": "Centrs, 14. aud.",
-          "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
-          "availability": {
-            "freeSeats": 162,
-            "totalSeats": 183
-          }
-        },
-        {
-          "id": "apollo-521167",
-          "source": "apollo",
-          "cinema": "Apollo Domina",
-          "title": "Skarbās zemes sirdī",
-          "originalTitle": "Heart of the Beast",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8622/landscape_qhd/LK_HB__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "12+",
-          "genres": [
-            "Drāma",
-            "Asa sižeta filma",
-            "Piedzīvojumu filma",
-            "Trilleris"
-          ],
-          "startTime": "2026-09-26T21:00:00.0000000+03:00",
-          "serviceDate": "2026-09-26",
-          "auditorium": "2. zāle",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304183/skarb%C4%81s_zemes_sird%C4%AB?theatreAreaID=1014&dt=26.09.2026",
-          "availability": {
-            "freeSeats": 47,
-            "totalSeats": 70,
-            "takenSeats": 23,
-            "occupiedPercent": 33
-          }
-        },
-        {
-          "id": "forum-439133",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Santjago ceļa terapija",
-          "originalTitle": "Compostelle",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11487/portrait_medium/SantiagoCamino_poster_LV.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt39814688/",
-          "ageRating": "12+",
-          "genres": [
-            "Drāma"
-          ],
-          "startTime": "2026-09-26T21:05:00+03:00",
-          "serviceDate": "2026-09-26",
-          "auditorium": "Centrs, 5. aud.",
-          "language": "Franču",
-          "movieUrl": "https://www.forumcinemas.lv/event/304909/title/santjago_ce%C4%BCa_terapija/",
-          "availability": {
-            "freeSeats": 86,
-            "totalSeats": 95
-          }
-        },
-        {
-          "id": "forum-439144",
-          "source": "forum",
-          "cinema": "Forum Cinemas",
-          "title": "Kritiens 2",
-          "originalTitle": "Fall 2: Deadpoint",
-          "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11444/portrait_medium/Fall-2-plakats-v2.jpg",
-          "imdbRating": "",
-          "imdbUrl": "https://www.imdb.com/title/tt31192372/",
-          "ageRating": "12+",
-          "genres": [
-            "Trilleris",
-            "Piedzīvojumi",
-            "Drāma"
-          ],
-          "startTime": "2026-09-26T21:10:00+03:00",
-          "serviceDate": "2026-09-26",
-          "auditorium": "Centrs, 8. aud.",
-          "language": "Angļu",
-          "movieUrl": "https://www.forumcinemas.lv/event/304879/title/kritiens_2/",
-          "availability": {
-            "freeSeats": 70,
-            "totalSeats": 98
-          }
-        },
-        {
-          "id": "apollo-520619",
-          "source": "apollo",
-          "cinema": "Apollo Akropole",
-          "title": "Es gribu tikai seksu",
-          "originalTitle": "I Want Your Sex",
-          "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8624/landscape_qhd/IWantYourSex_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-          "imdbRating": "",
-          "imdbUrl": "",
-          "ageRating": "18+",
-          "genres": [
-            "Komēdija",
-            "Drāma",
-            "Romantika",
-            "Trilleris"
-          ],
-          "startTime": "2026-09-26T21:10:00.0000000+03:00",
-          "serviceDate": "2026-09-26",
-          "auditorium": "8. zāle Restorāns",
-          "language": "Angļu",
-          "movieUrl": "https://www.apollokino.lv/event/304185/es_gribu_tikai_seksu?theatreAreaID=1014&dt=26.09.2026",
-          "availability": {
-            "freeSeats": 22
-          }
-        },
         {
           "id": "apollo-520627",
           "source": "apollo",
@@ -341,7 +67,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304221/atrieb%C4%93ji_nosl%C4%93gums_papildin%C4%81ts?theatreAreaID=1014&dt=26.09.2026",
           "availability": {
-            "freeSeats": 338
+            "freeSeats": 331
           }
         },
         {
@@ -363,7 +89,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304162/nez%C5%ABdo%C5%A1ais_%C4%BCaunums?theatreAreaID=1014&dt=26.09.2026",
           "availability": {
-            "freeSeats": 34
+            "freeSeats": 26
           }
         },
         {
@@ -412,7 +138,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304221/atrieb%C4%93ji_nosl%C4%93gums_papildin%C4%81ts?theatreAreaID=1014&dt=26.09.2026",
           "availability": {
-            "freeSeats": 48
+            "freeSeats": 44
           }
         },
         {
@@ -435,7 +161,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=26.09.2026",
           "availability": {
-            "freeSeats": 181
+            "freeSeats": 173
           }
         },
         {
@@ -457,10 +183,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304162/nez%C5%ABdo%C5%A1ais_%C4%BCaunums?theatreAreaID=1014&dt=26.09.2026",
           "availability": {
-            "freeSeats": 44,
+            "freeSeats": 34,
             "totalSeats": 70,
-            "takenSeats": 26,
-            "occupiedPercent": 37
+            "takenSeats": 36,
+            "occupiedPercent": 51
           }
         },
         {
@@ -483,10 +209,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=26.09.2026",
           "availability": {
-            "freeSeats": 162,
+            "freeSeats": 155,
             "totalSeats": 277,
-            "takenSeats": 115,
-            "occupiedPercent": 42
+            "takenSeats": 122,
+            "occupiedPercent": 44
           }
         },
         {
@@ -535,7 +261,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=26.09.2026",
           "availability": {
-            "freeSeats": 162
+            "freeSeats": 156
           }
         },
         {
@@ -607,10 +333,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304185/es_gribu_tikai_seksu?theatreAreaID=1014&dt=26.09.2026",
           "availability": {
-            "freeSeats": 121,
+            "freeSeats": 107,
             "totalSeats": 127,
-            "takenSeats": 6,
-            "occupiedPercent": 5
+            "takenSeats": 20,
+            "occupiedPercent": 16
           }
         },
         {
@@ -634,7 +360,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304188/kritiens_2?theatreAreaID=1014&dt=26.09.2026",
           "availability": {
-            "freeSeats": 38
+            "freeSeats": 18
           }
         },
         {
@@ -656,7 +382,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304162/nez%C5%ABdo%C5%A1ais_%C4%BCaunums?theatreAreaID=1014&dt=26.09.2026",
           "availability": {
-            "freeSeats": 44
+            "freeSeats": 32
           }
         },
         {
@@ -681,10 +407,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304183/skarb%C4%81s_zemes_sird%C4%AB?theatreAreaID=1014&dt=26.09.2026",
           "availability": {
-            "freeSeats": 57,
+            "freeSeats": 55,
             "totalSeats": 90,
-            "takenSeats": 33,
-            "occupiedPercent": 37
+            "takenSeats": 35,
+            "occupiedPercent": 39
           }
         },
         {
@@ -708,7 +434,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304173/dumpis?theatreAreaID=1014&dt=26.09.2026",
           "availability": {
-            "freeSeats": 35
+            "freeSeats": 27
           }
         }
       ]
@@ -720,9 +446,9 @@
           "id": "forum",
           "name": "Forum Cinemas",
           "url": "https://www.forumcinemas.lv/",
-          "count": 62,
-          "status": "fresh",
+          "status": "cached",
           "dataDate": "2026-09-27",
+          "count": 62,
           "fetchedAt": "2026-09-26T17:31:11.096Z",
           "lastSuccessAt": "2026-09-26T17:31:11.096Z",
           "error": null
@@ -731,22 +457,22 @@
           "id": "apollo",
           "name": "Apollo Kino",
           "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-          "status": "cached",
-          "dataDate": "2026-09-27",
           "count": 102,
-          "fetchedAt": "2026-09-26T17:12:17.972Z",
-          "lastSuccessAt": "2026-09-26T17:12:17.972Z",
+          "status": "fresh",
+          "dataDate": "2026-09-27",
+          "fetchedAt": "2026-09-26T18:12:07.618Z",
+          "lastSuccessAt": "2026-09-26T18:12:07.618Z",
           "error": null
         },
         {
           "id": "cinamon",
           "name": "Cinamon Alfa",
           "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-          "status": "cached",
-          "dataDate": "2026-09-27",
           "count": 0,
-          "fetchedAt": "2026-09-26T17:12:17.972Z",
-          "lastSuccessAt": "2026-09-26T17:12:17.972Z",
+          "status": "fresh",
+          "dataDate": "2026-09-27",
+          "fetchedAt": "2026-09-26T18:12:07.618Z",
+          "lastSuccessAt": "2026-09-26T18:12:07.618Z",
           "error": null
         }
       ],
@@ -1076,7 +802,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 42
+            "freeSeats": 40
           }
         },
         {
@@ -1272,10 +998,10 @@
           "language": "Krievu",
           "movieUrl": "https://www.apollokino.lv/event/304012/%C4%B7epu_patru%C4%BCa_dinozauru_filma?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 84,
+            "freeSeats": 79,
             "totalSeats": 90,
-            "takenSeats": 6,
-            "occupiedPercent": 7
+            "takenSeats": 11,
+            "occupiedPercent": 12
           }
         },
         {
@@ -1366,7 +1092,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.apollokino.lv/event/304161/dz%C4%ABvnieku_ferma?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 98
+            "freeSeats": 93
           }
         },
         {
@@ -1435,7 +1161,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 29
+            "freeSeats": 26
           }
         },
         {
@@ -1484,10 +1210,10 @@
           "language": "Latviešu",
           "movieUrl": "https://www.apollokino.lv/event/304012/%C4%B7epu_patru%C4%BCa_dinozauru_filma?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 215,
+            "freeSeats": 211,
             "totalSeats": 227,
-            "takenSeats": 12,
-            "occupiedPercent": 5
+            "takenSeats": 16,
+            "occupiedPercent": 7
           }
         },
         {
@@ -1722,7 +1448,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304156/spa_br%C4%ABvdienas?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 35
+            "freeSeats": 31
           }
         },
         {
@@ -1863,7 +1589,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304221/atrieb%C4%93ji_nosl%C4%93gums_papildin%C4%81ts?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 326
+            "freeSeats": 323
           }
         },
         {
@@ -2035,7 +1761,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304188/kritiens_2?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 38
+            "freeSeats": 35
           }
         },
         {
@@ -2058,7 +1784,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 138
+            "freeSeats": 132
           }
         },
         {
@@ -2269,7 +1995,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 175
+            "freeSeats": 166
           }
         },
         {
@@ -2314,7 +2040,7 @@
           "language": "Krievu",
           "movieUrl": "https://www.apollokino.lv/event/304161/dz%C4%ABvnieku_ferma?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 40
+            "freeSeats": 38
           }
         },
         {
@@ -2478,10 +2204,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304183/skarb%C4%81s_zemes_sird%C4%AB?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 61,
+            "freeSeats": 57,
             "totalSeats": 70,
-            "takenSeats": 9,
-            "occupiedPercent": 13
+            "takenSeats": 13,
+            "occupiedPercent": 19
           }
         },
         {
@@ -2530,7 +2256,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304203/karstais_raidlaiks?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 29
+            "freeSeats": 33
           }
         },
         {
@@ -2745,7 +2471,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304200/d-diena_pirms_v%C4%93tras?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 35
+            "freeSeats": 33
           }
         },
         {
@@ -2791,7 +2517,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 141
+            "freeSeats": 140
           }
         },
         {
@@ -2883,10 +2609,10 @@
           "language": "Latviešu",
           "movieUrl": "https://www.apollokino.lv/event/304012/%C4%B7epu_patru%C4%BCa_dinozauru_filma?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 223,
+            "freeSeats": 220,
             "totalSeats": 227,
-            "takenSeats": 4,
-            "occupiedPercent": 2
+            "takenSeats": 7,
+            "occupiedPercent": 3
           }
         },
         {
@@ -2909,10 +2635,10 @@
           "language": "Latviešu",
           "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 70,
+            "freeSeats": 63,
             "totalSeats": 70,
-            "takenSeats": 0,
-            "occupiedPercent": 0
+            "takenSeats": 7,
+            "occupiedPercent": 10
           }
         },
         {
@@ -2980,7 +2706,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304183/skarb%C4%81s_zemes_sird%C4%AB?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 88
+            "freeSeats": 85
           }
         },
         {
@@ -3003,7 +2729,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 186
+            "freeSeats": 188
           }
         },
         {
@@ -3097,10 +2823,10 @@
           "language": "Latviešu",
           "movieUrl": "https://www.apollokino.lv/event/304199/%C4%81rnijs_un_b%C4%81rnijs?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 127,
+            "freeSeats": 123,
             "totalSeats": 127,
-            "takenSeats": 0,
-            "occupiedPercent": 0
+            "takenSeats": 4,
+            "occupiedPercent": 3
           }
         },
         {
@@ -3149,7 +2875,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304221/atrieb%C4%93ji_nosl%C4%93gums_papildin%C4%81ts?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 339
+            "freeSeats": 336
           }
         },
         {
@@ -3246,7 +2972,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.apollokino.lv/event/303948/minioni_un_mo%C5%A1%C4%B7i?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 75
+            "freeSeats": 73
           }
         },
         {
@@ -3322,7 +3048,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304203/karstais_raidlaiks?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 65
+            "freeSeats": 69
           }
         },
         {
@@ -3372,10 +3098,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304221/atrieb%C4%93ji_nosl%C4%93gums_papildin%C4%81ts?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 165,
+            "freeSeats": 162,
             "totalSeats": 277,
-            "takenSeats": 112,
-            "occupiedPercent": 40
+            "takenSeats": 115,
+            "occupiedPercent": 42
           }
         },
         {
@@ -3469,7 +3195,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304183/skarb%C4%81s_zemes_sird%C4%AB?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 101
+            "freeSeats": 99
           }
         },
         {
@@ -3515,7 +3241,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304188/kritiens_2?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 36
+            "freeSeats": 32
           }
         },
         {
@@ -3618,7 +3344,7 @@
           "language": "Latviešu",
           "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 164
+            "freeSeats": 162
           }
         },
         {
@@ -3641,10 +3367,10 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 224,
+            "freeSeats": 220,
             "totalSeats": 227,
-            "takenSeats": 3,
-            "occupiedPercent": 1
+            "takenSeats": 7,
+            "occupiedPercent": 3
           }
         },
         {
@@ -3769,7 +3495,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304183/skarb%C4%81s_zemes_sird%C4%AB?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 85
+            "freeSeats": 80
           }
         },
         {
@@ -3889,7 +3615,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304162/nez%C5%ABdo%C5%A1ais_%C4%BCaunums?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 34
+            "freeSeats": 38
           }
         },
         {
@@ -3988,7 +3714,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304162/nez%C5%ABdo%C5%A1ais_%C4%BCaunums?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 70
+            "freeSeats": 64
           }
         },
         {
@@ -4106,7 +3832,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304203/karstais_raidlaiks?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 67
+            "freeSeats": 71
           }
         },
         {
@@ -4365,7 +4091,7 @@
           "language": "Angļu",
           "movieUrl": "https://www.apollokino.lv/event/304221/atrieb%C4%93ji_nosl%C4%93gums_papildin%C4%81ts?theatreAreaID=1014&dt=27.09.2026",
           "availability": {
-            "freeSeats": 343
+            "freeSeats": 341
           }
         },
         {
@@ -4724,9 +4450,9 @@
       "id": "forum",
       "name": "Forum Cinemas",
       "url": "https://www.forumcinemas.lv/",
-      "count": 10,
-      "status": "fresh",
+      "status": "cached",
       "dataDate": "2026-09-26",
+      "count": 9,
       "fetchedAt": "2026-09-26T17:31:11.096Z",
       "lastSuccessAt": "2026-09-26T17:31:11.096Z",
       "error": null
@@ -4735,301 +4461,27 @@
       "id": "apollo",
       "name": "Apollo Kino",
       "url": "https://www.apollokino.lv/schedule?theatreAreaID=1014",
-      "status": "cached",
+      "count": 13,
+      "status": "fresh",
       "dataDate": "2026-09-26",
-      "count": 19,
-      "fetchedAt": "2026-09-26T17:12:17.972Z",
-      "lastSuccessAt": "2026-09-26T17:12:17.972Z",
+      "fetchedAt": "2026-09-26T18:12:07.618Z",
+      "lastSuccessAt": "2026-09-26T18:12:07.618Z",
       "error": null
     },
     {
       "id": "cinamon",
       "name": "Cinamon Alfa",
       "url": "https://cinamonkino.com/akropole-alfa/saraksts/lv",
-      "status": "cached",
-      "dataDate": "2026-09-26",
       "count": 0,
-      "fetchedAt": "2026-09-26T17:12:17.972Z",
-      "lastSuccessAt": "2026-09-26T17:12:17.972Z",
+      "status": "fresh",
+      "dataDate": "2026-09-26",
+      "fetchedAt": "2026-09-26T18:12:07.618Z",
+      "lastSuccessAt": "2026-09-26T18:12:07.618Z",
       "error": null
     }
   ],
   "warnings": [],
   "showtimes": [
-    {
-      "id": "forum-439166",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Skarbās zemes sirdī",
-      "originalTitle": "Heart of the Beast",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11455/portrait_medium/Heart-of-the-Beast-plakats.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt7526136/",
-      "ageRating": "12+",
-      "genres": [
-        "Trilleris",
-        "Piedzīvojumi",
-        "Drāma",
-        "Asa sižeta"
-      ],
-      "startTime": "2026-09-26T20:35:00+03:00",
-      "serviceDate": "2026-09-26",
-      "auditorium": "Centrs, 4 LUX aud.",
-      "language": "Angļu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304880/title/skarb%C4%81s_zemes_sird%C4%AB/",
-      "availability": {
-        "freeSeats": 59,
-        "totalSeats": 91
-      }
-    },
-    {
-      "id": "apollo-520642",
-      "source": "apollo",
-      "cinema": "Apollo Plaza",
-      "title": "Zirnekļcilvēks: Jauna diena",
-      "originalTitle": "Spider-Man: Brand New Day",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8505/landscape_qhd/SpiderMan-BND_LV_PPRef_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "12+",
-      "genres": [
-        "Piedzīvojumu filma",
-        "Fantastika"
-      ],
-      "startTime": "2026-09-26T20:45:00.0000000+03:00",
-      "serviceDate": "2026-09-26",
-      "auditorium": "5. zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304071/zirnek%C4%BCcilv%C4%93ks_jauna_diena?theatreAreaID=1014&dt=26.09.2026",
-      "availability": {
-        "freeSeats": 27
-      }
-    },
-    {
-      "id": "apollo-520588",
-      "source": "apollo",
-      "cinema": "Apollo Akropole",
-      "title": "Atriebēji: Noslēgums. Papildināts",
-      "originalTitle": "Avengers: Endgame Encore",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8663/landscape_qhd/LK_AE__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "12+",
-      "genres": [
-        "Asa sižeta filma",
-        "Zinātniska fantastika",
-        "Piedzīvojumu filma"
-      ],
-      "startTime": "2026-09-26T20:45:00.0000000+03:00",
-      "serviceDate": "2026-09-26",
-      "auditorium": "2. zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304221/atrieb%C4%93ji_nosl%C4%93gums_papildin%C4%81ts?theatreAreaID=1014&dt=26.09.2026",
-      "availability": {
-        "freeSeats": 188,
-        "totalSeats": 227,
-        "takenSeats": 39,
-        "occupiedPercent": 17
-      }
-    },
-    {
-      "id": "apollo-520659",
-      "source": "apollo",
-      "cinema": "Apollo Plaza",
-      "title": "Odiseja",
-      "originalTitle": "The Odyssey",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8419/landscape_qhd/LK_OD__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "16+",
-      "genres": [
-        "Piedzīvojumu filma",
-        "Vēsturiska"
-      ],
-      "startTime": "2026-09-26T20:45:00.0000000+03:00",
-      "serviceDate": "2026-09-26",
-      "auditorium": "8. Vintage zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=26.09.2026",
-      "availability": {
-        "freeSeats": 12
-      }
-    },
-    {
-      "id": "forum-439092",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Uļa",
-      "originalTitle": "Uļa",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11421/portrait_medium/ula-plakats.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt14173636/",
-      "ageRating": "12+",
-      "genres": [
-        "Drāma",
-        "Biogrāfija"
-      ],
-      "startTime": "2026-09-26T20:50:00+03:00",
-      "serviceDate": "2026-09-26",
-      "auditorium": "Centrs, 2. aud.",
-      "language": "Latviešu / krievu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304848/title/u%C4%BCa/",
-      "availability": {
-        "freeSeats": 384,
-        "totalSeats": 427
-      }
-    },
-    {
-      "id": "apollo-519893",
-      "source": "apollo",
-      "cinema": "Apollo Plaza",
-      "title": "Skarbās zemes sirdī",
-      "originalTitle": "Heart of the Beast",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8622/landscape_qhd/LK_HB__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "12+",
-      "genres": [
-        "Drāma",
-        "Asa sižeta filma",
-        "Piedzīvojumu filma",
-        "Trilleris"
-      ],
-      "startTime": "2026-09-26T20:50:00.0000000+03:00",
-      "serviceDate": "2026-09-26",
-      "auditorium": "3. zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304183/skarb%C4%81s_zemes_sird%C4%AB?theatreAreaID=1014&dt=26.09.2026",
-      "availability": {
-        "freeSeats": 41
-      }
-    },
-    {
-      "id": "forum-439132",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Zirnekļcilvēks: Jauna diena",
-      "originalTitle": "Spider-Man: Brand New Day",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11377/portrait_medium/Spider-Man-Brand-New-Day-plakats.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt22084616/",
-      "ageRating": "12+",
-      "genres": [
-        "Piedzīvojumi",
-        "Fantāzija",
-        "Fantastika"
-      ],
-      "startTime": "2026-09-26T21:00:00+03:00",
-      "serviceDate": "2026-09-26",
-      "auditorium": "Centrs, 14. aud.",
-      "language": "Angļu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304817/title/zirnek%C4%BCcilv%C4%93ks_jauna_diena/",
-      "availability": {
-        "freeSeats": 162,
-        "totalSeats": 183
-      }
-    },
-    {
-      "id": "apollo-521167",
-      "source": "apollo",
-      "cinema": "Apollo Domina",
-      "title": "Skarbās zemes sirdī",
-      "originalTitle": "Heart of the Beast",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8622/landscape_qhd/LK_HB__Apollo_ID28_3840x2160px.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "12+",
-      "genres": [
-        "Drāma",
-        "Asa sižeta filma",
-        "Piedzīvojumu filma",
-        "Trilleris"
-      ],
-      "startTime": "2026-09-26T21:00:00.0000000+03:00",
-      "serviceDate": "2026-09-26",
-      "auditorium": "2. zāle",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304183/skarb%C4%81s_zemes_sird%C4%AB?theatreAreaID=1014&dt=26.09.2026",
-      "availability": {
-        "freeSeats": 47,
-        "totalSeats": 70,
-        "takenSeats": 23,
-        "occupiedPercent": 33
-      }
-    },
-    {
-      "id": "forum-439133",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Santjago ceļa terapija",
-      "originalTitle": "Compostelle",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11487/portrait_medium/SantiagoCamino_poster_LV.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt39814688/",
-      "ageRating": "12+",
-      "genres": [
-        "Drāma"
-      ],
-      "startTime": "2026-09-26T21:05:00+03:00",
-      "serviceDate": "2026-09-26",
-      "auditorium": "Centrs, 5. aud.",
-      "language": "Franču",
-      "movieUrl": "https://www.forumcinemas.lv/event/304909/title/santjago_ce%C4%BCa_terapija/",
-      "availability": {
-        "freeSeats": 86,
-        "totalSeats": 95
-      }
-    },
-    {
-      "id": "forum-439144",
-      "source": "forum",
-      "cinema": "Forum Cinemas",
-      "title": "Kritiens 2",
-      "originalTitle": "Fall 2: Deadpoint",
-      "posterUrl": "https://forumcinemaslv.blob.core.windows.net/1012/Event_11444/portrait_medium/Fall-2-plakats-v2.jpg",
-      "imdbRating": "",
-      "imdbUrl": "https://www.imdb.com/title/tt31192372/",
-      "ageRating": "12+",
-      "genres": [
-        "Trilleris",
-        "Piedzīvojumi",
-        "Drāma"
-      ],
-      "startTime": "2026-09-26T21:10:00+03:00",
-      "serviceDate": "2026-09-26",
-      "auditorium": "Centrs, 8. aud.",
-      "language": "Angļu",
-      "movieUrl": "https://www.forumcinemas.lv/event/304879/title/kritiens_2/",
-      "availability": {
-        "freeSeats": 70,
-        "totalSeats": 98
-      }
-    },
-    {
-      "id": "apollo-520619",
-      "source": "apollo",
-      "cinema": "Apollo Akropole",
-      "title": "Es gribu tikai seksu",
-      "originalTitle": "I Want Your Sex",
-      "posterUrl": "https://images.markus.live/mcswebsites.blob.core.windows.net/1048/Event_8624/landscape_qhd/IWantYourSex_LV_Apollo_EHDh_3840x2160.jpg?width=350&height=200&format=jpg&quality=90",
-      "imdbRating": "",
-      "imdbUrl": "",
-      "ageRating": "18+",
-      "genres": [
-        "Komēdija",
-        "Drāma",
-        "Romantika",
-        "Trilleris"
-      ],
-      "startTime": "2026-09-26T21:10:00.0000000+03:00",
-      "serviceDate": "2026-09-26",
-      "auditorium": "8. zāle Restorāns",
-      "language": "Angļu",
-      "movieUrl": "https://www.apollokino.lv/event/304185/es_gribu_tikai_seksu?theatreAreaID=1014&dt=26.09.2026",
-      "availability": {
-        "freeSeats": 22
-      }
-    },
     {
       "id": "apollo-520627",
       "source": "apollo",
@@ -5051,7 +4503,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304221/atrieb%C4%93ji_nosl%C4%93gums_papildin%C4%81ts?theatreAreaID=1014&dt=26.09.2026",
       "availability": {
-        "freeSeats": 338
+        "freeSeats": 331
       }
     },
     {
@@ -5073,7 +4525,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304162/nez%C5%ABdo%C5%A1ais_%C4%BCaunums?theatreAreaID=1014&dt=26.09.2026",
       "availability": {
-        "freeSeats": 34
+        "freeSeats": 26
       }
     },
     {
@@ -5122,7 +4574,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304221/atrieb%C4%93ji_nosl%C4%93gums_papildin%C4%81ts?theatreAreaID=1014&dt=26.09.2026",
       "availability": {
-        "freeSeats": 48
+        "freeSeats": 44
       }
     },
     {
@@ -5145,7 +4597,7 @@
       "language": "Latviešu",
       "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=26.09.2026",
       "availability": {
-        "freeSeats": 181
+        "freeSeats": 173
       }
     },
     {
@@ -5167,10 +4619,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304162/nez%C5%ABdo%C5%A1ais_%C4%BCaunums?theatreAreaID=1014&dt=26.09.2026",
       "availability": {
-        "freeSeats": 44,
+        "freeSeats": 34,
         "totalSeats": 70,
-        "takenSeats": 26,
-        "occupiedPercent": 37
+        "takenSeats": 36,
+        "occupiedPercent": 51
       }
     },
     {
@@ -5193,10 +4645,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/303993/odiseja?theatreAreaID=1014&dt=26.09.2026",
       "availability": {
-        "freeSeats": 162,
+        "freeSeats": 155,
         "totalSeats": 277,
-        "takenSeats": 115,
-        "occupiedPercent": 42
+        "takenSeats": 122,
+        "occupiedPercent": 44
       }
     },
     {
@@ -5245,7 +4697,7 @@
       "language": "Latviešu",
       "movieUrl": "https://www.apollokino.lv/event/304170/u%C4%BCa?theatreAreaID=1014&dt=26.09.2026",
       "availability": {
-        "freeSeats": 162
+        "freeSeats": 156
       }
     },
     {
@@ -5317,10 +4769,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304185/es_gribu_tikai_seksu?theatreAreaID=1014&dt=26.09.2026",
       "availability": {
-        "freeSeats": 121,
+        "freeSeats": 107,
         "totalSeats": 127,
-        "takenSeats": 6,
-        "occupiedPercent": 5
+        "takenSeats": 20,
+        "occupiedPercent": 16
       }
     },
     {
@@ -5344,7 +4796,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304188/kritiens_2?theatreAreaID=1014&dt=26.09.2026",
       "availability": {
-        "freeSeats": 38
+        "freeSeats": 18
       }
     },
     {
@@ -5366,7 +4818,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304162/nez%C5%ABdo%C5%A1ais_%C4%BCaunums?theatreAreaID=1014&dt=26.09.2026",
       "availability": {
-        "freeSeats": 44
+        "freeSeats": 32
       }
     },
     {
@@ -5391,10 +4843,10 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304183/skarb%C4%81s_zemes_sird%C4%AB?theatreAreaID=1014&dt=26.09.2026",
       "availability": {
-        "freeSeats": 57,
+        "freeSeats": 55,
         "totalSeats": 90,
-        "takenSeats": 33,
-        "occupiedPercent": 37
+        "takenSeats": 35,
+        "occupiedPercent": 39
       }
     },
     {
@@ -5418,7 +4870,7 @@
       "language": "Angļu",
       "movieUrl": "https://www.apollokino.lv/event/304173/dumpis?theatreAreaID=1014&dt=26.09.2026",
       "availability": {
-        "freeSeats": 35
+        "freeSeats": 27
       }
     }
   ]
